@@ -1,0 +1,1233 @@
+id,Specialism,max_threshold_value,alignment_sum,alignment_sum_relative,alignment_mean,max,min
+1,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+1,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+1,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+1,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+1,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+1,Cyber Security Management,NA,NA,NA,NA,NA,NA
+1,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+1,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+1,Digital Forensics,NA,NA,NA,NA,NA,NA
+1,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+1,Identity & Access Management,NA,NA,NA,NA,NA,NA
+1,Incident response,NA,NA,NA,NA,NA,NA
+1,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+1,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+1,Secure Operations,NA,NA,NA,NA,NA,NA
+1,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+1,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+1,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+1,Secure System Development,NA,NA,NA,NA,NA,NA
+1,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+1,Security Testing,NA,NA,NA,NA,NA,NA
+1,Vulnerability Management,NA,NA,NA,NA,NA,NA
+2,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+2,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+2,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+2,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+2,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+2,Cyber Security Management,NA,NA,NA,NA,NA,NA
+2,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+2,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+2,Digital Forensics,NA,NA,NA,NA,NA,NA
+2,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+2,Identity & Access Management,NA,NA,NA,NA,NA,NA
+2,Incident response,NA,NA,NA,NA,NA,NA
+2,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+2,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+2,Secure Operations,NA,NA,NA,NA,NA,NA
+2,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+2,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+2,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+2,Secure System Development,NA,NA,NA,NA,NA,NA
+2,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+2,Security Testing,NA,NA,NA,NA,NA,NA
+2,Vulnerability Management,NA,NA,NA,NA,NA,NA
+3,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+3,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+3,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+3,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+3,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+3,Cyber Security Management,NA,NA,NA,NA,NA,NA
+3,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+3,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+3,Digital Forensics,NA,NA,NA,NA,NA,NA
+3,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+3,Identity & Access Management,NA,NA,NA,NA,NA,NA
+3,Incident response,NA,NA,NA,NA,NA,NA
+3,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+3,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+3,Secure Operations,NA,NA,NA,NA,NA,NA
+3,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+3,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+3,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+3,Secure System Development,NA,NA,NA,NA,NA,NA
+3,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+3,Security Testing,NA,NA,NA,NA,NA,NA
+3,Vulnerability Management,NA,NA,NA,NA,NA,NA
+4,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+4,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+4,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+4,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+4,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+4,Cyber Security Management,NA,NA,NA,NA,NA,NA
+4,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+4,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+4,Digital Forensics,NA,NA,NA,NA,NA,NA
+4,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+4,Identity & Access Management,NA,NA,NA,NA,NA,NA
+4,Incident response,NA,NA,NA,NA,NA,NA
+4,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+4,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+4,Secure Operations,NA,NA,NA,NA,NA,NA
+4,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+4,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+4,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+4,Secure System Development,NA,NA,NA,NA,NA,NA
+4,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+4,Security Testing,NA,NA,NA,NA,NA,NA
+4,Vulnerability Management,NA,NA,NA,NA,NA,NA
+5,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+5,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+5,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+5,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+5,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+5,Cyber Security Management,NA,NA,NA,NA,NA,NA
+5,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+5,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+5,Digital Forensics,NA,NA,NA,NA,NA,NA
+5,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+5,Identity & Access Management,NA,NA,NA,NA,NA,NA
+5,Incident response,NA,NA,NA,NA,NA,NA
+5,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+5,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+5,Secure Operations,NA,NA,NA,NA,NA,NA
+5,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+5,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+5,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+5,Secure System Development,NA,NA,NA,NA,NA,NA
+5,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+5,Security Testing,NA,NA,NA,NA,NA,NA
+5,Vulnerability Management,NA,NA,NA,NA,NA,NA
+6,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+6,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+6,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+6,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+6,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+6,Cyber Security Management,NA,NA,NA,NA,NA,NA
+6,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+6,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+6,Digital Forensics,NA,NA,NA,NA,NA,NA
+6,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+6,Identity & Access Management,NA,NA,NA,NA,NA,NA
+6,Incident response,NA,NA,NA,NA,NA,NA
+6,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+6,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+6,Secure Operations,NA,NA,NA,NA,NA,NA
+6,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+6,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+6,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+6,Secure System Development,NA,NA,NA,NA,NA,NA
+6,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+6,Security Testing,NA,NA,NA,NA,NA,NA
+6,Vulnerability Management,NA,NA,NA,NA,NA,NA
+7,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+7,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+7,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+7,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+7,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+7,Cyber Security Management,NA,NA,NA,NA,NA,NA
+7,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+7,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+7,Digital Forensics,NA,NA,NA,NA,NA,NA
+7,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+7,Identity & Access Management,NA,NA,NA,NA,NA,NA
+7,Incident response,NA,NA,NA,NA,NA,NA
+7,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+7,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+7,Secure Operations,NA,NA,NA,NA,NA,NA
+7,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+7,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+7,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+7,Secure System Development,NA,NA,NA,NA,NA,NA
+7,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+7,Security Testing,NA,NA,NA,NA,NA,NA
+7,Vulnerability Management,NA,NA,NA,NA,NA,NA
+8,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+8,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+8,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+8,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+8,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+8,Cyber Security Management,NA,NA,NA,NA,NA,NA
+8,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+8,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+8,Digital Forensics,NA,NA,NA,NA,NA,NA
+8,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+8,Identity & Access Management,NA,NA,NA,NA,NA,NA
+8,Incident response,NA,NA,NA,NA,NA,NA
+8,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+8,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+8,Secure Operations,NA,NA,NA,NA,NA,NA
+8,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+8,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+8,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+8,Secure System Development,NA,NA,NA,NA,NA,NA
+8,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+8,Security Testing,NA,NA,NA,NA,NA,NA
+8,Vulnerability Management,NA,NA,NA,NA,NA,NA
+9,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+9,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+9,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+9,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+9,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+9,Cyber Security Management,NA,NA,NA,NA,NA,NA
+9,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+9,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+9,Digital Forensics,NA,NA,NA,NA,NA,NA
+9,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+9,Identity & Access Management,NA,NA,NA,NA,NA,NA
+9,Incident response,NA,NA,NA,NA,NA,NA
+9,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+9,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+9,Secure Operations,NA,NA,NA,NA,NA,NA
+9,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+9,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+9,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+9,Secure System Development,NA,NA,NA,NA,NA,NA
+9,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+9,Security Testing,NA,NA,NA,NA,NA,NA
+9,Vulnerability Management,NA,NA,NA,NA,NA,NA
+10,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+10,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+10,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+10,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+10,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+10,Cyber Security Management,NA,NA,NA,NA,NA,NA
+10,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+10,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+10,Digital Forensics,NA,NA,NA,NA,NA,NA
+10,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+10,Identity & Access Management,NA,NA,NA,NA,NA,NA
+10,Incident response,NA,NA,NA,NA,NA,NA
+10,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+10,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+10,Secure Operations,NA,NA,NA,NA,NA,NA
+10,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+10,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+10,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+10,Secure System Development,NA,NA,NA,NA,NA,NA
+10,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+10,Security Testing,NA,NA,NA,NA,NA,NA
+10,Vulnerability Management,NA,NA,NA,NA,NA,NA
+11,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+11,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+11,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+11,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+11,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+11,Cyber Security Management,NA,NA,NA,NA,NA,NA
+11,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+11,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+11,Digital Forensics,NA,NA,NA,NA,NA,NA
+11,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+11,Identity & Access Management,NA,NA,NA,NA,NA,NA
+11,Incident response,NA,NA,NA,NA,NA,NA
+11,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+11,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+11,Secure Operations,NA,NA,NA,NA,NA,NA
+11,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+11,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+11,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+11,Secure System Development,NA,NA,NA,NA,NA,NA
+11,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+11,Security Testing,NA,NA,NA,NA,NA,NA
+11,Vulnerability Management,NA,NA,NA,NA,NA,NA
+12,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+12,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+12,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+12,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+12,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+12,Cyber Security Management,NA,NA,NA,NA,NA,NA
+12,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+12,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+12,Digital Forensics,NA,NA,NA,NA,NA,NA
+12,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+12,Identity & Access Management,NA,NA,NA,NA,NA,NA
+12,Incident response,NA,NA,NA,NA,NA,NA
+12,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+12,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+12,Secure Operations,NA,NA,NA,NA,NA,NA
+12,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+12,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+12,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+12,Secure System Development,NA,NA,NA,NA,NA,NA
+12,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+12,Security Testing,NA,NA,NA,NA,NA,NA
+12,Vulnerability Management,NA,NA,NA,NA,NA,NA
+13,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+13,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+13,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+13,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+13,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+13,Cyber Security Management,NA,NA,NA,NA,NA,NA
+13,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+13,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+13,Digital Forensics,NA,NA,NA,NA,NA,NA
+13,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+13,Identity & Access Management,NA,NA,NA,NA,NA,NA
+13,Incident response,NA,NA,NA,NA,NA,NA
+13,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+13,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+13,Secure Operations,NA,NA,NA,NA,NA,NA
+13,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+13,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+13,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+13,Secure System Development,NA,NA,NA,NA,NA,NA
+13,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+13,Security Testing,NA,NA,NA,NA,NA,NA
+13,Vulnerability Management,NA,NA,NA,NA,NA,NA
+14,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+14,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+14,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+14,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+14,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+14,Cyber Security Management,NA,NA,NA,NA,NA,NA
+14,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+14,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+14,Digital Forensics,NA,NA,NA,NA,NA,NA
+14,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+14,Identity & Access Management,NA,NA,NA,NA,NA,NA
+14,Incident response,NA,NA,NA,NA,NA,NA
+14,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+14,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+14,Secure Operations,NA,NA,NA,NA,NA,NA
+14,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+14,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+14,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+14,Secure System Development,NA,NA,NA,NA,NA,NA
+14,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+14,Security Testing,NA,NA,NA,NA,NA,NA
+14,Vulnerability Management,NA,NA,NA,NA,NA,NA
+15,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+15,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+15,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+15,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+15,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+15,Cyber Security Management,NA,NA,NA,NA,NA,NA
+15,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+15,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+15,Digital Forensics,NA,NA,NA,NA,NA,NA
+15,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+15,Identity & Access Management,NA,NA,NA,NA,NA,NA
+15,Incident response,NA,NA,NA,NA,NA,NA
+15,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+15,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+15,Secure Operations,NA,NA,NA,NA,NA,NA
+15,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+15,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+15,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+15,Secure System Development,NA,NA,NA,NA,NA,NA
+15,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+15,Security Testing,NA,NA,NA,NA,NA,NA
+15,Vulnerability Management,NA,NA,NA,NA,NA,NA
+16,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+16,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+16,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+16,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+16,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+16,Cyber Security Management,NA,NA,NA,NA,NA,NA
+16,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+16,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+16,Digital Forensics,NA,NA,NA,NA,NA,NA
+16,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+16,Identity & Access Management,NA,NA,NA,NA,NA,NA
+16,Incident response,NA,NA,NA,NA,NA,NA
+16,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+16,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+16,Secure Operations,NA,NA,NA,NA,NA,NA
+16,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+16,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+16,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+16,Secure System Development,NA,NA,NA,NA,NA,NA
+16,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+16,Security Testing,NA,NA,NA,NA,NA,NA
+16,Vulnerability Management,NA,NA,NA,NA,NA,NA
+17,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+17,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+17,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+17,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+17,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+17,Cyber Security Management,NA,NA,NA,NA,NA,NA
+17,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+17,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+17,Digital Forensics,NA,NA,NA,NA,NA,NA
+17,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+17,Identity & Access Management,NA,NA,NA,NA,NA,NA
+17,Incident response,NA,NA,NA,NA,NA,NA
+17,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+17,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+17,Secure Operations,NA,NA,NA,NA,NA,NA
+17,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+17,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+17,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+17,Secure System Development,NA,NA,NA,NA,NA,NA
+17,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+17,Security Testing,NA,NA,NA,NA,NA,NA
+17,Vulnerability Management,NA,NA,NA,NA,NA,NA
+18,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+18,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+18,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+18,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+18,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+18,Cyber Security Management,NA,NA,NA,NA,NA,NA
+18,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+18,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+18,Digital Forensics,NA,NA,NA,NA,NA,NA
+18,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+18,Identity & Access Management,NA,NA,NA,NA,NA,NA
+18,Incident response,NA,NA,NA,NA,NA,NA
+18,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+18,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+18,Secure Operations,NA,NA,NA,NA,NA,NA
+18,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+18,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+18,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+18,Secure System Development,NA,NA,NA,NA,NA,NA
+18,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+18,Security Testing,NA,NA,NA,NA,NA,NA
+18,Vulnerability Management,NA,NA,NA,NA,NA,NA
+19,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+19,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+19,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+19,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+19,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+19,Cyber Security Management,NA,NA,NA,NA,NA,NA
+19,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+19,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+19,Digital Forensics,NA,NA,NA,NA,NA,NA
+19,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+19,Identity & Access Management,NA,NA,NA,NA,NA,NA
+19,Incident response,NA,NA,NA,NA,NA,NA
+19,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+19,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+19,Secure Operations,NA,NA,NA,NA,NA,NA
+19,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+19,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+19,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+19,Secure System Development,NA,NA,NA,NA,NA,NA
+19,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+19,Security Testing,NA,NA,NA,NA,NA,NA
+19,Vulnerability Management,NA,NA,NA,NA,NA,NA
+20,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+20,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+20,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+20,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+20,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+20,Cyber Security Management,NA,NA,NA,NA,NA,NA
+20,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+20,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+20,Digital Forensics,NA,NA,NA,NA,NA,NA
+20,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+20,Identity & Access Management,NA,NA,NA,NA,NA,NA
+20,Incident response,NA,NA,NA,NA,NA,NA
+20,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+20,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+20,Secure Operations,NA,NA,NA,NA,NA,NA
+20,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+20,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+20,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+20,Secure System Development,NA,NA,NA,NA,NA,NA
+20,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+20,Security Testing,NA,NA,NA,NA,NA,NA
+20,Vulnerability Management,NA,NA,NA,NA,NA,NA
+21,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+21,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+21,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+21,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+21,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+21,Cyber Security Management,NA,NA,NA,NA,NA,NA
+21,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+21,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+21,Digital Forensics,NA,NA,NA,NA,NA,NA
+21,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+21,Identity & Access Management,NA,NA,NA,NA,NA,NA
+21,Incident response,NA,NA,NA,NA,NA,NA
+21,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+21,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+21,Secure Operations,NA,NA,NA,NA,NA,NA
+21,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+21,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+21,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+21,Secure System Development,NA,NA,NA,NA,NA,NA
+21,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+21,Security Testing,NA,NA,NA,NA,NA,NA
+21,Vulnerability Management,NA,NA,NA,NA,NA,NA
+22,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+22,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+22,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+22,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+22,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+22,Cyber Security Management,NA,NA,NA,NA,NA,NA
+22,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+22,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+22,Digital Forensics,NA,NA,NA,NA,NA,NA
+22,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+22,Identity & Access Management,NA,NA,NA,NA,NA,NA
+22,Incident response,NA,NA,NA,NA,NA,NA
+22,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+22,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+22,Secure Operations,NA,NA,NA,NA,NA,NA
+22,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+22,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+22,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+22,Secure System Development,NA,NA,NA,NA,NA,NA
+22,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+22,Security Testing,NA,NA,NA,NA,NA,NA
+22,Vulnerability Management,NA,NA,NA,NA,NA,NA
+23,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+23,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+23,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+23,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+23,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+23,Cyber Security Management,NA,NA,NA,NA,NA,NA
+23,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+23,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+23,Digital Forensics,NA,NA,NA,NA,NA,NA
+23,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+23,Identity & Access Management,NA,NA,NA,NA,NA,NA
+23,Incident response,NA,NA,NA,NA,NA,NA
+23,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+23,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+23,Secure Operations,NA,NA,NA,NA,NA,NA
+23,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+23,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+23,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+23,Secure System Development,NA,NA,NA,NA,NA,NA
+23,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+23,Security Testing,NA,NA,NA,NA,NA,NA
+23,Vulnerability Management,NA,NA,NA,NA,NA,NA
+24,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+24,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+24,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+24,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+24,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+24,Cyber Security Management,NA,NA,NA,NA,NA,NA
+24,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+24,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+24,Digital Forensics,NA,NA,NA,NA,NA,NA
+24,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+24,Identity & Access Management,NA,NA,NA,NA,NA,NA
+24,Incident response,NA,NA,NA,NA,NA,NA
+24,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+24,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+24,Secure Operations,NA,NA,NA,NA,NA,NA
+24,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+24,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+24,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+24,Secure System Development,NA,NA,NA,NA,NA,NA
+24,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+24,Security Testing,NA,NA,NA,NA,NA,NA
+24,Vulnerability Management,NA,NA,NA,NA,NA,NA
+25,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+25,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+25,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+25,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+25,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+25,Cyber Security Management,NA,NA,NA,NA,NA,NA
+25,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+25,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+25,Digital Forensics,NA,NA,NA,NA,NA,NA
+25,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+25,Identity & Access Management,NA,NA,NA,NA,NA,NA
+25,Incident response,NA,NA,NA,NA,NA,NA
+25,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+25,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+25,Secure Operations,NA,NA,NA,NA,NA,NA
+25,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+25,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+25,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+25,Secure System Development,NA,NA,NA,NA,NA,NA
+25,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+25,Security Testing,NA,NA,NA,NA,NA,NA
+25,Vulnerability Management,NA,NA,NA,NA,NA,NA
+26,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+26,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+26,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+26,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+26,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+26,Cyber Security Management,NA,NA,NA,NA,NA,NA
+26,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+26,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+26,Digital Forensics,NA,NA,NA,NA,NA,NA
+26,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+26,Identity & Access Management,NA,NA,NA,NA,NA,NA
+26,Incident response,NA,NA,NA,NA,NA,NA
+26,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+26,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+26,Secure Operations,NA,NA,NA,NA,NA,NA
+26,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+26,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+26,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+26,Secure System Development,NA,NA,NA,NA,NA,NA
+26,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+26,Security Testing,NA,NA,NA,NA,NA,NA
+26,Vulnerability Management,NA,NA,NA,NA,NA,NA
+27,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+27,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+27,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+27,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+27,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+27,Cyber Security Management,NA,NA,NA,NA,NA,NA
+27,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+27,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+27,Digital Forensics,NA,NA,NA,NA,NA,NA
+27,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+27,Identity & Access Management,NA,NA,NA,NA,NA,NA
+27,Incident response,NA,NA,NA,NA,NA,NA
+27,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+27,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+27,Secure Operations,NA,NA,NA,NA,NA,NA
+27,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+27,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+27,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+27,Secure System Development,NA,NA,NA,NA,NA,NA
+27,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+27,Security Testing,NA,NA,NA,NA,NA,NA
+27,Vulnerability Management,NA,NA,NA,NA,NA,NA
+28,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+28,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+28,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+28,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+28,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+28,Cyber Security Management,NA,NA,NA,NA,NA,NA
+28,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+28,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+28,Digital Forensics,NA,NA,NA,NA,NA,NA
+28,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+28,Identity & Access Management,NA,NA,NA,NA,NA,NA
+28,Incident response,NA,NA,NA,NA,NA,NA
+28,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+28,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+28,Secure Operations,NA,NA,NA,NA,NA,NA
+28,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+28,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+28,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+28,Secure System Development,NA,NA,NA,NA,NA,NA
+28,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+28,Security Testing,NA,NA,NA,NA,NA,NA
+28,Vulnerability Management,NA,NA,NA,NA,NA,NA
+29,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+29,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+29,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+29,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+29,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+29,Cyber Security Management,NA,NA,NA,NA,NA,NA
+29,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+29,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+29,Digital Forensics,NA,NA,NA,NA,NA,NA
+29,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+29,Identity & Access Management,NA,NA,NA,NA,NA,NA
+29,Incident response,NA,NA,NA,NA,NA,NA
+29,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+29,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+29,Secure Operations,NA,NA,NA,NA,NA,NA
+29,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+29,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+29,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+29,Secure System Development,NA,NA,NA,NA,NA,NA
+29,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+29,Security Testing,NA,NA,NA,NA,NA,NA
+29,Vulnerability Management,NA,NA,NA,NA,NA,NA
+30,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+30,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+30,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+30,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+30,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+30,Cyber Security Management,NA,NA,NA,NA,NA,NA
+30,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+30,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+30,Digital Forensics,NA,NA,NA,NA,NA,NA
+30,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+30,Identity & Access Management,NA,NA,NA,NA,NA,NA
+30,Incident response,NA,NA,NA,NA,NA,NA
+30,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+30,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+30,Secure Operations,NA,NA,NA,NA,NA,NA
+30,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+30,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+30,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+30,Secure System Development,NA,NA,NA,NA,NA,NA
+30,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+30,Security Testing,NA,NA,NA,NA,NA,NA
+30,Vulnerability Management,NA,NA,NA,NA,NA,NA
+31,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+31,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+31,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+31,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+31,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+31,Cyber Security Management,NA,NA,NA,NA,NA,NA
+31,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+31,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+31,Digital Forensics,NA,NA,NA,NA,NA,NA
+31,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+31,Identity & Access Management,NA,NA,NA,NA,NA,NA
+31,Incident response,NA,NA,NA,NA,NA,NA
+31,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+31,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+31,Secure Operations,NA,NA,NA,NA,NA,NA
+31,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+31,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+31,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+31,Secure System Development,NA,NA,NA,NA,NA,NA
+31,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+31,Security Testing,NA,NA,NA,NA,NA,NA
+31,Vulnerability Management,NA,NA,NA,NA,NA,NA
+32,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+32,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+32,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+32,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+32,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+32,Cyber Security Management,NA,NA,NA,NA,NA,NA
+32,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+32,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+32,Digital Forensics,NA,NA,NA,NA,NA,NA
+32,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+32,Identity & Access Management,NA,NA,NA,NA,NA,NA
+32,Incident response,NA,NA,NA,NA,NA,NA
+32,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+32,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+32,Secure Operations,NA,NA,NA,NA,NA,NA
+32,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+32,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+32,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+32,Secure System Development,NA,NA,NA,NA,NA,NA
+32,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+32,Security Testing,NA,NA,NA,NA,NA,NA
+32,Vulnerability Management,NA,NA,NA,NA,NA,NA
+33,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+33,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+33,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+33,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+33,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+33,Cyber Security Management,NA,NA,NA,NA,NA,NA
+33,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+33,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+33,Digital Forensics,NA,NA,NA,NA,NA,NA
+33,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+33,Identity & Access Management,NA,NA,NA,NA,NA,NA
+33,Incident response,NA,NA,NA,NA,NA,NA
+33,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+33,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+33,Secure Operations,NA,NA,NA,NA,NA,NA
+33,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+33,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+33,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+33,Secure System Development,NA,NA,NA,NA,NA,NA
+33,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+33,Security Testing,NA,NA,NA,NA,NA,NA
+33,Vulnerability Management,NA,NA,NA,NA,NA,NA
+34,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+34,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+34,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+34,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+34,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+34,Cyber Security Management,NA,NA,NA,NA,NA,NA
+34,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+34,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+34,Digital Forensics,NA,NA,NA,NA,NA,NA
+34,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+34,Identity & Access Management,NA,NA,NA,NA,NA,NA
+34,Incident response,NA,NA,NA,NA,NA,NA
+34,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+34,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+34,Secure Operations,NA,NA,NA,NA,NA,NA
+34,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+34,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+34,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+34,Secure System Development,NA,NA,NA,NA,NA,NA
+34,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+34,Security Testing,NA,NA,NA,NA,NA,NA
+34,Vulnerability Management,NA,NA,NA,NA,NA,NA
+35,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+35,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+35,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+35,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+35,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+35,Cyber Security Management,NA,NA,NA,NA,NA,NA
+35,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+35,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+35,Digital Forensics,NA,NA,NA,NA,NA,NA
+35,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+35,Identity & Access Management,NA,NA,NA,NA,NA,NA
+35,Incident response,NA,NA,NA,NA,NA,NA
+35,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+35,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+35,Secure Operations,NA,NA,NA,NA,NA,NA
+35,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+35,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+35,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+35,Secure System Development,NA,NA,NA,NA,NA,NA
+35,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+35,Security Testing,NA,NA,NA,NA,NA,NA
+35,Vulnerability Management,NA,NA,NA,NA,NA,NA
+36,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+36,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+36,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+36,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+36,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+36,Cyber Security Management,NA,NA,NA,NA,NA,NA
+36,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+36,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+36,Digital Forensics,NA,NA,NA,NA,NA,NA
+36,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+36,Identity & Access Management,NA,NA,NA,NA,NA,NA
+36,Incident response,NA,NA,NA,NA,NA,NA
+36,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+36,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+36,Secure Operations,NA,NA,NA,NA,NA,NA
+36,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+36,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+36,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+36,Secure System Development,NA,NA,NA,NA,NA,NA
+36,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+36,Security Testing,NA,NA,NA,NA,NA,NA
+36,Vulnerability Management,NA,NA,NA,NA,NA,NA
+37,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+37,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+37,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+37,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+37,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+37,Cyber Security Management,NA,NA,NA,NA,NA,NA
+37,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+37,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+37,Digital Forensics,NA,NA,NA,NA,NA,NA
+37,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+37,Identity & Access Management,NA,NA,NA,NA,NA,NA
+37,Incident response,NA,NA,NA,NA,NA,NA
+37,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+37,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+37,Secure Operations,NA,NA,NA,NA,NA,NA
+37,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+37,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+37,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+37,Secure System Development,NA,NA,NA,NA,NA,NA
+37,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+37,Security Testing,NA,NA,NA,NA,NA,NA
+37,Vulnerability Management,NA,NA,NA,NA,NA,NA
+38,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+38,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+38,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+38,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+38,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+38,Cyber Security Management,NA,NA,NA,NA,NA,NA
+38,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+38,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+38,Digital Forensics,NA,NA,NA,NA,NA,NA
+38,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+38,Identity & Access Management,NA,NA,NA,NA,NA,NA
+38,Incident response,NA,NA,NA,NA,NA,NA
+38,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+38,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+38,Secure Operations,NA,NA,NA,NA,NA,NA
+38,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+38,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+38,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+38,Secure System Development,NA,NA,NA,NA,NA,NA
+38,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+38,Security Testing,NA,NA,NA,NA,NA,NA
+38,Vulnerability Management,NA,NA,NA,NA,NA,NA
+39,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+39,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+39,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+39,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+39,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+39,Cyber Security Management,NA,NA,NA,NA,NA,NA
+39,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+39,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+39,Digital Forensics,NA,NA,NA,NA,NA,NA
+39,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+39,Identity & Access Management,NA,NA,NA,NA,NA,NA
+39,Incident response,NA,NA,NA,NA,NA,NA
+39,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+39,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+39,Secure Operations,NA,NA,NA,NA,NA,NA
+39,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+39,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+39,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+39,Secure System Development,NA,NA,NA,NA,NA,NA
+39,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+39,Security Testing,NA,NA,NA,NA,NA,NA
+39,Vulnerability Management,NA,NA,NA,NA,NA,NA
+40,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+40,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+40,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+40,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+40,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+40,Cyber Security Management,NA,NA,NA,NA,NA,NA
+40,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+40,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+40,Digital Forensics,NA,NA,NA,NA,NA,NA
+40,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+40,Identity & Access Management,NA,NA,NA,NA,NA,NA
+40,Incident response,NA,NA,NA,NA,NA,NA
+40,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+40,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+40,Secure Operations,NA,NA,NA,NA,NA,NA
+40,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+40,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+40,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+40,Secure System Development,NA,NA,NA,NA,NA,NA
+40,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+40,Security Testing,NA,NA,NA,NA,NA,NA
+40,Vulnerability Management,NA,NA,NA,NA,NA,NA
+41,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+41,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+41,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+41,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+41,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+41,Cyber Security Management,NA,NA,NA,NA,NA,NA
+41,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+41,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+41,Digital Forensics,NA,NA,NA,NA,NA,NA
+41,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+41,Identity & Access Management,NA,NA,NA,NA,NA,NA
+41,Incident response,NA,NA,NA,NA,NA,NA
+41,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+41,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+41,Secure Operations,NA,NA,NA,NA,NA,NA
+41,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+41,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+41,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+41,Secure System Development,NA,NA,NA,NA,NA,NA
+41,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+41,Security Testing,NA,NA,NA,NA,NA,NA
+41,Vulnerability Management,NA,NA,NA,NA,NA,NA
+42,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+42,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+42,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+42,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+42,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+42,Cyber Security Management,NA,NA,NA,NA,NA,NA
+42,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+42,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+42,Digital Forensics,NA,NA,NA,NA,NA,NA
+42,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+42,Identity & Access Management,NA,NA,NA,NA,NA,NA
+42,Incident response,NA,NA,NA,NA,NA,NA
+42,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+42,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+42,Secure Operations,NA,NA,NA,NA,NA,NA
+42,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+42,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+42,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+42,Secure System Development,NA,NA,NA,NA,NA,NA
+42,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+42,Security Testing,NA,NA,NA,NA,NA,NA
+42,Vulnerability Management,NA,NA,NA,NA,NA,NA
+43,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+43,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+43,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+43,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+43,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+43,Cyber Security Management,NA,NA,NA,NA,NA,NA
+43,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+43,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+43,Digital Forensics,NA,NA,NA,NA,NA,NA
+43,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+43,Identity & Access Management,NA,NA,NA,NA,NA,NA
+43,Incident response,NA,NA,NA,NA,NA,NA
+43,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+43,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+43,Secure Operations,NA,NA,NA,NA,NA,NA
+43,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+43,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+43,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+43,Secure System Development,NA,NA,NA,NA,NA,NA
+43,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+43,Security Testing,NA,NA,NA,NA,NA,NA
+43,Vulnerability Management,NA,NA,NA,NA,NA,NA
+44,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+44,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+44,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+44,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+44,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+44,Cyber Security Management,NA,NA,NA,NA,NA,NA
+44,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+44,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+44,Digital Forensics,NA,NA,NA,NA,NA,NA
+44,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+44,Identity & Access Management,NA,NA,NA,NA,NA,NA
+44,Incident response,NA,NA,NA,NA,NA,NA
+44,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+44,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+44,Secure Operations,NA,NA,NA,NA,NA,NA
+44,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+44,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+44,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+44,Secure System Development,NA,NA,NA,NA,NA,NA
+44,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+44,Security Testing,NA,NA,NA,NA,NA,NA
+44,Vulnerability Management,NA,NA,NA,NA,NA,NA
+45,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+45,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+45,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+45,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+45,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+45,Cyber Security Management,NA,NA,NA,NA,NA,NA
+45,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+45,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+45,Digital Forensics,NA,NA,NA,NA,NA,NA
+45,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+45,Identity & Access Management,NA,NA,NA,NA,NA,NA
+45,Incident response,NA,NA,NA,NA,NA,NA
+45,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+45,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+45,Secure Operations,NA,NA,NA,NA,NA,NA
+45,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+45,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+45,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+45,Secure System Development,NA,NA,NA,NA,NA,NA
+45,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+45,Security Testing,NA,NA,NA,NA,NA,NA
+45,Vulnerability Management,NA,NA,NA,NA,NA,NA
+46,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+46,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+46,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+46,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+46,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+46,Cyber Security Management,NA,NA,NA,NA,NA,NA
+46,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+46,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+46,Digital Forensics,NA,NA,NA,NA,NA,NA
+46,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+46,Identity & Access Management,NA,NA,NA,NA,NA,NA
+46,Incident response,NA,NA,NA,NA,NA,NA
+46,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+46,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+46,Secure Operations,NA,NA,NA,NA,NA,NA
+46,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+46,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+46,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+46,Secure System Development,NA,NA,NA,NA,NA,NA
+46,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+46,Security Testing,NA,NA,NA,NA,NA,NA
+46,Vulnerability Management,NA,NA,NA,NA,NA,NA
+47,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+47,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+47,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+47,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+47,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+47,Cyber Security Management,NA,NA,NA,NA,NA,NA
+47,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+47,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+47,Digital Forensics,NA,NA,NA,NA,NA,NA
+47,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+47,Identity & Access Management,NA,NA,NA,NA,NA,NA
+47,Incident response,NA,NA,NA,NA,NA,NA
+47,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+47,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+47,Secure Operations,NA,NA,NA,NA,NA,NA
+47,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+47,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+47,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+47,Secure System Development,NA,NA,NA,NA,NA,NA
+47,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+47,Security Testing,NA,NA,NA,NA,NA,NA
+47,Vulnerability Management,NA,NA,NA,NA,NA,NA
+48,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+48,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+48,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+48,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+48,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+48,Cyber Security Management,NA,NA,NA,NA,NA,NA
+48,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+48,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+48,Digital Forensics,NA,NA,NA,NA,NA,NA
+48,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+48,Identity & Access Management,NA,NA,NA,NA,NA,NA
+48,Incident response,NA,NA,NA,NA,NA,NA
+48,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+48,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+48,Secure Operations,NA,NA,NA,NA,NA,NA
+48,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+48,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+48,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+48,Secure System Development,NA,NA,NA,NA,NA,NA
+48,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+48,Security Testing,NA,NA,NA,NA,NA,NA
+48,Vulnerability Management,NA,NA,NA,NA,NA,NA
+49,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+49,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+49,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+49,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+49,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+49,Cyber Security Management,NA,NA,NA,NA,NA,NA
+49,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+49,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+49,Digital Forensics,NA,NA,NA,NA,NA,NA
+49,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+49,Identity & Access Management,NA,NA,NA,NA,NA,NA
+49,Incident response,NA,NA,NA,NA,NA,NA
+49,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+49,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+49,Secure Operations,NA,NA,NA,NA,NA,NA
+49,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+49,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+49,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+49,Secure System Development,NA,NA,NA,NA,NA,NA
+49,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+49,Security Testing,NA,NA,NA,NA,NA,NA
+49,Vulnerability Management,NA,NA,NA,NA,NA,NA
+50,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+50,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+50,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+50,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+50,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+50,Cyber Security Management,NA,NA,NA,NA,NA,NA
+50,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+50,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+50,Digital Forensics,NA,NA,NA,NA,NA,NA
+50,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+50,Identity & Access Management,NA,NA,NA,NA,NA,NA
+50,Incident response,NA,NA,NA,NA,NA,NA
+50,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+50,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+50,Secure Operations,NA,NA,NA,NA,NA,NA
+50,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+50,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+50,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+50,Secure System Development,NA,NA,NA,NA,NA,NA
+50,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+50,Security Testing,NA,NA,NA,NA,NA,NA
+50,Vulnerability Management,NA,NA,NA,NA,NA,NA
+51,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+51,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+51,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+51,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+51,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+51,Cyber Security Management,NA,NA,NA,NA,NA,NA
+51,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+51,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+51,Digital Forensics,NA,NA,NA,NA,NA,NA
+51,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+51,Identity & Access Management,NA,NA,NA,NA,NA,NA
+51,Incident response,NA,NA,NA,NA,NA,NA
+51,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+51,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+51,Secure Operations,NA,NA,NA,NA,NA,NA
+51,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+51,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+51,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+51,Secure System Development,NA,NA,NA,NA,NA,NA
+51,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+51,Security Testing,NA,NA,NA,NA,NA,NA
+51,Vulnerability Management,NA,NA,NA,NA,NA,NA
+52,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+52,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+52,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+52,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+52,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+52,Cyber Security Management,NA,NA,NA,NA,NA,NA
+52,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+52,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+52,Digital Forensics,NA,NA,NA,NA,NA,NA
+52,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+52,Identity & Access Management,NA,NA,NA,NA,NA,NA
+52,Incident response,NA,NA,NA,NA,NA,NA
+52,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+52,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+52,Secure Operations,NA,NA,NA,NA,NA,NA
+52,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+52,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+52,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+52,Secure System Development,NA,NA,NA,NA,NA,NA
+52,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+52,Security Testing,NA,NA,NA,NA,NA,NA
+52,Vulnerability Management,NA,NA,NA,NA,NA,NA
+53,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+53,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+53,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+53,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+53,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+53,Cyber Security Management,NA,NA,NA,NA,NA,NA
+53,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+53,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+53,Digital Forensics,NA,NA,NA,NA,NA,NA
+53,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+53,Identity & Access Management,NA,NA,NA,NA,NA,NA
+53,Incident response,NA,NA,NA,NA,NA,NA
+53,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+53,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+53,Secure Operations,NA,NA,NA,NA,NA,NA
+53,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+53,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+53,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+53,Secure System Development,NA,NA,NA,NA,NA,NA
+53,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+53,Security Testing,NA,NA,NA,NA,NA,NA
+53,Vulnerability Management,NA,NA,NA,NA,NA,NA
+54,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+54,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+54,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+54,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+54,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+54,Cyber Security Management,NA,NA,NA,NA,NA,NA
+54,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+54,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+54,Digital Forensics,NA,NA,NA,NA,NA,NA
+54,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+54,Identity & Access Management,NA,NA,NA,NA,NA,NA
+54,Incident response,NA,NA,NA,NA,NA,NA
+54,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+54,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+54,Secure Operations,NA,NA,NA,NA,NA,NA
+54,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+54,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+54,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+54,Secure System Development,NA,NA,NA,NA,NA,NA
+54,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+54,Security Testing,NA,NA,NA,NA,NA,NA
+54,Vulnerability Management,NA,NA,NA,NA,NA,NA
+55,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+55,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+55,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+55,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+55,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+55,Cyber Security Management,NA,NA,NA,NA,NA,NA
+55,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+55,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+55,Digital Forensics,NA,NA,NA,NA,NA,NA
+55,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+55,Identity & Access Management,NA,NA,NA,NA,NA,NA
+55,Incident response,NA,NA,NA,NA,NA,NA
+55,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+55,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+55,Secure Operations,NA,NA,NA,NA,NA,NA
+55,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+55,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+55,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+55,Secure System Development,NA,NA,NA,NA,NA,NA
+55,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+55,Security Testing,NA,NA,NA,NA,NA,NA
+55,Vulnerability Management,NA,NA,NA,NA,NA,NA
+56,Cryptography & Communications Security (Cryptographer),NA,NA,NA,NA,NA,NA
+56,Cryptography & Communications Security (Secure Communications Operator),NA,NA,NA,NA,NA,NA
+56,Cyber Security Audit & Assurance,NA,NA,NA,NA,NA,NA
+56,Cyber Security Governance & Risk Management,NA,NA,NA,NA,NA,NA
+56,Cyber Security Governance & Risk Management (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+56,Cyber Security Management,NA,NA,NA,NA,NA,NA
+56,Cyber Threat Intelligence,NA,NA,NA,NA,NA,NA
+56,Data Protection & Privacy,NA,NA,NA,NA,NA,NA
+56,Digital Forensics,NA,NA,NA,NA,NA,NA
+56,Digital Forensics (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+56,Identity & Access Management,NA,NA,NA,NA,NA,NA
+56,Incident response,NA,NA,NA,NA,NA,NA
+56,Incident response (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+56,Network Monitoring & Intrusion Detection,NA,NA,NA,NA,NA,NA
+56,Secure Operations,NA,NA,NA,NA,NA,NA
+56,Secure Operations (Industrial control systems),NA,NA,NA,NA,NA,NA
+56,Secure System Architecture & Design,NA,NA,NA,NA,NA,NA
+56,Secure System Architecture & Design (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+56,Secure System Development,NA,NA,NA,NA,NA,NA
+56,Secure System Development (Industrial Control Systems),NA,NA,NA,NA,NA,NA
+56,Security Testing,NA,NA,NA,NA,NA,NA
+56,Vulnerability Management,NA,NA,NA,NA,NA,NA
