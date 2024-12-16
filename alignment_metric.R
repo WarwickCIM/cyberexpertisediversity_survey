@@ -1,7 +1,6 @@
 library(dplyr)
 library(readr)
 library(tidyr)
-library(uuid)
 library(stringr)
 
 
@@ -73,7 +72,7 @@ for(response in responses$id) {
     # Remove prefix so we can join with specialisms dataframe.
     mutate(name = str_remove(name, "expertise_comb_"))
   
-  tmp_specialisms_respondent <- specialisms_long |> 
+  tmp_specialisms_respondent_raw <- specialisms_long |> 
     # Combine with specialisms_long dataframe.
     left_join(tmp_responses, by = c("Expertise_clean" = "name")) |> 
     relocate(id, .before = 1) |> 
@@ -84,8 +83,10 @@ for(response in responses$id) {
     ))
   
   # Create a dataframe containing all values for all survey responses.
-  specialisms_respondent_raw <- specialisms_respondent |> 
-    bind_rows(tmp_specialisms_respondent)
+  specialisms_respondent_raw <- specialisms_respondent_raw |> 
+    bind_rows(tmp_specialisms_respondent_raw)
+  
+  remove(tmp_specialisms_respondent_raw)
   
 }
 
