@@ -1,5 +1,4 @@
 library(dplyr)
-library(readr)
 library(tidyr)
 library(stringr)
 
@@ -18,6 +17,14 @@ value_wider <- 30
 # Load data ---------------------------------------------------------------
 
 # Load responses from GitHub Repo: https://github.com/WarwickCIM/cyberexpertisediversity_survey_data
+
+# TODO: implement an automated way to load a dataset from a private repo. 
+# Workaround:
+# 1. Visit https://github.com/WarwickCIM/cyberexpertisediversity_survey_data/blob/main/data/cyber_expertise_diversity_survey_responses.csv
+# 2. Click on "Download raw file" (upper right corner of the file)
+# 3. Move the file to the folder /data/raw/ in this project.
+# 4. Run the code below.
+
 responses <- read.csv("data/raw/cyber_expertise_diversity_survey_responses.csv") |> 
   # mutate(id = uuid::UUIDgenerate(use.time = FALSE), .before = recorded_date)
   mutate(id = row_number(), .before = recorded_date)
