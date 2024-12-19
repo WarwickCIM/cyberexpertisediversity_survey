@@ -1,0 +1,23 @@
+Specialism,Risk Management & Governance,Human Factors,Privacy & Online Rights,Law & Regulation,Malware & Attack Technologies,Adversarial Behaviours,Forensics,Security Operations & Incident Management,Cryptography,Operating Systems & Virtualisation Security,Distributed Systems Security,Formal Methods for Security,"Authentication, Authorisation & Accountability",Software Security,Web & Mobile Security,Secure Software Lifecycle,Network Security,Hardware Security,Applied Cryptography,Cyber Physical Systems,Physical Layer & Telecoms Security
+Digital Forensics,,,,Core,,Related,Core,Related,,,Related,,,Related,Wider,,Wider,,,,
+Digital Forensics (Industrial Control Systems),,,,Core,,Related,Core,Related,,,Related,,,Related,Wider,,Wider,,,Core,
+Cyber Threat Intelligence,Wider,,,Related,Core,Core,Wider,Core,,,,,,,,,Wider,,,,
+Cyber Security Management,Core,Related,Related,Core,Wider,Wider,Wider,Core,Wider,Wider,Wider,Wider,Wider,Wider,Wider,Wider,Wider,Wider,Wider,Wider,Wider
+Incident response,,Wider,,,Related,Related,Wider,Core,,,,,,,,,Wider,Wider,,,
+Incident response (Industrial Control Systems),,Wider,,,Related,Related,Wider,Core,,,,,,,,,Wider,Wider,,Core,
+Network Monitoring & Intrusion Detection,,,,,Related,Wider,,Core,,,,,,,,,Core,,,,
+Vulnerability Management,Wider,,,,Related,Related,,Core,,,,,,,Core,,Related,,,,
+Security Testing,,,,Related,Core,Wider,,,,,,,,Core,Related,Core,Core,,,,
+Cryptography & Communications Security (Cryptographer),,,Wider,Wider,,,,,Core,Wider,Core,,Wider,,,,Core,,,,Related
+Cryptography & Communications Security (Secure Communications Operator),,,Wider,Wider,,,,,Related,Wider,Core,,Wider,,,,Core,,,,Related
+Secure Operations,,Wider,,,Wider,,Wider,Core,,Related,Wider,,Core,,,,Related,,,,
+Secure Operations (Industrial control systems),,Wider,,,Wider,,Wider,Core,,Related,Wider,,Core,,,,Related,,,Related,
+Identity & Access Management,Related,,Related,Wider,,Wider,,Wider,Related,Related,,,Core,,Core,,,,,,
+Secure System Architecture & Design,,,,,,,,,Related,Related,Related,,,Core,Related,Core,Wider,Core,,,
+Secure System Architecture & Design (Industrial Control Systems),,,,,,,,,Related,Related,Related,,,Core,Related,Core,Wider,Core,,Core,
+Cyber Security Audit & Assurance,Core,Related,Wider,Core,,Wider,,Related,,,,,,,,,,,,,
+Data Protection & Privacy,Related,Wider,Core,Core,,,,,,,,,Related,,,,,,,,
+Secure System Development,,,,,,,,,Related,Related,Related,,,Core,Related,Core,Wider,Core,,,
+Secure System Development (Industrial Control Systems),,,,,,,,,Related,Related,Related,,,Core,Related,Core,Wider,Core,,Core,
+Cyber Security Governance & Risk Management,Core,Related,,Related,,,,Wider,,,,,,,,,,,,,
+Cyber Security Governance & Risk Management (Industrial Control Systems),Core,Related,,Related,,,,Wider,,,,,,,,,,,,Related,
