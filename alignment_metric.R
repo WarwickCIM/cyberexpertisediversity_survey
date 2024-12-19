@@ -118,4 +118,13 @@ responses_specialism <- specialisms_respondent |>
   janitor::clean_names()
 
 write_csv(responses_specialism, 
-          file = "data/processed/responses_specialism.csv")
+          file = "data/processed/responses_specialism_option1.csv")
+
+
+responses_specialism2 <- specialisms_respondent |> 
+  pivot_wider(id_cols = id, names_from = Specialism, 
+              values_from = alignment_mean) |> 
+  janitor::clean_names()
+
+write_csv(responses_specialism2, 
+          file = "data/processed/responses_specialism_option2.csv")
