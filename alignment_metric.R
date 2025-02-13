@@ -104,7 +104,13 @@ for(response in responses$id) {
 
 # Calculate alignment values by response and specialisms. We are exploring multiple options here.
 
-alignment_index <- function(df) {
+
+alignment_index <- function(df, type = NULL) {
+  
+  if (!type %in% c("scenario", "specialism")) {
+    stop("type needs to be either `scenario` or `specialism`")
+  }
+  
   df_alignment <- df |> 
     group_by(id, Specialism) |> 
     summarise(max_threshold_value = sum(Threshold),
@@ -112,13 +118,17 @@ alignment_index <- function(df) {
               alignment_index = alignment_sum/max_threshold_value,
               alignment_mean = mean(response_mod),
               max = max(response),
-              min = min(response))
-  
+              min = min(response)) |> 
+    mutate(alignment_type = type)
+
   return(df_alignment)
   
 }
 
-specialisms_respondent <- alignment_index(specialisms_respondent_raw)
+specialisms_respondent <- alignment_index(
+  specialisms_respondent_raw, 
+  "specialism"
+)
 
 readr::write_csv(specialisms_respondent, 
           file = "data/processed/specialisms_respondent.csv")
@@ -146,20 +156,23 @@ readr::write_csv(specialisms_respondent_long,
 
 # Scenarios alignment -----------------------------------------------------
 
+scenarios <- read.csv("data/raw/cyber_expertise_diversity_survey_scenarios.csv") |> 
+  mutate(id = row_number(), .before = 1)
+
 # We create an empty dataset which we will be populating in the loop below.
-scenarios_respondent_raw <- data.frame()
+scenarios_alignment_raw <- data.frame()
 
 # Generate a long version of specialisms dataframe with actual values for each
 # response.
-for(response in responses$id) {
-  tmp_responses_scenario <- responses |> 
-    filter(id == response) |> 
+for(scenario in scenarios$id) {
+  tmp_responses_scenario <- scenarios |> 
+    filter(id == scenario) |> 
     select(id, starts_with("scenario_expertise_portfolio_")) |> 
     pivot_longer(!id, values_to = "response") |> 
     # Remove prefix so we can join with specialisms dataframe.
     mutate(name = str_remove(name, "scenario_expertise_portfolio_"))
   
-  tmp_scenarios_respondent_raw <- specialisms_long |> 
+  tmp_scenarios_raw <- specialisms_long |> 
     # Combine with specialisms_long dataframe.
     left_join(tmp_responses_scenario, by = c("Expertise_clean" = "name")) |> 
     relocate(id, .before = 1) |> 
@@ -170,23 +183,24 @@ for(response in responses$id) {
     ))
   
   # Create a dataframe containing all values for all survey responses.
-  scenarios_respondent_raw <- scenarios_respondent_raw |> 
-    bind_rows(tmp_scenarios_respondent_raw)
+  scenarios_alignment_raw <- scenarios_alignment_raw |> 
+    bind_rows(tmp_scenarios_raw)
   
-  remove(tmp_scenarios_respondent_raw)
+  remove(tmp_scenarios_raw)
   
 }
 
 
-scenarios_respondent <- alignment_index(scenarios_respondent_raw)
+scenarios_alignment <- alignment_index(scenarios_alignment_raw, "scenario") |> 
+  rename(scenario_id = id)
 
 readr::write_csv(scenarios_respondent, 
                  file = "data/processed/scenarios_respondent.csv")
 
 
 # Reshape the dataset to a wider format, so it can be combined with responses.
-scenarios_respondent_long <- scenarios_respondent |> 
-  pivot_wider(id_cols = id, names_from = Specialism, 
+scenarios_alignment_long <- scenarios_alignment |> 
+  pivot_wider(id_cols = scenario_id, names_from = Specialism, 
               values_from = alignment_index) |> 
   janitor::clean_names()
 
