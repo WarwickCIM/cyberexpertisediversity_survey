@@ -1,7 +1,7 @@
 library(dplyr)
+library(purrr)
 library(tidyr)
 library(stringr)
-
 
 # Parameters --------------------------------------------------------------
 
@@ -204,5 +204,43 @@ scenarios_alignment_long <- scenarios_alignment |>
               values_from = alignment_index) |> 
   janitor::clean_names()
 
-readr::write_csv(scenarios_respondent_long, 
+readr::write_csv(scenarios_alignment_long, 
                  file = "data/processed/scenarios_respondent_long.csv")
+
+
+
+# Scenarios' permutations -------------------------------------------------
+
+# Create permutations of 3 different values of specialism for each scenario
+calc_permuted_index <- function(df, permutations_n = 3) {
+  df_permutations <- df |>
+    group_by(scenario_id) |>
+    summarise(
+      permutations = list(combn(unique(Specialism), permutations_n, simplify = FALSE)),
+      .groups = "drop"
+    ) |>
+    unnest(permutations) |>
+    mutate(permutation = map_chr(permutations, ~ paste(.x, collapse = ", "))) |>
+    select(-permutations) |>
+    rowwise() |>
+    mutate(
+      threshold_sum = sum(
+        df$max_threshold_value[df$scenario_id == scenario_id &
+          df$Specialism %in% strsplit(permutation, ", ")[[1]]]
+      ),
+      values_sum = sum(
+        df$alignment_sum[df$scenario_id == scenario_id &
+          df$Specialism %in% strsplit(permutation, ", ")[[1]]]
+      )
+    ) |>
+    ungroup() |>
+    mutate(
+      alignment_index = values_sum / threshold_sum,
+      n_permutations = permutations_n
+    )
+
+  return(df_permutations)
+}
+
+scenarios_alignment_permutations_3 <- calc_permuted_index(scenarios_alignment, 3)
+
