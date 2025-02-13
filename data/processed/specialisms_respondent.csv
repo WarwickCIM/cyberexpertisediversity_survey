@@ -1,4 +1,4 @@
-id,Specialism,max_threshold_value,alignment_sum,alignment_sum_relative,alignment_mean,max,min
+id,Specialism,max_threshold_value,alignment_sum,alignment_index,alignment_mean,max,min
 1,Cryptography & Communications Security (Cryptographer),450,60.910000000000004,0.13535555555555556,7.6137500000000005,23.87,0
 1,Cryptography & Communications Security (Secure Communications Operator),420,60.910000000000004,0.14502380952380953,7.6137500000000005,23.87,0
 1,Cyber Security Audit & Assurance,360,164.76,0.45766666666666667,27.46,100,0

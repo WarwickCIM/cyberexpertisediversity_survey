@@ -30,6 +30,7 @@ responses <- read.csv("data/raw/cyber_expertise_diversity_survey_responses.csv")
   mutate(id = row_number(), .before = recorded_date)
 
 # Dataset with a classification of Specialisms and related expertises.
+# using readr::read_csv to preserve column names for further manipulation.
 specialisms <- readr::read_csv("data/raw/specialisms.csv") 
 
 
@@ -66,7 +67,7 @@ specialisms_long <- specialisms |>
 
 # Combine responses with specialisms --------------------------------------
 
-# We create an empy dataset which we will be populating in the loop below.
+# We create an empty dataset which we will be populating in the loop below.
 specialisms_respondent_raw <- data.frame()
 
 # Generate a long version of specialisms dataframe with actual values for each
@@ -102,29 +103,30 @@ specialisms_respondent <- specialisms_respondent_raw |>
   group_by(id, Specialism) |> 
   summarise(max_threshold_value = sum(Threshold),
             alignment_sum = sum(response_mod),
-            alignment_sum_relative = alignment_sum/max_threshold_value,
+            alignment_index = alignment_sum/max_threshold_value,
             alignment_mean = mean(response_mod),
             max = max(response),
             min = min(response))
 
-write_csv(specialisms_respondent, 
+readr::write_csv(specialisms_respondent, 
           file = "data/processed/specialisms_respondent.csv")
 
 
 # Reshape the dataset to a wider format, so it can be combined with responses.
-responses_specialism <- specialisms_respondent |> 
+specialisms_respondent_long <- specialisms_respondent |> 
   pivot_wider(id_cols = id, names_from = Specialism, 
-              values_from = alignment_sum_relative) |> 
+              values_from = alignment_index) |> 
   janitor::clean_names()
 
-write_csv(responses_specialism, 
-          file = "data/processed/responses_specialism_option1.csv")
+readr::write_csv(specialisms_respondent_long, 
+          file = "data/processed/specialisms_respondent_long.csv")
 
-
-responses_specialism2 <- specialisms_respondent |> 
-  pivot_wider(id_cols = id, names_from = Specialism, 
-              values_from = alignment_mean) |> 
-  janitor::clean_names()
-
-write_csv(responses_specialism2, 
-          file = "data/processed/responses_specialism_option2.csv")
+# 
+# responses_specialism2 <- specialisms_respondent |> 
+#   pivot_wider(id_cols = id, names_from = Specialism, 
+#               values_from = alignment_mean) |> 
+#   janitor::clean_names()
+# 
+# 
+# write_csv(responses_specialism2, 
+#           file = "data/processed/responses_specialism_option2.csv")
