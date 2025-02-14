@@ -242,5 +242,10 @@ calc_permuted_index <- function(df, permutations_n = 3) {
   return(df_permutations)
 }
 
+scenarios_alignment_permutations_2 <- calc_permuted_index(scenarios_alignment, 2)
 scenarios_alignment_permutations_3 <- calc_permuted_index(scenarios_alignment, 3)
+scenarios_alignment_permutations_4 <- calc_permuted_index(scenarios_alignment, 4)
 
+write.csv(scenarios_alignment_permutations_2, "data/processed/scenarios_alignment_permutations_2.csv")
+write.csv(scenarios_alignment_permutations_3, "data/processed/scenarios_alignment_permutations_3.csv")
+write.csv(scenarios_alignment_permutations_4, "data/processed/scenarios_alignment_permutations_4.csv")
