@@ -1,0 +1,20 @@
+# Preface {.unnumbered}
+
+The [Cyber Expertise Diversity Survey](https://warwick.ac.uk/fac/cross_fac/cim/research/cyber_expertise_diversity) is a project run by the [Centre for Interdisciplinary Methodologies](https://warwick.ac.uk/cim) and the [Research Institute for Sociotechnical Cyber Security (RISCS)](https://riscs.org.uk), led by Matt Spencer, RISCS Senior Fellow and Associate Professor at CIM.
+
+Other CIM staff involved in putting the survey together and analysing the data include Carlos Cámara-Menoyo and Timothy Monteath.
+
+The survey aims to inform cyber policy discussions by generating new insights into the value and distribution of cyber expertise.
+
+## Executive summary
+
+## List of recommendations
+
+1.  Recommendation 1
+2.  Recommendation 2
+
+::: callout-note
+This is a Quarto book.
+
+To learn more about Quarto books visit <https://quarto.org/docs/books>.
+:::

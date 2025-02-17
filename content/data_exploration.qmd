@@ -1,0 +1,95 @@
+---
+title: "Data exploration"
+format: 
+  html:
+    echo: false
+    reference-location: margin
+    embed-resources: true # Self contained document.
+    fig.width: 10
+    fig.height: 8
+toc: true
+editor: visual
+---
+
+```{r}
+#| echo: false
+#| warning: false
+
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(skimr)
+
+responses <- read.csv("../data/raw/cyber_expertise_diversity_survey_responses.csv")
+scenarios <- read.csv("../data/raw/cyber_expertise_diversity_survey_scenarios.csv")
+
+```
+
+## Data exploration
+
+### Responses
+
+```{r}
+#| column: page
+
+skim(responses)
+```
+
+### Scenarios
+
+```{r}
+
+#| column: page
+
+skim(scenarios)
+```
+
+## Alignment metric
+
+Explain how the metric was calculated
+
+### Expertise Alignment
+
+### Scenarios alignment
+
+## Megacomb
+
+### Expertise comb
+
+```{r}
+#| column: page
+#| fig-height: 15
+#| fig-width: 13
+#| warning: false
+df <- responses |> 
+  select(gender, starts_with("expertise_comb_")) |> 
+  pivot_longer(!gender) |> 
+  mutate(name = str_remove(name, "expertise_comb_"))
+
+ggplot(df, aes(y = name, x = value, fill = gender)) +
+  geom_boxplot() +
+  theme_minimal() +
+  theme(legend.position="top")
+```
+
+### Scenarios and gender
+
+A first draft for the megacomb:
+
+```{r}
+#| column: page
+#| fig-height: 15
+#| fig-width: 13
+#| warning: false
+scenario_risk_gender <- scenarios |> 
+  select(gender, starts_with("scenario_expertise_portfolio_")) |> 
+  pivot_longer(!gender) |> 
+  mutate(name = str_remove(name, "scenario_expertise_portfolio_"))
+
+ggplot(scenario_risk_gender,aes(y = name, x = value, fill = gender)) +
+  geom_boxplot() +
+  theme_minimal() +
+  theme(legend.position="top")
+
+```

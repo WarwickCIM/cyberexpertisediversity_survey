@@ -1,0 +1,38 @@
+---
+title: "Diversity of expertise"
+format: html
+---
+
+## Theory
+
+### High reliability organisations
+
+The safety management literature is increasingly influential in cyber security and one of the most influential ideas within this tradition is the idea that a diversity of thought is essential for maintaining high reliability. The idea is usually attributed to Karl Weick, but has its roots in cybernetics and Ashby’s principle of requisite variety. Essentially, to be able to detect problems and respond to them early requires a sensitivity to new information. Monocultures, like the ‘production culture’ that Diane Vaughan uncovered at NASA in the years leading up to the Challenger Space Shuttle disaster, tend to have blind spots, which creates risks of problems going unnoticed. The value of diversity from this point of view is not just about broad issues of justice, it is also directly relevant to achieving business goals.
+
+### STS work on categories
+
+I might also include a section about categories. In the STS literature, standardised categories are often thought of as a kind of infrastructure. Establishing infrastructure often requires standardisation, so that everyone is using the same gauge wire, same protocols, same terminology to refer to the same thing. Like infrastructure, entrenched categories create path dependencies and blindspots. We can think about
+
+the Cybok categories in these terms, and think about what is excluded from consideration as a result of being excluded from the standard.
+
+Professional territories
+
+I might put a discussion of professional territories here too. In risk management, cyber security is doing a sort of ‘land grab’ from risk management: they see risk management as part of cyber security, and define a risk management specialism. On the other hand, they don’t see PR and communications as a cyber security specialism. Some kinds of expertise are not recognised in cyber security because they are plain ignored, others because they are treated as belonging to a non-cyber profession.
+
+## Data analysis
+
+This is where we look at the non-cybok bits of the comb (minimal: just some of the mega combs, with these highlighted)
+
+Various free text comments from respondents are relevant here.
+
+::: callout-note
+### Questions for viz
+
+7.  How can we bring out the relative importance of the categories of expertise that are not included in Cybok?
+    7.  One version would be just to highlight them in some of the meta-combs, and to pick out those non-cybok categories that are most common
+    8.  There may be more sophisticated things we might do as well. For instance, if some of the scenarios include significant contributions from non-cybok expertise, might we highlight this somehow.
+:::
+
+## Recommendations
+
+We might have some recommendations for CyBOK itself.

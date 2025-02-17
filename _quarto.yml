@@ -1,0 +1,64 @@
+project:
+  type: book
+
+book:
+  title: "The Cyber Expertise Diversity Survey - Report"
+  author: 
+  - name: Matt Spencer
+    orcid: 0000-0002-5146-6201
+    affiliation: University of Warwick
+    affiliation-url: http://warwick.ac.uk/cim
+  - name: Carlos Cámara-Menoyo
+    orcid: 0000-0002-9378-0549
+    affiliations:
+    - name: University of Warwick
+  - name: Timothy Monteath
+    orcid: 0000-0003-2481-9785
+    affiliations:
+    - name: University of Warwick
+  date: "2/17/2025"
+  
+  repo-url: https://github.com/WarwickCIM/cyberexpertisediversity_survey
+  repo-actions: [edit, issue]
+  
+  chapters:
+    - index.qmd
+    - content/introduction.qmd
+    - content/survey.qmd
+    - part: "Analysis"
+      chapters:
+        - content/professionalisation.qmd
+        - content/interdisciplinarity.qmd
+        - content/diversity.qmd
+    # - content/data_exploration.qmd
+    - content/references.qmd
+  
+  page-footer: 
+    # left: "[![](media/CIM_logo_white.png){height=120}](https://warwick.ac.uk/fac/cross_fac/cim/) [![](media/cropped-RISCS-Banner-Reg1-1.png){height=120}](https://riscs.org.uk/)"
+    left:
+      - text: "![](/media/CIM_logo_white.png){width=300}"
+        href: https://warwick.ac.uk/cim
+      # - text: "![](media/cropped-RISCS-Banner-Reg1-1.png){width=400}"
+      #   href: https://riscs.org
+    right: 
+      - icon: github
+        href: https://github.com/WarwickCIM/
+      - icon: mastodon 
+        href: https://fediscience.org/@cimethods
+      - icon: bluesky
+        href: https://bsky.app/profile/cimethods.bsky.social
+
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+      - css/warwick.scss
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+

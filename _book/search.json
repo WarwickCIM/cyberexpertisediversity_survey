@@ -1,0 +1,274 @@
+[
+  {
+    "objectID": "content/survey.html",
+    "href": "content/survey.html",
+    "title": "2  The survey",
+    "section": "",
+    "text": "2.1 Methodology",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The survey</span>"
+    ]
+  },
+  {
+    "objectID": "content/survey.html#methodology",
+    "href": "content/survey.html#methodology",
+    "title": "2  The survey",
+    "section": "",
+    "text": "2.1.1 The comb concept\n\n\n2.1.2 The research process\n\n\n2.1.3 The alignment metric calculation",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The survey</span>"
+    ]
+  },
+  {
+    "objectID": "content/survey.html#limitations",
+    "href": "content/survey.html#limitations",
+    "title": "2  The survey",
+    "section": "2.2 Limitations",
+    "text": "2.2 Limitations\n\n2.2.1 Sample size\n\n\n2.2.2 Sampling strategy\n\n\n2.2.3 Sliders",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The survey</span>"
+    ]
+  },
+  {
+    "objectID": "content/survey.html#results",
+    "href": "content/survey.html#results",
+    "title": "2  The survey",
+    "section": "2.3 Results",
+    "text": "2.3 Results\n\n2.3.1 Megacombs\n\n\n\n\n\n\nQuestions for Viz\n\n\n\n\nDo we have a good set of descriptive views of the basic raw data? You produced quite a few, so it is just a matter of going back to these and seeing if they’re ready to go.\nAre there features of the data that these visualisations reveal that aren’t currently reflected in the report, that we should focus more on?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The survey</span>"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Cyber Expertise Diversity Survey - Report",
+    "section": "",
+    "text": "Preface\nThe Cyber Expertise Diversity Survey is a project run by the Centre for Interdisciplinary Methodologies and the Research Institute for Sociotechnical Cyber Security (RISCS), led by Matt Spencer, RISCS Senior Fellow and Associate Professor at CIM.\nOther CIM staff involved in putting the survey together and analysing the data include Carlos Cámara-Menoyo and Timothy Monteath.\nThe survey aims to inform cyber policy discussions by generating new insights into the value and distribution of cyber expertise.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#executive-summary",
+    "href": "index.html#executive-summary",
+    "title": "The Cyber Expertise Diversity Survey - Report",
+    "section": "Executive summary",
+    "text": "Executive summary",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#list-of-recommendations",
+    "href": "index.html#list-of-recommendations",
+    "title": "The Cyber Expertise Diversity Survey - Report",
+    "section": "List of recommendations",
+    "text": "List of recommendations\n\nRecommendation 1\nRecommendation 2\n\n\n\n\n\n\n\nNote\n\n\n\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "content/introduction.html",
+    "href": "content/introduction.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "1.1 Background on cyber professionalisation",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "content/introduction.html#background-on-cyber-professionalisation",
+    "href": "content/introduction.html#background-on-cyber-professionalisation",
+    "title": "1  introduction",
+    "section": "2.1 Background on cyber professionalisation",
+    "text": "2.1 Background on cyber professionalisation",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>introduction</span>"
+    ]
+  },
+  {
+    "objectID": "content/introduction.html#background-on-this-survey-aims-and-objectives",
+    "href": "content/introduction.html#background-on-this-survey-aims-and-objectives",
+    "title": "1  Introduction",
+    "section": "1.2 Background on this survey, aims and objectives",
+    "text": "1.2 Background on this survey, aims and objectives",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "content/professionalisation.html",
+    "href": "content/professionalisation.html",
+    "title": "3  Professionalisation and exclusion",
+    "section": "",
+    "text": "3.1 Theory",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Professionalisation and exclusion</span>"
+    ]
+  },
+  {
+    "objectID": "content/professionalisation.html#theory",
+    "href": "content/professionalisation.html#theory",
+    "title": "3  Professionalisation and exclusion",
+    "section": "",
+    "text": "3.1.1 Social closure\nProfessionalisation can be studied sociologically as a process of ‘occupational closure’, which is a special case of what Weber called ‘social closure’. Social closure is an umbrella term for the ways in which groups construct and maintain monopolies over opportunities (often economic), by including some people and excluding others. This can be done formally (for instance through legal exclusions) or informally (for instance, through cronyism or nepotism). Structures of social closure can be highly durable because often combine concentrations of power with alignments of incentives: it is in the interest of those who are in the ‘in group’ to perpetuate the exclusion of others, and being in the ‘in group’ also gives influence over institutions. In the case of professionalisation, it is usually a set of moral arguments about safety, or fairness that justify closure: for instance the idea that practicing as doctors, accountants, or lawyers must be restricted to those who have committed to a set of standards of conduct, or who can be guaranteed to have passed some threshold of training, and so on. But the potential for the professions to entrench wider inequalities has been a point of criticism of increasing importance in the last century, so that the profession is regulated not just in terms of standards of conduct, but also regulated to ensure that it is a vehicle for (rather than obstacle of) social mobility, fair access to opportunities, and so on.",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Professionalisation and exclusion</span>"
+    ]
+  },
+  {
+    "objectID": "content/data_exploration.html",
+    "href": "content/data_exploration.html",
+    "title": "5  Data exploration",
+    "section": "",
+    "text": "5.1 Data exploration",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data exploration</span>"
+    ]
+  },
+  {
+    "objectID": "content/data_exploration.html#data-exploration",
+    "href": "content/data_exploration.html#data-exploration",
+    "title": "5  Data exploration",
+    "section": "",
+    "text": "5.1.1 Responses\n\n\n\nData summary\n\n\nName\nresponses\n\n\nNumber of rows\n56\n\n\nNumber of columns\n107\n\n\n_______________________\n\n\n\nColumn type frequency:\n\n\n\ncharacter\n28\n\n\nnumeric\n79\n\n\n________________________\n\n\n\nGroup variables\nNone\n\n\n\nVariable type: character\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmin\nmax\nempty\nn_unique\nwhitespace\n\n\n\n\nrecorded_date\n0\n1.00\n16\n16\n0\n56\n0\n\n\nparticipant_accepts\n0\n1.00\n3\n3\n0\n1\n0\n\n\njob_title\n0\n1.00\n4\n68\n0\n50\n0\n\n\norganisation_sector\n0\n1.00\n9\n58\n0\n10\n0\n\n\norganisation_sector_other\n49\n0.12\n4\n46\n0\n7\n0\n\n\norganisation_size\n0\n1.00\n24\n29\n0\n4\n0\n\n\nscenario_name\n0\n1.00\n6\n402\n0\n56\n0\n\n\nscenario_role\n0\n1.00\n12\n13\n0\n2\n0\n\n\nscenario_description\n0\n1.00\n1\n3018\n0\n54\n0\n\n\nscenario_job_title\n0\n1.00\n3\n68\n0\n49\n0\n\n\nscenario_organisation_size\n0\n1.00\n24\n29\n0\n4\n0\n\n\nscenario_organisation_sector\n0\n1.00\n9\n52\n0\n9\n0\n\n\nscenario_organisation_sector_other\n39\n0.30\n1\n36\n0\n9\n0\n\n\nmore_scenarios\n3\n0.95\n45\n73\n0\n2\n0\n\n\nscenario_name_1\n0\n1.00\n1\n78\n0\n10\n0\n\n\nscenario_role_1\n0\n1.00\n1\n13\n0\n3\n0\n\n\nscenario_description_1\n0\n1.00\n1\n725\n0\n10\n0\n\n\nscenario_job_title_1\n0\n1.00\n1\n42\n0\n10\n0\n\n\nscenario_organisation_size_1\n0\n1.00\n1\n29\n0\n4\n0\n\n\nscenario_organisation_sector_1\n0\n1.00\n1\n39\n0\n6\n0\n\n\nscenario_organisation_sector_other_1\n5\n0.91\n1\n27\n0\n4\n0\n\n\nmore_scenarios_1\n47\n0.16\n73\n73\n0\n1\n0\n\n\nage\n0\n1.00\n5\n22\n0\n7\n0\n\n\ndisabilities\n0\n1.00\n22\n90\n0\n4\n0\n\n\nuk_ethnic_origin\n1\n0.98\n5\n75\n0\n6\n0\n\n\ngender\n0\n1.00\n4\n22\n0\n4\n0\n\n\nsexual_orientation\n1\n0.98\n2\n22\n0\n3\n0\n\n\ntransgender\n0\n1.00\n2\n22\n0\n3\n0\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\nyears_experience\n0\n1\n13.00\n9.39\n0\n5.75\n10.50\n20.00\n37.00\n▇▇▅▂▂\n\n\nexpertise_comb_risk_management_governance\n0\n1\n64.04\n31.18\n0\n44.37\n69.27\n90.80\n100.00\n▂▂▃▃▇\n\n\nexpertise_comb_social_organisation_strategy_and_process\n0\n1\n58.16\n32.69\n0\n30.15\n65.70\n86.34\n100.00\n▅▂▃▆▇\n\n\nexpertise_comb_cyber_security_law_regulation\n0\n1\n52.39\n31.21\n0\n26.79\n52.41\n79.56\n100.00\n▇▂▆▇▆\n\n\nexpertise_comb_political_aspects_of_cyber_security\n0\n1\n54.65\n31.57\n0\n23.34\n63.63\n81.29\n100.00\n▆▃▂▇▇\n\n\nexpertise_comb_human_factors_and_usable_security\n0\n1\n54.86\n32.81\n0\n27.82\n62.29\n81.28\n100.00\n▆▃▃▆▇\n\n\nexpertise_comb_security_culture_narrative_and_communication\n0\n1\n60.87\n34.38\n0\n32.65\n70.30\n91.76\n100.00\n▃▂▃▃▇\n\n\nexpertise_comb_privacy_online_rights\n0\n1\n43.37\n31.81\n0\n13.16\n42.18\n69.74\n100.00\n▇▃▅▃▅\n\n\nexpertise_comb_data_science_ai_for_cyber_security\n0\n1\n23.27\n24.52\n0\n4.85\n13.28\n35.36\n97.47\n▇▂▂▁▁\n\n\nexpertise_comb_malware_attack_technologies\n0\n1\n43.73\n29.78\n0\n18.59\n39.64\n68.33\n100.00\n▇▆▅▆▃\n\n\nexpertise_comb_adversarial_behaviours\n0\n1\n50.57\n35.07\n0\n15.47\n55.36\n84.16\n100.00\n▇▃▃▅▇\n\n\nexpertise_comb_security_operations_incident_management\n0\n1\n57.53\n32.91\n0\n35.97\n56.53\n86.82\n100.00\n▅▃▆▅▇\n\n\nexpertise_comb_forensics\n0\n1\n26.36\n24.08\n0\n7.41\n17.84\n47.84\n95.47\n▇▂▂▂▁\n\n\nexpertise_comb_cryptography\n0\n1\n26.55\n28.73\n0\n3.18\n16.31\n41.15\n100.00\n▇▂▂▁▁\n\n\nexpertise_comb_operating_systems_virtualisation_security\n0\n1\n27.97\n26.27\n0\n7.97\n18.74\n47.25\n96.98\n▇▃▂▂▁\n\n\nexpertise_comb_distributed_systems_security\n0\n1\n25.38\n26.25\n0\n3.97\n19.06\n38.03\n92.09\n▇▃▂▂▁\n\n\nexpertise_comb_formal_methods_for_security\n0\n1\n37.39\n31.89\n0\n7.99\n31.60\n63.75\n100.00\n▇▅▃▂▃\n\n\nexpertise_comb_authentication_authorisation_accountability\n0\n1\n40.74\n28.05\n0\n21.23\n43.24\n58.43\n100.00\n▆▆▇▅▂\n\n\nexpertise_comb_software_security\n0\n1\n28.41\n26.61\n0\n4.36\n21.72\n50.75\n95.89\n▇▅▂▂▁\n\n\nexpertise_comb_web_mobile_security\n0\n1\n29.61\n25.26\n0\n8.30\n26.73\n44.75\n99.68\n▇▆▅▂▁\n\n\nexpertise_comb_secure_software_lifecycle\n0\n1\n29.78\n28.48\n0\n3.16\n22.94\n48.47\n97.78\n▇▃▂▂▁\n\n\nexpertise_comb_network_security\n0\n1\n45.73\n31.64\n0\n17.90\n47.19\n69.54\n100.00\n▇▅▇▃▆\n\n\nexpertise_comb_cloud_security\n0\n1\n37.05\n24.66\n0\n18.97\n35.51\n55.07\n85.46\n▇▇▅▅▅\n\n\nexpertise_comb_applied_cryptography\n0\n1\n19.73\n28.35\n0\n1.68\n5.39\n30.50\n99.72\n▇▁▁▁▁\n\n\nexpertise_comb_hardware_security\n0\n1\n26.75\n30.03\n0\n3.36\n15.14\n42.00\n99.05\n▇▂▂▁▂\n\n\nexpertise_comb_cyber_physical_systems\n0\n1\n40.68\n33.40\n0\n9.97\n30.91\n67.67\n100.00\n▇▃▃▅▃\n\n\nexpertise_comb_physical_layer_and_telecommunications_security\n0\n1\n30.12\n30.69\n0\n3.74\n19.48\n47.39\n100.00\n▇▂▃▁▂\n\n\nscenario_expertise_portfolio_risk_management_governance\n0\n1\n53.09\n38.31\n0\n13.65\n53.28\n93.14\n100.00\n▇▂▃▃▇\n\n\nscenario_expertise_portfolio_social_organisation_strategy_and_process\n0\n1\n46.26\n38.04\n0\n4.22\n49.34\n83.60\n100.00\n▇▁▃▂▆\n\n\nscenario_expertise_portfolio_cyber_security_law_regulation\n0\n1\n46.68\n38.24\n0\n2.95\n48.15\n83.62\n100.00\n▇▁▃▂▆\n\n\nscenario_expertise_portfolio_political_aspects_of_cyber_security\n0\n1\n34.14\n35.35\n0\n0.72\n20.17\n67.56\n100.00\n▇▂▂▂▂\n\n\nscenario_expertise_portfolio_human_factors_and_usable_security\n0\n1\n41.70\n39.31\n0\n0.00\n40.02\n72.88\n100.00\n▇▁▂▂▅\n\n\nscenario_expertise_portfolio_security_culture_narrative_and_communication\n0\n1\n57.16\n40.05\n0\n11.83\n67.15\n94.86\n100.00\n▆▂▁▃▇\n\n\nscenario_expertise_portfolio_privacy_online_rights\n0\n1\n24.06\n33.33\n0\n0.00\n3.98\n45.64\n100.00\n▇▁▁▁▂\n\n\nscenario_expertise_portfolio_data_science_ai_for_cyber_security\n0\n1\n11.96\n22.62\n0\n0.00\n1.27\n7.44\n100.00\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_malware_attack_technologies\n0\n1\n37.65\n38.07\n0\n0.83\n25.72\n75.26\n100.00\n▇▁▂▂▃\n\n\nscenario_expertise_portfolio_adversarial_behaviours\n0\n1\n47.28\n40.89\n0\n1.44\n49.29\n90.61\n100.00\n▇▁▃▂▆\n\n\nscenario_expertise_portfolio_security_operations_incident_management\n0\n1\n49.35\n37.77\n0\n14.03\n50.42\n85.84\n100.00\n▇▃▃▃▇\n\n\nscenario_expertise_portfolio_forensics\n0\n1\n22.76\n31.65\n0\n0.00\n4.73\n51.02\n100.00\n▇▁▂▁▁\n\n\nscenario_expertise_portfolio_cryptography\n0\n1\n15.09\n28.18\n0\n0.00\n2.40\n9.26\n98.10\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_operating_systems_virtualisation_security\n0\n1\n24.27\n31.99\n0\n0.00\n5.12\n49.48\n100.00\n▇▁▂▁▁\n\n\nscenario_expertise_portfolio_distributed_systems_security\n0\n1\n19.61\n31.61\n0\n0.00\n2.66\n21.89\n100.00\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_formal_methods_for_security\n0\n1\n23.20\n32.06\n0\n0.00\n4.12\n41.60\n100.00\n▇▂▂▁▂\n\n\nscenario_expertise_portfolio_authentication_authorisation_accountability\n0\n1\n38.17\n36.33\n0\n0.00\n38.20\n69.96\n100.00\n▇▂▃▂▃\n\n\nscenario_expertise_portfolio_software_security\n0\n1\n23.00\n29.80\n0\n0.00\n4.78\n43.49\n100.00\n▇▂▂▁▁\n\n\nscenario_expertise_portfolio_web_mobile_security\n0\n1\n25.69\n33.67\n0\n0.00\n5.44\n54.73\n100.00\n▇▁▂▁▁\n\n\nscenario_expertise_portfolio_secure_software_lifecycle\n0\n1\n14.12\n27.04\n0\n0.00\n2.13\n7.52\n100.00\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_network_security\n0\n1\n41.28\n38.11\n0\n0.00\n42.73\n78.93\n100.00\n▇▁▂▂▅\n\n\nscenario_expertise_portfolio_cloud_security\n0\n1\n22.05\n32.10\n0\n0.00\n3.30\n44.43\n100.00\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_applied_cryptography\n0\n1\n14.41\n27.57\n0\n0.00\n0.64\n10.21\n100.00\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_hardware_security\n0\n1\n22.65\n32.05\n0\n0.00\n2.82\n37.20\n100.00\n▇▂▁▁▁\n\n\nscenario_expertise_portfolio_cyber_physical_systems\n0\n1\n27.68\n36.68\n0\n0.00\n5.22\n56.97\n100.00\n▇▁▁▁▂\n\n\nscenario_expertise_portfolio_physical_layer_and_telecommunications_security\n0\n1\n19.01\n29.29\n0\n0.00\n2.67\n27.98\n100.00\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_risk_management_governance_1\n0\n1\n9.46\n26.18\n0\n0.00\n0.00\n0.00\n100.00\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_social_organisation_strategy_and_process_1\n0\n1\n6.44\n21.46\n0\n0.00\n0.00\n0.00\n100.00\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_cyber_security_law_regulation_1\n0\n1\n6.60\n20.57\n0\n0.00\n0.00\n0.00\n90.40\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_political_aspects_of_cyber_security_1\n0\n1\n3.65\n13.58\n0\n0.00\n0.00\n0.00\n75.17\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_human_factors_and_usable_security_1\n0\n1\n4.12\n15.58\n0\n0.00\n0.00\n0.00\n84.22\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_security_culture_narrative_and_communication_1\n0\n1\n7.29\n22.91\n0\n0.00\n0.00\n0.00\n100.00\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_privacy_online_rights_1\n0\n1\n3.80\n13.18\n0\n0.00\n0.00\n0.00\n64.61\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_data_science_ai_for_cyber_security_1\n0\n1\n2.77\n12.58\n0\n0.00\n0.00\n0.00\n86.15\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_malware_attack_technologies_1\n0\n1\n11.07\n29.05\n0\n0.00\n0.00\n0.00\n100.00\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_adversarial_behaviours_1\n0\n1\n11.88\n31.10\n0\n0.00\n0.00\n0.00\n100.00\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_security_operations_incident_management_1\n0\n1\n9.20\n26.48\n0\n0.00\n0.00\n0.00\n100.00\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_forensics_1\n0\n1\n4.34\n14.58\n0\n0.00\n0.00\n0.00\n73.07\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_cryptography_1\n0\n1\n2.84\n9.75\n0\n0.00\n0.00\n0.00\n49.30\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_operating_systems_virtualisation_security_1\n0\n1\n5.06\n13.98\n0\n0.00\n0.00\n0.00\n50.75\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_distributed_systems_security_1\n0\n1\n3.95\n16.87\n0\n0.00\n0.00\n0.00\n96.98\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_formal_methods_for_security_1\n0\n1\n3.80\n14.73\n0\n0.00\n0.00\n0.00\n96.16\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_authentication_authorisation_accountability_1\n0\n1\n8.63\n24.62\n0\n0.00\n0.00\n0.00\n99.86\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_software_security_1\n0\n1\n6.92\n20.57\n0\n0.00\n0.00\n0.00\n96.02\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_web_mobile_security_1\n0\n1\n4.64\n16.01\n0\n0.00\n0.00\n0.00\n83.13\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_secure_software_lifecycle_1\n0\n1\n3.27\n13.87\n0\n0.00\n0.00\n0.00\n90.26\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_network_security_1\n0\n1\n8.66\n22.04\n0\n0.00\n0.00\n0.00\n87.65\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_cloud_security_1\n0\n1\n7.44\n22.65\n0\n0.00\n0.00\n0.00\n96.30\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_applied_cryptography_1\n0\n1\n4.73\n16.98\n0\n0.00\n0.00\n0.00\n98.35\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_hardware_security_1\n0\n1\n4.01\n15.54\n0\n0.00\n0.00\n0.00\n90.95\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_cyber_physical_systems_1\n0\n1\n4.34\n16.46\n0\n0.00\n0.00\n0.00\n100.00\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_physical_layer_and_telecommunications_security_1\n0\n1\n4.41\n16.65\n0\n0.00\n0.00\n0.00\n88.02\n▇▁▁▁▁\n\n\n\n\n\n\n\n5.1.2 Scenarios\n\n\n\nData summary\n\n\nName\nscenarios\n\n\nNumber of rows\n65\n\n\nNumber of columns\n39\n\n\n_______________________\n\n\n\nColumn type frequency:\n\n\n\ncharacter\n13\n\n\nnumeric\n26\n\n\n________________________\n\n\n\nGroup variables\nNone\n\n\n\nVariable type: character\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmin\nmax\nempty\nn_unique\nwhitespace\n\n\n\n\nage\n0\n1.00\n5\n22\n0\n7\n0\n\n\ndisabilities\n0\n1.00\n22\n90\n0\n4\n0\n\n\nuk_ethnic_origin\n1\n0.98\n5\n75\n0\n6\n0\n\n\ngender\n0\n1.00\n4\n22\n0\n4\n0\n\n\nsexual_orientation\n1\n0.98\n2\n22\n0\n3\n0\n\n\ntransgender\n0\n1.00\n2\n22\n0\n3\n0\n\n\nscenario_name\n0\n1.00\n6\n402\n0\n64\n0\n\n\nscenario_role\n0\n1.00\n12\n13\n0\n2\n0\n\n\nscenario_description\n0\n1.00\n1\n3018\n0\n63\n0\n\n\nscenario_job_title\n0\n1.00\n3\n68\n0\n52\n0\n\n\nscenario_organisation_size\n0\n1.00\n24\n29\n0\n4\n0\n\n\nscenario_organisation_sector\n0\n1.00\n9\n52\n0\n9\n0\n\n\nscenario_organisation_sector_other\n44\n0.32\n1\n36\n0\n11\n0\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\nscenario_expertise_portfolio_risk_management_governance\n0\n1\n53.89\n38.02\n0\n16.47\n53.76\n92.32\n100.0\n▆▂▃▃▇\n\n\nscenario_expertise_portfolio_social_organisation_strategy_and_process\n0\n1\n45.40\n38.14\n0\n2.88\n49.05\n83.07\n100.0\n▇▁▅▂▆\n\n\nscenario_expertise_portfolio_cyber_security_law_regulation\n0\n1\n45.91\n37.75\n0\n3.16\n48.97\n82.03\n100.0\n▇▁▃▂▆\n\n\nscenario_expertise_portfolio_political_aspects_of_cyber_security\n0\n1\n32.56\n34.46\n0\n0.96\n10.84\n61.87\n100.0\n▇▂▂▂▂\n\n\nscenario_expertise_portfolio_human_factors_and_usable_security\n0\n1\n39.48\n38.60\n0\n0.00\n33.06\n70.23\n100.0\n▇▁▂▂▃\n\n\nscenario_expertise_portfolio_security_culture_narrative_and_communication\n0\n1\n55.52\n40.05\n0\n4.92\n66.53\n94.65\n100.0\n▆▂▂▃▇\n\n\nscenario_expertise_portfolio_privacy_online_rights\n0\n1\n24.00\n32.22\n0\n0.00\n4.39\n50.07\n100.0\n▇▁▂▁▁\n\n\nscenario_expertise_portfolio_data_science_ai_for_cyber_security\n0\n1\n12.69\n23.32\n0\n0.00\n1.37\n14.13\n100.0\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_malware_attack_technologies\n0\n1\n41.97\n39.10\n0\n1.37\n34.97\n80.23\n100.0\n▇▂▂▂▅\n\n\nscenario_expertise_portfolio_adversarial_behaviours\n0\n1\n50.96\n41.34\n0\n2.47\n54.46\n94.10\n100.0\n▇▁▃▂▇\n\n\nscenario_expertise_portfolio_security_operations_incident_management\n0\n1\n50.44\n38.08\n0\n9.60\n54.40\n85.73\n100.0\n▇▃▃▃▇\n\n\nscenario_expertise_portfolio_forensics\n0\n1\n23.35\n30.98\n0\n0.00\n5.62\n50.21\n100.0\n▇▁▂▁▁\n\n\nscenario_expertise_portfolio_cryptography\n0\n1\n15.44\n26.98\n0\n0.00\n2.74\n18.93\n98.1\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_operating_systems_virtualisation_security\n0\n1\n25.27\n30.60\n0\n0.00\n6.48\n49.52\n100.0\n▇▂▂▁▁\n\n\nscenario_expertise_portfolio_distributed_systems_security\n0\n1\n20.30\n32.17\n0\n0.00\n2.31\n28.26\n100.0\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_formal_methods_for_security\n0\n1\n23.26\n31.68\n0\n0.00\n4.40\n37.57\n100.0\n▇▂▁▁▂\n\n\nscenario_expertise_portfolio_authentication_authorisation_accountability\n0\n1\n40.32\n36.66\n0\n0.00\n38.41\n74.86\n100.0\n▇▂▃▂▅\n\n\nscenario_expertise_portfolio_software_security\n0\n1\n25.78\n30.93\n0\n0.00\n7.82\n49.74\n100.0\n▇▂▂▂▁\n\n\nscenario_expertise_portfolio_web_mobile_security\n0\n1\n26.13\n33.13\n0\n0.00\n5.76\n54.05\n100.0\n▇▁▂▁▂\n\n\nscenario_expertise_portfolio_secure_software_lifecycle\n0\n1\n14.98\n27.37\n0\n0.00\n2.25\n8.86\n100.0\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_network_security\n0\n1\n43.02\n36.63\n0\n0.96\n48.56\n78.51\n100.0\n▇▂▂▃▅\n\n\nscenario_expertise_portfolio_cloud_security\n0\n1\n25.40\n33.83\n0\n0.00\n5.21\n51.06\n100.0\n▇▁▁▁▂\n\n\nscenario_expertise_portfolio_applied_cryptography\n0\n1\n16.48\n28.75\n0\n0.00\n2.07\n19.75\n100.0\n▇▁▁▁▁\n\n\nscenario_expertise_portfolio_hardware_security\n0\n1\n22.97\n31.90\n0\n0.00\n3.79\n37.45\n100.0\n▇▂▁▁▁\n\n\nscenario_expertise_portfolio_cyber_physical_systems\n0\n1\n27.58\n36.10\n0\n0.00\n5.62\n55.56\n100.0\n▇▁▁▁▂\n\n\nscenario_expertise_portfolio_physical_layer_and_telecommunications_security\n0\n1\n20.18\n29.92\n0\n0.00\n3.02\n30.86\n100.0\n▇▁▁▁▁",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data exploration</span>"
+    ]
+  },
+  {
+    "objectID": "content/data_exploration.html#alignment-metric",
+    "href": "content/data_exploration.html#alignment-metric",
+    "title": "5  Data exploration",
+    "section": "5.2 Alignment metric",
+    "text": "5.2 Alignment metric\nExplain how the metric was calculated\n\n5.2.1 Expertise Alignment\n\n\n5.2.2 Scenarios alignment",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data exploration</span>"
+    ]
+  },
+  {
+    "objectID": "content/data_exploration.html#megacomb",
+    "href": "content/data_exploration.html#megacomb",
+    "title": "5  Data exploration",
+    "section": "5.3 Megacomb",
+    "text": "5.3 Megacomb\n\n5.3.1 Expertise comb\n\n\n\n\n\n\n\n\n\n\n\n5.3.2 Scenarios and gender\nA first draft for the megacomb:",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Data exploration</span>"
+    ]
+  },
+  {
+    "objectID": "content/professionalisation.html#data-analysis",
+    "href": "content/professionalisation.html#data-analysis",
+    "title": "3  Professionalisation and exclusion",
+    "section": "3.2 Data analysis",
+    "text": "3.2 Data analysis\n\n3.2.1 looking at diversity in general\n\n\n3.2.2 looking at individual alignment with the specialisms\n\n\n3.2.3 looking at how well people from different backgrounds are aligned with the specialisms\n\n\n\n\n\n\nQuestions for Viz\n\n\n\n- NB when we talk about alignment, we are working with the numbers that we used to call ‘version 2’ of the metric. I think Carlos has updated the code so that this is the only version, but I think when you initially looked at it you were using version 1 – so just something to be aware of.\n\nWhat does individual alignment look like? You already did some visualisations of alignment in different sectors, and so on. One might expect greater alignment for people with greater numbers of years of experience.\nHow do you show whether and how inequality translates into greater or lesser alignment with the standardised specialisms? One of the recommendations we will make is that the government and/or the cyber security council should monitor diversity and inclusion in more extensive and rigorous fashion. It would be helpful to show the kinds of views of the data that we think they should be looking at in future work. So anything that you think captures the issue of figuring out whether inequalities are being carried through to the profession, or amplified or suppressed, would be great.\nIs there any correlation between diversity and alignment with the specialisms? We can be pretty sure, for instance, that women in cyber are less well aligned with the specialisms than men, because there is no security awareness specialism. Our survey is small and may not actually show this (and if it did we wouldn’t have confidence in it). But we could nevertheless show the kind of perspective on the data that the CSC/government ought to be paying attention to. The same goes for other characteristics than gender.",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Professionalisation and exclusion</span>"
+    ]
+  },
+  {
+    "objectID": "content/interdisciplinarity.html",
+    "href": "content/interdisciplinarity.html",
+    "title": "4  Interdisciplinarity",
+    "section": "",
+    "text": "4.1 Theory",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interdisciplinarity</span>"
+    ]
+  },
+  {
+    "objectID": "content/interdisciplinarity.html#theory",
+    "href": "content/interdisciplinarity.html#theory",
+    "title": "4  Interdisciplinarity",
+    "section": "",
+    "text": "4.1.1 Transdisciplinarity, interdisciplinarity, multidisciplinarity\nI was thinking of including a section talking about trans, inter and multidisciplinarity, as I think that one might see these as useful windows onto the profession.",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interdisciplinarity</span>"
+    ]
+  },
+  {
+    "objectID": "content/interdisciplinarity.html#data-analysis",
+    "href": "content/interdisciplinarity.html#data-analysis",
+    "title": "4  Interdisciplinarity",
+    "section": "4.2 Data analysis",
+    "text": "4.2 Data analysis\n\n4.2.1 Looking at specialisms alignment with the scenarios\n\n\n4.2.2 Meta view of alignment vs interdisciplinarity\n\n\n4.2.3 Qualitative analysis of the scenario descriptions\n\n\n\nSketches of data analysis\n\n\n\n\n\n\n\n\nQuestions for Viz\n\n\n\nNB here we are looking at how well specialisms (including combinations of specialisms) are aligned with the scenarios people told us about. Before we were looking at how well people’s own profiles were aligned with the specialisms.\n\nThe main thing is the kind of analysis that we sketched out in the slide below. Those two graphs show comparative views of the scenarios based on how the alignment changes when you are combining specialisms in greater numbers. Carlos and I were chatting about this last week and he said we might be able to do an interactive view of these to help explore the qualitative dataset (I.e. click on a specific point or line and it would tell you what the scenario number or name is, and then can look at the description). In the report we might just need to highlight a small number that are being referred to specifically, rather than necessarily embedding an interactive visualisation (which wouldn’t work well for a pdf/print version).",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interdisciplinarity</span>"
+    ]
+  },
+  {
+    "objectID": "content/interdisciplinarity.html#recommendations",
+    "href": "content/interdisciplinarity.html#recommendations",
+    "title": "4  Interdisciplinarity",
+    "section": "4.3 Recommendations",
+    "text": "4.3 Recommendations",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interdisciplinarity</span>"
+    ]
+  },
+  {
+    "objectID": "content/professionalisation.html#recommendations",
+    "href": "content/professionalisation.html#recommendations",
+    "title": "3  Professionalisation and exclusion",
+    "section": "3.3 Recommendations",
+    "text": "3.3 Recommendations\n\n3.3.1 Limitations of the research and the importance of monitoring alignment",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Professionalisation and exclusion</span>"
+    ]
+  },
+  {
+    "objectID": "content/diversity.html",
+    "href": "content/diversity.html",
+    "title": "5  Diversity of expertise",
+    "section": "",
+    "text": "5.1 Theory",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diversity of expertise</span>"
+    ]
+  },
+  {
+    "objectID": "content/diversity.html#theory",
+    "href": "content/diversity.html#theory",
+    "title": "5  Diversity of expertise",
+    "section": "",
+    "text": "5.1.1 High reliability organisations\nThe safety management literature is increasingly influential in cyber security and one of the most influential ideas within this tradition is the idea that a diversity of thought is essential for maintaining high reliability. The idea is usually attributed to Karl Weick, but has its roots in cybernetics and Ashby’s principle of requisite variety. Essentially, to be able to detect problems and respond to them early requires a sensitivity to new information. Monocultures, like the ‘production culture’ that Diane Vaughan uncovered at NASA in the years leading up to the Challenger Space Shuttle disaster, tend to have blind spots, which creates risks of problems going unnoticed. The value of diversity from this point of view is not just about broad issues of justice, it is also directly relevant to achieving business goals.\n\n\n5.1.2 STS work on categories\nI might also include a section about categories. In the STS literature, standardised categories are often thought of as a kind of infrastructure. Establishing infrastructure often requires standardisation, so that everyone is using the same gauge wire, same protocols, same terminology to refer to the same thing. Like infrastructure, entrenched categories create path dependencies and blindspots. We can think about\nthe Cybok categories in these terms, and think about what is excluded from consideration as a result of being excluded from the standard.\nProfessional territories\nI might put a discussion of professional territories here too. In risk management, cyber security is doing a sort of ‘land grab’ from risk management: they see risk management as part of cyber security, and define a risk management specialism. On the other hand, they don’t see PR and communications as a cyber security specialism. Some kinds of expertise are not recognised in cyber security because they are plain ignored, others because they are treated as belonging to a non-cyber profession.",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diversity of expertise</span>"
+    ]
+  },
+  {
+    "objectID": "content/diversity.html#data-analysis",
+    "href": "content/diversity.html#data-analysis",
+    "title": "5  Diversity of expertise",
+    "section": "5.2 Data analysis",
+    "text": "5.2 Data analysis\nThis is where we look at the non-cybok bits of the comb (minimal: just some of the mega combs, with these highlighted)\nVarious free text comments from respondents are relevant here.\n\n\n\n\n\n\nQuestions for viz\n\n\n\n\nHow can we bring out the relative importance of the categories of expertise that are not included in Cybok?\n\nOne version would be just to highlight them in some of the meta-combs, and to pick out those non-cybok categories that are most common\nThere may be more sophisticated things we might do as well. For instance, if some of the scenarios include significant contributions from non-cybok expertise, might we highlight this somehow.",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diversity of expertise</span>"
+    ]
+  },
+  {
+    "objectID": "content/diversity.html#recommendations",
+    "href": "content/diversity.html#recommendations",
+    "title": "5  Diversity of expertise",
+    "section": "5.3 Recommendations",
+    "text": "5.3 Recommendations\nWe might have some recommendations for CyBOK itself.",
+    "crumbs": [
+      "Analysis",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diversity of expertise</span>"
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+---
+title: "The survey"
+format: html
+---
+
+## Methodology
+
+### The comb concept
+
+### The research process
+
+### The alignment metric calculation
+
+## Limitations
+
+### Sample size
+
+### Sampling strategy
+
+### Sliders
+
+## Results
+
+### Megacombs
+
+::: callout-caution
+## Questions for Viz 
+
+1.  Do we have a good set of descriptive views of the basic raw data? You produced quite a few, so it is just a matter of going back to these and seeing if they’re ready to go.
+
+2.  Are there features of the data that these visualisations reveal that aren’t currently reflected in the report, that we should focus more on?
+:::

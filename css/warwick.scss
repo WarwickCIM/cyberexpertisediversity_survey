@@ -1,0 +1,49 @@
+// Warwick colors:
+$w_aubergine: #552D62;
+$w_grey: #393A3B;
+$w_ruby_red: #9A1310;
+$w_sky_blue: #00407A;
+
+
+/*-- scss:defaults --*/
+// Base document colors
+
+$link-color: $w_aubergine;
+
+#quarto-content {
+    border-top: 5px solid $link-color;
+}
+
+.footer .nav-footer {
+    background-color: $link-color;
+    color: white;
+    a {
+        color: white;
+    }
+}
+
+
+
+.slide-deck {
+    border: 3px solid #dee2e6;
+    width: 100%;
+    height: 475px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+   .slide-deck {
+      height: 400px;
+    }
+  }
+  
+.sidebar-item-section{
+  font-weight: 300;
+  a.active {
+    font-weight: 500;
+  }
+  > div:first-of-type {
+    font-weight: 500;
+    font-variant: small-caps;
+    }
+  
+}

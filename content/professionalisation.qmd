@@ -1,0 +1,40 @@
+---
+title: "Professionalisation and exclusion "
+format: html
+---
+
+## Theory
+
+### Social closure
+
+Professionalisation can be studied sociologically as a process of ‘occupational closure’, which is a special case of what Weber called ‘social closure’. Social closure is an umbrella term for the ways in which groups construct and maintain monopolies over opportunities (often economic), by including some people and excluding others. This can be done formally (for instance through legal exclusions) or informally (for instance, through cronyism or nepotism). Structures of social closure can be highly durable because often combine concentrations of power with alignments of incentives: it is in the interest of those who are in the ‘in group’ to perpetuate the exclusion of others, and being in the ‘in
+group’ also gives influence over institutions. In the case of professionalisation, it is usually a set of moral arguments about safety, or fairness that justify closure: for instance the idea that practicing as doctors, accountants, or lawyers must be restricted to those who have committed to a set of standards of conduct, or who can be guaranteed to have passed some threshold of training, and so on. But
+the potential for the professions to entrench wider inequalities has been a point of criticism of increasing importance in the last century, so that the profession is regulated not just in terms of standards of conduct, but also regulated to ensure that it is a vehicle for (rather than obstacle of) social mobility, fair access to opportunities, and so on.
+
+## Data analysis
+
+### looking at diversity in general  
+
+### looking at individual alignment with the specialisms 
+
+### looking at how well people from different backgrounds are aligned with the specialisms 
+
+::: callout-note
+## Questions for Viz 
+
+\- NB when we talk about alignment, we are working with the numbers that we used to call ‘version 2’ of the metric.
+I think Carlos has updated the code so that this is the only version, but I think when you initially looked at it you were using version 1 – so just something to be aware of.
+
+1.  What does individual alignment look like? You already did some visualisations of alignment in different sectors, and so on. One might expect greater alignment for people with greater numbers of years of experience.
+
+2.  How do you show whether and how inequality translates into greater or lesser alignment with the standardised specialisms? One of the recommendations we will make is that the government and/or the cyber security council should monitor diversity and inclusion in more extensive and rigorous fashion. It would be helpful to show the kinds of views of the data that we think they should be looking at in future work. So anything that you think captures the issue of figuring out whether inequalities are being carried through to the profession, or amplified or suppressed, would be great.
+
+3.  Is there any correlation between diversity and alignment with the specialisms? We can be pretty sure, for instance, that women in cyber
+    are less well aligned with the specialisms than men, because there is no security awareness specialism. Our survey is small and may not actually
+    show this (and if it did we wouldn’t have confidence in it). But we could nevertheless show the kind of perspective on the data that the
+    CSC/government ought to be paying attention to. The same goes for other characteristics than gender.
+:::
+
+##  Recommendations 
+
+###   Limitations of the research and the importance of monitoring alignment 
