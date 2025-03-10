@@ -1,4 +1,8 @@
 data/raw/
+# Rendered version of quarto book.
+_book/
+
+
 # History files
 .Rhistory
 .Rapp.history
