@@ -15,8 +15,6 @@ I was thinking of including a section talking about trans-, inter- and multidisc
 
 ### Meta view of alignment vs interdisciplinarity
 
-.
-
 ### Qualitative analysis of the scenario descriptions
 
 ![Sketches of data analysis](../media/Picture%201.png)
