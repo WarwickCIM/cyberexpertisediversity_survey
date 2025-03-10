@@ -5,11 +5,83 @@ format: html
 
 ## Methodology
 
+```{r}
+#| echo: false
+#| warning: false
+
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(skimr)
+library(lubridate)
+
+responses <- read.csv("../data/raw/cyber_expertise_diversity_survey_responses.csv") |> 
+  mutate(recorded_date = dmy_hm(recorded_date))
+scenarios <- read.csv("../data/raw/cyber_expertise_diversity_survey_scenarios.csv")
+
+```
+
+The survey was distributed on social media and was accepting responses between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")`
+
 ### The comb concept
+
+-   The **personal comb** is just the values that a person put in for their own expertise using the sliders. NB for these alignment calculations we’re only using those ‘teeth’ of the comb that correspond to cybok categories (we have some extras in but for these calculations we ignore them).
+
+-   The **specialism comb** is the cybok values that correspond to each specialism: we create these by substituting 30 for ‘wider’, 60 for ‘related’ and 90 for ‘core’.
+
+-   The **scenario comb** is the values that a person put in for that specific scenario using the sliders. Again, for these calculations we’re only using the ‘teeth’ that correspond to cybok categories and ignoring our extras.
+
+```{r}
+#| echo: false
+#| warning: false
+personal_comb <- read.csv("../data/raw/cyber_expertise_diversity_survey_responses.csv")
+```
 
 ### The research process
 
 ### The alignment metric calculation
+
+In order to see how well (or bad) are two combs aligned, we will compute an **alignment index** $A_{(x,y)}$ as follows.
+
+Given a set of **test values** $X:[x_0, x_1, ... x_n ]$ and a corresponding set of **reference values** $Y:[y_0, y_1, ... y_n ]$, the alignment index will be:
+
+$$
+A_{(x,y)} = \frac{\sum I(X)}{\sum Y}
+$$
+
+Where the indicator function $I(X)$ is defined as follows:
+
+-   $I(X) = x_m$ when $x_m \leq y_m$
+-   $I(X) = y_m$ when $x_m > y_m$
+
+All the indicator function does is say that a person can’t get ‘credit’ for overshooting the reference values (which could offset their deficit in other areas). So it takes the reference value as a ceiling in each tooth of the test comb.
+
+Wit this, we will be calculating two types of alignments:
+
+-   **Personal alignment**, where test values ($X$) are the person's comb (responses) and the reference values ($Y$) are the specialism comb
+
+-   **Scenarios alignment**, where test values ($X$) are the specialism comb and the reference values ($Y$) are the scenario comb.
+
+In both cases, the **alignment index** will result in a number between `0` and `1`, where `1` means perfect alignment between the test value and the reference value and `0` means not aligned at all.
+
+::: callout-note
+Computations for the alignment metric can be audited at the file `alignment_metric.R`
+:::
+
+## Results
+
+The survey was conducted bewteen `r min(responses$recorded_date)` and `r max(responses$recorded_date)` and received responses from `r nrow(responses)` individuals and describing `r nrow(scenarios)` scenarios.
+
+### Megacombs
+
+::: callout-caution
+## Questions for Viz
+
+1.  Do we have a good set of descriptive views of the basic raw data? You produced quite a few, so it is just a matter of going back to these and seeing if they’re ready to go.
+
+2.  Are there features of the data that these visualisations reveal that aren’t currently reflected in the report, that we should focus more on?
+:::
 
 ## Limitations
 
@@ -18,15 +90,3 @@ format: html
 ### Sampling strategy
 
 ### Sliders
-
-## Results
-
-### Megacombs
-
-::: callout-caution
-## Questions for Viz 
-
-1.  Do we have a good set of descriptive views of the basic raw data? You produced quite a few, so it is just a matter of going back to these and seeing if they’re ready to go.
-
-2.  Are there features of the data that these visualisations reveal that aren’t currently reflected in the report, that we should focus more on?
-:::
