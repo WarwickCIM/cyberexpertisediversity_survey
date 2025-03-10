@@ -34,6 +34,9 @@ responses <- read.csv("data/raw/cyber_expertise_diversity_survey_responses.csv")
 specialisms <- readr::read_csv("data/raw/specialisms.csv") 
 
 
+scenarios <- read.csv("data/raw/cyber_expertise_diversity_survey_scenarios.csv") |> 
+  mutate(id = row_number(), .before = 1)
+
 # Data preparation --------------------------------------------------------
 
 # Prepares a dataframe with specialisms information so it is easier to operate
@@ -66,10 +69,12 @@ specialisms_long <- specialisms |>
 
 
 
-# Specialism alignment ----------------------------------------------------
+# Personal alignment ----------------------------------------------------
 
+# where test values (X) are the person’s comb (responses) and the reference
+# values (Y) are the specialism comb.
 
-# Combine responses with specialisms
+# We need to combine responses with specialisms
 
 # We create an empty dataset which we will be populating in the loop below.
 specialisms_respondent_raw <- data.frame()
@@ -104,30 +109,29 @@ for(response in responses$id) {
 
 # Calculate alignment values by response and specialisms. We are exploring multiple options here.
 
+alignment_index <- function(df, ref_value = NULL) {
+  
+  # ref_value <- enquo(ref_value)
+  ref_symbol <- as.name(ref_value)
 
-alignment_index <- function(df, type = NULL) {
-  
-  if (!type %in% c("scenario", "specialism")) {
-    stop("type needs to be either `scenario` or `specialism`")
-  }
-  
-  df_alignment <- df |> 
-    group_by(id, Specialism) |> 
-    summarise(max_threshold_value = sum(Threshold),
-              alignment_sum = sum(response_mod),
-              alignment_index = alignment_sum/max_threshold_value,
-              alignment_mean = mean(response_mod),
-              max = max(response),
-              min = min(response)) |> 
-    mutate(alignment_type = type)
+  df_alignment <- df |>
+    group_by(id, {{ref_symbol}}) |>
+    summarise(
+      max_threshold_value = sum(Threshold),
+      alignment_sum = sum(response_mod),
+      alignment_index = alignment_sum / max_threshold_value,
+      alignment_mean = mean(response_mod),
+      max = max(response),
+      min = min(response)
+    ) |>
+    mutate(alignment_type = ref_value)
 
   return(df_alignment)
-  
 }
 
 specialisms_respondent <- alignment_index(
   specialisms_respondent_raw, 
-  "specialism"
+  ref_value =  "Specialism"
 )
 
 readr::write_csv(specialisms_respondent, 
@@ -156,8 +160,10 @@ readr::write_csv(specialisms_respondent_long,
 
 # Scenarios alignment -----------------------------------------------------
 
-scenarios <- read.csv("data/raw/cyber_expertise_diversity_survey_scenarios.csv") |> 
-  mutate(id = row_number(), .before = 1)
+# Scenarios alignment, where test values () are the specialism comb and the
+# reference values () are the scenario comb.
+
+# We need to combine specialisms with scenarios
 
 # We create an empty dataset which we will be populating in the loop below.
 scenarios_alignment_raw <- data.frame()
@@ -190,8 +196,19 @@ for(scenario in scenarios$id) {
   
 }
 
+# Now, compute the alignment index for scenarios.
 
-scenarios_alignment <- alignment_index(scenarios_alignment_raw, "scenario") |> 
+# df_alignment <- df |> 
+#   group_by(id, Specialism) |> 
+#   summarise(max_threshold_value = sum(Threshold),
+#             alignment_sum = sum(response_mod),
+#             alignment_index = alignment_sum/max_threshold_value,
+#             alignment_mean = mean(response_mod),
+#             max = max(response),
+#             min = min(response)) |> 
+#   mutate(alignment_type = type)
+
+scenarios_alignment <- alignment_index(scenarios_alignment_raw, ref_value = "Expertise") |> 
   rename(scenario_id = id)
 
 readr::write_csv(scenarios_respondent, 
@@ -199,13 +216,13 @@ readr::write_csv(scenarios_respondent,
 
 
 # Reshape the dataset to a wider format, so it can be combined with responses.
-scenarios_alignment_long <- scenarios_alignment |> 
-  pivot_wider(id_cols = scenario_id, names_from = Specialism, 
+scenarios_alignment_wide <- scenarios_alignment |> 
+  pivot_wider(id_cols = scenario_id, names_from = Expertise, 
               values_from = alignment_index) |> 
   janitor::clean_names()
 
-readr::write_csv(scenarios_alignment_long, 
-                 file = "data/processed/scenarios_respondent_long.csv")
+readr::write_csv(scenarios_alignment_wide, 
+                 file = "data/processed/scenarios_respondent_wide.csv")
 
 
 
