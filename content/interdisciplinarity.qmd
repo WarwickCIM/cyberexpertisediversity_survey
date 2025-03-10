@@ -5,28 +5,26 @@ format: html
 
 ## Theory
 
-### Transdisciplinarity, interdisciplinarity, multidisciplinarity 
+### Transdisciplinarity, interdisciplinarity, multidisciplinarity
 
-I was thinking of including a section talking about trans, inter and multidisciplinarity, as I think that one might see these as useful windows onto the profession.
+I was thinking of including a section talking about trans-, inter- and multidisciplinarity, as I think that one might see these as useful windows onto the profession.
 
-## Data analysis 
+## Data analysis
 
-### Looking at specialisms alignment with the scenarios 
+### Looking at specialisms alignment with the scenarios
 
-### Meta view of alignment vs interdisciplinarity 
+### Meta view of alignment vs interdisciplinarity
 
-### Qualitative analysis of the scenario descriptions 
+### Qualitative analysis of the scenario descriptions
 
-![Sketches of data analysis](../media/Picture 1.png)
+![Sketches of data analysis](../media/Picture%201.png)
 
 ::: callout-note
-### Questions for Viz 
+### Questions for Viz
 
-NB here we are looking at how well specialisms (including combinations of specialisms) are aligned with the scenarios people told us about.
-Before we were looking at how well people’s own profiles were aligned with the specialisms.
+NB here we are looking at how well specialisms (including combinations of specialisms) are aligned with the scenarios people told us about. Before we were looking at how well people’s own profiles were aligned with the specialisms.
 
-1.  The main thing is the kind of analysis that we sketched out in the slide below. Those two graphs show comparative views of the scenarios based on how the alignment changes when you are combining specialisms in greater numbers. Carlos and I were chatting about this last week and he said we might be able to do an interactive view of these to help explore the qualitative dataset (I.e. click on a specific point or line and it would tell you what the scenario number or name is, and then can look at the description). In the report we might just need to highlight a small number that are being referred to specifically, rather than necessarily embedding an interactive visualisation (which wouldn’t work well for a pdf/print
-    version).
+1.  The main thing is the kind of analysis that we sketched out in the slide below. Those two graphs show comparative views of the scenarios based on how the alignment changes when you are combining specialisms in greater numbers. Carlos and I were chatting about this last week and he said we might be able to do an interactive view of these to help explore the qualitative dataset (I.e. click on a specific point or line and it would tell you what the scenario number or name is, and then can look at the description). In the report we might just need to highlight a small number that are being referred to specifically, rather than necessarily embedding an interactive visualisation (which wouldn’t work well for a pdf/print version).
 :::
 
-##  Recommendations 
+## Recommendations
