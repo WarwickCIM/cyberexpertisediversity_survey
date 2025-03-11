@@ -55,7 +55,7 @@ Where the indicator function $I(X)$ is defined as follows:
 -   $I(X) = x_m$ when $x_m \leq y_m$
 -   $I(X) = y_m$ when $x_m > y_m$
 
-All the indicator function does is say that a test comb can’t get ‘credit’ for overshooting the reference values (which could offset their deficit in other areas). So it takes the reference value as a ceiling in each tooth of the test comb. This also means that the maximum possible alignment is 1.
+The indicator function is used to prevent a test comb getting ‘credit’ for overshooting the reference values (which could offset their deficit in other areas). To do so, it takes the reference value as a ceiling in each tooth of the test comb. This also means that the maximum possible alignment is 1.
 
 With this, we will be calculating two types of alignments:
 
