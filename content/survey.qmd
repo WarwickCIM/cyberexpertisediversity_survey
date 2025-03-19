@@ -10,15 +10,24 @@ format: html
 #| warning: false
 
 library(ggplot2)
+library(gridExtra)
+library(ggbeeswarm)
 library(dplyr)
 library(tidyr)
 library(stringr)
 library(skimr)
 library(lubridate)
+library(knitr)
 
-responses <- read.csv("../data/raw/cyber_expertise_diversity_survey_responses.csv") |> 
+#responses <- read.csv("../data/raw/cyber_expertise_diversity_survey_responses.csv") |> 
+#  mutate(recorded_date = dmy_hm(recorded_date))
+
+# sorry for changing this, for some reason I just could not get relative paths working
+responses <- read.csv('/Users/u2272744/Downloads/cyberexpertisediversity_survey_data-main/data/cyber_expertise_diversity_survey_responses.csv') |> 
   mutate(recorded_date = dmy_hm(recorded_date))
-scenarios <- read.csv("../data/raw/cyber_expertise_diversity_survey_scenarios.csv")
+
+
+scenarios <- read.csv("/Users/u2272744/Downloads/cyberexpertisediversity_survey_data-main/data/cyber_expertise_diversity_survey_scenarios.csv")
 
 ```
 
@@ -26,16 +35,16 @@ The survey was distributed on social media and was accepting responses between `
 
 ### The comb concept
 
--   The **personal comb** is just the values that a person put in for their own expertise using the sliders. NB for these alignment calculations we’re only using those ‘teeth’ of the comb that correspond to cybok categories (we have some extras in but for these calculations we ignore them).
+-   The **personal comb** is just the values that a person put in for their own expertise using the sliders. NB for these alignment calculations we're only using those 'teeth' of the comb that correspond to cybok categories (we have some extras in but for these calculations we ignore them).
 
--   The **specialism comb** is the cybok values that correspond to each specialism: we create these by substituting 30 for ‘wider’, 60 for ‘related’ and 90 for ‘core’.
+-   The **specialism comb** is the cybok values that correspond to each specialism: we create these by substituting 30 for 'wider', 60 for 'related' and 90 for 'core'.
 
--   The **scenario comb** is the values that a person put in for that specific scenario using the sliders. Again, for these calculations we’re only using the ‘teeth’ that correspond to cybok categories and ignoring our extras.
+-   The **scenario comb** is the values that a person put in for that specific scenario using the sliders. Again, for these calculations we're only using the 'teeth' that correspond to cybok categories and ignoring our extras.
 
 ```{r}
 #| echo: false
 #| warning: false
-personal_comb <- read.csv("../data/raw/cyber_expertise_diversity_survey_responses.csv")
+#personal_comb <- read.csv("../data/raw/cyber_expertise_diversity_survey_responses.csv")
 ```
 
 ### The research process
@@ -55,7 +64,7 @@ Where the indicator function $I(X)$ is defined as follows:
 -   $I(X) = x_m$ when $x_m \leq y_m$
 -   $I(X) = y_m$ when $x_m > y_m$
 
-The indicator function is used to prevent a test comb getting ‘credit’ for overshooting the reference values (which could offset their deficit in other areas). To do so, it takes the reference value as a ceiling in each tooth of the test comb. This also means that the maximum possible alignment is 1.
+The indicator function is used to prevent a test comb getting 'credit' for overshooting the reference values (which could offset their deficit in other areas). To do so, it takes the reference value as a ceiling in each tooth of the test comb. This also means that the maximum possible alignment is 1.
 
 With this, we will be calculating two types of alignments:
 
@@ -71,16 +80,107 @@ Computations for the alignment metric can be audited at the file `alignment_metr
 
 ## Results
 
-The survey was conducted bewteen `r min(responses$recorded_date)` and `r max(responses$recorded_date)` and received responses from `r nrow(responses)` individuals and describing `r nrow(scenarios)` scenarios.
+The survey was conducted between `r min(responses$recorded_date)` and `r max(responses$recorded_date)` and received responses from `r nrow(responses)` individuals and describing `r nrow(scenarios)` scenarios. Of these respondents `r nrow(filter(responses, gender == 'Male'))` identified as men, `r nrow(filter(responses, sexual_orientation == 'No'))` as heterosexual, `r nrow(filter(responses, transgender == 'No'))` as their sex assigned at birth, `r nrow(filter(responses, disabilities == 'No, I do not have a disability, or a history/record of having one'))` as having no disabilities, and `r nrow(filter(responses, uk_ethnic_origin == 'White'))` of White British Ethnic origin. These figures, while not reflective of the diversity of wider British society, they are inline with previous findings (XXX ???) of the lack of diversity within the UK cyber security. 
 
+
+```{r}
+#| echo: false
+#| warning: false
+
+age <- ggplot(responses, aes(age)) +
+          geom_bar() +
+          xlab('') + 
+          ylab('') +
+          ggtitle('Age')
+
+exp <- ggplot(responses, aes(cut(responses$years_experience, c(-Inf, 5, 10, 15, 20, 25, Inf), c('0-5', '6-10', '11-15', '16-20', '21-25', '25+')))) +
+          geom_bar() +
+          xlab('') + 
+          ylab('') +
+          ggtitle('Years Experience')
+
+grid.arrange(age, exp, nrow = 1)
+
+```
+
+
+```{r}
+#| echo: false
+#| warning: false
+
+
+# this might not be the neatest way to create this table, but I was thinking about
+# how the code to create the table could be in the report without it revealing
+# any of the categories we are suppressing
+
+# First make a table of sectors, then set sector names as charecters (otherwise,
+# replace will not work with factors), then set 3 or below to other, then group
+# and count results
+
+industry_table <- data.frame(table(responses$organisation_sector))
+industry_table$Var1 <- industry_table$Var1 <- as.character(industry_table$Var1)
+industry_table$Var1 <- replace(industry_table$Var1, industry_table$Freq <= 3, 'Other (low n)')
+industry_table <- industry_table %>% group_by(Var1) %>% summarise(Freq=sum(Freq))
+
+# order and set col names
+industry_table <- industry_table %>% arrange(desc(Freq))
+colnames(industry_table) <- c('Industry Sector', 'Number of respondents')
+
+kable(industry_table)
+
+```
+
+```{r}
+#| echo: false
+#| warning: false
+
+org_size <- data.frame(table(responses$organisation_size))
+
+org_size <- org_size %>% arrange(factor(Var1, levels=c('Large (250 employees or more)',
+                                           'Medium (50 to 249 employees)',
+                                           'Small (10 to 49 employees)',
+                                           'Micro (1 to 9 employees)')))
+
+colnames(org_size) <- c('Organisation Size', 'Number of respondents')
+
+kable(org_size)
+
+```
 ### Megacombs
+
+
+```{r}
+#| echo: false
+#| warning: false
+
+response_all <- responses[8:33]
+
+response_all <- pivot_longer(response_all, 
+                                cols = names(response_all), 
+                                values_to = 'all_points')
+
+response_all$all_name <-  'name'
+# chopping off the name variable
+response_all$name <- gsub("expertise_comb_", '', response_all$name)
+# 87 NAs
+response_all <- drop_na(response_all)
+
+ggplot(response_all, aes(all_points, all_name)) +
+  geom_quasirandom(size= 0.5, alpha=0.5) +
+  geom_boxplot(width=0.05) +
+  xlab('') + 
+  ylab('') +
+  ggtitle('All comb responses')
+```
+
+Good distribution of responses across the sliders, with  `r 100 / nrow(response_all) * nrow(filter(response_all, all_points == 0))`% responses being set to 0 and   `r 100 / nrow(response_all) * nrow(filter(response_all, all_points == 100))`% set to 1.
 
 ::: callout-caution
 ## Questions for Viz
 
-1.  Do we have a good set of descriptive views of the basic raw data? You produced quite a few, so it is just a matter of going back to these and seeing if they’re ready to go.
+1.  Do we have a good set of descriptive views of the basic raw data? You produced quite a few, so it is just a matter of going back to these and seeing if they're ready to go.
 
-2.  Are there features of the data that these visualisations reveal that aren’t currently reflected in the report, that we should focus more on?
+2.  Are there features of the data that these visualisations reveal that aren't currently reflected in the report, that we should focus more on?
 :::
 
 ## Limitations
