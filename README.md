@@ -46,3 +46,22 @@ The workflow to recreate the book is as follows:
 -   <https://quarto.org/docs/books/>
 
 -   <https://quarto.org/docs/authoring/markdown-basics.html> (and sibling pages)
+
+
+## Managing dependencies
+
+This project uses [{renv}](https://rstudio.github.io/renv/index.html) to manage dependencies. Quarto detects the presence of `renv/` folder and will install the required dependencies.
+
+To install all packages needed to run the project, on the R terminal run:
+
+```         
+renv::restore()
+```
+
+This will load all packages and versions stored in the file `renv.lock` and install them.
+
+If you need to install extra packages or need to update the library version, you need to update the `renv.lock` as follows:
+
+1.  Install packages normally (\`install.packages(...)\`
+2.  Create a new snapshot of the dependencies and record it into `renv.lock` by running `renv::snapshot()`
+3.  From git, create a commit including `renv.lock` and push it to the repository
