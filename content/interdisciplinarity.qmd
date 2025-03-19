@@ -3,6 +3,17 @@ title: "Interdisciplinarity"
 format: html
 ---
 
+```{r}
+#| echo: false
+#| warning: false
+
+source("../scripts/setup.R")
+
+alignment_scenarios_long <- read.csv("../data/processed/alignment_scenarios_long.csv")
+alignment_scenarios_2_permutations <- read.csv("../data/processed/alignment_scenarios_2_permutations.csv")
+alignment_scenarios_3_permutations <- read.csv("../data/processed/alignment_scenarios_3_permutations.csv")
+```
+
 ## Theory
 
 ### Transdisciplinarity, interdisciplinarity, multidisciplinarity
@@ -13,9 +24,18 @@ I was thinking of including a section talking about trans-, inter- and multidisc
 
 ### Looking at specialisms alignment with the scenarios
 
+```{r}
+alignment_scenarios |> 
+  ggplot()
+```
+
 ### Meta view of alignment vs interdisciplinarity
 
 ### Qualitative analysis of the scenario descriptions
+
+```{r}
+
+```
 
 ![Sketches of data analysis](../media/Picture%201.png)
 

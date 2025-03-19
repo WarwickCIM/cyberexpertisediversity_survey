@@ -5,19 +5,8 @@ format: html
 
 ## Methodology
 
-```{r}
-#| echo: false
-#| warning: false
-
-library(ggplot2)
-library(gridExtra)
-library(ggbeeswarm)
-library(dplyr)
-library(tidyr)
-library(stringr)
-library(skimr)
-library(lubridate)
-library(knitr)
+```{r setup}
+source("../scripts/setup.R")
 
 #responses <- read.csv("../data/raw/cyber_expertise_diversity_survey_responses.csv") |> 
 #  mutate(recorded_date = dmy_hm(recorded_date))
@@ -101,8 +90,6 @@ The survey was conducted between `r format(min(date(responses$recorded_date)), "
 
 
 ```{r}
-#| echo: false
-#| warning: false
 
 age <- ggplot(responses, aes(age)) +
           geom_bar() +
@@ -122,9 +109,6 @@ grid.arrange(age, exp, nrow = 1)
 
 
 ```{r}
-#| echo: false
-#| warning: false
-
 
 # this might not be the neatest way to create this table, but I was thinking about
 # how the code to create the table could be in the report without it revealing
@@ -148,8 +132,6 @@ kable(industry_table)
 ```
 
 ```{r}
-#| echo: false
-#| warning: false
 
 org_size <- data.frame(table(responses$organisation_size))
 
@@ -163,12 +145,12 @@ colnames(org_size) <- c('Organisation Size', 'Number of respondents')
 kable(org_size)
 
 ```
+
+
 ### Megacombs
 
 
 ```{r}
-#| echo: false
-#| warning: false
 
 response_all <- responses[8:33]
 

@@ -1,5 +1,9 @@
 project:
   type: book
+  
+execute: 
+  echo: false
+  warning: false
 
 book:
   title: "The Cyber Expertise Diversity Survey - Report"
