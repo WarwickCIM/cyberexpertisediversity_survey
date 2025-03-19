@@ -216,13 +216,13 @@ all.equal(alignment_scenarios_summary, test)
 
 
 # Reshape the dataset to a wider format, so it can be combined with responses.
-scenarios_alignment <- scenarios_alignment_summary |> 
+scenarios_alignment <- alignment_scenarios_summary |> 
   pivot_wider(id_cols = id, names_from = Specialism, 
               values_from = alignment_index) |> 
   janitor::clean_names()
 
 readr::write_csv(scenarios_alignment, 
-                 file = "data/processed/scenarios_alignment.csv")
+                 file = "data/processed/alignment_scenarios.csv")
 
 
 # Scenarios' permutations -------------------------------------------------
@@ -257,8 +257,8 @@ calc_permuted_index <- function(df, permutations_n = 3) {
   return(df_permutations)
 }
 
-scenarios_alignment_permutations_2 <- calc_permuted_index(scenarios_alignment_summary, 2)
-scenarios_alignment_permutations_3 <- calc_permuted_index(scenarios_alignment_summary, 3)
+scenarios_alignment_permutations_2 <- calc_permuted_index(alignment_scenarios_summary, 2)
+scenarios_alignment_permutations_3 <- calc_permuted_index(alignment_scenarios_summary, 3)
 
-write.csv(scenarios_alignment_permutations_2, "data/processed/scenarios_alignment_permutations_2.csv")
-write.csv(scenarios_alignment_permutations_3, "data/processed/scenarios_alignment_permutations_3.csv")
+write.csv(scenarios_alignment_permutations_2, "data/processed/alignment_scenarios_permutations_2.csv")
+write.csv(scenarios_alignment_permutations_3, "data/processed/alignment_scenarios_permutations_3.csv")
