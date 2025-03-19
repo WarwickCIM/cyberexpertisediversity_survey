@@ -81,7 +81,7 @@ With this, we will be calculating two types of alignments:
 In both cases, the **alignment index** will result in a number between `0` and `1`, where `1` means perfect alignment between the test value and the reference value and `0` means not aligned at all.
 
 ::: aside
-Computations for the alignment metric can be audited at the file `scripts/alignment_metric.R`
+Computations for the alignment metric can be audited at the file [`scripts/alignment_metric.R`](https://github.com/WarwickCIM/cyberexpertisediversity_survey/blob/main/scripts/alignment_metric.R)
 :::
 
 ## Results
