@@ -90,7 +90,8 @@ The survey was conducted between `r format(min(date(responses$recorded_date)), "
 
 
 ```{r}
-
+#| label: fig-responses-age
+#| fig-cap: "Responses by age and years of experience"
 age <- ggplot(responses, aes(age)) +
           geom_bar() +
           xlab('') + 
@@ -107,9 +108,43 @@ grid.arrange(age, exp, nrow = 1)
 
 ```
 
+This is an alternative way of creating composite images (see 
+<https://quarto.org/docs/authoring/figures.html#subfigures>) (just FYI, not suggesting this should be the way to do them.)
+
+::: {#fig-dates layout-ncol=2}
+
 
 ```{r}
+#| label: fig-responses-age2
+#| fig-cap: "Responses by age"
+ggplot(responses, aes(age)) +
+          geom_bar() +
+          xlab('') + 
+          ylab('') +
+          ggtitle('Age')
 
+```
+
+```{r}
+#| label: fig-responses-age3
+#| fig-cap: "Responses by years of experience"
+ggplot(responses, aes(cut(responses$years_experience, c(-Inf, 5, 10, 15, 20, 25, Inf), c('0-5', '6-10', '11-15', '16-20', '21-25', '25+')))) +
+          geom_bar() +
+          xlab('') + 
+          ylab('') +
+          ggtitle('Years Experience')
+
+
+```
+
+Some caption here, referring to a and b
+
+:::
+
+
+```{r}
+#| label: tbl-responses-industry
+#| tbl-cap: "Responses by Industry sector"
 # this might not be the neatest way to create this table, but I was thinking about
 # how the code to create the table could be in the report without it revealing
 # any of the categories we are suppressing
@@ -132,7 +167,8 @@ kable(industry_table)
 ```
 
 ```{r}
-
+#| label: tbl-responses-org
+#| tbl-cap: "Responses by Organisation size"
 org_size <- data.frame(table(responses$organisation_size))
 
 org_size <- org_size %>% arrange(factor(Var1, levels=c('Large (250 employees or more)',
