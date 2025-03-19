@@ -37,15 +37,95 @@ specialisms <- readr::read_csv("data/raw/specialisms.csv")
 scenarios <- read.csv("data/raw/cyber_expertise_diversity_survey_scenarios.csv") |> 
   mutate(id = row_number(), .before = 1)
 
-# Data preparation --------------------------------------------------------
 
-# Prepares a dataframe with specialisms information so it is easier to operate
-# with and to combine with responses.
-specialisms_long <- specialisms |>
-  # Reshape into long format.
+# Functions ---------------------------------------------------------------
+
+calc_indicator <- function(df){
+  # This indicator function calculates the value to be used as indicator for a
+  # given dataframe. It will check the response values from a dataframe and
+  # assign an indicator that will be the response, capped by the specialism
+  # threshold values.
+  
+  # We create an empty dataset which we will be populating in the loop below.
+  df_indicator <- data.frame()
+  
+  for(id_val in 1:nlevels(df$id)) {
+    
+    df_filtered <- df |>
+      # tmp_df_indicator <- comb_personal |> 
+      filter(id == id_val)
+    # Combine with comb_specialisms dataframe.
+    
+    tmp_df_indicator <- comb_specialism |> 
+      left_join(df_filtered, by = c("Expertise_clean" = "name")) |> 
+      # Create a new variable based on the thresholds.
+      mutate(indicator = case_when(
+        response >= Threshold ~ Threshold,
+        .default = response)
+      ) |> 
+      # relocate(id, .before = 1) |> 
+      relocate(response, .before = indicator)
+    
+    if (nrow(df_indicator) == 0) {
+      df_indicator <- tmp_df_indicator
+    } else {
+      df_indicator <-  df_indicator |> 
+        bind_rows(tmp_df_indicator)
+    }
+  }
+  
+  return(df_indicator)
+  
+}
+
+#' Calculate alignment metric
+#'
+#' @param df 
+#' @param alignment_type is a string either containing "Personal" or  "Scenario".
+#'
+#' @returns a dataframe 
+#' @export
+#'
+#' @examples
+calc_alignment_index <- function(df, type = NULL) {
+  
+  # ref_value <- enquo(ref_value)
+  # type <- as.name(type)
+  
+  df_alignment <- df |> 
+    group_by(id, Specialism) |> 
+    summarise(
+      threshold_sum = sum(Threshold),
+      indicator_sum = sum(indicator),
+      indicator_mean = mean(indicator),
+      indicator_max = max(indicator),
+      indicator_min = min(indicator)
+    )
+  
+  if (type == "personal"){
+    df_alignment <- df_alignment |> 
+      mutate(alignment_index =  indicator_sum / threshold_sum )
+  } else {
+    df_alignment <- df_alignment |> 
+      mutate(alignment_index =  threshold_sum / indicator_sum)
+  }
+  
+  df_alignment <- df_alignment |> 
+    mutate(alignment_type = type, .before = threshold_sum)
+  
+  return(df_alignment)
+}
+
+
+# Combs -------------------------------------------------------------------
+
+# This is the specialisms dataset, in a long format, with threshold values,
+# according to core, relevant or wider values.
+comb_specialism <- specialisms |>
+  # Reshape into long format is needed to replace values.
   pivot_longer(!Specialism, names_to = "Expertise", values_to = "Value") |>
   mutate(Expertise = as.factor(Expertise)) |> 
-  # Remove empty rows.
+  # Remove expertise that are not relevant to specialism.
   filter(!is.na(Value)) |> 
   # Create a new variable based on defined threshold values.
   mutate(Threshold = case_when(
@@ -67,171 +147,89 @@ specialisms_long <- specialisms |>
     .default = as.character(Expertise_clean)
   ))
 
+comb_personal <- responses |> 
+  select(id, starts_with("expertise_comb")) |> 
+  pivot_longer(!id, values_to = "response") |> 
+  # Remove prefix so we can join with specialisms dataframe.
+  mutate(name = str_remove(name, "expertise_comb_"),
+         id = as.factor(id)) |> 
+  calc_indicator()
+
+comb_scenario <- scenarios |> 
+  select(id, starts_with("scenario_expertise_")) |> 
+  pivot_longer(!id, values_to = "response") |> 
+  # Remove prefix so we can join with specialisms dataframe.
+  mutate(name = str_remove(name, "scenario_expertise_portfolio_"),
+         id = as.factor(id)) |> 
+  calc_indicator()
 
 
 # Personal alignment ----------------------------------------------------
 
 # where test values (X) are the person’s comb (responses) and the reference
 # values (Y) are the specialism comb.
+alignment_personal_summary <- comb_personal |> 
+  group_by(id, Specialism) |> 
+  summarise(
+    threshold_sum = sum(Threshold),
+    indicator_sum = sum(indicator),
+    indicator_mean = mean(indicator),
+    indicator_max = max(indicator),
+    indicator_min = min(indicator),
+    alignment_index = indicator_sum / threshold_sum
+  ) |> 
+  mutate(alignment_type = "personal", .before = threshold_sum)
 
-# We need to combine responses with specialisms
-
-# We create an empty dataset which we will be populating in the loop below.
-specialisms_respondent_raw <- data.frame()
-
-# Generate a long version of specialisms dataframe with actual values for each
-# response.
-for(response in responses$id) {
-  tmp_responses <- responses |> 
-    filter(id == response) |> 
-    select(id, starts_with("expertise_comb_")) |> 
-    pivot_longer(!id, values_to = "response") |> 
-    # Remove prefix so we can join with specialisms dataframe.
-    mutate(name = str_remove(name, "expertise_comb_"))
-  
-  tmp_specialisms_respondent_raw <- specialisms_long |> 
-    # Combine with specialisms_long dataframe.
-    left_join(tmp_responses, by = c("Expertise_clean" = "name")) |> 
-    relocate(id, .before = 1) |> 
-    # Create a new variable based on the thresholds.
-    mutate(response_mod = case_when(
-      response >= Threshold ~ Threshold,
-      .default = response
-    ))
-  
-  # Create a dataframe containing all values for all survey responses.
-  specialisms_respondent_raw <- specialisms_respondent_raw |> 
-    bind_rows(tmp_specialisms_respondent_raw)
-  
-  remove(tmp_specialisms_respondent_raw)
-  
-}
-
-# Calculate alignment values by response and specialisms. We are exploring multiple options here.
-
-alignment_index <- function(df, ref_value = NULL) {
-  
-  # ref_value <- enquo(ref_value)
-  ref_symbol <- as.name(ref_value)
-
-  df_alignment <- df |>
-    group_by(id, {{ref_symbol}}) |>
-    summarise(
-      max_threshold_value = sum(Threshold),
-      alignment_sum = sum(response_mod),
-      alignment_index = alignment_sum / max_threshold_value,
-      alignment_mean = mean(response_mod),
-      max = max(response),
-      min = min(response)
-    ) |>
-    mutate(alignment_type = ref_value)
-
-  return(df_alignment)
-}
-
-specialisms_respondent <- alignment_index(
-  specialisms_respondent_raw, 
-  ref_value =  "Specialism"
-)
-
-readr::write_csv(specialisms_respondent, 
-          file = "data/processed/specialisms_respondent.csv")
+readr::write_csv(alignment_personal_summary, 
+          file = "data/processed/alignment_personal_summary.csv")
 
 
 # Reshape the dataset to a wider format, so it can be combined with responses.
-specialisms_respondent_long <- specialisms_respondent |> 
+alignment_personal <- alignment_personal_summary |> 
   pivot_wider(id_cols = id, names_from = Specialism, 
               values_from = alignment_index) |> 
   janitor::clean_names()
 
-readr::write_csv(specialisms_respondent_long, 
-          file = "data/processed/specialisms_respondent_long.csv")
-
-# 
-# responses_specialism2 <- specialisms_respondent |> 
-#   pivot_wider(id_cols = id, names_from = Specialism, 
-#               values_from = alignment_mean) |> 
-#   janitor::clean_names()
-# 
-# 
-# write_csv(responses_specialism2, 
-#           file = "data/processed/responses_specialism_option2.csv")
+readr::write_csv(alignment_personal, 
+          file = "data/processed/alignment_personal.csv")
 
 
 # Scenarios alignment -----------------------------------------------------
 
-# Scenarios alignment, where test values () are the specialism comb and the
-# reference values () are the scenario comb.
+# Scenarios alignment, where test values (X) are the specialism comb and the
+# reference values (Y) are the scenario comb.
+alignment_scenarios_summary <- comb_scenario |> 
+  group_by(id, Specialism) |> 
+  summarise(
+    threshold_sum = sum(Threshold),
+    indicator_sum = sum(indicator),
+    indicator_mean = mean(indicator),
+    indicator_max = max(indicator),
+    indicator_min = min(indicator),
+    alignment_index =  threshold_sum / indicator_sum
+  ) |> 
+  mutate(alignment_type = "scenarios", .before = threshold_sum) 
 
-# We need to combine specialisms with scenarios
+test <- calc_alignment_index(comb_scenario, type = "scenarios")
 
-# We create an empty dataset which we will be populating in the loop below.
-scenarios_alignment_raw <- data.frame()
-
-# Generate a long version of specialisms dataframe with actual values for each
-# response.
-for(scenario in scenarios$id) {
-  tmp_responses_scenario <- scenarios |> 
-    filter(id == scenario) |> 
-    select(id, starts_with("scenario_expertise_portfolio_")) |> 
-    pivot_longer(!id, values_to = "response") |> 
-    # Remove prefix so we can join with specialisms dataframe.
-    mutate(name = str_remove(name, "scenario_expertise_portfolio_"))
-  
-  tmp_scenarios_raw <- specialisms_long |> 
-    # Combine with specialisms_long dataframe.
-    left_join(tmp_responses_scenario, by = c("Expertise_clean" = "name")) |> 
-    relocate(id, .before = 1) |> 
-    # Create a new variable based on the thresholds.
-    mutate(response_mod = case_when(
-      response >= Threshold ~ Threshold,
-      .default = response
-    ))
-  
-  # Create a dataframe containing all values for all survey responses.
-  scenarios_alignment_raw <- scenarios_alignment_raw |> 
-    bind_rows(tmp_scenarios_raw)
-  
-  remove(tmp_scenarios_raw)
-  
-}
-
-# Now, compute the alignment index for scenarios.
-
-# df_alignment <- df |> 
-#   group_by(id, Specialism) |> 
-#   summarise(max_threshold_value = sum(Threshold),
-#             alignment_sum = sum(response_mod),
-#             alignment_index = alignment_sum/max_threshold_value,
-#             alignment_mean = mean(response_mod),
-#             max = max(response),
-#             min = min(response)) |> 
-#   mutate(alignment_type = type)
-
-scenarios_alignment <- alignment_index(scenarios_alignment_raw, ref_value = "Expertise") |> 
-  rename(scenario_id = id)
-
-readr::write_csv(scenarios_respondent, 
-                 file = "data/processed/scenarios_respondent.csv")
+all.equal(alignment_scenarios_summary, test)
 
 
 # Reshape the dataset to a wider format, so it can be combined with responses.
-scenarios_alignment_wide <- scenarios_alignment |> 
-  pivot_wider(id_cols = scenario_id, names_from = Expertise, 
+scenarios_alignment <- scenarios_alignment_summary |> 
+  pivot_wider(id_cols = id, names_from = Specialism, 
               values_from = alignment_index) |> 
   janitor::clean_names()
 
-readr::write_csv(scenarios_alignment_wide, 
-                 file = "data/processed/scenarios_respondent_wide.csv")
-
+readr::write_csv(scenarios_alignment, 
+                 file = "data/processed/scenarios_alignment.csv")
 
 
 # Scenarios' permutations -------------------------------------------------
 
-# Create permutations of 3 different values of specialism for each scenario
 calc_permuted_index <- function(df, permutations_n = 3) {
   df_permutations <- df |>
-    group_by(scenario_id) |>
+    group_by(id) |>
     summarise(
       permutations = list(combn(unique(Specialism), permutations_n, simplify = FALSE)),
       .groups = "drop"
@@ -242,26 +240,26 @@ calc_permuted_index <- function(df, permutations_n = 3) {
     rowwise() |>
     mutate(
       threshold_sum = sum(
-        df$max_threshold_value[df$scenario_id == scenario_id &
-          df$Specialism %in% strsplit(permutation, ", ")[[1]]]
+        df$max_threshold_value[df$id == id &
+                                 df$Specialism %in% strsplit(permutation, ", ")[[1]]]
       ),
-      values_sum = sum(
-        df$alignment_sum[df$scenario_id == scenario_id &
-          df$Specialism %in% strsplit(permutation, ", ")[[1]]]
+      indicator_sum = sum(
+        df$indicator_sum[df$id == id &
+                           df$Specialism %in% strsplit(permutation, ", ")[[1]]]
       )
     ) |>
     ungroup() |>
     mutate(
-      alignment_index = values_sum / threshold_sum,
+      alignment_index = indicator_sum / threshold_sum,
       n_permutations = permutations_n
     )
 
   return(df_permutations)
 }
 
-scenarios_alignment_permutations_2 <- calc_permuted_index(scenarios_alignment, 2)
-scenarios_alignment_permutations_3 <- calc_permuted_index(scenarios_alignment, 3)
-scenarios_alignment_permutations_4 <- calc_permuted_index(scenarios_alignment, 4)
+scenarios_alignment_permutations_2 <- calc_permuted_index(scenarios_alignment_summary, 2)
+scenarios_alignment_permutations_3 <- calc_permuted_index(scenarios_alignment_summary, 3)
+scenarios_alignment_permutations_4 <- calc_permuted_index(scenarios_alignment_summary, 4)
 
 write.csv(scenarios_alignment_permutations_2, "data/processed/scenarios_alignment_permutations_2.csv")
 write.csv(scenarios_alignment_permutations_3, "data/processed/scenarios_alignment_permutations_3.csv")
