@@ -23,11 +23,11 @@ library(knitr)
 #  mutate(recorded_date = dmy_hm(recorded_date))
 
 # sorry for changing this, for some reason I just could not get relative paths working
-responses <- read.csv('/Users/u2272744/Downloads/cyberexpertisediversity_survey_data-main/data/cyber_expertise_diversity_survey_responses.csv') |> 
+responses <- read.csv('../data/raw/cyber_expertise_diversity_survey_responses.csv') |> 
   mutate(recorded_date = dmy_hm(recorded_date))
 
 
-scenarios <- read.csv("/Users/u2272744/Downloads/cyberexpertisediversity_survey_data-main/data/cyber_expertise_diversity_survey_scenarios.csv")
+scenarios <- read.csv("../data/raw/cyber_expertise_diversity_survey_scenarios.csv")
 
 ```
 
@@ -35,17 +35,34 @@ The survey was distributed on social media and was accepting responses between `
 
 ### The comb concept
 
--   The **personal comb** is just the values that a person put in for their own expertise using the sliders. NB for these alignment calculations we're only using those 'teeth' of the comb that correspond to cybok categories (we have some extras in but for these calculations we ignore them).
+::: aside
+![The broken comb metaphor, coined by John R](/media/expertise_comb.png)
+:::
+
+For the purposes of this survey, we would like you to imagine your expertise as a kind of comb. Each ‘tooth’ of the comb represents one area of specialism. Many people have one or two areas in which they have a lot of expertise, other areas in which they have a little, and some in which they have none. Some people have a broad base; others are highly specialised. It can depend on domain, career stage, and individual personality.\
+
+In this survey we will ask you to use sliders to express how you see your own ‘broken comb’ of expertise.\
+
+We will also ask you to think about cyber security problems and challenges that you tackle in your work, and to show us the kind of 'broken comb' of expertise that is needed in order to address them.\
+
+For the questions with sliders, first identify the area of greatest significance (for instance, your main area of expertise), and give that the highest value (all the way to the right). Then, set the other
+sliders roughly in proportion to that.\
+
+The categories on the comb are based on those developed by the 'CyBOK' project, extended slightly. \
+
+::: {.callout-tip appearance="minimal"}
+Credit to goes to John R for suggesting the broken comb metaphor!
+:::
+
+There will be three combs:
+
+-   The **personal comb** is just the values that a person put in for their own expertise using the sliders. NB for these alignment calculations we’re only using those ‘teeth’ of the comb that correspond to cybok categories (we have some extras in but for these calculations we ignore them).
 
 -   The **specialism comb** is the cybok values that correspond to each specialism: we create these by substituting 30 for 'wider', 60 for 'related' and 90 for 'core'.
 
 -   The **scenario comb** is the values that a person put in for that specific scenario using the sliders. Again, for these calculations we're only using the 'teeth' that correspond to cybok categories and ignoring our extras.
 
-```{r}
-#| echo: false
-#| warning: false
-#personal_comb <- read.csv("../data/raw/cyber_expertise_diversity_survey_responses.csv")
-```
+
 
 ### The research process
 
@@ -74,13 +91,13 @@ With this, we will be calculating two types of alignments:
 
 In both cases, the **alignment index** will result in a number between `0` and `1`, where `1` means perfect alignment between the test value and the reference value and `0` means not aligned at all.
 
-::: callout-note
-Computations for the alignment metric can be audited at the file `alignment_metric.R`
+::: aside
+Computations for the alignment metric can be audited at the file `scripts/alignment_metric.R`
 :::
 
 ## Results
 
-The survey was conducted between `r min(responses$recorded_date)` and `r max(responses$recorded_date)` and received responses from `r nrow(responses)` individuals and describing `r nrow(scenarios)` scenarios. Of these respondents `r nrow(filter(responses, gender == 'Male'))` identified as men, `r nrow(filter(responses, sexual_orientation == 'No'))` as heterosexual, `r nrow(filter(responses, transgender == 'No'))` as their sex assigned at birth, `r nrow(filter(responses, disabilities == 'No, I do not have a disability, or a history/record of having one'))` as having no disabilities, and `r nrow(filter(responses, uk_ethnic_origin == 'White'))` of White British Ethnic origin. These figures, while not reflective of the diversity of wider British society, they are inline with previous findings (XXX ???) of the lack of diversity within the UK cyber security. 
+The survey was conducted between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")` and received responses from `r nrow(responses)` individuals, describing `r nrow(scenarios)` scenarios. Of these respondents `r nrow(filter(responses, gender == 'Male'))` identified as men, `r nrow(filter(responses, sexual_orientation == 'No'))` as heterosexual, `r nrow(filter(responses, transgender == 'No'))` as their sex assigned at birth, `r nrow(filter(responses, disabilities == 'No, I do not have a disability, or a history/record of having one'))` as having no disabilities, and `r nrow(filter(responses, uk_ethnic_origin == 'White'))` of White British Ethnic origin. These figures, while not reflective of the diversity of wider British society, they are inline with previous findings (XXX ???) of the lack of diversity within the UK cyber security. 
 
 
 ```{r}
