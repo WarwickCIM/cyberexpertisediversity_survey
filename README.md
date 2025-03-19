@@ -47,7 +47,6 @@ The workflow to recreate the book is as follows:
 
 -   <https://quarto.org/docs/authoring/markdown-basics.html> (and sibling pages)
 
-
 ## Managing dependencies
 
 This project uses [{renv}](https://rstudio.github.io/renv/index.html) to manage dependencies. Quarto detects the presence of `renv/` folder and will install the required dependencies.
@@ -65,3 +64,17 @@ If you need to install extra packages or need to update the library version, you
 1.  Install packages normally (\`install.packages(...)\`
 2.  Create a new snapshot of the dependencies and record it into `renv.lock` by running `renv::snapshot()`
 3.  From git, create a commit including `renv.lock` and push it to the repository
+
+## Running this for the first time
+
+1.  Clone this repository
+2.  Install all dependencies needed: `renv::restore()`
+3.  Recreate the book by either:
+    1.  opening `index.qmd` (or any other `.qmd` file within `content/`) and click on RStudio's "Render" icon
+    2.  running `quarto render` on the Terminal (not the R Console) - This will generate the rendered files in \_book/ . You can now open index.html and navigate them in your web browser.
+    3.  running `quarto preview` on the Terminal (not the R Console) - This will run a local server rendering the book in your browser every time a file from the ToC is saved.
+4.  Pull changes (pull frequently, specially if others are working in this since the last pull, or you suspect they might)
+5.  Make changes to files.
+6.  Render the book to preview changes
+7.  Create a commit.
+8.  Push changes to the repo
