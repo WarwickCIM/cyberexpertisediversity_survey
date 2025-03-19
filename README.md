@@ -4,7 +4,7 @@ This repository contains the report and analysis components derived from [The Cy
 
 You are free to reuse this dataset under the Licence conditions. If you use this dataset in your work, please cite it as below:
 
-TODO: incorporate citation file and cite text here.
+-   [ ] TODO: incorporate citation file and cite text here ([see #1](https://github.com/WarwickCIM/cyberexpertisediversity_survey/issues/2)).
 
 ## About us
 
@@ -14,7 +14,7 @@ Other CIM staff involved in putting the survey together and analysing the data i
 
 The survey aims to inform cyber policy discussions by generating new insights into the value and distribution of cyber expertise.
 
-## How to recreate the book
+## Project's structure
 
 This repo uses quarto to create the online and pdf version of the report. Some important files and folders to note are:
 
@@ -32,6 +32,8 @@ This repo uses quarto to create the online and pdf version of the report. Some i
 
 -   `_book/` this folder contains the html and pdf versions of the rendered book. It is not tracked in the git repository to avoid conflicts and because it should be possible to recreate it from scratch based on the other files and folders.
 
+## How to recreate the book
+
 The workflow to recreate the book is as follows:
 
 1.  Edit the `qmd` files in the `content/` folder.
@@ -43,4 +45,4 @@ The workflow to recreate the book is as follows:
 
 -   <https://quarto.org/docs/books/>
 
--    <https://quarto.org/docs/authoring/markdown-basics.html> (and sibling pages)
+-   <https://quarto.org/docs/authoring/markdown-basics.html> (and sibling pages)
