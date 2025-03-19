@@ -1,0 +1,1431 @@
+id,Specialism,reference_sum,test_sum,alignment_index,alignment_type
+1,Cryptography & Communications Security (Cryptographer),0,0,NA,scenario
+1,Cryptography & Communications Security (Secure Communications Operator),0,0,NA,scenario
+1,Cyber Security Audit & Assurance,100,30,0.3,scenario
+1,Cyber Security Governance & Risk Management,0,0,NA,scenario
+1,Cyber Security Governance & Risk Management (Industrial Control Systems),0,0,NA,scenario
+1,Cyber Security Management,250.21,90,0.3596978538028056,scenario
+1,Cyber Threat Intelligence,250.21,210,0.8392949922065465,scenario
+1,Data Protection & Privacy,0,0,NA,scenario
+1,Digital Forensics,150.21,110.21000000000001,0.7337061447307104,scenario
+1,Digital Forensics (Industrial Control Systems),150.21,110.21000000000001,0.7337061447307104,scenario
+1,Identity & Access Management,100,30,0.3,scenario
+1,Incident response,250.21,150,0.5994964230046761,scenario
+1,Incident response (Industrial Control Systems),250.21,150,0.5994964230046761,scenario
+1,Network Monitoring & Intrusion Detection,200,90,0.45,scenario
+1,Secure Operations,150.21,60,0.3994407829039345,scenario
+1,Secure Operations (Industrial control systems),150.21,60,0.3994407829039345,scenario
+1,Secure System Architecture & Design,0,0,NA,scenario
+1,Secure System Architecture & Design (Industrial Control Systems),0,0,NA,scenario
+1,Secure System Development,0,0,NA,scenario
+1,Secure System Development (Industrial Control Systems),0,0,NA,scenario
+1,Security Testing,200,120,0.6,scenario
+1,Vulnerability Management,200,120,0.6,scenario
+2,Cryptography & Communications Security (Cryptographer),341.56000000000006,265.35,0.7768766834523948,scenario
+2,Cryptography & Communications Security (Secure Communications Operator),341.56000000000006,265.35,0.7768766834523948,scenario
+2,Cyber Security Audit & Assurance,362.28000000000003,334.65000000000003,0.9237330241801921,scenario
+2,Cyber Security Governance & Risk Management,326.2,240,0.7357449417535254,scenario
+2,Cyber Security Governance & Risk Management (Industrial Control Systems),423.46,300,0.7084494403249422,scenario
+2,Cyber Security Management,856.7900000000001,640.26,0.7472776292907246,scenario
+2,Cyber Threat Intelligence,345.13,205.46,0.5953119114536551,scenario
+2,Data Protection & Privacy,336.08000000000004,248.45,0.7392585098786002,scenario
+2,Digital Forensics,317.83000000000004,277.20000000000005,0.8721643645974263,scenario
+2,Digital Forensics (Industrial Control Systems),415.09000000000003,367.20000000000005,0.8846274301958612,scenario
+2,Identity & Access Management,367.76,234.54,0.637752882314553,scenario
+2,Incident response,289.84999999999997,175.46,0.6053475935828878,scenario
+2,Incident response (Industrial Control Systems),387.10999999999996,265.46000000000004,0.6857482369352382,scenario
+2,Network Monitoring & Intrusion Detection,141.56,141.56,1,scenario
+2,Secure Operations,310.01,252.64000000000001,0.8149414535015,scenario
+2,Secure Operations (Industrial control systems),407.27,312.64,0.7676479976428413,scenario
+2,Secure System Architecture & Design,275.58,240.56,0.8729225633209958,scenario
+2,Secure System Architecture & Design (Industrial Control Systems),372.84,330.56,0.8866001501984766,scenario
+2,Secure System Development,275.58,240.56,0.8729225633209958,scenario
+2,Secure System Development (Industrial Control Systems),372.84,330.56,0.8866001501984766,scenario
+2,Security Testing,260.63,225.01999999999998,0.8633695276829221,scenario
+2,Vulnerability Management,255.69,181.63,0.7103523798349564,scenario
+3,Cryptography & Communications Security (Cryptographer),798.1,450,0.5638391179050244,scenario
+3,Cryptography & Communications Security (Secure Communications Operator),798.1,420,0.5262498433780228,scenario
+3,Cyber Security Audit & Assurance,600,360,0.6,scenario
+3,Cyber Security Governance & Risk Management,400,240,0.6,scenario
+3,Cyber Security Governance & Risk Management (Industrial Control Systems),500,300,0.6,scenario
+3,Cyber Security Management,2098.1,870,0.4146608836566417,scenario
+3,Cyber Threat Intelligence,700,420,0.6,scenario
+3,Data Protection & Privacy,500,330,0.66,scenario
+3,Digital Forensics,800,480,0.6,scenario
+3,Digital Forensics (Industrial Control Systems),900,570,0.6333333333333333,scenario
+3,Identity & Access Management,898.1,510,0.5678654938202873,scenario
+3,Incident response,700,330,0.4714285714285714,scenario
+3,Incident response (Industrial Control Systems),800,420,0.525,scenario
+3,Network Monitoring & Intrusion Detection,400,270,0.675,scenario
+3,Secure Operations,800,420,0.525,scenario
+3,Secure Operations (Industrial control systems),900,480,0.5333333333333333,scenario
+3,Secure System Architecture & Design,798.1,540,0.6766069414860293,scenario
+3,Secure System Architecture & Design (Industrial Control Systems),898.1,630,0.7014809041309431,scenario
+3,Secure System Development,798.1,540,0.6766069414860293,scenario
+3,Secure System Development (Industrial Control Systems),898.1,630,0.7014809041309431,scenario
+3,Security Testing,700,510,0.7285714285714285,scenario
+3,Vulnerability Management,600,390,0.65,scenario
+4,Cryptography & Communications Security (Cryptographer),302.89,238.84,0.788537092673908,scenario
+4,Cryptography & Communications Security (Secure Communications Operator),302.89,238.84,0.788537092673908,scenario
+4,Cyber Security Audit & Assurance,329.77,258.1,0.7826667070988872,scenario
+4,Cyber Security Governance & Risk Management,276.01,196.64999999999998,0.7124741857179087,scenario
+4,Cyber Security Governance & Risk Management (Industrial Control Systems),376.01,256.65,0.6825616339990958,scenario
+4,Cyber Security Management,909.8100000000001,603.23,0.6630285444213627,scenario
+4,Cyber Threat Intelligence,358.38,299.53000000000003,0.8357888275015348,scenario
+4,Data Protection & Privacy,258.67999999999995,188.68,0.7293953919901037,scenario
+4,Digital Forensics,363.57,348.95,0.9597876612481778,scenario
+4,Digital Forensics (Industrial Control Systems),463.57,438.95,0.9468904372586664,scenario
+4,Identity & Access Management,334.68,250.11999999999998,0.7473407433966773,scenario
+4,Incident response,409.53000000000003,276.64,0.6755060679315312,scenario
+4,Incident response (Industrial Control Systems),509.53000000000003,366.64,0.7195650893961101,scenario
+4,Network Monitoring & Intrusion Detection,191.89999999999998,169.58999999999997,0.8837415320479416,scenario
+4,Secure Operations,455.2,325.78,0.7156854130052723,scenario
+4,Secure Operations (Industrial control systems),555.2,385.78,0.6948487031700287,scenario
+4,Secure System Architecture & Design,241.59999999999997,236.33999999999997,0.9782284768211921,scenario
+4,Secure System Architecture & Design (Industrial Control Systems),341.59999999999997,326.34,0.955327868852459,scenario
+4,Secure System Development,241.59999999999997,236.33999999999997,0.9782284768211921,scenario
+4,Secure System Development (Industrial Control Systems),341.59999999999997,326.34,0.955327868852459,scenario
+4,Security Testing,216.75,194.44,0.8970703575547866,scenario
+4,Vulnerability Management,247.38999999999996,223.62999999999997,0.9039573143619387,scenario
+5,Cryptography & Communications Security (Cryptographer),82.95,30,0.3616636528028933,scenario
+5,Cryptography & Communications Security (Secure Communications Operator),82.95,30,0.3616636528028933,scenario
+5,Cyber Security Audit & Assurance,179.19,172.95,0.9651766281600536,scenario
+5,Cyber Security Governance & Risk Management,179.19,150,0.8371002846140968,scenario
+5,Cyber Security Governance & Risk Management (Industrial Control Systems),179.19,150,0.8371002846140968,scenario
+5,Cyber Security Management,179.19,172.95,0.9651766281600536,scenario
+5,Cyber Threat Intelligence,179.19,90,0.5022601707684581,scenario
+5,Data Protection & Privacy,179.19,142.95,0.7977565712372342,scenario
+5,Digital Forensics,82.95,82.95,1,scenario
+5,Digital Forensics (Industrial Control Systems),82.95,82.95,1,scenario
+5,Identity & Access Management,179.19,90,0.5022601707684581,scenario
+5,Incident response,0,0,NA,scenario
+5,Incident response (Industrial Control Systems),0,0,NA,scenario
+5,Network Monitoring & Intrusion Detection,0,0,NA,scenario
+5,Secure Operations,0,0,NA,scenario
+5,Secure Operations (Industrial control systems),0,0,NA,scenario
+5,Secure System Architecture & Design,0,0,NA,scenario
+5,Secure System Architecture & Design (Industrial Control Systems),0,0,NA,scenario
+5,Secure System Development,0,0,NA,scenario
+5,Secure System Development (Industrial Control Systems),0,0,NA,scenario
+5,Security Testing,82.95,60,0.7233273056057866,scenario
+5,Vulnerability Management,96.24,30,0.3117206982543641,scenario
+6,Cryptography & Communications Security (Cryptographer),255.69000000000003,144.09,0.5635339669130588,scenario
+6,Cryptography & Communications Security (Secure Communications Operator),255.69000000000003,144.09,0.5635339669130588,scenario
+6,Cyber Security Audit & Assurance,92.32,90,0.9748700173310226,scenario
+6,Cyber Security Governance & Risk Management,92.32,90,0.9748700173310226,scenario
+6,Cyber Security Governance & Risk Management (Industrial Control Systems),92.32,90,0.9748700173310226,scenario
+6,Cyber Security Management,508.78,263.18,0.5172766225087465,scenario
+6,Cyber Threat Intelligence,153.23,60,0.3915682307642107,scenario
+6,Data Protection & Privacy,171.74,120,0.698730639338535,scenario
+6,Digital Forensics,221.68,120,0.5413208228076507,scenario
+6,Digital Forensics (Industrial Control Systems),221.68,120,0.5413208228076507,scenario
+6,Identity & Access Management,387.1,312.6,0.8075432704727461,scenario
+6,Incident response,60.91,30,0.49252996223936957,scenario
+6,Incident response (Industrial Control Systems),60.91,30,0.49252996223936957,scenario
+6,Network Monitoring & Intrusion Detection,60.91,60.91,1,scenario
+6,Secure Operations,232.51000000000002,199.42000000000002,0.857683540492882,scenario
+6,Secure Operations (Industrial control systems),232.51000000000002,199.42000000000002,0.857683540492882,scenario
+6,Secure System Architecture & Design,337.03999999999996,233.95000000000002,0.6941312603845242,scenario
+6,Secure System Architecture & Design (Industrial Control Systems),337.03999999999996,233.95000000000002,0.6941312603845242,scenario
+6,Secure System Development,337.03999999999996,233.95000000000002,0.6941312603845242,scenario
+6,Secure System Development (Industrial Control Systems),337.03999999999996,233.95000000000002,0.6941312603845242,scenario
+6,Security Testing,221.68,181.68,0.8195597257307831,scenario
+6,Vulnerability Management,253.23,180,0.7108162539983415,scenario
+7,Cryptography & Communications Security (Cryptographer),431,341.09999999999997,0.7914153132250579,scenario
+7,Cryptography & Communications Security (Secure Communications Operator),431,311.09999999999997,0.7218097447795823,scenario
+7,Cyber Security Audit & Assurance,88.9,48.39000000000001,0.5443194600674917,scenario
+7,Cyber Security Governance & Risk Management,14.69,14.69,1,scenario
+7,Cyber Security Governance & Risk Management (Industrial Control Systems),75.87,74.69,0.9844470805324897,scenario
+7,Cyber Security Management,815.92,344.72,0.4224924012158055,scenario
+7,Cyber Threat Intelligence,215.24,153.06,0.711113175989593,scenario
+7,Data Protection & Privacy,102.89,75.37,0.7325298862863252,scenario
+7,Digital Forensics,262.70000000000005,164.41,0.6258469737342975,scenario
+7,Digital Forensics (Industrial Control Systems),323.88000000000005,225.59,0.6965234037297764,scenario
+7,Identity & Access Management,323.6,248.57999999999998,0.7681705809641531,scenario
+7,Incident response,311.39000000000004,169.66,0.544847297601079,scenario
+7,Incident response (Industrial Control Systems),372.57000000000005,230.84,0.6195882652924282,scenario
+7,Network Monitoring & Intrusion Detection,203.57,160.88,0.7902932652158963,scenario
+7,Secure Operations,370.65,275.01,0.7419668150546338,scenario
+7,Secure Operations (Industrial control systems),431.83,335.01,0.7757913993932798,scenario
+7,Secure System Architecture & Design,436.48,305.15,0.6991156524926685,scenario
+7,Secure System Architecture & Design (Industrial Control Systems),497.66,366.33,0.7361049712655225,scenario
+7,Secure System Development,436.48,305.15,0.6991156524926685,scenario
+7,Secure System Development (Industrial Control Systems),497.66,366.33,0.7361049712655225,scenario
+7,Security Testing,213.17000000000002,170.48000000000002,0.799737298869447,scenario
+7,Vulnerability Management,209.06,166.37,0.7958002487324213,scenario
+8,Cryptography & Communications Security (Cryptographer),239.5,109.93,0.4589979123173278,scenario
+8,Cryptography & Communications Security (Secure Communications Operator),239.5,109.93,0.4589979123173278,scenario
+8,Cyber Security Audit & Assurance,408.78,298.78,0.7309066001272078,scenario
+8,Cyber Security Governance & Risk Management,308.78,215.57,0.69813459420946955,scenario
+8,Cyber Security Governance & Risk Management (Industrial Control Systems),308.78,215.57,0.69813459420946955,scenario
+8,Cyber Security Management,507.27,408.71,0.8057050485934512,scenario
+8,Cyber Threat Intelligence,267.77,184.07,0.687418306755798,scenario
+8,Data Protection & Privacy,355.14,269.57,0.7590527679225094,scenario
+8,Digital Forensics,229.89999999999998,211.33999999999997,0.9192692474989126,scenario
+8,Digital Forensics (Industrial Control Systems),229.89999999999998,211.33999999999997,0.9192692474989126,scenario
+8,Identity & Access Management,329.9,201.12,0.6096392846317066,scenario
+8,Incident response,212.63,124.07,0.583501857687062,scenario
+8,Incident response (Industrial Control Systems),212.63,124.07,0.583501857687062,scenario
+8,Network Monitoring & Intrusion Detection,112.63,112.63,1,scenario
+8,Secure Operations,212.63,142.63,0.6707896345764943,scenario
+8,Secure Operations (Industrial control systems),212.63,142.63,0.6707896345764943,scenario
+8,Secure System Architecture & Design,88.06,69.5,0.7892346127640245,scenario
+8,Secure System Architecture & Design (Industrial Control Systems),88.06,69.5,0.7892346127640245,scenario
+8,Secure System Development,88.06,69.5,0.7892346127640245,scenario
+8,Secure System Development (Industrial Control Systems),88.06,69.5,0.7892346127640245,scenario
+8,Security Testing,186.69,157.12,0.8416090845787134,scenario
+8,Vulnerability Management,197.95,162.38,0.8203081586259157,scenario
+9,Cryptography & Communications Security (Cryptographer),286.55999999999995,198.64000000000001,0.6931881630374095,scenario
+9,Cryptography & Communications Security (Secure Communications Operator),286.55999999999995,198.64000000000001,0.6931881630374095,scenario
+9,Cyber Security Audit & Assurance,385.05,325.71,0.8458901441371249,scenario
+9,Cyber Security Governance & Risk Management,265.71000000000004,226.49,0.8523954687441194,scenario
+9,Cyber Security Governance & Risk Management (Industrial Control Systems),271.33000000000004,232.11,0.8554527696900452,scenario
+9,Cyber Security Management,621.54,535.65,0.8618109856163723,scenario
+9,Cyber Threat Intelligence,343.9,246.06,0.7154986914800815,scenario
+9,Data Protection & Privacy,314.41,267.92,0.8521357463185013,scenario
+9,Digital Forensics,248.01000000000002,227.8,0.9185113503487762,scenario
+9,Digital Forensics (Industrial Control Systems),253.63000000000002,233.42000000000002,0.9203169972006466,scenario
+9,Identity & Access Management,425.38,301.22,0.7081197987681603,scenario
+9,Incident response,233.47000000000003,192.37,0.8239602518524863,scenario
+9,Incident response (Industrial Control Systems),239.09000000000003,197.99,0.8280982056965995,scenario
+9,Network Monitoring & Intrusion Detection,174.62,146.6,0.8395372809529263,scenario
+9,Secure Operations,210.70000000000002,189.81,0.9008542952064547,scenario
+9,Secure Operations (Industrial control systems),216.32000000000002,195.43,0.9034301035502958,scenario
+9,Secure System Architecture & Design,120.85,100.64,0.8327678940835748,scenario
+9,Secure System Architecture & Design (Industrial Control Systems),126.47,106.26,0.840199256740729,scenario
+9,Secure System Development,120.85,100.64,0.8327678940835748,scenario
+9,Secure System Development (Industrial Control Systems),126.47,106.26,0.840199256740729,scenario
+9,Security Testing,221.26000000000002,171.21,0.7737955346650999,scenario
+9,Vulnerability Management,265.57,209.97,0.7906390028994239,scenario
+10,Cryptography & Communications Security (Cryptographer),324.69,238.56,0.7347315901321261,scenario
+10,Cryptography & Communications Security (Secure Communications Operator),324.69,238.56,0.7347315901321261,scenario
+10,Cyber Security Audit & Assurance,263.1,242.22,0.9206385404789053,scenario
+10,Cyber Security Governance & Risk Management,213.98999999999998,179.48999999999998,0.8387775129678957,scenario
+10,Cyber Security Governance & Risk Management (Industrial Control Systems),313.84999999999997,239.48999999999998,0.7630715309861399,scenario
+10,Cyber Security Management,730.46,542.63,0.7428606631437724,scenario
+10,Cyber Threat Intelligence,366.66999999999996,237.97,0.649003190880083,scenario
+10,Data Protection & Privacy,237.72000000000003,202.11,0.8502019182231196,scenario
+10,Digital Forensics,286.43,252.23,0.8805990992563627,scenario
+10,Digital Forensics (Industrial Control Systems),386.29,342.23,0.8859406145641875,scenario
+10,Identity & Access Management,357.06000000000006,247.29,0.6925726768610316,scenario
+10,Incident response,223.32,181.67000000000002,0.8134963281389934,scenario
+10,Incident response (Industrial Control Systems),323.18,271.67,0.8406151370753141,scenario
+10,Network Monitoring & Intrusion Detection,178.32999999999998,163.06,0.9143722312566591,scenario
+10,Secure Operations,256.1,238.83,0.9325654041390081,scenario
+10,Secure Operations (Industrial control systems),355.96000000000004,298.83000000000004,0.8395044387009777,scenario
+10,Secure System Architecture & Design,212.90000000000003,178.7,0.839361202442461,scenario
+10,Secure System Architecture & Design (Industrial Control Systems),312.76000000000005,268.7,0.8591252078270877,scenario
+10,Secure System Development,212.90000000000003,178.7,0.839361202442461,scenario
+10,Secure System Development (Industrial Control Systems),312.76000000000005,268.7,0.8591252078270877,scenario
+10,Security Testing,275.73,231.57,0.8398433249918398,scenario
+10,Vulnerability Management,277.23,207.42,0.7481874256032895,scenario
+11,Cryptography & Communications Security (Cryptographer),529.5,391.4,0.7391879131255902,scenario
+11,Cryptography & Communications Security (Secure Communications Operator),529.5,361.4,0.6825306893295562,scenario
+11,Cyber Security Audit & Assurance,225.51999999999998,209.67999999999998,0.9297623270663355,scenario
+11,Cyber Security Governance & Risk Management,216.73999999999998,170.89999999999998,0.7885023530497369,scenario
+11,Cyber Security Governance & Risk Management (Industrial Control Systems),315.22999999999996,230.89999999999998,0.7324810455857628,scenario
+11,Cyber Security Management,1233.34,606.56,0.4918027470121783,scenario
+11,Cyber Threat Intelligence,486.83000000000004,293.29,0.6024484933138878,scenario
+11,Data Protection & Privacy,252.26999999999998,177.20999999999998,0.7024616482340349,scenario
+11,Digital Forensics,460.51,361.26,0.7844780786519294,scenario
+11,Digital Forensics (Industrial Control Systems),559,451.26,0.8072629695885509,scenario
+11,Identity & Access Management,503.1599999999999,354.55999999999995,0.7046665076715161,scenario
+11,Incident response,352.81,201.62,0.5714690626682917,scenario
+11,Incident response (Industrial Control Systems),451.3,291.62,0.6461777088411256,scenario
+11,Network Monitoring & Intrusion Detection,251.3,218.31,0.8687226422602466,scenario
+11,Secure Operations,602.33,369.40999999999997,0.6133016784818952,scenario
+11,Secure Operations (Industrial control systems),700.82,429.40999999999997,0.6127250934619445,scenario
+11,Secure System Architecture & Design,445.28,301.5,0.677102048149479,scenario
+11,Secure System Architecture & Design (Industrial Control Systems),543.77,391.5,0.719973518215422,scenario
+11,Secure System Development,445.28,301.5,0.677102048149479,scenario
+11,Secure System Development (Industrial Control Systems),543.77,391.5,0.719973518215422,scenario
+11,Security Testing,314.55,309.21000000000004,0.983023366714354,scenario
+11,Vulnerability Management,367.08000000000004,234.09,0.6377084014383785,scenario
+12,Cryptography & Communications Security (Cryptographer),141.29,131.37,0.9297897940406258,scenario
+12,Cryptography & Communications Security (Secure Communications Operator),141.29,131.37,0.9297897940406258,scenario
+12,Cyber Security Audit & Assurance,164.20999999999998,164.20999999999998,1,scenario
+12,Cyber Security Governance & Risk Management,147.75,147.75,1,scenario
+12,Cyber Security Governance & Risk Management (Industrial Control Systems),148.3,148.3,1,scenario
+12,Cyber Security Management,315.79,302.77,0.958770068716552,scenario
+12,Cyber Threat Intelligence,162.42000000000002,123.65,0.7612978697204777,scenario
+12,Data Protection & Privacy,149.67,142.04,0.9490211799291776,scenario
+12,Digital Forensics,105.08,103.94,0.9891511229539398,scenario
+12,Digital Forensics (Industrial Control Systems),105.63,104.49,0.989207611474013,scenario
+12,Identity & Access Management,171.48,153.93,0.8976557032890133,scenario
+12,Incident response,78.88000000000001,77.74000000000001,0.9855476673427992,scenario
+12,Incident response (Industrial Control Systems),79.43,78.29,0.9856477401485585,scenario
+12,Network Monitoring & Intrusion Detection,54.870000000000005,54.870000000000005,1,scenario
+12,Secure Operations,95.07,95.07,1,scenario
+12,Secure Operations (Industrial control systems),95.61999999999999,95.61999999999999,1,scenario
+12,Secure System Architecture & Design,67.08,65.94000000000001,0.9830053667262971,scenario
+12,Secure System Architecture & Design (Industrial Control Systems),67.63,66.49000000000001,0.9831435753363894,scenario
+12,Secure System Development,67.08,65.94000000000001,0.9830053667262971,scenario
+12,Secure System Development (Industrial Control Systems),67.63,66.49000000000001,0.9831435753363894,scenario
+12,Security Testing,91.77000000000001,91.77000000000001,1,scenario
+12,Vulnerability Management,125.52,87.89000000000001,0.7002071383046528,scenario
+13,Cryptography & Communications Security (Cryptographer),650.35,351.61,0.5406473437379873,scenario
+13,Cryptography & Communications Security (Secure Communications Operator),650.35,351.61,0.5406473437379873,scenario
+13,Cyber Security Audit & Assurance,544.23,316.03999999999996,0.5807103614280726,scenario
+13,Cyber Security Governance & Risk Management,345.11,196.04,0.5680507664223001,scenario
+13,Cyber Security Governance & Risk Management (Industrial Control Systems),347.52000000000004,198.45,0.571046270718232,scenario
+13,Cyber Security Management,1400.32,723.2499999999998,0.5164890882084093,scenario
+13,Cyber Threat Intelligence,596.78,420,0.7037769362244043,scenario
+13,Data Protection & Privacy,444.84000000000003,316.03999999999996,0.7104576926535382,scenario
+13,Digital Forensics,697.61,429.48,0.6156448445406459,scenario
+13,Digital Forensics (Industrial Control Systems),700.02,431.89000000000004,0.6169680866260965,scenario
+13,Identity & Access Management,747.06,438.87,0.5874628543892058,scenario
+13,Incident response,553.93,303.79,0.548426696514,scenario
+13,Incident response (Industrial Control Systems),556.3399999999999,306.20000000000005,0.5503828594025238,scenario
+13,Network Monitoring & Intrusion Detection,397.30000000000007,270,0.6795872136924237,scenario
+13,Secure Operations,750.2299999999999,420,0.55982831931541,scenario
+13,Secure Operations (Industrial control systems),752.6399999999999,422.41,0.5612377763605444,scenario
+13,Secure System Architecture & Design,493.09999999999997,303.76000000000005,0.616021091056581,scenario
+13,Secure System Architecture & Design (Industrial Control Systems),495.51,306.1700000000001,0.6178886399870842,scenario
+13,Secure System Development,493.09999999999997,303.76000000000005,0.616021091056581,scenario
+13,Secure System Development (Industrial Control Systems),495.51,306.1700000000001,0.6178886399870842,scenario
+13,Security Testing,584.7700000000001,417.14,0.7133402876344545,scenario
+13,Vulnerability Management,543.34,390,0.7177826038944307,scenario
+14,Cryptography & Communications Security (Cryptographer),341.71000000000004,252.57,0.7391355242749699,scenario
+14,Cryptography & Communications Security (Secure Communications Operator),341.71000000000004,252.57,0.7391355242749699,scenario
+14,Cyber Security Audit & Assurance,389.98,308.78999999999996,0.7918098364018666,scenario
+14,Cyber Security Governance & Risk Management,313.3,234.72,0.7491860836259177,scenario
+14,Cyber Security Governance & Risk Management (Industrial Control Systems),368.86,290.28,0.7869652442661171,scenario
+14,Cyber Security Management,1003.5799999999999,662.8399999999999,0.6604754977181689,scenario
+14,Cyber Threat Intelligence,505.21999999999997,368.03,0.7284549305253157,scenario
+14,Data Protection & Privacy,266.39,211.67,0.794586883892038,scenario
+14,Digital Forensics,492.7300000000001,332.13,0.6740608446816714,scenario
+14,Digital Forensics (Industrial Control Systems),548.2900000000001,387.69,0.7070893140491344,scenario
+14,Identity & Access Management,508.09000000000003,327.64,0.6448463854828869,scenario
+14,Incident response,470.51000000000005,305.08000000000004,0.6484027969649955,scenario
+14,Incident response (Industrial Control Systems),526.07,360.64000000000004,0.6855361453798924,scenario
+14,Network Monitoring & Intrusion Detection,340.88,270,0.7920675897676602,scenario
+14,Secure Operations,478.7500000000001,346.73,0.7242402088772845,scenario
+14,Secure Operations (Industrial control systems),534.3100000000002,402.29,0.7529149744530327,scenario
+14,Secure System Architecture & Design,361.46,282.05,0.7803076412327783,scenario
+14,Secure System Architecture & Design (Industrial Control Systems),417.02,337.61,0.809577478298403,scenario
+14,Secure System Development,361.46,282.05,0.7803076412327783,scenario
+14,Secure System Development (Industrial Control Systems),417.02,337.61,0.809577478298403,scenario
+14,Security Testing,421.12,340.96,0.8096504559270516,scenario
+14,Vulnerability Management,502.06,375.99,0.7488945544357248,scenario
+15,Cryptography & Communications Security (Cryptographer),225.1,151.91,0.6748556197245669,scenario
+15,Cryptography & Communications Security (Secure Communications Operator),225.1,151.91,0.6748556197245669,scenario
+15,Cyber Security Audit & Assurance,287.24,192.06,0.6686394652555354,scenario
+15,Cyber Security Governance & Risk Management,191.89999999999998,127.94,0.6667014069828036,scenario
+15,Cyber Security Governance & Risk Management (Industrial Control Systems),232.08999999999997,168.13,0.7244172519281313,scenario
+15,Cyber Security Management,836.63,560.0999999999999,0.6694715704672315,scenario
+15,Cyber Threat Intelligence,377.35999999999996,339.04,0.8984524061903754,scenario
+15,Data Protection & Privacy,192.18,162.06,0.843271932563222,scenario
+15,Digital Forensics,416.59,319.96,0.76804532033894235,scenario
+15,Digital Forensics (Industrial Control Systems),456.78,360.15,0.7884539603310128,scenario
+15,Identity & Access Management,458.7,320.33,0.6983431436668847,scenario
+15,Incident response,304.39,253.53,0.8329117250895234,scenario
+15,Incident response (Industrial Control Systems),344.58,293.72,0.8524000232166696,scenario
+15,Network Monitoring & Intrusion Detection,241.14999999999998,175.97,0.729711797636326,scenario
+15,Secure Operations,317.01,283.34999999999997,0.8938203842150089,scenario
+15,Secure Operations (Industrial control systems),357.2,323.53999999999996,0.905767077267637,scenario
+15,Secure System Architecture & Design,221.13,219.68,0.993442771220549,scenario
+15,Secure System Architecture & Design (Industrial Control Systems),261.32,259.87,0.9944512475126283,scenario
+15,Secure System Development,221.13,219.68,0.993442771220549,scenario
+15,Secure System Development (Industrial Control Systems),261.32,259.87,0.9944512475126283,scenario
+15,Security Testing,352.13,289.46,0.8220259563229488,scenario
+15,Vulnerability Management,350.05999999999995,297.42,0.8496257784379823,scenario
+16,Cryptography & Communications Security (Cryptographer),101.14999999999999,101.14999999999999,1,scenario
+16,Cryptography & Communications Security (Secure Communications Operator),101.14999999999999,101.14999999999999,1,scenario
+16,Cyber Security Audit & Assurance,120.63,85.78999999999999,0.7111829561468954,scenario
+16,Cyber Security Governance & Risk Management,120.63,55.79,0.46248860150874577,scenario
+16,Cyber Security Governance & Risk Management (Industrial Control Systems),120.63,55.79,0.46248860150874577,scenario
+16,Cyber Security Management,337.25,247.91,0.7350926612305412,scenario
+16,Cyber Threat Intelligence,276.51,220.29,0.7966800477378757,scenario
+16,Data Protection & Privacy,25.79,25.79,1,scenario
+16,Digital Forensics,218.34,132.12,0.6051112943116241,scenario
+16,Digital Forensics (Industrial Control Systems),218.34,132.12,0.6051112943116241,scenario
+16,Identity & Access Management,120.63,55.79,0.46248860150874577,scenario
+16,Incident response,291.69,224.5,0.769652713497206,scenario
+16,Incident response (Industrial Control Systems),291.69,224.5,0.769652713497206,scenario
+16,Network Monitoring & Intrusion Detection,228.37,223.53,0.9788063230722074,scenario
+16,Secure Operations,270.49,222.12,0.8211763836001331,scenario
+16,Secure Operations (Industrial control systems),270.49,222.12,0.8211763836001331,scenario
+16,Secure System Architecture & Design,142.12,90.74,0.6384745285674077,scenario
+16,Secure System Architecture & Design (Industrial Control Systems),142.12,90.74,0.6384745285674077,scenario
+16,Secure System Development,142.12,90.74,0.6384745285674077,scenario
+16,Secure System Development (Industrial Control Systems),142.12,90.74,0.6384745285674077,scenario
+16,Security Testing,133.53,133.53,1,scenario
+16,Vulnerability Management,254.16,227.94,0.8968366383380548,scenario
+17,Cryptography & Communications Security (Cryptographer),11.8,11.8,1,scenario
+17,Cryptography & Communications Security (Secure Communications Operator),11.8,11.8,1,scenario
+17,Cyber Security Audit & Assurance,11.8,11.8,1,scenario
+17,Cyber Security Governance & Risk Management,11.8,11.8,1,scenario
+17,Cyber Security Governance & Risk Management (Industrial Control Systems),11.8,11.8,1,scenario
+17,Cyber Security Management,11.8,11.8,1,scenario
+17,Cyber Threat Intelligence,11.8,11.8,1,scenario
+17,Data Protection & Privacy,11.8,11.8,1,scenario
+17,Digital Forensics,11.8,11.8,1,scenario
+17,Digital Forensics (Industrial Control Systems),11.8,11.8,1,scenario
+17,Identity & Access Management,11.8,11.8,1,scenario
+17,Incident response,0,0,NA,scenario
+17,Incident response (Industrial Control Systems),0,0,NA,scenario
+17,Network Monitoring & Intrusion Detection,0,0,NA,scenario
+17,Secure Operations,0,0,NA,scenario
+17,Secure Operations (Industrial control systems),0,0,NA,scenario
+17,Secure System Architecture & Design,0,0,NA,scenario
+17,Secure System Architecture & Design (Industrial Control Systems),0,0,NA,scenario
+17,Secure System Development,0,0,NA,scenario
+17,Secure System Development (Industrial Control Systems),0,0,NA,scenario
+17,Security Testing,11.8,11.8,1,scenario
+17,Vulnerability Management,0,0,NA,scenario
+18,Cryptography & Communications Security (Cryptographer),128.96,101.48,0.7869106699751861,scenario
+18,Cryptography & Communications Security (Secure Communications Operator),128.96,101.48,0.7869106699751861,scenario
+18,Cyber Security Audit & Assurance,272.29999999999995,239.24999999999997,0.8786265148733016,scenario
+18,Cyber Security Governance & Risk Management,211.11999999999998,204.85999999999999,0.9703486169003411,scenario
+18,Cyber Security Governance & Risk Management (Industrial Control Systems),236.35999999999999,230.1,0.9735149771534947,scenario
+18,Cyber Security Management,472.44999999999993,416.45,0.8814689385120119,scenario
+18,Cyber Threat Intelligence,276.54999999999995,219.53999999999996,0.7938528295064183,scenario
+18,Data Protection & Privacy,197.26999999999998,156.95000000000002,0.7956100775586761,scenario
+18,Digital Forensics,235.67000000000002,212.72,0.90261806763695,scenario
+18,Digital Forensics (Industrial Control Systems),260.91,237.96,0.9120386340117281,scenario
+18,Identity & Access Management,242.12,183.79000000000002,0.7590864034363126,scenario
+18,Incident response,243.63,184.42000000000002,0.756967532734064,scenario
+18,Incident response (Industrial Control Systems),268.87,209.66000000000003,0.7797820508052219,scenario
+18,Network Monitoring & Intrusion Detection,140.88,114.09,0.8098381601362863,scenario
+18,Secure Operations,169.56,133.3,0.7861523944326493,scenario
+18,Secure Operations (Industrial control systems),194.8,158.54000000000002,0.8138603696098563,scenario
+18,Secure System Architecture & Design,114.82000000000001,91.87,0.8001219299773559,scenario
+18,Secure System Architecture & Design (Industrial Control Systems),140.06,117.11,0.8361416535770384,scenario
+18,Secure System Development,114.82000000000001,91.87,0.8001219299773559,scenario
+18,Secure System Development (Industrial Control Systems),140.06,117.11,0.8361416535770384,scenario
+18,Security Testing,211.53000000000003,184.74,0.8733512976882711,scenario
+18,Vulnerability Management,232.91999999999996,198.86,0.8537695346041562,scenario
+19,Cryptography & Communications Security (Cryptographer),35.94,35.94,1,scenario
+19,Cryptography & Communications Security (Secure Communications Operator),35.94,35.94,1,scenario
+19,Cyber Security Audit & Assurance,17.97,17.97,1,scenario
+19,Cyber Security Governance & Risk Management,17.97,17.97,1,scenario
+19,Cyber Security Governance & Risk Management (Industrial Control Systems),17.97,17.97,1,scenario
+19,Cyber Security Management,96.3,65.94,0.6847352024922119,scenario
+19,Cyber Threat Intelligence,78.33,47.97,0.6124090386824971,scenario
+19,Data Protection & Privacy,17.97,17.97,1,scenario
+19,Digital Forensics,78.33,78.33,1,scenario
+19,Digital Forensics (Industrial Control Systems),78.33,78.33,1,scenario
+19,Identity & Access Management,35.94,35.94,1,scenario
+19,Incident response,60.36,30,0.4970178926441352,scenario
+19,Incident response (Industrial Control Systems),60.36,30,0.4970178926441352,scenario
+19,Network Monitoring & Intrusion Detection,0,0,NA,scenario
+19,Secure Operations,78.33,47.97,0.6124090386824971,scenario
+19,Secure Operations (Industrial control systems),78.33,47.97,0.6124090386824971,scenario
+19,Secure System Architecture & Design,17.97,17.97,1,scenario
+19,Secure System Architecture & Design (Industrial Control Systems),17.97,17.97,1,scenario
+19,Secure System Development,17.97,17.97,1,scenario
+19,Secure System Development (Industrial Control Systems),17.97,17.97,1,scenario
+19,Security Testing,17.97,17.97,1,scenario
+19,Vulnerability Management,0,0,NA,scenario
+20,Cryptography & Communications Security (Cryptographer),40.6,30,0.7389162561576355,scenario
+20,Cryptography & Communications Security (Secure Communications Operator),40.6,30,0.7389162561576355,scenario
+20,Cyber Security Audit & Assurance,190.52999999999997,139.93,0.7344250249304572,scenario
+20,Cyber Security Governance & Risk Management,124.83,84.83,0.6795642073219579,scenario
+20,Cyber Security Governance & Risk Management (Industrial Control Systems),124.83,84.83,0.6795642073219579,scenario
+20,Cyber Security Management,235.79999999999998,180.52999999999997,0.7656064461407972,scenario
+20,Cyber Threat Intelligence,49.93,49.93,1,scenario
+20,Data Protection & Privacy,140.6,70.6,0.5021337126600284,scenario
+20,Digital Forensics,95.2,79.93,0.8396008403361345,scenario
+20,Digital Forensics (Industrial Control Systems),95.2,79.93,0.8396008403361345,scenario
+20,Identity & Access Management,135.8,135.8,1,scenario
+20,Incident response,149.93,79.93,0.5331154538784767,scenario
+20,Incident response (Industrial Control Systems),149.93,79.93,0.5331154538784767,scenario
+20,Network Monitoring & Intrusion Detection,49.93,49.93,1,scenario
+20,Secure Operations,124.83,54.83,0.43923736281342624,scenario
+20,Secure Operations (Industrial control systems),124.83,54.83,0.43923736281342624,scenario
+20,Secure System Architecture & Design,45.27,45.27,1,scenario
+20,Secure System Architecture & Design (Industrial Control Systems),45.27,45.27,1,scenario
+20,Secure System Development,45.27,45.27,1,scenario
+20,Secure System Development (Industrial Control Systems),45.27,45.27,1,scenario
+20,Security Testing,70.37,70.37,1,scenario
+20,Vulnerability Management,95.2,95.2,1,scenario
+21,Cryptography & Communications Security (Cryptographer),332.51,245.65000000000003,0.738774773691017,scenario
+21,Cryptography & Communications Security (Secure Communications Operator),332.51,245.65000000000003,0.738774773691017,scenario
+21,Cyber Security Audit & Assurance,454.32,335.71,0.738928508540236,scenario
+21,Cyber Security Governance & Risk Management,343.21000000000004,240,0.6992803239998834,scenario
+21,Cyber Security Governance & Risk Management (Industrial Control Systems),349.52000000000004,246.31,0.7047093156328679,scenario
+21,Cyber Security Management,936.8899999999999,704.99,0.75247894630106,scenario
+21,Cyber Threat Intelligence,414.54,317.8,0.7666328942924687,scenario
+21,Data Protection & Privacy,349.52,247.75,0.708829251544976,scenario
+21,Digital Forensics,367.76,294.21000000000004,0.8000054383293453,scenario
+21,Digital Forensics (Industrial Control Systems),374.07,300.52000000000004,0.8033790467024889,scenario
+21,Identity & Access Management,503.98,350.82,0.6960990515496647,scenario
+21,Incident response,403.56,287.8,0.7131529388442859,scenario
+21,Incident response (Industrial Control Systems),409.87,294.11,0.7175689852880182,scenario
+21,Network Monitoring & Intrusion Detection,245.95000000000002,221.49000000000004,0.90054889205123,scenario
+21,Secure Operations,388.33,301.83000000000004,0.7772513068781708,scenario
+21,Secure Operations (Industrial control systems),394.64,308.14000000000004,0.7808128927630247,scenario
+21,Secure System Architecture & Design,312.07,288.3,0.9238311917198065,scenario
+21,Secure System Architecture & Design (Industrial Control Systems),318.38,294.61,0.9253407877379233,scenario
+21,Secure System Development,312.07,288.3,0.9238311917198065,scenario
+21,Secure System Development (Industrial Control Systems),318.38,294.61,0.9253407877379233,scenario
+21,Security Testing,359.81,329.64,0.9161501903782552,scenario
+21,Vulnerability Management,397.26,330,0.8306902280622263,scenario
+22,Cryptography & Communications Security (Cryptographer),226.68,200.57,0.8848155990824068,scenario
+22,Cryptography & Communications Security (Secure Communications Operator),226.68,200.57,0.8848155990824068,scenario
+22,Cyber Security Audit & Assurance,110.88,110.88,1,scenario
+22,Cyber Security Governance & Risk Management,81.6,57.2,0.7009803921568628,scenario
+22,Cyber Security Governance & Risk Management (Industrial Control Systems),165.01999999999998,117.2,0.7102169434008,scenario
+22,Cyber Security Management,733.67,414.38999999999993,0.5648179699319857,scenario
+22,Cyber Threat Intelligence,199.20999999999998,132.32,0.6642236835500226,scenario
+22,Data Protection & Privacy,100,100,1,scenario
+22,Digital Forensics,365.53999999999996,220.76999999999998,0.6039557914318543,scenario
+22,Digital Forensics (Industrial Control Systems),448.96,304.19,0.6775436564504633,scenario
+22,Identity & Access Management,255.18,230.78,0.9043812210988321,scenario
+22,Incident response,211.13,144.24,0.683180978544025,scenario
+22,Incident response (Industrial Control Systems),294.55,227.66000000000003,0.7729078254965202,scenario
+22,Network Monitoring & Intrusion Detection,159.06,152.17000000000002,0.9566830126996103,scenario
+22,Secure Operations,239.11,202.22,0.845719543306428,scenario
+22,Secure Operations (Industrial control systems),322.53000000000003,262.22,0.8130096425138746,scenario
+22,Secure System Architecture & Design,431.09000000000003,336.32000000000005,0.7801619151453293,scenario
+22,Secure System Architecture & Design (Industrial Control Systems),514.51,419.74000000000007,0.8158053293424813,scenario
+22,Secure System Development,431.09000000000003,336.32000000000005,0.7801619151453293,scenario
+22,Secure System Development (Industrial Control Systems),514.51,419.74000000000007,0.8158053293424813,scenario
+22,Security Testing,388.86,354.09000000000003,0.9105847862984108,scenario
+22,Vulnerability Management,232.12,195.23,0.8410735826296742,scenario
+23,Cryptography & Communications Security (Cryptographer),56.930000000000014,48.660000000000004,0.8547338837168451,scenario
+23,Cryptography & Communications Security (Secure Communications Operator),56.930000000000014,48.660000000000004,0.8547338837168451,scenario
+23,Cyber Security Audit & Assurance,45.54,45.54,1,scenario
+23,Cyber Security Governance & Risk Management,41.15,41.15,1,scenario
+23,Cyber Security Governance & Risk Management (Industrial Control Systems),43.62,43.62,1,scenario
+23,Cyber Security Management,121.67,113.39999999999999,0.9320292594723432,scenario
+23,Cyber Threat Intelligence,47.32,45.08,0.9526627218934911,scenario
+23,Data Protection & Privacy,79.7,79.7,1,scenario
+23,Digital Forensics,20.3,20.3,1,scenario
+23,Digital Forensics (Industrial Control Systems),22.77,22.77,1,scenario
+23,Identity & Access Management,87.24,87.24,1,scenario
+23,Incident response,19.060000000000002,19.060000000000002,1,scenario
+23,Incident response (Industrial Control Systems),21.53,21.53,1,scenario
+23,Network Monitoring & Intrusion Detection,9.46,9.46,1,scenario
+23,Secure Operations,59.800000000000004,59.800000000000004,1,scenario
+23,Secure Operations (Industrial control systems),62.27,62.27,1,scenario
+23,Secure System Architecture & Design,20.58,20.58,1,scenario
+23,Secure System Architecture & Design (Industrial Control Systems),23.049999999999997,23.049999999999997,1,scenario
+23,Secure System Development,20.58,20.58,1,scenario
+23,Secure System Development (Industrial Control Systems),23.049999999999997,23.049999999999997,1,scenario
+23,Security Testing,17.419999999999998,17.419999999999998,1,scenario
+23,Vulnerability Management,44.31,42.07,0.9494470774091627,scenario
+24,Cryptography & Communications Security (Cryptographer),247.16,158.99,0.6432675190160221,scenario
+24,Cryptography & Communications Security (Secure Communications Operator),247.16,158.99,0.6432675190160221,scenario
+24,Cyber Security Audit & Assurance,422.9,317.41999999999996,0.7505793331756916,scenario
+24,Cyber Security Governance & Risk Management,315.27,219.79,0.6971484759095379,scenario
+24,Cyber Security Governance & Risk Management (Industrial Control Systems),331.13,235.64999999999998,0.7116540331591822,scenario
+24,Cyber Security Management,846.37,571.5,0.6752365986507083,scenario
+24,Cyber Threat Intelligence,619.15,420,0.6783493499152063,scenario
+24,Data Protection & Privacy,285.59000000000003,243.54,0.8527609510136909,scenario
+24,Digital Forensics,481.7900000000001,361.94,0.7512401668776851,scenario
+24,Digital Forensics (Industrial Control Systems),497.6500000000001,377.8,0.7591680900231085,scenario
+24,Identity & Access Management,439.59999999999997,226.81,0.5159463148316652,scenario
+24,Incident response,539.18,330,0.612040505953485,scenario
+24,Incident response (Industrial Control Systems),555.04,345.86,0.6231262611703662,scenario
+24,Network Monitoring & Intrusion Detection,356.49,251.28,0.7048725069426912,scenario
+24,Secure Operations,467.18999999999994,305.13,0.6531175752905671,scenario
+24,Secure Operations (Industrial control systems),483.04999999999995,320.99,0.6645067798364559,scenario
+24,Secure System Architecture & Design,151.28,110,0.7271285034373347,scenario
+24,Secure System Architecture & Design (Industrial Control Systems),167.14,125.86,0.7530214191695586,scenario
+24,Secure System Development,151.28,110,0.7271285034373347,scenario
+24,Secure System Development (Industrial Control Systems),167.14,125.86,0.7530214191695586,scenario
+24,Security Testing,385.82000000000005,281.57,0.729796278057125,scenario
+24,Vulnerability Management,439.23,305.43,0.6953759989071785,scenario
+25,Cryptography & Communications Security (Cryptographer),0,0,NA,scenario
+25,Cryptography & Communications Security (Secure Communications Operator),0,0,NA,scenario
+25,Cyber Security Audit & Assurance,0,0,NA,scenario
+25,Cyber Security Governance & Risk Management,0,0,NA,scenario
+25,Cyber Security Governance & Risk Management (Industrial Control Systems),0,0,NA,scenario
+25,Cyber Security Management,0,0,NA,scenario
+25,Cyber Threat Intelligence,0,0,NA,scenario
+25,Data Protection & Privacy,0,0,NA,scenario
+25,Digital Forensics,0,0,NA,scenario
+25,Digital Forensics (Industrial Control Systems),0,0,NA,scenario
+25,Identity & Access Management,0,0,NA,scenario
+25,Incident response,0,0,NA,scenario
+25,Incident response (Industrial Control Systems),0,0,NA,scenario
+25,Network Monitoring & Intrusion Detection,0,0,NA,scenario
+25,Secure Operations,0,0,NA,scenario
+25,Secure Operations (Industrial control systems),0,0,NA,scenario
+25,Secure System Architecture & Design,0,0,NA,scenario
+25,Secure System Architecture & Design (Industrial Control Systems),0,0,NA,scenario
+25,Secure System Development,0,0,NA,scenario
+25,Secure System Development (Industrial Control Systems),0,0,NA,scenario
+25,Security Testing,0,0,NA,scenario
+25,Vulnerability Management,0,0,NA,scenario
+26,Cryptography & Communications Security (Cryptographer),79.37,52.35,0.6595691067153836,scenario
+26,Cryptography & Communications Security (Secure Communications Operator),79.37,52.35,0.6595691067153836,scenario
+26,Cyber Security Audit & Assurance,369.90999999999997,259.90999999999997,0.7026303695493498,scenario
+26,Cyber Security Governance & Risk Management,269.90999999999997,199.91,0.7406542921714646,scenario
+26,Cyber Security Governance & Risk Management (Industrial Control Systems),269.90999999999997,199.91,0.7406542921714646,scenario
+26,Cyber Security Management,606.5899999999999,424.03999999999996,0.6990553751298242,scenario
+26,Cyber Threat Intelligence,448.42,387.02,0.8630747959502252,scenario
+26,Data Protection & Privacy,169.91,143.18,0.8426814195750693,scenario
+26,Digital Forensics,371.34999999999997,264.04,0.7110273327049954,scenario
+26,Digital Forensics (Industrial Control Systems),371.34999999999997,264.04,0.7110273327049954,scenario
+26,Identity & Access Management,392.84000000000003,225.82,0.574839629365645,scenario
+26,Incident response,391.97,270,0.6888282266499987,scenario
+26,Incident response (Industrial Control Systems),391.97,270,0.6888282266499987,scenario
+26,Network Monitoring & Intrusion Detection,300,180,0.6,scenario
+26,Secure Operations,314.32000000000005,202.35,0.6437706795622294,scenario
+26,Secure Operations (Industrial control systems),314.32000000000005,202.35,0.6437706795622294,scenario
+26,Secure System Architecture & Design,101.44,101.44,1,scenario
+26,Secure System Architecture & Design (Industrial Control Systems),101.44,101.44,1,scenario
+26,Secure System Development,101.44,101.44,1,scenario
+26,Secure System Development (Industrial Control Systems),101.44,101.44,1,scenario
+26,Security Testing,336.10999999999996,256.11,0.7619826842402786,scenario
+26,Vulnerability Management,413.46999999999997,297.31,0.7190606331777397,scenario
+27,Cryptography & Communications Security (Cryptographer),293.94,181.36,0.6169966659862558,scenario
+27,Cryptography & Communications Security (Secure Communications Operator),293.94,181.36,0.6169966659862558,scenario
+27,Cyber Security Audit & Assurance,183.58,116.32,0.6336202200675454,scenario
+27,Cyber Security Governance & Risk Management,82.00999999999999,75.72,0.9233020363370321,scenario
+27,Cyber Security Governance & Risk Management (Industrial Control Systems),113.96,107.67,0.9448051948051949,scenario
+27,Cyber Security Management,814.7600000000001,441.63,0.5420369188472678,scenario
+27,Cyber Threat Intelligence,424.71000000000004,302.74,0.7128158037248946,scenario
+27,Data Protection & Privacy,150.03,110.03,0.7333866560021329,scenario
+27,Digital Forensics,407.34,315.37,0.7742180979034714,scenario
+27,Digital Forensics (Industrial Control Systems),439.28999999999996,347.32,0.7906394409160237,scenario
+27,Identity & Access Management,375.44,279.31,0.7439537609205199,scenario
+27,Incident response,410.35,235.20999999999998,0.5731936152065309,scenario
+27,Incident response (Industrial Control Systems),442.3,267.15999999999997,0.604024417815962,scenario
+27,Network Monitoring & Intrusion Detection,291.43,201,0.6897025014583261,scenario
+27,Secure Operations,483.5,323.03999999999996,0.6681282316442605,scenario
+27,Secure Operations (Industrial control systems),515.45,354.98999999999995,0.6886991948782616,scenario
+27,Secure System Architecture & Design,249.47,192.18,0.7703531486751914,scenario
+27,Secure System Architecture & Design (Industrial Control Systems),281.42,224.13,0.7964252718356903,scenario
+27,Secure System Development,249.47,192.18,0.7703531486751914,scenario
+27,Secure System Development (Industrial Control Systems),281.42,224.13,0.7964252718356903,scenario
+27,Security Testing,356.11999999999995,288.86,0.8111310794114345,scenario
+27,Vulnerability Management,336.25999999999993,261.12,0.776541961577351,scenario
+28,Cryptography & Communications Security (Cryptographer),665.71,423.71,0.6364783464271229,scenario
+28,Cryptography & Communications Security (Secure Communications Operator),665.71,402.03,0.6039116131648915,scenario
+28,Cyber Security Audit & Assurance,556.28,360,0.6471561084346014,scenario
+28,Cyber Security Governance & Risk Management,378.7,240,0.6337470293108001,scenario
+28,Cyber Security Governance & Risk Management (Industrial Control Systems),458.41999999999996,300,0.6544217093495048,scenario
+28,Cyber Security Management,1777.9900000000005,858.7,0.4829610965191029,scenario
+28,Cyber Threat Intelligence,615.74,398.37,0.646977620424205,scenario
+28,Data Protection & Privacy,459.73,317.58,0.6907967720183585,scenario
+28,Digital Forensics,684.98,468.86,0.6844871383106076,scenario
+28,Digital Forensics (Industrial Control Systems),764.7,548.58,0.7173793644566496,scenario
+28,Identity & Access Management,785.7,496.78,0.6322769504900089,scenario
+28,Incident response,593.9300000000001,318.7,0.536595221659118,scenario
+28,Incident response (Industrial Control Systems),673.6500000000001,398.41999999999996,0.5914347212944406,scenario
+28,Network Monitoring & Intrusion Detection,336.88,247.20999999999998,0.7338221325100925,scenario
+28,Secure Operations,662.37,400.85,0.6051753551640322,scenario
+28,Secure Operations (Industrial control systems),742.09,460.85,0.6210163187753507,scenario
+28,Secure System Architecture & Design,643.6299999999999,504.33,0.7835713064959683,scenario
+28,Secure System Architecture & Design (Industrial Control Systems),723.3499999999999,584.05,0.80742379207852355,scenario
+28,Secure System Development,643.6299999999999,504.33,0.7835713064959683,scenario
+28,Secure System Development (Industrial Control Systems),723.3499999999999,584.05,0.80742379207852355,scenario
+28,Security Testing,598.95,464.32,0.7752233074547124,scenario
+28,Vulnerability Management,521.51,373.33,0.7158635500757415,scenario
+29,Cryptography & Communications Security (Cryptographer),460.15000000000003,348.75,0.7579050309681625,scenario
+29,Cryptography & Communications Security (Secure Communications Operator),460.15000000000003,348.75,0.7579050309681625,scenario
+29,Cyber Security Audit & Assurance,444.87,315.14,0.708386719715872,scenario
+29,Cyber Security Governance & Risk Management,294.16999999999996,198.75,0.6756297379066527,scenario
+29,Cyber Security Governance & Risk Management (Industrial Control Systems),376.80999999999995,258.75,0.6866855975159896,scenario
+29,Cyber Security Management,1296.1300000000003,806.25,0.6220440850840577,scenario
+29,Cyber Threat Intelligence,565.99,419.17,0.7405961236064241,scenario
+29,Data Protection & Privacy,299.03000000000003,271.95,0.909440524362104,scenario
+29,Digital Forensics,624.73,427.78,0.6847438093256286,scenario
+29,Digital Forensics (Industrial Control Systems),707.37,510.41999999999996,0.7215742822002629,scenario
+29,Identity & Access Management,583.62,389.03,0.6665809944827114,scenario
+29,Incident response,519.1800000000001,330,0.6356177048422512,scenario
+29,Incident response (Industrial Control Systems),601.82,412.64,0.6856535176630886,scenario
+29,Network Monitoring & Intrusion Detection,369.18,261.81,0.7091662603607995,scenario
+29,Secure Operations,539.87,356.67,0.6606590475484839,scenario
+29,Secure Operations (Industrial control systems),622.51,416.67,0.6693386451623268,scenario
+29,Secure System Architecture & Design,401.53,312.78000000000003,0.7789704380743657,scenario
+29,Secure System Architecture & Design (Industrial Control Systems),484.16999999999996,395.42,0.8166966148253714,scenario
+29,Secure System Development,401.53,312.78000000000003,0.7789704380743657,scenario
+29,Secure System Development (Industrial Control Systems),484.16999999999996,395.42,0.8166966148253714,scenario
+29,Security Testing,520.8399999999999,395.7,0.7597342754012749,scenario
+29,Vulnerability Management,510.42999999999995,389.58,0.7632388378426034,scenario
+30,Cryptography & Communications Security (Cryptographer),76.35,30,0.39292730844793716,scenario
+30,Cryptography & Communications Security (Secure Communications Operator),76.35,30,0.39292730844793716,scenario
+30,Cyber Security Audit & Assurance,240.6,240.6,1,scenario
+30,Cyber Security Governance & Risk Management,232.7,203.32999999999998,0.8737859905457671,scenario
+30,Cyber Security Governance & Risk Management (Industrial Control Systems),310.28999999999996,263.33,0.8486577073060686,scenario
+30,Cyber Security Management,351.18999999999994,300.59999999999997,0.8559469233178622,scenario
+30,Cyber Threat Intelligence,236.62,173.92000000000002,0.7350181725974136,scenario
+30,Data Protection & Privacy,189.67999999999998,166.35,0.8770033741037537,scenario
+30,Digital Forensics,127.27000000000001,127.27000000000001,1,scenario
+30,Digital Forensics (Industrial Control Systems),204.86,204.86,1,scenario
+30,Identity & Access Management,203.62,127.9,0.6281308319418525,scenario
+30,Incident response,120.9,113.92000000000002,0.942266335814723,scenario
+30,Incident response (Industrial Control Systems),198.49,191.51000000000002,0.9648345004786136,scenario
+30,Network Monitoring & Intrusion Detection,83.92,83.92,1,scenario
+30,Secure Operations,113,103.02000000000001,0.9116814159292036,scenario
+30,Secure Operations (Industrial control systems),190.59,163.02,0.8553439320006296,scenario
+30,Secure System Architecture & Design,0,0,NA,scenario
+30,Secure System Architecture & Design (Industrial Control Systems),77.59,77.59,1,scenario
+30,Secure System Development,0,0,NA,scenario
+30,Secure System Development (Industrial Control Systems),77.59,77.59,1,scenario
+30,Security Testing,117.25,100.9,0.8605543710021323,scenario
+30,Vulnerability Management,160.27,113.92000000000002,0.710800524115555,scenario
+31,Cryptography & Communications Security (Cryptographer),0,0,NA,scenario
+31,Cryptography & Communications Security (Secure Communications Operator),0,0,NA,scenario
+31,Cyber Security Audit & Assurance,0,0,NA,scenario
+31,Cyber Security Governance & Risk Management,0,0,NA,scenario
+31,Cyber Security Governance & Risk Management (Industrial Control Systems),0,0,NA,scenario
+31,Cyber Security Management,0,0,NA,scenario
+31,Cyber Threat Intelligence,0,0,NA,scenario
+31,Data Protection & Privacy,0,0,NA,scenario
+31,Digital Forensics,0,0,NA,scenario
+31,Digital Forensics (Industrial Control Systems),0,0,NA,scenario
+31,Identity & Access Management,0,0,NA,scenario
+31,Incident response,0,0,NA,scenario
+31,Incident response (Industrial Control Systems),0,0,NA,scenario
+31,Network Monitoring & Intrusion Detection,0,0,NA,scenario
+31,Secure Operations,0,0,NA,scenario
+31,Secure Operations (Industrial control systems),0,0,NA,scenario
+31,Secure System Architecture & Design,0,0,NA,scenario
+31,Secure System Architecture & Design (Industrial Control Systems),0,0,NA,scenario
+31,Secure System Development,0,0,NA,scenario
+31,Secure System Development (Industrial Control Systems),0,0,NA,scenario
+31,Security Testing,0,0,NA,scenario
+31,Vulnerability Management,0,0,NA,scenario
+32,Cryptography & Communications Security (Cryptographer),200.29,71.85,0.35872984172949224,scenario
+32,Cryptography & Communications Security (Secure Communications Operator),200.29,71.85,0.35872984172949224,scenario
+32,Cyber Security Audit & Assurance,539.02,360,0.6678787429037883,scenario
+32,Cyber Security Governance & Risk Management,373.99,240,0.6417283884595845,scenario
+32,Cyber Security Governance & Risk Management (Industrial Control Systems),373.99,240,0.6417283884595845,scenario
+32,Cyber Security Management,765.3199999999999,506.71,0.6620890607850312,scenario
+32,Cyber Threat Intelligence,349.71000000000004,240.57999999999998,0.6879414371908151,scenario
+32,Data Protection & Privacy,388.44,269.31,0.6933117083719493,scenario
+32,Digital Forensics,410.10999999999996,301.27,0.7346077881543976,scenario
+32,Digital Forensics (Industrial Control Systems),410.10999999999996,301.27,0.7346077881543976,scenario
+32,Identity & Access Management,547.6899999999999,309.53999999999996,0.5651737296645912,scenario
+32,Incident response,250.57999999999998,164.86,0.6579136403543779,scenario
+32,Incident response (Industrial Control Systems),250.57999999999998,164.86,0.6579136403543779,scenario
+32,Network Monitoring & Intrusion Detection,150.57999999999998,104.86,0.6963740204542437,scenario
+32,Secure Operations,182.95000000000002,112.95,0.617381798305548,scenario
+32,Secure Operations (Industrial control systems),182.95000000000002,112.95,0.617381798305548,scenario
+32,Secure System Architecture & Design,169.94,130.81,0.7697422619748147,scenario
+32,Secure System Architecture & Design (Industrial Control Systems),169.94,130.81,0.7697422619748147,scenario
+32,Secure System Development,169.94,130.81,0.7697422619748147,scenario
+32,Secure System Development (Industrial Control Systems),169.94,130.81,0.7697422619748147,scenario
+32,Security Testing,332.94,208.96,0.6276205922989128,scenario
+32,Vulnerability Management,349.71,254.86,0.7287752709387779,scenario
+33,Cryptography & Communications Security (Cryptographer),303.39,206.18,0.6795873298394806,scenario
+33,Cryptography & Communications Security (Secure Communications Operator),303.39,206.18,0.6795873298394806,scenario
+33,Cyber Security Audit & Assurance,370.84999999999997,239.97,0.6470810300660645,scenario
+33,Cyber Security Governance & Risk Management,245.04000000000002,149.97,0.612022526934378,scenario
+33,Cyber Security Governance & Risk Management (Industrial Control Systems),256.23,161.16,0.6289661632127385,scenario
+33,Cyber Security Management,950.6699999999998,538.7600000000001,0.5667161054835013,scenario
+33,Cyber Threat Intelligence,428.14,344.57,0.804806838884477,scenario
+33,Data Protection & Privacy,276.12,180.64,0.6542083152252643,scenario
+33,Digital Forensics,377.33000000000004,246,0.6519492221662735,scenario
+33,Digital Forensics (Industrial Control Systems),388.52000000000004,257.19,0.6619736435704725,scenario
+33,Identity & Access Management,452.58000000000004,318.64,0.7040523222413716,scenario
+33,Incident response,474.09,289.37,0.6103693391550128,scenario
+33,Incident response (Industrial Control Systems),485.28,300.56,0.6193537751401254,scenario
+33,Network Monitoring & Intrusion Detection,361.90999999999997,260.19,0.7189356469840569,scenario
+33,Secure Operations,532.75,376.63,0.7069544814641013,scenario
+33,Secure Operations (Industrial control systems),543.94,387.82,0.7129830496010588,scenario
+33,Secure System Architecture & Design,268.14000000000004,214.08000000000004,0.7983889013202059,scenario
+33,Secure System Architecture & Design (Industrial Control Systems),279.33000000000004,225.27000000000004,0.8064654709483406,scenario
+33,Secure System Development,268.14000000000004,214.08000000000004,0.7983889013202059,scenario
+33,Secure System Development (Industrial Control Systems),279.33000000000004,225.27000000000004,0.8064654709483406,scenario
+33,Security Testing,371.62,302.16,0.8130886389322427,scenario
+33,Vulnerability Management,424.63,311.06,0.7325436262157643,scenario
+34,Cryptography & Communications Security (Cryptographer),221.74000000000004,111.64999999999999,0.5035176332641832,scenario
+34,Cryptography & Communications Security (Secure Communications Operator),221.74000000000004,111.64999999999999,0.5035176332641832,scenario
+34,Cyber Security Audit & Assurance,312.39,183.26999999999998,0.5866705080188226,scenario
+34,Cyber Security Governance & Risk Management,123.27,102.3,0.8298856169384279,scenario
+34,Cyber Security Governance & Risk Management (Industrial Control Systems),128.1,107.13,0.8362997658079625,scenario
+34,Cyber Security Management,574.6,371.7399999999999,0.6469544030630001,scenario
+34,Cyber Threat Intelligence,373.71,283.92,0.7597334831821466,scenario
+34,Data Protection & Privacy,193.05,193.05,1,scenario
+34,Digital Forensics,326.28,286.28,0.8774059090351845,scenario
+34,Digital Forensics (Industrial Control Systems),331.10999999999996,291.10999999999996,0.8791942254839781,scenario
+34,Identity & Access Management,323.85999999999996,173.77,0.536559006978324,scenario
+34,Incident response,310.27,196.53000000000003,0.6334160569826282,scenario
+34,Incident response (Industrial Control Systems),315.09999999999997,201.36000000000004,0.6390352269120916,scenario
+34,Network Monitoring & Intrusion Detection,202.11000000000004,117.19,0.5798327643362524,scenario
+34,Secure Operations,232.02000000000004,128.28,0.5528833721230928,scenario
+34,Secure Operations (Industrial control systems),236.85000000000005,133.11,0.5620012666244458,scenario
+34,Secure System Architecture & Design,63.73,63.73,1,scenario
+34,Secure System Architecture & Design (Industrial Control Systems),68.56,68.56,1,scenario
+34,Secure System Development,63.73,63.73,1,scenario
+34,Secure System Development (Industrial Control Systems),68.56,68.56,1,scenario
+34,Security Testing,279.44,188.47000000000003,0.6744560549670772,scenario
+34,Vulnerability Management,209.96000000000004,155.04000000000002,0.7384263669270337,scenario
+35,Cryptography & Communications Security (Cryptographer),277.64,197.85000000000002,0.7126134562743122,scenario
+35,Cryptography & Communications Security (Secure Communications Operator),277.64,197.85000000000002,0.7126134562743122,scenario
+35,Cyber Security Audit & Assurance,343.5,257.76,0.7503930131004366,scenario
+35,Cyber Security Governance & Risk Management,237.76,172.78,0.7266991924629879,scenario
+35,Cyber Security Governance & Risk Management (Industrial Control Systems),244.41,179.43,0.7341352645145452,scenario
+35,Cyber Security Management,719.94,503.92,0.6999472178237075,scenario
+35,Cyber Threat Intelligence,278.55,182.96,0.6568300125650691,scenario
+35,Data Protection & Privacy,307.25,218.58,0.7114076484947112,scenario
+35,Digital Forensics,268.28,217.01,0.8088936931564038,scenario
+35,Digital Forensics (Industrial Control Systems),274.92999999999995,223.66,0.8135161677517915,scenario
+35,Identity & Access Management,364.65000000000003,309.60999999999996,0.8490607431783901,scenario
+35,Incident response,303.02,181.75,0.5997953930433635,scenario
+35,Incident response (Industrial Control Systems),309.66999999999996,188.4,0.6083895760002584,scenario
+35,Network Monitoring & Intrusion Detection,189.12,173.5,0.9174069373942471,scenario
+35,Secure Operations,366.15999999999997,274.89,0.7507373825649989,scenario
+35,Secure Operations (Industrial control systems),372.80999999999995,281.53999999999996,0.7551836055899788,scenario
+35,Secure System Architecture & Design,218.13,166.85999999999999,0.7649566772108375,scenario
+35,Secure System Architecture & Design (Industrial Control Systems),224.78,173.51,0.7719103123053652,scenario
+35,Secure System Development,218.13,166.85999999999999,0.7649566772108375,scenario
+35,Secure System Development (Industrial Control Systems),224.78,173.51,0.7719103123053652,scenario
+35,Security Testing,214.51,198.89,0.9271828819169269,scenario
+35,Vulnerability Management,268.88,203.29,0.756062183873847,scenario
+36,Cryptography & Communications Security (Cryptographer),150.75000000000003,66.58,0.44165837479270303,scenario
+36,Cryptography & Communications Security (Secure Communications Operator),150.75000000000003,66.58,0.44165837479270303,scenario
+36,Cyber Security Audit & Assurance,396.16,306.12,0.7727180936995153,scenario
+36,Cyber Security Governance & Risk Management,266.12,216.12,0.8121148354125958,scenario
+36,Cyber Security Governance & Risk Management (Industrial Control Systems),268.31,218.31,0.8136483917856211,scenario
+36,Cyber Security Management,409.19,333.32,0.8145849116547325,scenario
+36,Cyber Threat Intelligence,310.98,200.98000000000002,0.6462795035050486,scenario
+36,Data Protection & Privacy,287.24,224.17000000000002,0.7804275170589055,scenario
+36,Digital Forensics,211.53000000000003,175.66000000000003,0.8304259443104997,scenario
+36,Digital Forensics (Industrial Control Systems),213.72000000000003,177.85000000000002,0.8321635785139435,scenario
+36,Identity & Access Management,354.46000000000004,188.59000000000003,0.5320487502115895,scenario
+36,Incident response,155.56000000000003,116.61999999999999,0.7496785806119823,scenario
+36,Incident response (Industrial Control Systems),157.75000000000003,118.80999999999999,0.7531537242472264,scenario
+36,Network Monitoring & Intrusion Detection,110.97999999999999,55.11000000000001,0.4965759596323663,scenario
+36,Secure Operations,68.17999999999999,55.11000000000001,0.8083015547081257,scenario
+36,Secure Operations (Industrial control systems),70.36999999999999,57.300000000000004,0.8142674435128607,scenario
+36,Secure System Architecture & Design,5.49,5.49,1,scenario
+36,Secure System Architecture & Design (Industrial Control Systems),7.68,7.68,1,scenario
+36,Secure System Development,5.49,5.49,1,scenario
+36,Secure System Development (Industrial Control Systems),7.68,7.68,1,scenario
+36,Security Testing,189.58,93.71,0.4943031965397193,scenario
+36,Vulnerability Management,210.98000000000002,115.10999999999999,0.5455967390273958,scenario
+37,Cryptography & Communications Security (Cryptographer),138.41000000000003,111.31000000000002,0.8042048984899934,scenario
+37,Cryptography & Communications Security (Secure Communications Operator),138.41000000000003,111.31000000000002,0.8042048984899934,scenario
+37,Cyber Security Audit & Assurance,170.65000000000003,170.65000000000003,1,scenario
+37,Cyber Security Governance & Risk Management,156.38,144.68,0.9251822483693568,scenario
+37,Cyber Security Governance & Risk Management (Industrial Control Systems),156.65,144.95000000000002,0.9253112033195021,scenario
+37,Cyber Security Management,292.44999999999993,277.4199999999999,0.948606599418704,scenario
+37,Cyber Threat Intelligence,190.54000000000002,180.99,0.9498792904377034,scenario
+37,Data Protection & Privacy,154.32000000000002,151.26,0.9801710730948676,scenario
+37,Digital Forensics,155.82999999999998,148.93,0.9557209779888342,scenario
+37,Digital Forensics (Industrial Control Systems),156.1,149.20000000000002,0.9557975656630366,scenario
+37,Identity & Access Management,184.63000000000002,153.96,0.8338839841845853,scenario
+37,Incident response,142.25000000000003,132.29000000000002,0.929982425307557,scenario
+37,Incident response (Industrial Control Systems),142.52000000000004,132.56000000000003,0.9301150715689026,scenario
+37,Network Monitoring & Intrusion Detection,107,107,1,scenario
+37,Secure Operations,172.84,169.78,0.9822957648692432,scenario
+37,Secure Operations (Industrial control systems),173.11,170.05,0.9823233781988331,scenario
+37,Secure System Architecture & Design,60.49,53.59,0.8859315589353612,scenario
+37,Secure System Architecture & Design (Industrial Control Systems),60.760000000000005,53.86000000000001,0.8864384463462804,scenario
+37,Secure System Development,60.49,53.59,0.8859315589353612,scenario
+37,Secure System Development (Industrial Control Systems),60.760000000000005,53.86000000000001,0.8864384463462804,scenario
+37,Security Testing,129.77,129.77,1,scenario
+37,Vulnerability Management,146.23,143.57999999999998,0.981877863639472,scenario
+38,Cryptography & Communications Security (Cryptographer),47.33,30,0.6338474540460596,scenario
+38,Cryptography & Communications Security (Secure Communications Operator),47.33,30,0.6338474540460596,scenario
+38,Cyber Security Audit & Assurance,71.06,71.06,1,scenario
+38,Cyber Security Governance & Risk Management,65.16,60.45,0.9277163904235728,scenario
+38,Cyber Security Governance & Risk Management (Industrial Control Systems),78.6,73.89,0.9400763358778627,scenario
+38,Cyber Security Management,156.66,139.33,0.889378271415805,scenario
+38,Cyber Threat Intelligence,71.06,70.61,0.9936673233886856,scenario
+38,Data Protection & Privacy,77.78,77.78,1,scenario
+38,Digital Forensics,40.61,40.61,1,scenario
+38,Digital Forensics (Industrial Control Systems),54.05,54.05,1,scenario
+38,Identity & Access Management,118.39,113.67999999999999,0.9602162344792634,scenario
+38,Incident response,40.61,40.61,1,scenario
+38,Incident response (Industrial Control Systems),54.05,54.05,1,scenario
+38,Network Monitoring & Intrusion Detection,40.61,40.61,1,scenario
+38,Secure Operations,82.03999999999999,82.03999999999999,1,scenario
+38,Secure Operations (Industrial control systems),95.47999999999999,95.47999999999999,1,scenario
+38,Secure System Architecture & Design,0,0,NA,scenario
+38,Secure System Architecture & Design (Industrial Control Systems),13.44,13.44,1,scenario
+38,Secure System Development,0,0,NA,scenario
+38,Secure System Development (Industrial Control Systems),13.44,13.44,1,scenario
+38,Security Testing,5.9,5.9,1,scenario
+38,Vulnerability Management,71.06,70.61,0.9936673233886856,scenario
+39,Cryptography & Communications Security (Cryptographer),145.4,60,0.4126547455295736,scenario
+39,Cryptography & Communications Security (Secure Communications Operator),145.4,60,0.4126547455295736,scenario
+39,Cyber Security Audit & Assurance,295.33000000000004,222.7,0.7540717163850607,scenario
+39,Cyber Security Governance & Risk Management,218.65000000000003,162.7,0.744111593871484,scenario
+39,Cyber Security Governance & Risk Management (Industrial Control Systems),295.6,222.7,0.7533829499323409,scenario
+39,Cyber Security Management,722.2000000000002,415.81,0.5757546386042646,scenario
+39,Cyber Threat Intelligence,294.92,252.22000000000003,0.8552149735521498,scenario
+39,Data Protection & Privacy,216.18,150,0.6938662225922841,scenario
+39,Digital Forensics,149.79000000000002,120,0.8011215701982775,scenario
+39,Digital Forensics (Industrial Control Systems),226.74,196.95,0.8686160359883566,scenario
+39,Identity & Access Management,367.89,250.64,0.6812906031694256,scenario
+39,Incident response,372.01,253.11,0.6803849358888202,scenario
+39,Incident response (Industrial Control Systems),448.96,330.06,0.7351657163221669,scenario
+39,Network Monitoring & Intrusion Detection,222.22000000000003,163.11,0.7340023400234003,scenario
+39,Secure Operations,363.78,263.75,0.7250261146846996,scenario
+39,Secure Operations (Industrial control systems),440.72999999999996,323.75,0.7345767249790122,scenario
+39,Secure System Architecture & Design,151.71,136.95,0.9027091160767252,scenario
+39,Secure System Architecture & Design (Industrial Control Systems),228.66000000000003,213.89999999999998,0.9354500131199158,scenario
+39,Secure System Development,151.71,136.95,0.9027091160767252,scenario
+39,Secure System Development (Industrial Control Systems),228.66000000000003,213.89999999999998,0.9354500131199158,scenario
+39,Security Testing,149.11,102.43,0.686942525652203,scenario
+39,Vulnerability Management,294.92,223.11,0.7565102400651024,scenario
+40,Cryptography & Communications Security (Cryptographer),64.89,43.72,0.6737555863769455,scenario
+40,Cryptography & Communications Security (Secure Communications Operator),64.89,43.72,0.6737555863769455,scenario
+40,Cyber Security Audit & Assurance,200.15,131.52,0.6571071696227829,scenario
+40,Cyber Security Governance & Risk Management,98.91,83.92,0.848448084116874,scenario
+40,Cyber Security Governance & Risk Management (Industrial Control Systems),101.1,86.11,0.851730959446093,scenario
+40,Cyber Security Management,278.0599999999999,185.93000000000004,0.6686686326692085,scenario
+40,Cyber Threat Intelligence,252.55,220.42000000000002,0.8727776677885567,scenario
+40,Data Protection & Privacy,57.63,57.63,1,scenario
+40,Digital Forensics,255.42000000000002,216.79000000000002,0.8487589068984418,scenario
+40,Digital Forensics (Industrial Control Systems),257.61,218.98000000000002,0.85004464112418,scenario
+40,Identity & Access Management,206.45000000000002,101.66,0.49241947202712516,scenario
+40,Incident response,202.62,140.48999999999998,0.6933668936926265,scenario
+40,Incident response (Industrial Control Systems),204.81,142.67999999999998,0.6966456715980663,scenario
+40,Network Monitoring & Intrusion Detection,146.78,78.15,0.5324294863060363,scenario
+40,Secure Operations,108.50999999999999,85.00999999999999,0.7834300986084232,scenario
+40,Secure Operations (Industrial control systems),110.69999999999999,87.19999999999999,0.7877145438121048,scenario
+40,Secure System Architecture & Design,13.849999999999998,13.849999999999998,1,scenario
+40,Secure System Architecture & Design (Industrial Control Systems),16.04,16.04,1,scenario
+40,Secure System Development,13.849999999999998,13.849999999999998,1,scenario
+40,Secure System Development (Industrial Control Systems),16.04,16.04,1,scenario
+40,Security Testing,157.76,89.13,0.5649721095334685,scenario
+40,Vulnerability Management,149.66,111.03000000000002,0.7418815982894562,scenario
+41,Cryptography & Communications Security (Cryptographer),476.95,311.18,0.6524373624069609,scenario
+41,Cryptography & Communications Security (Secure Communications Operator),476.95,311.18,0.6524373624069609,scenario
+41,Cyber Security Audit & Assurance,447.87,356.06,0.7950074798490634,scenario
+41,Cyber Security Governance & Risk Management,380.66,240,0.6304838963904796,scenario
+41,Cyber Security Governance & Risk Management (Industrial Control Systems),462.28000000000003,300,0.6489573418707276,scenario
+41,Cyber Security Management,1321.54,781.58,0.5914160751850115,scenario
+41,Cyber Threat Intelligence,457.07000000000005,292.3,0.6395081716148511,scenario
+41,Data Protection & Privacy,405.48,266.06,0.6561605997829733,scenario
+41,Digital Forensics,451.30999999999995,336.12,0.7447652389709957,scenario
+41,Digital Forensics (Industrial Control Systems),532.93,417.74,0.7838552905634887,scenario
+41,Identity & Access Management,585.32,413.51,0.7064682566801065,scenario
+41,Incident response,439.24,262.3,0.5971678353519716,scenario
+41,Incident response (Industrial Control Systems),520.86,343.92,0.6602925930192375,scenario
+41,Network Monitoring & Intrusion Detection,239.1,227.95,0.9533667921371811,scenario
+41,Secure Operations,459.13,361.98,0.7884041556857535,scenario
+41,Secure Operations (Industrial control systems),540.75,421.98,0.7803606102635229,scenario
+41,Secure System Architecture & Design,471.05999999999995,416.15,0.8834331083089204,scenario
+41,Secure System Architecture & Design (Industrial Control Systems),552.68,497.77,0.9006477527683289,scenario
+41,Secure System Development,471.05999999999995,416.15,0.8834331083089204,scenario
+41,Secure System Development (Industrial Control Systems),552.68,497.77,0.9006477527683289,scenario
+41,Security Testing,455.55999999999995,404.40999999999997,0.8877206076038283,scenario
+41,Vulnerability Management,396.85,302.08,0.7611944059468312,scenario
+42,Cryptography & Communications Security (Cryptographer),55.870000000000005,49.480000000000004,0.8856273492035082,scenario
+42,Cryptography & Communications Security (Secure Communications Operator),55.870000000000005,49.480000000000004,0.8856273492035082,scenario
+42,Cyber Security Audit & Assurance,74.79,74.79,1,scenario
+42,Cyber Security Governance & Risk Management,74.79,74.79,1,scenario
+42,Cyber Security Governance & Risk Management (Industrial Control Systems),88.83000000000001,88.83000000000001,1,scenario
+42,Cyber Security Management,108.31,108.31,1,scenario
+42,Cyber Threat Intelligence,75.07000000000001,75.07000000000001,1,scenario
+42,Data Protection & Privacy,55.59,55.59,1,scenario
+42,Digital Forensics,75.07000000000001,75.07000000000001,1,scenario
+42,Digital Forensics (Industrial Control Systems),89.11000000000001,89.11000000000001,1,scenario
+42,Identity & Access Management,55.59,49.2,0.8850512682137075,scenario
+42,Incident response,57.879999999999995,57.879999999999995,1,scenario
+42,Incident response (Industrial Control Systems),71.91999999999999,71.91999999999999,1,scenario
+42,Network Monitoring & Intrusion Detection,38.68,38.68,1,scenario
+42,Secure Operations,57.879999999999995,57.879999999999995,1,scenario
+42,Secure Operations (Industrial control systems),71.91999999999999,71.91999999999999,1,scenario
+42,Secure System Architecture & Design,19.48,19.48,1,scenario
+42,Secure System Architecture & Design (Industrial Control Systems),33.519999999999996,33.519999999999996,1,scenario
+42,Secure System Development,19.48,19.48,1,scenario
+42,Secure System Development (Industrial Control Systems),33.519999999999996,33.519999999999996,1,scenario
+42,Security Testing,55.870000000000005,55.870000000000005,1,scenario
+42,Vulnerability Management,38.68,38.68,1,scenario
+43,Cryptography & Communications Security (Cryptographer),722.22,441.89,0.611849574921769,scenario
+43,Cryptography & Communications Security (Secure Communications Operator),722.22,411.89,0.5703109855722632,scenario
+43,Cyber Security Audit & Assurance,513.44,340.64,0.6634465565596758,scenario
+43,Cyber Security Governance & Risk Management,325.51,240,0.7373045374950079,scenario
+43,Cyber Security Governance & Risk Management (Industrial Control Systems),422.9,300,0.7093875620714117,scenario
+43,Cyber Security Management,1828.5300000000002,850.64,0.46520428978469036,scenario
+43,Cyber Threat Intelligence,600.54,420,0.6993705664901589,scenario
+43,Data Protection & Privacy,428.12,310.64,0.7255909558067831,scenario
+43,Digital Forensics,622.0799999999999,425.91999999999996,0.6846707818930041,scenario
+43,Digital Forensics (Industrial Control Systems),719.4699999999999,515.92,0.7170834086202343,scenario
+43,Identity & Access Management,784.9099999999999,472.81,0.602374794562434,scenario
+43,Incident response,594.3800000000001,330,0.555200376863286,scenario
+43,Incident response (Industrial Control Systems),691.7700000000001,420,0.6071382106769591,scenario
+43,Network Monitoring & Intrusion Detection,376.68,270,0.7167887862376553,scenario
+43,Secure Operations,677.2299999999999,420,0.6201733532182568,scenario
+43,Secure Operations (Industrial control systems),774.6199999999999,480,0.6196586713485323,scenario
+43,Secure System Architecture & Design,681.49,519.62,0.7624763386109847,scenario
+43,Secure System Architecture & Design (Industrial Control Systems),778.88,609.62,0.7826879622021364,scenario
+43,Secure System Development,681.49,519.62,0.7624763386109847,scenario
+43,Secure System Development (Industrial Control Systems),778.88,609.62,0.7826879622021364,scenario
+43,Security Testing,573.25,489.62,0.8541125163541212,scenario
+43,Vulnerability Management,527.43,352.81,0.6689228902413591,scenario
+44,Cryptography & Communications Security (Cryptographer),0,0,NA,scenario
+44,Cryptography & Communications Security (Secure Communications Operator),0,0,NA,scenario
+44,Cyber Security Audit & Assurance,0,0,NA,scenario
+44,Cyber Security Governance & Risk Management,0,0,NA,scenario
+44,Cyber Security Governance & Risk Management (Industrial Control Systems),0,0,NA,scenario
+44,Cyber Security Management,0,0,NA,scenario
+44,Cyber Threat Intelligence,0,0,NA,scenario
+44,Data Protection & Privacy,0,0,NA,scenario
+44,Digital Forensics,0,0,NA,scenario
+44,Digital Forensics (Industrial Control Systems),0,0,NA,scenario
+44,Identity & Access Management,0,0,NA,scenario
+44,Incident response,0,0,NA,scenario
+44,Incident response (Industrial Control Systems),0,0,NA,scenario
+44,Network Monitoring & Intrusion Detection,0,0,NA,scenario
+44,Secure Operations,0,0,NA,scenario
+44,Secure Operations (Industrial control systems),0,0,NA,scenario
+44,Secure System Architecture & Design,0,0,NA,scenario
+44,Secure System Architecture & Design (Industrial Control Systems),0,0,NA,scenario
+44,Secure System Development,0,0,NA,scenario
+44,Secure System Development (Industrial Control Systems),0,0,NA,scenario
+44,Security Testing,0,0,NA,scenario
+44,Vulnerability Management,0,0,NA,scenario
+45,Cryptography & Communications Security (Cryptographer),330.3,230.32,0.6973054798667877,scenario
+45,Cryptography & Communications Security (Secure Communications Operator),330.3,230.32,0.6973054798667877,scenario
+45,Cyber Security Audit & Assurance,431.27,332.73,0.771512045818165,scenario
+45,Cyber Security Governance & Risk Management,324.96,240,0.7385524372230429,scenario
+45,Cyber Security Governance & Risk Management (Industrial Control Systems),387.65,300,0.7738939765252161,scenario
+45,Cyber Security Management,879.8099999999998,655.4199999999998,0.7449562973823893,scenario
+45,Cyber Threat Intelligence,451.97999999999996,349.62,0.7735298022036374,scenario
+45,Data Protection & Privacy,326.88,242.73,0.7425660792951542,scenario
+45,Digital Forensics,382.43999999999994,308.53000000000003,0.8067409266813097,scenario
+45,Digital Forensics (Industrial Control Systems),445.12999999999994,371.22,0.8339586188304542,scenario
+45,Identity & Access Management,510.4099999999999,319.81,0.62657471444525,scenario
+45,Incident response,379.28,291.46,0.7684560219363004,scenario
+45,Incident response (Industrial Control Systems),441.96999999999997,354.15,0.801298730683078,scenario
+45,Network Monitoring & Intrusion Detection,275.58,220.11999999999998,0.7987517236374192,scenario
+45,Secure Operations,429.61,352.54,0.8206047345266637,scenario
+45,Secure Operations (Industrial control systems),492.3,412.54,0.837984968515133,scenario
+45,Secure System Architecture & Design,212.75,190.21,0.8940540540540541,scenario
+45,Secure System Architecture & Design (Industrial Control Systems),275.44,252.9,0.9181672959628231,scenario
+45,Secure System Development,212.75,190.21,0.8940540540540541,scenario
+45,Secure System Development (Industrial Control Systems),275.44,252.9,0.9181672959628231,scenario
+45,Security Testing,298.08,230.74,0.774087493290392,scenario
+45,Vulnerability Management,404.10999999999996,310.71,0.7688748113137512,scenario
+46,Cryptography & Communications Security (Cryptographer),405.49,277.51,0.684381858985425,scenario
+46,Cryptography & Communications Security (Secure Communications Operator),405.49,260.76,0.6430738119312437,scenario
+46,Cyber Security Audit & Assurance,470.13,326.91,0.6953608576351222,scenario
+46,Cyber Security Governance & Risk Management,368.85999999999996,240,0.6506533644201052,scenario
+46,Cyber Security Governance & Risk Management (Industrial Control Systems),370.12999999999994,241.27,0.6518520519817362,scenario
+46,Cyber Security Management,871.2500000000002,535.4000000000001,0.614519368723099,scenario
+46,Cyber Threat Intelligence,451.00999999999993,306.74,0.6801179574732269,scenario
+46,Data Protection & Privacy,340.09000000000003,236.91,0.6966097209562174,scenario
+46,Digital Forensics,429.22,334.77000000000004,0.7799496761567495,scenario
+46,Digital Forensics (Industrial Control Systems),430.49,336.04,0.7805988524704407,scenario
+46,Identity & Access Management,536.87,284.71000000000004,0.5303146013001286,scenario
+46,Incident response,351.71,219.63,0.62446333627136,scenario
+46,Incident response (Industrial Control Systems),352.97999999999996,220.9,0.6258144937390221,scenario
+46,Network Monitoring & Intrusion Detection,206.51,126.74,0.6137233063774151,scenario
+46,Secure Operations,394.72,257.96000000000004,0.6535265504661533,scenario
+46,Secure Operations (Industrial control systems),395.99,259.23,0.654637743377358,scenario
+46,Secure System Architecture & Design,169.36999999999998,137.94,0.8144299462714768,scenario
+46,Secure System Architecture & Design (Industrial Control Systems),170.64,139.21,0.8158110642287859,scenario
+46,Secure System Development,169.36999999999998,137.94,0.8144299462714768,scenario
+46,Secure System Development (Industrial Control Systems),170.64,139.21,0.8158110642287859,scenario
+46,Security Testing,202.61999999999998,106.98,0.5279834172342317,scenario
+46,Vulnerability Management,308.73,188.96,0.6120558416739545,scenario
+47,Cryptography & Communications Security (Cryptographer),58.74,58.74,1,scenario
+47,Cryptography & Communications Security (Secure Communications Operator),58.74,58.74,1,scenario
+47,Cyber Security Audit & Assurance,147.28,90,0.6110809342748507,scenario
+47,Cyber Security Governance & Risk Management,100,30,0.3,scenario
+47,Cyber Security Governance & Risk Management (Industrial Control Systems),100,30,0.3,scenario
+47,Cyber Security Management,279.37,180,0.6443068332319146,scenario
+47,Cyber Threat Intelligence,279.37,240.63,0.8613308515588646,scenario
+47,Data Protection & Privacy,0,0,NA,scenario
+47,Digital Forensics,206.02,137.28,0.6663430734880108,scenario
+47,Digital Forensics (Industrial Control Systems),206.02,137.28,0.6663430734880108,scenario
+47,Identity & Access Management,147.28,60,0.40738728951656705,scenario
+47,Incident response,279.37,227.28,0.8135447614274975,scenario
+47,Incident response (Industrial Control Systems),279.37,227.28,0.8135447614274975,scenario
+47,Network Monitoring & Intrusion Detection,279.37,238.74,0.8545656298099295,scenario
+47,Secure Operations,232.09,178.74,0.7701322762721359,scenario
+47,Secure Operations (Industrial control systems),232.09,178.74,0.7701322762721359,scenario
+47,Secure System Architecture & Design,58.74,30,0.5107252298263534,scenario
+47,Secure System Architecture & Design (Industrial Control Systems),58.74,30,0.5107252298263534,scenario
+47,Secure System Development,58.74,30,0.5107252298263534,scenario
+47,Secure System Development (Industrial Control Systems),58.74,30,0.5107252298263534,scenario
+47,Security Testing,179.37,162.09,0.9036628198695434,scenario
+47,Vulnerability Management,279.37,256.02,0.9164190858001933,scenario
+48,Cryptography & Communications Security (Cryptographer),184.50000000000003,89.76999999999998,0.48655826558265564,scenario
+48,Cryptography & Communications Security (Secure Communications Operator),184.50000000000003,89.76999999999998,0.48655826558265564,scenario
+48,Cyber Security Audit & Assurance,380.24,288.85999999999996,0.759678098043341,scenario
+48,Cyber Security Governance & Risk Management,264.06,199.01,0.7536544724683784,scenario
+48,Cyber Security Governance & Risk Management (Industrial Control Systems),268.04,202.98999999999998,0.7573123414415758,scenario
+48,Cyber Security Management,551.9700000000001,432.2099999999999,0.783031686504701,scenario
+48,Cyber Threat Intelligence,300.68,248.01999999999998,0.824863642410536,scenario
+48,Data Protection & Privacy,305.90000000000003,240.7,0.786858450474011,scenario
+48,Digital Forensics,248.27999999999997,221.48999999999998,0.8920976317061382,scenario
+48,Digital Forensics (Industrial Control Systems),252.25999999999996,225.46999999999997,0.8938000475699676,scenario
+48,Identity & Access Management,349.51,263.48,0.7538553975565793,scenario
+48,Incident response,255.96000000000004,189.17000000000002,0.7390607907485545,scenario
+48,Incident response (Industrial Control Systems),259.94000000000005,193.15,0.7430560898668922,scenario
+48,Network Monitoring & Intrusion Detection,155.83,132.94,0.8531091574151318,scenario
+48,Secure Operations,210.43000000000004,113.63999999999999,0.5400370669581331,scenario
+48,Secure Operations (Industrial control systems),214.41000000000003,117.61999999999999,0.5485751597406836,scenario
+48,Secure System Architecture & Design,88.32999999999998,88.32999999999998,1,scenario
+48,Secure System Architecture & Design (Industrial Control Systems),92.30999999999999,92.30999999999999,1,scenario
+48,Secure System Development,88.32999999999998,88.32999999999998,1,scenario
+48,Secure System Development (Industrial Control Systems),92.30999999999999,92.30999999999999,1,scenario
+48,Security Testing,280.79,229.64000000000001,0.8178353929983262,scenario
+48,Vulnerability Management,265.42999999999995,241.03,0.9080736917454698,scenario
+49,Cryptography & Communications Security (Cryptographer),93.63999999999999,70.75,0.7555531824006836,scenario
+49,Cryptography & Communications Security (Secure Communications Operator),93.63999999999999,70.75,0.7555531824006836,scenario
+49,Cyber Security Audit & Assurance,175.14,168.60999999999999,0.9627155418522325,scenario
+49,Cyber Security Governance & Risk Management,133.52,128.78,0.9644997004194128,scenario
+49,Cyber Security Governance & Risk Management (Industrial Control Systems),144.21,139.47,0.9671312669024339,scenario
+49,Cyber Security Management,308.95,276.87,0.8961644279009549,scenario
+49,Cyber Threat Intelligence,122.52999999999999,103.39999999999999,0.8438749693952502,scenario
+49,Data Protection & Privacy,196.24,161.5,0.8229718711781492,scenario
+49,Digital Forensics,75.42999999999999,75.42999999999999,1,scenario
+49,Digital Forensics (Industrial Control Systems),86.11999999999999,86.11999999999999,1,scenario
+49,Identity & Access Management,163.29000000000002,161.5,0.9890379080164124,scenario
+49,Incident response,151.14999999999998,113.74999999999999,0.7525636784651009,scenario
+49,Incident response (Industrial Control Systems),161.83999999999997,124.43999999999998,0.7689075630252101,scenario
+49,Network Monitoring & Intrusion Detection,53.169999999999995,51.379999999999995,0.9663343990972353,scenario
+49,Secure Operations,140.17,105.42999999999999,0.7521580937433117,scenario
+49,Secure Operations (Industrial control systems),150.85999999999999,116.11999999999999,0.7697202704494234,scenario
+49,Secure System Architecture & Design,56.06999999999999,56.06999999999999,1,scenario
+49,Secure System Architecture & Design (Industrial Control Systems),66.75999999999999,66.75999999999999,1,scenario
+49,Secure System Development,56.06999999999999,56.06999999999999,1,scenario
+49,Secure System Development (Industrial Control Systems),66.75999999999999,66.75999999999999,1,scenario
+49,Security Testing,84.96,83.16999999999999,0.9789312617702447,scenario
+49,Vulnerability Management,102.3,83.16999999999999,0.8130009775171064,scenario
+50,Cryptography & Communications Security (Cryptographer),182.24,127.62,0.7002853380158033,scenario
+50,Cryptography & Communications Security (Secure Communications Operator),182.24,127.62,0.7002853380158033,scenario
+50,Cyber Security Audit & Assurance,329.8,259.65999999999997,0.7873256519102485,scenario
+50,Cyber Security Governance & Risk Management,258.17,199.66,0.7733663864895224,scenario
+50,Cyber Security Governance & Risk Management (Industrial Control Systems),258.17,199.66,0.7733663864895224,scenario
+50,Cyber Security Management,804.87,482.81,0.5998608470933194,scenario
+50,Cyber Threat Intelligence,416.05,308.43,0.7413291671674077,scenario
+50,Data Protection & Privacy,262.47,181.81,0.6926886882310359,scenario
+50,Digital Forensics,322.91999999999996,211.81,0.6559209711383626,scenario
+50,Digital Forensics (Industrial Control Systems),322.91999999999996,211.81,0.6559209711383626,scenario
+50,Identity & Access Management,438.11,306.15999999999997,0.69881993106754,scenario
+50,Incident response,411.46000000000004,288.51,0.7011860205123219,scenario
+50,Incident response (Industrial Control Systems),411.46000000000004,288.51,0.7011860205123219,scenario
+50,Network Monitoring & Intrusion Detection,284.24,236.13,0.8307416267942583,scenario
+50,Secure Operations,343.27000000000004,281.32,0.8195298161796836,scenario
+50,Secure Operations (Industrial control systems),343.27000000000004,281.32,0.8195298161796836,scenario
+50,Secure System Architecture & Design,220.34,169.37,0.7686756830353091,scenario
+50,Secure System Architecture & Design (Industrial Control Systems),220.34,169.37,0.7686756830353091,scenario
+50,Secure System Development,220.34,169.37,0.7686756830353091,scenario
+50,Secure System Development (Industrial Control Systems),220.34,169.37,0.7686756830353091,scenario
+50,Security Testing,310.89,255.91000000000003,0.8231528836565989,scenario
+50,Vulnerability Management,457.59000000000003,361.86,0.7907952533927751,scenario
+51,Cryptography & Communications Security (Cryptographer),187.44,136.95,0.7306338028169014,scenario
+51,Cryptography & Communications Security (Secure Communications Operator),187.44,136.95,0.7306338028169014,scenario
+51,Cyber Security Audit & Assurance,393.78999999999996,302.58,0.7683790852992712,scenario
+51,Cyber Security Governance & Risk Management,312.58,222.09,0.7105061104357285,scenario
+51,Cyber Security Governance & Risk Management (Industrial Control Systems),313.88,223.39000000000001,0.7117051102332101,scenario
+51,Cyber Security Management,713.05,523.1199999999999,0.7336371923427528,scenario
+51,Cyber Threat Intelligence,561.06,411.21,0.7329162656400385,scenario
+51,Data Protection & Privacy,231.45999999999998,189.37,0.8181543247213342,scenario
+51,Digital Forensics,410.2799999999999,312.23999999999995,0.7610412401286927,scenario
+51,Digital Forensics (Industrial Control Systems),411.5799999999999,313.53999999999996,0.7617960056368143,scenario
+51,Identity & Access Management,398.06999999999994,203.21,0.510488105107142,scenario
+51,Incident response,446.34,300,0.6721333512568894,scenario
+51,Incident response (Industrial Control Systems),447.64,301.3,0.6730855151460996,scenario
+51,Network Monitoring & Intrusion Detection,342.53,246.82999999999998,0.7206084138615596,scenario
+51,Secure Operations,405.24999999999994,280.12,0.6912276372609502,scenario
+51,Secure Operations (Industrial control systems),406.54999999999995,281.42,0.6922149797072932,scenario
+51,Secure System Architecture & Design,117.19,80.36,0.6857240378871917,scenario
+51,Secure System Architecture & Design (Industrial Control Systems),118.49,81.66,0.689172082032239,scenario
+51,Secure System Development,117.19,80.36,0.6857240378871917,scenario
+51,Secure System Development (Industrial Control Systems),118.49,81.66,0.689172082032239,scenario
+51,Security Testing,352.13999999999993,275.95,0.7836371897540753,scenario
+51,Vulnerability Management,438.7799999999999,313.09000000000003,0.7135466520807696,scenario
+52,Cryptography & Communications Security (Cryptographer),294.25,246.22,0.8367714528462192,scenario
+52,Cryptography & Communications Security (Secure Communications Operator),294.25,246.22,0.8367714528462192,scenario
+52,Cyber Security Audit & Assurance,363.51,281.96000000000004,0.7756595416907377,scenario
+52,Cyber Security Governance & Risk Management,267.63,220.18,0.8227029854650078,scenario
+52,Cyber Security Governance & Risk Management (Industrial Control Systems),306.72,259.27,0.8452986437141365,scenario
+52,Cyber Security Management,1025.5400000000002,615.57,0.6002398736275523,scenario
+52,Cyber Threat Intelligence,478.6099999999999,353.29999999999995,0.7381793109212094,scenario
+52,Data Protection & Privacy,251.85000000000002,185.06,0.7348024617828072,scenario
+52,Digital Forensics,443.77,296.11,0.6672600671519031,scenario
+52,Digital Forensics (Industrial Control Systems),482.86,335.20000000000005,0.6941970757569482,scenario
+52,Identity & Access Management,432.11,290.61,0.6725370854643493,scenario
+52,Incident response,496.03,286.55,0.5776868334576538,scenario
+52,Incident response (Industrial Control Systems),535.12,325.64,0.6085364030497832,scenario
+52,Network Monitoring & Intrusion Detection,339.1,247.22,0.7290474786198761,scenario
+52,Secure Operations,405.5,277.49,0.6843156596794081,scenario
+52,Secure Operations (Industrial control systems),444.59000000000003,316.58000000000004,0.7120717964866506,scenario
+52,Secure System Architecture & Design,398.1,333.45,0.8376036171816126,scenario
+52,Secure System Architecture & Design (Industrial Control Systems),437.19000000000005,372.53999999999996,0.8521237905716048,scenario
+52,Secure System Development,398.1,333.45,0.8376036171816126,scenario
+52,Secure System Development (Industrial Control Systems),437.19000000000005,372.53999999999996,0.8521237905716048,scenario
+52,Security Testing,507.14,438.39,0.8644358559766534,scenario
+52,Vulnerability Management,483.54999999999995,335.11,0.6930203701788854,scenario
+53,Cryptography & Communications Security (Cryptographer),0,0,NA,scenario
+53,Cryptography & Communications Security (Secure Communications Operator),0,0,NA,scenario
+53,Cyber Security Audit & Assurance,0,0,NA,scenario
+53,Cyber Security Governance & Risk Management,0,0,NA,scenario
+53,Cyber Security Governance & Risk Management (Industrial Control Systems),0,0,NA,scenario
+53,Cyber Security Management,0,0,NA,scenario
+53,Cyber Threat Intelligence,0,0,NA,scenario
+53,Data Protection & Privacy,0,0,NA,scenario
+53,Digital Forensics,0,0,NA,scenario
+53,Digital Forensics (Industrial Control Systems),0,0,NA,scenario
+53,Identity & Access Management,0,0,NA,scenario
+53,Incident response,0,0,NA,scenario
+53,Incident response (Industrial Control Systems),0,0,NA,scenario
+53,Network Monitoring & Intrusion Detection,0,0,NA,scenario
+53,Secure Operations,0,0,NA,scenario
+53,Secure Operations (Industrial control systems),0,0,NA,scenario
+53,Secure System Architecture & Design,0,0,NA,scenario
+53,Secure System Architecture & Design (Industrial Control Systems),0,0,NA,scenario
+53,Secure System Development,0,0,NA,scenario
+53,Secure System Development (Industrial Control Systems),0,0,NA,scenario
+53,Security Testing,0,0,NA,scenario
+53,Vulnerability Management,0,0,NA,scenario
+54,Cryptography & Communications Security (Cryptographer),339.24,258.37,0.7616141964390991,scenario
+54,Cryptography & Communications Security (Secure Communications Operator),339.24,258.37,0.7616141964390991,scenario
+54,Cyber Security Audit & Assurance,265.03,218.81,0.8256046485303552,scenario
+54,Cyber Security Governance & Risk Management,214.96,129.51,0.6024841831038332,scenario
+54,Cyber Security Governance & Risk Management (Industrial Control Systems),214.96,129.51,0.6024841831038332,scenario
+54,Cyber Security Management,475.87,362.89,0.7625822178326013,scenario
+54,Cyber Threat Intelligence,317.43,217.12,0.68399332136219,scenario
+54,Data Protection & Privacy,205.76999999999998,205.76999999999998,1,scenario
+54,Digital Forensics,348.43,239.3,0.6867950520908074,scenario
+54,Digital Forensics (Industrial Control Systems),348.43,239.3,0.6867950520908074,scenario
+54,Identity & Access Management,291.91999999999996,176.46999999999997,0.6045149355987942,scenario
+54,Incident response,188.62,127.12,0.6739476195525395,scenario
+54,Incident response (Industrial Control Systems),188.62,127.12,0.6739476195525395,scenario
+54,Network Monitoring & Intrusion Detection,188.62,187.12,0.9920475029159156,scenario
+54,Secure Operations,296.99,214.01,0.7205966530859624,scenario
+54,Secure Operations (Industrial control systems),296.99,214.01,0.7205966530859624,scenario
+54,Secure System Architecture & Design,172.98000000000002,90,0.5202913631633714,scenario
+54,Secure System Architecture & Design (Industrial Control Systems),172.98000000000002,90,0.5202913631633714,scenario
+54,Secure System Development,172.98000000000002,90,0.5202913631633714,scenario
+54,Secure System Development (Industrial Control Systems),172.98000000000002,90,0.5202913631633714,scenario
+54,Security Testing,191.76999999999998,160.97,0.8393909370600199,scenario
+54,Vulnerability Management,228.13,187.12,0.8202340770613247,scenario
+55,Cryptography & Communications Security (Cryptographer),74.86,30,0.4007480630510286,scenario
+55,Cryptography & Communications Security (Secure Communications Operator),74.86,30,0.4007480630510286,scenario
+55,Cyber Security Audit & Assurance,16.47,16.47,1,scenario
+55,Cyber Security Governance & Risk Management,16.47,16.47,1,scenario
+55,Cyber Security Governance & Risk Management (Industrial Control Systems),16.47,16.47,1,scenario
+55,Cyber Security Management,97.98,53.12,0.5421514594815268,scenario
+55,Cyber Threat Intelligence,16.47,16.47,1,scenario
+55,Data Protection & Privacy,91.33,76.47,0.837293331873426,scenario
+55,Digital Forensics,0,0,NA,scenario
+55,Digital Forensics (Industrial Control Systems),0,0,NA,scenario
+55,Identity & Access Management,91.33,91.33,1,scenario
+55,Incident response,0,0,NA,scenario
+55,Incident response (Industrial Control Systems),0,0,NA,scenario
+55,Network Monitoring & Intrusion Detection,0,0,NA,scenario
+55,Secure Operations,74.86,74.86,1,scenario
+55,Secure Operations (Industrial control systems),74.86,74.86,1,scenario
+55,Secure System Architecture & Design,6.65,6.65,1,scenario
+55,Secure System Architecture & Design (Industrial Control Systems),6.65,6.65,1,scenario
+55,Secure System Development,6.65,6.65,1,scenario
+55,Secure System Development (Industrial Control Systems),6.65,6.65,1,scenario
+55,Security Testing,6.65,6.65,1,scenario
+55,Vulnerability Management,16.47,16.47,1,scenario
+56,Cryptography & Communications Security (Cryptographer),113.86000000000001,75.27000000000001,0.6610750043913578,scenario
+56,Cryptography & Communications Security (Secure Communications Operator),113.86000000000001,75.27000000000001,0.6610750043913578,scenario
+56,Cyber Security Audit & Assurance,110.84,72.25,0.651840490797546,scenario
+56,Cyber Security Governance & Risk Management,42.25,42.25,1,scenario
+56,Cyber Security Governance & Risk Management (Industrial Control Systems),96.3,96.3,1,scenario
+56,Cyber Security Management,279.3,192.25,0.688327962764053,scenario
+56,Cyber Threat Intelligence,42.25,30,0.7100591715976331,scenario
+56,Data Protection & Privacy,110.84,110.84,1,scenario
+56,Digital Forensics,0,0,NA,scenario
+56,Digital Forensics (Industrial Control Systems),54.05,54.05,1,scenario
+56,Identity & Access Management,156.11,147.52,0.9449746973288066,scenario
+56,Incident response,0,0,NA,scenario
+56,Incident response (Industrial Control Systems),54.05,54.05,1,scenario
+56,Network Monitoring & Intrusion Detection,0,0,NA,scenario
+56,Secure Operations,0,0,NA,scenario
+56,Secure Operations (Industrial control systems),54.05,54.05,1,scenario
+56,Secure System Architecture & Design,45.27,45.27,1,scenario
+56,Secure System Architecture & Design (Industrial Control Systems),99.32,99.32,1,scenario
+56,Secure System Development,45.27,45.27,1,scenario
+56,Secure System Development (Industrial Control Systems),99.32,99.32,1,scenario
+56,Security Testing,0,0,NA,scenario
+56,Vulnerability Management,42.25,30,0.7100591715976331,scenario
+57,Cryptography & Communications Security (Cryptographer),190.82,135.59,0.7105649303008071,scenario
+57,Cryptography & Communications Security (Secure Communications Operator),190.82,135.59,0.7105649303008071,scenario
+57,Cyber Security Audit & Assurance,211.94,187.89000000000001,0.8865244880626594,scenario
+57,Cyber Security Governance & Risk Management,157.89000000000001,156.71,0.9925264424599404,scenario
+57,Cyber Security Governance & Risk Management (Industrial Control Systems),157.89000000000001,156.71,0.9925264424599404,scenario
+57,Cyber Security Management,385.88,301.94,0.7824712345806987,scenario
+57,Cyber Threat Intelligence,143.07999999999998,120,0.8386916410399777,scenario
+57,Data Protection & Privacy,211.94,192.97000000000003,0.9104935359063887,scenario
+57,Digital Forensics,95.34,91.18,0.9563666876442207,scenario
+57,Digital Forensics (Industrial Control Systems),95.34,91.18,0.9563666876442207,scenario
+57,Identity & Access Management,204.4,173.22,0.8474559686888453,scenario
+57,Incident response,83.13,60,0.7217610970768676,scenario
+57,Incident response (Industrial Control Systems),83.13,60,0.7217610970768676,scenario
+57,Network Monitoring & Intrusion Detection,34.16,34.16,1,scenario
+57,Secure Operations,83.13,64.16,0.7718031998075304,scenario
+57,Secure Operations (Industrial control systems),83.13,64.16,0.7718031998075304,scenario
+57,Secure System Architecture & Design,75.59,71.43,0.9449662653790184,scenario
+57,Secure System Architecture & Design (Industrial Control Systems),75.59,71.43,0.9449662653790184,scenario
+57,Secure System Development,75.59,71.43,0.9449662653790184,scenario
+57,Secure System Development (Industrial Control Systems),75.59,71.43,0.9449662653790184,scenario
+57,Security Testing,95.34,94.16,0.987623243129851,scenario
+57,Vulnerability Management,81.9,64.16,0.7833943833943833,scenario
+58,Cryptography & Communications Security (Cryptographer),285.44999999999993,225.25000000000003,0.7891049220528992,scenario
+58,Cryptography & Communications Security (Secure Communications Operator),285.44999999999993,225.25000000000003,0.7891049220528992,scenario
+58,Cyber Security Audit & Assurance,432.09,321.01,0.7429239278853943,scenario
+58,Cyber Security Governance & Risk Management,306.29999999999995,231.01000000000002,0.7541952334312767,scenario
+58,Cyber Security Governance & Risk Management (Industrial Control Systems),346.0799999999999,270.79,0.7824491447064265,scenario
+58,Cyber Security Management,943.06,759.4799999999999,0.8053358216868491,scenario
+58,Cyber Threat Intelligence,419.75,354.65,0.844907683144729,scenario
+58,Data Protection & Privacy,315.9,240.2,0.7603672048116493,scenario
+58,Digital Forensics,394.65,332.95,0.8436589382997594,scenario
+58,Digital Forensics (Industrial Control Systems),434.42999999999995,372.73,0.8579748175770552,scenario
+58,Identity & Access Management,475.15999999999997,329.55,0.6935558548699386,scenario
+58,Incident response,401.23,311.51,0.7763876081050768,scenario
+58,Incident response (Industrial Control Systems),441.01,351.28999999999996,0.796557901181379,scenario
+58,Network Monitoring & Intrusion Detection,258.3,214.69,0.8311653116531165,scenario
+58,Secure Operations,383.39,299.09,0.7801194606014763,scenario
+58,Secure Operations (Industrial control systems),423.16999999999996,338.87,0.8007892809036559,scenario
+58,Secure System Architecture & Design,292.03999999999996,278.41999999999996,0.9533625530749212,scenario
+58,Secure System Architecture & Design (Industrial Control Systems),331.81999999999994,318.19999999999993,0.9589536495690434,scenario
+58,Secure System Development,292.03999999999996,278.41999999999996,0.9533625530749212,scenario
+58,Secure System Development (Industrial Control Systems),331.81999999999994,318.19999999999993,0.9589536495690434,scenario
+58,Security Testing,372.43,328.90000000000003,0.8831189753779235,scenario
+58,Vulnerability Management,383.26,318.17,0.8301675103063195,scenario
+59,Cryptography & Communications Security (Cryptographer),64.88,44.13,0.6801787916152898,scenario
+59,Cryptography & Communications Security (Secure Communications Operator),64.88,44.13,0.6801787916152898,scenario
+59,Cyber Security Audit & Assurance,160.22,90,0.5617276245162901,scenario
+59,Cyber Security Governance & Risk Management,76.27,30,0.3933394519470303,scenario
+59,Cyber Security Governance & Risk Management (Industrial Control Systems),76.27,30,0.3933394519470303,scenario
+59,Cyber Security Management,413.29999999999995,236.73999999999998,0.5728042584079361,scenario
+59,Cyber Threat Intelligence,336.21,294.34999999999997,0.8754944826150323,scenario
+59,Data Protection & Privacy,0,0,NA,scenario
+59,Digital Forensics,253.22,213,0.8411657846931522,scenario
+59,Digital Forensics (Industrial Control Systems),253.22,213,0.8411657846931522,scenario
+59,Identity & Access Management,210.97,110.75,0.5249561549035408,scenario
+59,Incident response,349.52,253.70999999999998,0.7258812085145342,scenario
+59,Incident response (Industrial Control Systems),349.52,253.70999999999998,0.7258812085145342,scenario
+59,Network Monitoring & Intrusion Detection,270.37,180.39999999999998,0.6672337907312201,scenario
+59,Secure Operations,303.01,201.14999999999998,0.6638394772449754,scenario
+59,Secure Operations (Industrial control systems),303.01,201.14999999999998,0.6638394772449754,scenario
+59,Secure System Architecture & Design,91.22,91.22,1,scenario
+59,Secure System Architecture & Design (Industrial Control Systems),91.22,91.22,1,scenario
+59,Secure System Development,91.22,91.22,1,scenario
+59,Secure System Development (Industrial Control Systems),91.22,91.22,1,scenario
+59,Security Testing,207.13,147.16,0.7104716844493796,scenario
+59,Vulnerability Management,270.37,210.39999999999998,0.7781928468395162,scenario
+60,Cryptography & Communications Security (Cryptographer),151.57000000000002,93.52000000000001,0.6170086428712805,scenario
+60,Cryptography & Communications Security (Secure Communications Operator),151.57000000000002,93.52000000000001,0.6170086428712805,scenario
+60,Cyber Security Audit & Assurance,297.71000000000004,180,0.6046152295858385,scenario
+60,Cyber Security Governance & Risk Management,198.28,120,0.6052047609441195,scenario
+60,Cyber Security Governance & Risk Management (Industrial Control Systems),218.62,140.34,0.6419357789772208,scenario
+60,Cyber Security Management,693.6999999999999,447.88,0.6456393253567825,scenario
+60,Cyber Threat Intelligence,484.53,350.23,0.7228241801333252,scenario
+60,Data Protection & Privacy,179.37,120,0.669008195350393,scenario
+60,Digital Forensics,356.74,273.78999999999996,0.7674777148623646,scenario
+60,Digital Forensics (Industrial Control Systems),377.08,294.12999999999994,0.7800201548742971,scenario
+60,Identity & Access Management,433.24,255.53,0.5898116517403749,scenario
+60,Incident response,386.25,270,0.6990291262135923,scenario
+60,Incident response (Industrial Control Systems),406.59,290.34,0.7140854423374898,scenario
+60,Network Monitoring & Intrusion Detection,313.18,213.52,0.6817804457500479,scenario
+60,Secure Operations,404.87,301.57,0.7448563736508015,scenario
+60,Secure Operations (Industrial control systems),425.21,321.90999999999997,0.7570612168105171,scenario
+60,Secure System Architecture & Design,121.20000000000002,117.68,0.9709570957095709,scenario
+60,Secure System Architecture & Design (Industrial Control Systems),141.54000000000002,138.02,0.9751307051010314,scenario
+60,Secure System Development,121.20000000000002,117.68,0.9709570957095709,scenario
+60,Secure System Development (Industrial Control Systems),141.54000000000002,138.02,0.9751307051010314,scenario
+60,Security Testing,263.90000000000003,194.47,0.7369079196665402,scenario
+60,Vulnerability Management,428.94,291,0.678416561756889,scenario
+61,Cryptography & Communications Security (Cryptographer),349.39,253.12,0.7244626348779302,scenario
+61,Cryptography & Communications Security (Secure Communications Operator),349.39,253.12,0.7244626348779302,scenario
+61,Cyber Security Audit & Assurance,137.91,67.91,0.49242259444565295,scenario
+61,Cyber Security Governance & Risk Management,32.24,32.24,1,scenario
+61,Cyber Security Governance & Risk Management (Industrial Control Systems),91.6,91.6,1,scenario
+61,Cyber Security Management,927.98,448.88,0.4837173214939977,scenario
+61,Cyber Threat Intelligence,261.72,212.37,0.8114397065566253,scenario
+61,Data Protection & Privacy,124.29,95.7,0.7699734491914072,scenario
+61,Digital Forensics,324.53000000000003,200.74,0.6185560656950051,scenario
+61,Digital Forensics (Industrial Control Systems),383.89000000000004,260.1,0.6775378363593738,scenario
+61,Identity & Access Management,368.62,298.62,0.810102544625902,scenario
+61,Incident response,335.68000000000006,211.7,0.6306601525262153,scenario
+61,Incident response (Industrial Control Systems),395.0400000000001,271.06,0.6861583637100039,scenario
+61,Network Monitoring & Intrusion Detection,241.72,161.56,0.6683766341221248,scenario
+61,Secure Operations,311.24,261.73,0.8409266161161805,scenario
+61,Secure Operations (Industrial control systems),370.6,321.09000000000003,0.8664058283864005,scenario
+61,Secure System Architecture & Design,378.73,336.73,0.8891030549467959,scenario
+61,Secure System Architecture & Design (Industrial Control Systems),438.09000000000003,396.09000000000003,0.9041292885023625,scenario
+61,Secure System Development,378.73,336.73,0.8891030549467959,scenario
+61,Secure System Development (Industrial Control Systems),438.09000000000003,396.09000000000003,0.9041292885023625,scenario
+61,Security Testing,390.97,318.32,0.8141801161214415,scenario
+61,Vulnerability Management,307.35,247.83999999999997,0.8063770945176507,scenario
+62,Cryptography & Communications Security (Cryptographer),418.9200000000001,267.65,0.6389048028263151,scenario
+62,Cryptography & Communications Security (Secure Communications Operator),418.9200000000001,267.65,0.6389048028263151,scenario
+62,Cyber Security Audit & Assurance,434.43,279.82,0.6441083718896025,scenario
+62,Cyber Security Governance & Risk Management,269.82,180,0.66711140760507,scenario
+62,Cyber Security Governance & Risk Management (Industrial Control Systems),369.82,240,0.6489643610405063,scenario
+62,Cyber Security Management,1333.6000000000001,639.8199999999999,0.47976904619076177,scenario
+62,Cyber Threat Intelligence,598.76,420,0.7014496626361146,scenario
+62,Data Protection & Privacy,334.29,254.43,0.7611056268509377,scenario
+62,Digital Forensics,591.76,381.11,0.6440279843179668,scenario
+62,Digital Forensics (Industrial Control Systems),691.76,471.11,0.6810309934081185,scenario
+62,Identity & Access Management,534.29,300,0.5614928222500889,scenario
+62,Incident response,519.89,300,0.5770451441651119,scenario
+62,Incident response (Industrial Control Systems),619.89,390,0.6291438803658714,scenario
+62,Network Monitoring & Intrusion Detection,387.65,267.65,0.6904424093899135,scenario
+62,Secure Operations,525.78,330,0.6276389364372932,scenario
+62,Secure Operations (Industrial control systems),625.78,390,0.6232222186710985,scenario
+62,Secure System Architecture & Design,461.85999999999996,360,0.7794569783051142,scenario
+62,Secure System Architecture & Design (Industrial Control Systems),561.8599999999999,450,0.8009112590324994,scenario
+62,Secure System Development,461.85999999999996,360,0.7794569783051142,scenario
+62,Secure System Development (Industrial Control Systems),561.8599999999999,450,0.8009112590324994,scenario
+62,Security Testing,543.75,447.65,0.8232643678160919,scenario
+62,Vulnerability Management,487.65,300,0.6151953245155337,scenario
+63,Cryptography & Communications Security (Cryptographer),179.01999999999998,178.7,0.9982124902245559,scenario
+63,Cryptography & Communications Security (Secure Communications Operator),179.01999999999998,178.7,0.9982124902245559,scenario
+63,Cyber Security Audit & Assurance,90.11999999999999,90.11999999999999,1,scenario
+63,Cyber Security Governance & Risk Management,63.64,63.64,1,scenario
+63,Cyber Security Governance & Risk Management (Industrial Control Systems),63.64,63.64,1,scenario
+63,Cyber Security Management,281.34999999999997,242.67,0.8625199928914165,scenario
+63,Cyber Threat Intelligence,153.91,115.00999999999999,0.7472548892209733,scenario
+63,Data Protection & Privacy,94.65,94.65,1,scenario
+63,Digital Forensics,100.28,73.9,0.7369365775827683,scenario
+63,Digital Forensics (Industrial Control Systems),100.28,73.9,0.7369365775827683,scenario
+63,Identity & Access Management,154.73,154.73,1,scenario
+63,Incident response,107.27,80.89,0.7540784935210217,scenario
+63,Incident response (Industrial Control Systems),107.27,80.89,0.7540784935210217,scenario
+63,Network Monitoring & Intrusion Detection,102.2,102.2,1,scenario
+63,Secure Operations,144.72,144.72,1,scenario
+63,Secure Operations (Industrial control systems),144.72,144.72,1,scenario
+63,Secure System Architecture & Design,98.89999999999999,72.52,0.7332659251769464,scenario
+63,Secure System Architecture & Design (Industrial Control Systems),98.89999999999999,72.52,0.7332659251769464,scenario
+63,Secure System Development,98.89999999999999,72.52,0.7332659251769464,scenario
+63,Secure System Development (Industrial Control Systems),98.89999999999999,72.52,0.7332659251769464,scenario
+63,Security Testing,110.71,110.71,1,scenario
+63,Vulnerability Management,150.48000000000002,137.96,0.9167995746943115,scenario
+64,Cryptography & Communications Security (Cryptographer),404.6600000000001,292.74,0.723422132160332,scenario
+64,Cryptography & Communications Security (Secure Communications Operator),404.6600000000001,292.74,0.723422132160332,scenario
+64,Cyber Security Audit & Assurance,358.71,273.55,0.7625937386746955,scenario
+64,Cyber Security Governance & Risk Management,258.85,175.87,0.6794282402936063,scenario
+64,Cyber Security Governance & Risk Management (Industrial Control Systems),261.59000000000003,178.61,0.6827860392216828,scenario
+64,Cyber Security Management,1034.57,670.52,0.6481146756623525,scenario
+64,Cyber Threat Intelligence,527.02,411.52,0.7808432317559106,scenario
+64,Data Protection & Privacy,245.95000000000002,227.69,0.9257572677373449,scenario
+64,Digital Forensics,595.61,418.94,0.7033797283457296,scenario
+64,Digital Forensics (Industrial Control Systems),598.35,421.68,0.7047380295813487,scenario
+64,Identity & Access Management,574.63,383.61,0.6675773976297792,scenario
+64,Incident response,378.73,279.48999999999995,0.7379663612600004,scenario
+64,Incident response (Industrial Control Systems),381.47,282.22999999999996,0.7398484808766087,scenario
+64,Network Monitoring & Intrusion Detection,331.82,236.5,0.7127358206256404,scenario
+64,Secure Operations,467.75,353.05,0.7547835382148584,scenario
+64,Secure Operations (Industrial control systems),470.49,355.79,0.756211609173415,scenario
+64,Secure System Architecture & Design,408.78999999999996,334.09999999999997,0.8172900511264952,scenario
+64,Secure System Architecture & Design (Industrial Control Systems),411.53,336.84,0.8185065487327777,scenario
+64,Secure System Development,408.78999999999996,334.09999999999997,0.8172900511264952,scenario
+64,Secure System Development (Industrial Control Systems),411.53,336.84,0.8185065487327777,scenario
+64,Security Testing,518.11,399.26,0.7706085580282179,scenario
+64,Vulnerability Management,490.81,375.71,0.7654897006988447,scenario
+65,Cryptography & Communications Security (Cryptographer),416.67,279.69,0.67125062999496,scenario
+65,Cryptography & Communications Security (Secure Communications Operator),416.67,279.69,0.67125062999496,scenario
+65,Cyber Security Audit & Assurance,400.53,321.62,0.8029860434923727,scenario
+65,Cyber Security Governance & Risk Management,282.3,230.99,0.8182430038965639,scenario
+65,Cyber Security Governance & Risk Management (Industrial Control Systems),302.87,251.56,0.8305873807244032,scenario
+65,Cyber Security Management,1027.8799999999999,668.2399999999999,0.6501147993929253,scenario
+65,Cyber Threat Intelligence,502.87000000000006,367.19000000000005,0.7301887167657646,scenario
+65,Data Protection & Privacy,320.06,240.63,0.7518277822908205,scenario
+65,Digital Forensics,434.91,321.94,0.7402451081833022,scenario
+65,Digital Forensics (Industrial Control Systems),455.48,342.51,0.7519759374725564,scenario
+65,Identity & Access Management,522.14,355.47,0.6807944229516989,scenario
+65,Incident response,422.14000000000004,254.22,0.6022172738901785,scenario
+65,Incident response (Industrial Control Systems),442.71000000000004,274.79,0.6206997808949425,scenario
+65,Network Monitoring & Intrusion Detection,345.57,235.57,0.6816853314813207,scenario
+65,Secure Operations,457.56,329.64,0.7204301075268816,scenario
+65,Secure Operations (Industrial control systems),478.13,350.21,0.7324576997887603,scenario
+65,Secure System Architecture & Design,275.78999999999996,223.5,0.810399216795388,scenario
+65,Secure System Architecture & Design (Industrial Control Systems),296.35999999999996,244.07,0.8235591847752735,scenario
+65,Secure System Development,275.78999999999996,223.5,0.810399216795388,scenario
+65,Secure System Development (Industrial Control Systems),296.35999999999996,244.07,0.8235591847752735,scenario
+65,Security Testing,468.24,375.84000000000003,0.8026652998462328,scenario
+65,Vulnerability Management,473.96,320.68,0.6765971811967255,scenario
