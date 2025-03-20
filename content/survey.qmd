@@ -30,6 +30,8 @@ Explain
 
 -   limited to UK participants only
 
+-   distribution
+
 The survey was distributed on social media and was accepting responses between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")`
 
 ### The comb concept
