@@ -20,6 +20,16 @@ scenarios <- read.csv("../data/raw/cyber_expertise_diversity_survey_scenarios.cs
 
 ```
 
+Explain
+
+-   goals of the survey, number and type of questions...
+
+-   we used qualtrics
+
+-   received ethical approval from HSSREC
+
+-   limited to UK participants only
+
 The survey was distributed on social media and was accepting responses between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")`
 
 ### The comb concept
@@ -28,16 +38,15 @@ The survey was distributed on social media and was accepting responses between `
 ![The broken comb metaphor, coined by John R](/media/expertise_comb.png)
 :::
 
-For the purposes of this survey, we would like you to imagine your expertise as a kind of comb. Each ‘tooth’ of the comb represents one area of specialism. Many people have one or two areas in which they have a lot of expertise, other areas in which they have a little, and some in which they have none. Some people have a broad base; others are highly specialised. It can depend on domain, career stage, and individual personality.\
+For the purposes of this survey, asked participants to imagine their expertise as a kind of comb where each ‘tooth’ of the comb represents one area of specialism. Many people have one or two areas in which they have a lot of expertise, other areas in which they have a little, and some in which they have none. Some people have a broad base; others are highly specialised. It can depend on domain, career stage, and individual personality.\
 
 In this survey we will ask you to use sliders to express how you see your own ‘broken comb’ of expertise.\
 
 We will also ask you to think about cyber security problems and challenges that you tackle in your work, and to show us the kind of 'broken comb' of expertise that is needed in order to address them.\
 
-For the questions with sliders, first identify the area of greatest significance (for instance, your main area of expertise), and give that the highest value (all the way to the right). Then, set the other
-sliders roughly in proportion to that.\
+For the questions with sliders, first identify the area of greatest significance (for instance, your main area of expertise), and give that the highest value (all the way to the right). Then, set the other sliders roughly in proportion to that.\
 
-The categories on the comb are based on those developed by the 'CyBOK' project, extended slightly. \
+The categories on the comb are based on those developed by the 'CyBOK' project, extended slightly.\
 
 ::: {.callout-tip appearance="minimal"}
 Credit to goes to John R for suggesting the broken comb metaphor!
@@ -50,8 +59,6 @@ There will be three combs:
 -   The **specialism comb** is the cybok values that correspond to each specialism: we create these by substituting 30 for 'wider', 60 for 'related' and 90 for 'core'.
 
 -   The **scenario comb** is the values that a person put in for that specific scenario using the sliders. Again, for these calculations we're only using the 'teeth' that correspond to cybok categories and ignoring our extras.
-
-
 
 ### The research process
 
@@ -86,8 +93,7 @@ Computations for the alignment metric can be audited at the file [`scripts/align
 
 ## Results
 
-The survey was conducted between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")` and received responses from `r nrow(responses)` individuals, describing `r nrow(scenarios)` scenarios. Of these respondents `r nrow(filter(responses, gender == 'Male'))` identified as men, `r nrow(filter(responses, sexual_orientation == 'No'))` as heterosexual, `r nrow(filter(responses, transgender == 'No'))` as their sex assigned at birth, `r nrow(filter(responses, disabilities == 'No, I do not have a disability, or a history/record of having one'))` as having no disabilities, and `r nrow(filter(responses, uk_ethnic_origin == 'White'))` of White British Ethnic origin. These figures, while not reflective of the diversity of wider British society, they are inline with previous findings (XXX ???) of the lack of diversity within the UK cyber security. 
-
+The survey was conducted between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")` and received responses from `r nrow(responses)` individuals, describing `r nrow(scenarios)` scenarios. Of these respondents `r nrow(filter(responses, gender == 'Male'))` identified as men, `r nrow(filter(responses, sexual_orientation == 'No'))` as heterosexual, `r nrow(filter(responses, transgender == 'No'))` as their sex assigned at birth, `r nrow(filter(responses, disabilities == 'No, I do not have a disability, or a history/record of having one'))` as having no disabilities, and `r nrow(filter(responses, uk_ethnic_origin == 'White'))` of White British Ethnic origin. These figures, while not reflective of the diversity of wider British society, they are inline with previous findings (XXX ???) of the lack of diversity within the UK cyber security.
 
 ```{r}
 #| label: fig-responses-age
@@ -108,15 +114,13 @@ grid.arrange(age, exp, nrow = 1)
 
 ```
 
-This is an alternative way of creating composite images (see 
-<https://quarto.org/docs/authoring/figures.html#subfigures>) (just FYI, not suggesting this should be the way to do them.)
+This is an alternative way of creating composite images (see <https://quarto.org/docs/authoring/figures.html#subfigures>) (just FYI, not suggesting this should be the way to do them.)
 
-::: {#fig-dates layout-ncol=2}
-
-
+::: {#fig-dates layout-ncol="2"}
 ```{r}
 #| label: fig-responses-age2
 #| fig-cap: "Responses by age"
+#| fig-height: 10
 ggplot(responses, aes(age)) +
           geom_bar() +
           xlab('') + 
@@ -128,6 +132,7 @@ ggplot(responses, aes(age)) +
 ```{r}
 #| label: fig-responses-age3
 #| fig-cap: "Responses by years of experience"
+#| fig-height: 10
 ggplot(responses, aes(cut(responses$years_experience, c(-Inf, 5, 10, 15, 20, 25, Inf), c('0-5', '6-10', '11-15', '16-20', '21-25', '25+')))) +
           geom_bar() +
           xlab('') + 
@@ -138,9 +143,7 @@ ggplot(responses, aes(cut(responses$years_experience, c(-Inf, 5, 10, 15, 20, 25,
 ```
 
 Some caption here, referring to a and b
-
 :::
-
 
 ```{r}
 #| label: tbl-responses-industry
@@ -182,9 +185,7 @@ kable(org_size)
 
 ```
 
-
 ### Megacombs
-
 
 ```{r}
 
@@ -208,7 +209,7 @@ ggplot(response_all, aes(all_points, all_name)) +
   ggtitle('All comb responses')
 ```
 
-Good distribution of responses across the sliders, with  `r 100 / nrow(response_all) * nrow(filter(response_all, all_points == 0))`% responses being set to 0 and   `r 100 / nrow(response_all) * nrow(filter(response_all, all_points == 100))`% set to 1.
+Good distribution of responses across the sliders, with `r 100 / nrow(response_all) * nrow(filter(response_all, all_points == 0))`% responses being set to 0 and `r 100 / nrow(response_all) * nrow(filter(response_all, all_points == 100))`% set to 1.
 
 ::: callout-caution
 ## Questions for Viz

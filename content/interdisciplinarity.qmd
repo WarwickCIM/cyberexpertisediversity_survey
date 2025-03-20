@@ -1,12 +1,8 @@
 ---
 title: "Interdisciplinarity"
-format: html
 ---
 
 ```{r}
-#| echo: false
-#| warning: false
-
 source("../scripts/setup.R")
 
 alignment_scenarios_long <- read.csv("../data/processed/alignment_scenarios_long.csv")
@@ -24,9 +20,25 @@ I was thinking of including a section talking about trans-, inter- and multidisc
 
 ### Looking at specialisms alignment with the scenarios
 
+::: callout-caution
+## Demo only
+
+This is a visualization for demonstrative purposes:
+:::
+
 ```{r}
-alignment_scenarios |> 
-  ggplot()
+#| label: fig-alignment-scenarios
+#| fig-title: "Alignment indices by scenario and Specialism"
+#| column: page
+#| fig-width: 20
+#| fig-height: 15
+#| fig-align: "center"
+alignment_scenarios_long |> 
+  ggplot(aes(x = id, y = alignment_index)) +
+  geom_col() +
+  facet_wrap(~Specialism) +
+  labs(y = "Alignment index", x = "Scenarios") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 1, hjust=1))
 ```
 
 ### Meta view of alignment vs interdisciplinarity
