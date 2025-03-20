@@ -13,7 +13,7 @@ library(tidyr)
 value_core <- 90
 value_relevant <- 60
 value_wider <- 30
-
+value_NA <- 0
 
 # Load data ---------------------------------------------------------------
 
@@ -102,12 +102,13 @@ comb_specialism <- specialisms |>
   pivot_longer(!Specialism, names_to = "Expertise", values_to = "Value") |>
   mutate(Expertise = as.factor(Expertise)) |>
   # Remove expertise that are not relevant to specialism.
-  filter(!is.na(Value)) |>
+  #filter(!is.na(Value)) |>
   # Create a new variable based on defined threshold values.
   mutate(Threshold = case_when(
     Value == "Core" ~ value_core,
     Value == "Related" ~ value_relevant,
     Value == "Wider" ~ value_wider,
+    is.na(Value) ~ value_NA
   ), ) |>
   # Renaming values to match responses' variables.
   mutate(
