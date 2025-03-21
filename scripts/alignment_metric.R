@@ -202,7 +202,29 @@ write_csv(alignment_scenarios,
 )
 
 
-# Scenarios' permutations -------------------------------------------------
+# Scenarios' permutations original version-------------------------------------------------
+
+#calc_permutation_alignment <- function(df, n) {
+#  df |> 
+#    group_by(id) |> 
+#      permutations = list(combn(unique(Specialism), n, simplify = FALSE)),
+#    summarise(
+#      .groups = "drop"
+#    ) |> 
+#    unnest(permutations) |> 
+#    mutate(
+#      permutation = map_chr(permutations, ~ paste(.x, collapse = ", ")),
+#      test_max = map_dbl(permutations, ~ max(df$test_sum[df$id == cur_group_id() & df$Specialism %in% .x])),
+#      reference_max = map_dbl(permutations, ~ max(df$reference_sum[df$id == cur_group_id() & df$Specialism %in% .x])),
+#      alignment_index = test_max / reference_max,
+#      n_permutations = n
+#    ) |> 
+#    select(-permutations)
+#}
+
+
+#alignment_scenarios_2_permutations <- calc_permutation_alignment(alignment_scenarios_long, 2)
+#alignment_scenarios_3_permutations <- calc_permutation_alignment(alignment_scenarios_long, 3)
 
 calc_permutation_alignment <- function(df, n) {
   df |> 
@@ -211,20 +233,55 @@ calc_permutation_alignment <- function(df, n) {
       permutations = list(combn(unique(Specialism), n, simplify = FALSE)),
       .groups = "drop"
     ) |> 
-    unnest(permutations) |> 
+    # Process each id to find best permutation
+    rowwise() |>
     mutate(
-      permutation = map_chr(permutations, ~ paste(.x, collapse = ", ")),
-      test_max = map_dbl(permutations, ~ max(df$test_sum[df$id == cur_group_id() & df$Specialism %in% .x])),
-      reference_max = map_dbl(permutations, ~ max(df$reference_sum[df$id == cur_group_id() & df$Specialism %in% .x])),
-      alignment_index = test_max / reference_max,
-      n_permutations = n
-    ) |> 
-    select(-permutations)
+      results = list(map_dfr(permutations, function(p) {
+        # Filter data for current id and permutation
+        current_id <- id
+        id_data <- df |> filter(id == current_id, Specialism %in% p)
+        
+        # Calculate test_sum
+        test_sum <- id_data |>
+          group_by(Expertise_clean) |>
+          summarise(max_value = max(indicator, na.rm = TRUE), .groups = "drop") |>
+          summarise(sum = sum(max_value, na.rm = TRUE)) |>
+          pull(sum)
+        
+        # Calculate reference_sum
+        reference_sum <- id_data |>
+          group_by(Expertise_clean) |>
+          summarise(max_value = max(response, na.rm = TRUE), .groups = "drop") |>
+          summarise(sum = sum(max_value, na.rm = TRUE)) |>
+          pull(sum)
+        
+        # Return a mini data frame with results
+        tibble(
+          permutation = paste(p, collapse = ", "),
+          test_sum = test_sum,
+          reference_sum = reference_sum,
+          alignment_index = test_sum / reference_sum
+        )
+      }))
+    ) |>
+    # Get the best permutation for each id
+    mutate(
+      best_result = list(results |> slice_max(order_by = alignment_index, n = 1, with_ties = FALSE))
+    ) |>
+    select(-permutations, -results) |>
+    unnest(best_result) |>
+    # Add n_permutations
+    mutate(n_permutations = n)
 }
 
+alignment_scenarios_1_permutations <- calc_permutation_alignment(comb_scenario, 1)
+alignment_scenarios_2_permutations <- calc_permutation_alignment(comb_scenario, 2)
+alignment_scenarios_3_permutations <- calc_permutation_alignment(comb_scenario, 3)
+alignment_scenarios_4_permutations <- calc_permutation_alignment(comb_scenario, 4)
+alignment_scenarios_5_permutations <- calc_permutation_alignment(comb_scenario, 5)
 
-alignment_scenarios_2_permutations <- calc_permutation_alignment(alignment_scenarios_long, 2)
-alignment_scenarios_3_permutations <- calc_permutation_alignment(alignment_scenarios_long, 3)
-
-write.csv(alignment_scenarios_2_permutations, "data/processed/alignment_scenarios_2_permutations.csv")
-write.csv(alignment_scenarios_3_permutations, "data/processed/alignment_scenarios_3_permutations.csv")
+write.csv(alignment_scenarios_1_permutations, "data/processed/max_alignment_scenarios_1_permutations.csv")
+write.csv(alignment_scenarios_2_permutations, "data/processed/max_alignment_scenarios_2_permutations.csv")
+write.csv(alignment_scenarios_3_permutations, "data/processed/max_alignment_scenarios_3_permutations.csv")
+write.csv(alignment_scenarios_4_permutations, "data/processed/max_alignment_scenarios_4_permutations.csv")
+write.csv(alignment_scenarios_5_permutations, "data/processed/max_alignment_scenarios_5_permutations.csv")
