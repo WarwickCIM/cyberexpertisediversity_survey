@@ -32,29 +32,25 @@ Explain
 
 -   distribution
 
-The survey was distributed on social media and was accepting responses between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")`
+The survey was distributed on social media, and via a number of industry mailing lists. It was accepting responses between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")`
 
 ### The comb concept
 
 ::: aside
-![The broken comb metaphor, coined by John R](/media/expertise_comb.png)
+![The broken comb metaphor](/media/expertise_comb.png)
 :::
 
-For the purposes of this survey, asked participants to imagine their expertise as a kind of comb where each ‘tooth’ of the comb represents one area of specialism. Many people have one or two areas in which they have a lot of expertise, other areas in which they have a little, and some in which they have none. Some people have a broad base; others are highly specialised. It can depend on domain, career stage, and individual personality.\
+In addition to information about their job role, industry, experience and EDI characteristics, we asked survey participants to imagine their expertise as a kind of comb where each ‘tooth’ of the comb represents one area of specialism. Many people haveone or two areas in which they have a lot of expertise, other areasin which they have a little,and some in which they have none. Some people have a broad base; others are highly specialised. It can depend on domain, careerstage, and individual personality.
 
-In this survey we will ask you to use sliders to express how you see your own ‘broken comb’ of expertise.\
+The survey used an interface based on a series of sliders through which participants could express how they saw their own ‘broken combs’ of expertise, and to define similar 'broken combs' reflecting the combinations of expertise required to address cyber security problems and challenges that they tackle in their work.
 
-We will also ask you to think about cyber security problems and challenges that you tackle in your work, and to show us the kind of 'broken comb' of expertise that is needed in order to address them.\
-
-For the questions with sliders, first identify the area of greatest significance (for instance, your main area of expertise), and give that the highest value (all the way to the right). Then, set the other sliders roughly in proportion to that.\
-
-The categories on the comb are based on those developed by the 'CyBOK' project, extended slightly.\
+We based the 'teeth' of the comb on those developed by the 'CyBOK' project, extended slightly to account for areas that are not accounted for in the standard CyBOK classification.
 
 ::: {.callout-tip appearance="minimal"}
 Credit to goes to John R for suggesting the broken comb metaphor!
 :::
 
-There will be three combs:
+We thus gathered three combs to support the analysis.
 
 -   The **personal comb** is just the values that a person put in for their own expertise using the sliders. NB for these alignment calculations we’re only using those ‘teeth’ of the comb that correspond to cybok categories (we have some extras in but for these calculations we ignore them).
 
@@ -66,7 +62,7 @@ There will be three combs:
 
 ### The alignment metric calculation
 
-In order to see how well (or bad) are two combs aligned, we will compute an **alignment index** $A_{(x,y)}$ as follows.
+In order to see how well (or badly) are two combs aligned, we compute an **alignment index** $A_{(x,y)}$ as follows.
 
 Given a set of **test values** $X:[x_0, x_1, ... x_n ]$ and a corresponding set of **reference values** $Y:[y_0, y_1, ... y_n ]$, the alignment index will be:
 
@@ -83,9 +79,9 @@ The indicator function is used to prevent a test comb getting 'credit' for overs
 
 With this, we will be calculating two types of alignments:
 
--   **Personal alignment**, where test values ($X$) are the person's comb (responses) and the reference values ($Y$) are the specialism comb
+-   **Personal alignment**, where test values ($X$) are the person's comb (responses) and the reference values ($Y$) are the specialism comb. This gives us a sense of how close respondents' combs are to the different kinds of specialism.
 
--   **Scenarios alignment**, where test values ($X$) are the specialism comb and the reference values ($Y$) are the scenario comb.
+-   **Scenario alignment**, where test values ($X$) are the specialism comb and the reference values ($Y$) are the scenario comb. In this case, we are interested in how well the specialisms as defined in the Cyber Careers Framework provide the kind of expertise required to address each problem. We look at this for individual specialisms, and to look at combinations of specialisms.
 
 In both cases, the **alignment index** will result in a number between `0` and `1`, where `1` means perfect alignment between the test value and the reference value and `0` means not aligned at all.
 
@@ -228,3 +224,11 @@ Good distribution of responses across the sliders, with `r 100 / nrow(response_a
 ### Sampling strategy
 
 ### Sliders
+
+### Alignment scores
+
+The data has some important limitations that should be kept in mind when interpreting these alignment scores:
+
+-   The specialisms are defined according to 'core', 'related' and 'wider' relevance of categories of expertise, which to be used in our calculations have to be translated into positions in the slider. We have chosen values of 90, 60 and 30 as parameters for these levels of relevance respectively.
+
+-   The specialisms are only defined according to the standard CyBOK categories. The relevance of other forms of expertise is left undefined. This means that our additional teeth of the comb, representing areas that are not accounted for in CyBOK, must be ignored for the purposes of the alignment calculations. Instances where this makes a difference to the interpretation of the data are highlighted in the analysis below.
