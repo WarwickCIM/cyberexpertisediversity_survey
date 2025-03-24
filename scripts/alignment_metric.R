@@ -221,10 +221,10 @@ write_csv(alignment_scenarios,
 #    ) |> 
 #    select(-permutations)
 #}
-
-
 #alignment_scenarios_2_permutations <- calc_permutation_alignment(alignment_scenarios_long, 2)
 #alignment_scenarios_3_permutations <- calc_permutation_alignment(alignment_scenarios_long, 3)
+
+# Scenarios' permutations new version-------------------------------------------------
 
 calc_permutation_alignment <- function(df, n) {
   df |> 
@@ -274,14 +274,17 @@ calc_permutation_alignment <- function(df, n) {
     mutate(n_permutations = n)
 }
 
-alignment_scenarios_1_permutations <- calc_permutation_alignment(comb_scenario, 1)
-alignment_scenarios_2_permutations <- calc_permutation_alignment(comb_scenario, 2)
-alignment_scenarios_3_permutations <- calc_permutation_alignment(comb_scenario, 3)
-alignment_scenarios_4_permutations <- calc_permutation_alignment(comb_scenario, 4)
-alignment_scenarios_5_permutations <- calc_permutation_alignment(comb_scenario, 5)
+##Uncomment to run alignment calculations and generate csvs (slow for higher numbers)
 
-write.csv(alignment_scenarios_1_permutations, "data/processed/max_alignment_scenarios_1_permutations.csv")
-write.csv(alignment_scenarios_2_permutations, "data/processed/max_alignment_scenarios_2_permutations.csv")
-write.csv(alignment_scenarios_3_permutations, "data/processed/max_alignment_scenarios_3_permutations.csv")
-write.csv(alignment_scenarios_4_permutations, "data/processed/max_alignment_scenarios_4_permutations.csv")
-write.csv(alignment_scenarios_5_permutations, "data/processed/max_alignment_scenarios_5_permutations.csv")
+#alignment_scenarios_1_permutations <- calc_permutation_alignment(comb_scenario, 1)
+#alignment_scenarios_2_permutations <- calc_permutation_alignment(comb_scenario, 2)
+#alignment_scenarios_3_permutations <- calc_permutation_alignment(comb_scenario, 3)
+#alignment_scenarios_4_permutations <- calc_permutation_alignment(comb_scenario, 4)
+#alignment_scenarios_5_permutations <- calc_permutation_alignment(comb_scenario, 5)
+
+#write.csv(alignment_scenarios_1_permutations, "data/processed/max_alignment_scenarios_1_permutations.csv")
+#write.csv(alignment_scenarios_2_permutations, "data/processed/max_alignment_scenarios_2_permutations.csv")
+#write.csv(alignment_scenarios_3_permutations, "data/processed/max_alignment_scenarios_3_permutations.csv")
+#write.csv(alignment_scenarios_4_permutations, "data/processed/max_alignment_scenarios_4_permutations.csv")
+#write.csv(alignment_scenarios_5_permutations, "data/processed/max_alignment_scenarios_5_permutations.csv")
+
