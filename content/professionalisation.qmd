@@ -7,34 +7,38 @@ format: html
 
 ### Social closure
 
-Professionalisation can be studied sociologically as a process of ‘occupational closure’, which is a special case of what Weber called ‘social closure’. Social closure is an umbrella term for the ways in which groups construct and maintain monopolies over opportunities (often economic), by including some people and excluding others. This can be done formally (for instance through legal exclusions) or informally (for instance, through cronyism or nepotism). Structures of social closure can be highly durable because often combine concentrations of power with alignments of incentives: it is in the interest of those who are in the ‘in group’ to perpetuate the exclusion of others, and being in the ‘in
-group’ also gives influence over institutions. In the case of professionalisation, it is usually a set of moral arguments about safety, or fairness that justify closure: for instance the idea that practicing as doctors, accountants, or lawyers must be restricted to those who have committed to a set of standards of conduct, or who can be guaranteed to have passed some threshold of training, and so on. But
-the potential for the professions to entrench wider inequalities has been a point of criticism of increasing importance in the last century, so that the profession is regulated not just in terms of standards of conduct, but also regulated to ensure that it is a vehicle for (rather than obstacle of) social mobility, fair access to opportunities, and so on.
+Professionalisation can be analysed sociologically through the lens of social openness and social closure. The concept of social relationships being 'open' or 'closed' has deep roots in sociology, and is a building block of Max Weber's classic analysis of social action [@weber2019economy]. Social closure is an umbrella term for the ways in which groups construct and maintain monopolies over opportunities, by including some people and excluding others. Understanding how and why closure occurs is key to our understanding of social structure and power. It can operate at multiple levels. Even where opportunities are formally open, through cronyism or nepotism, groups may nevertheless be able to maintain control over resources through influencing access to jobs or status. Closure can create durable barriers to entry or 'glass ceilings', this durability arising from the way in which, once they exist, monopolies on resources create an alignment of interests among group members, a common interest in maintaining the status quo. Weber considered guilds to be an 'archetype' of closure where it is motivated by a cooperative monopolisation of (resource) acquisition, and the sociology of professions has studied professionalisation as an important example of social closure in the modern age, as 'occupational closure'.
+
+There is an obvious tension between occupational closure, and highly influential liberal moral projects that promote fair access and equality of opportunity. In the cases of the professions, the justification of occupational closure tends to stress a balance between moral principles: on the one hand, for buildings to be safe, for accounts to be trustworthy, for all to have fair and equal representation under the law, for healthcare to be safe, it is necessary to restrict who can practice engineering, accountancy, law and medicine to those who have met a certain standard of qualification and committed to standards of conduct. On the other hand, while entry into these professions may be formally open and non-discriminatory, entrants often need considerable capital—social capital in the form of social networks giving access to opportunities for apprenticeships and experience, cultural capital in the form of the ability to 'fit in,' be 'taken seriously' and generally navigate within professional communities, and financial capital in the form of resources to support what are often extended periods of training or low pay at the start of careers—and so the institutional structure of professions has a huge potential to reinforce existing social inequalities. It is not by accident that the traditional British middle classes are commonly referred to as 'the professional class'. Professional bodies, such as the British Medical Associations, the Law Society, the Association of Chartered Certified Accountants, and so on, thus tend to understand their mission as one of ensuring standards of conduct and competence in their domain, while also intervening to support equity of access to the profession, through financial support, communication, analysis of trends and so on. In short, professional bodies' interest in equality, diversity and inclusion is not a side-project: the legitimacy of occupational closure, in the eyes of society, depends upon the ability to show that the profession is a vehicle for, and not an obstacle to, fair access.
+
+### The value of diversity
+
+Diversity is understood, sociologically, as a broader phenomenon than characteristics such as race, class, gender, sexuality, religion and so on. Sociologists have argued that organisational or institutional diversity has value as a resource during times of economic transition [@grabher1997organizing]. Overly homogeneous patterns of reasoning and valuation can 'incubate disaster', a central problem for organisations that operate in safety critical contexts [@dekker2014drifting; @vaughan1996challenger]. Several studies have indicated that hiring people from diverse backgrounds provides value in broadening organisational repertoires of thought and practice, and enhancing the potential to innovate [@herring2009does]. Researchers have also argued that homogeneity can be a source of problems, leading, for instance to bubbles and inefficient markets [@levine2014ethnic]. The NCSC/KPMG Decrypting Diversity report builds on this tradition of scholarship, arguing that diversity in the workplace brings "benefits including better financial performance, increased creativity and innovation, greater employee satisfaction, lower absenteeism and stronger talent retention" [@NCSC2020decrypting].
+
+### The status quo
+
+The Decrypting Diversity report paints a mixed picture of diversity in the cyber security profession. On the one hand, the proportion of the cyber profession that identifies as coming from a BAME (Black and Minority Ethnic) background, and the proportion that identifies as Lesbian, Gay and Bisexual (LGB), were broadly in line with national figures. Data on trans people was insufficient to make reliable claims. Gender is well-recognised to be an issue for cyber security, with survey respondents identifying as male outnumbering those identifying as female 2:1. This, however, is a much broader issue, across many parts of the technology workforce. Socio-economic backgrounds were also skewed, for instance with those who had attended private schools over-represented. Furthermore, even in areas such as ethnicity or sexuality, where the profession was broadly in line with the general population, survey respondents noted that people from BAME backgrounds or who identified as LGB were more likely to have faced discrimination in the workplace.
 
 ## Data analysis
 
-### looking at diversity in general  
+### looking at diversity in general
 
-### looking at individual alignment with the specialisms 
+### looking at individual alignment with the specialisms
 
-### looking at how well people from different backgrounds are aligned with the specialisms 
+### looking at how well people from different backgrounds are aligned with the specialisms
 
 ::: callout-note
-## Questions for Viz 
+## Questions for Viz
 
-\- NB when we talk about alignment, we are working with the numbers that we used to call ‘version 2’ of the metric.
-I think Carlos has updated the code so that this is the only version, but I think when you initially looked at it you were using version 1 – so just something to be aware of.
+\- NB when we talk about alignment, we are working with the numbers that we used to call ‘version 2’ of the metric. I think Carlos has updated the code so that this is the only version, but I think when you initially looked at it you were using version 1 – so just something to be aware of.
 
 1.  What does individual alignment look like? You already did some visualisations of alignment in different sectors, and so on. One might expect greater alignment for people with greater numbers of years of experience.
 
 2.  How do you show whether and how inequality translates into greater or lesser alignment with the standardised specialisms? One of the recommendations we will make is that the government and/or the cyber security council should monitor diversity and inclusion in more extensive and rigorous fashion. It would be helpful to show the kinds of views of the data that we think they should be looking at in future work. So anything that you think captures the issue of figuring out whether inequalities are being carried through to the profession, or amplified or suppressed, would be great.
 
-3.  Is there any correlation between diversity and alignment with the specialisms? We can be pretty sure, for instance, that women in cyber
-    are less well aligned with the specialisms than men, because there is no security awareness specialism. Our survey is small and may not actually
-    show this (and if it did we wouldn’t have confidence in it). But we could nevertheless show the kind of perspective on the data that the
-    CSC/government ought to be paying attention to. The same goes for other characteristics than gender.
+3.  Is there any correlation between diversity and alignment with the specialisms? We can be pretty sure, for instance, that women in cyber are less well aligned with the specialisms than men, because there is no security awareness specialism. Our survey is small and may not actually show this (and if it did we wouldn’t have confidence in it). But we could nevertheless show the kind of perspective on the data that the CSC/government ought to be paying attention to. The same goes for other characteristics than gender.
 :::
 
-##  Recommendations 
+## Recommendations
 
-###   Limitations of the research and the importance of monitoring alignment 
+### Limitations of the research and the importance of monitoring alignment
