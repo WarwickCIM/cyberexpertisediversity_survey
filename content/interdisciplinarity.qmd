@@ -9,6 +9,17 @@ alignment_scenarios_long <- read.csv("../data/processed/alignment_scenarios_long
 max_alignment_scenarios_1_permutations <- read.csv("../data/processed/max_alignment_scenarios_1_permutations.csv")
 max_alignment_scenarios_2_permutations <- read.csv("../data/processed/max_alignment_scenarios_2_permutations.csv")
 max_alignment_scenarios_3_permutations <- read.csv("../data/processed/max_alignment_scenarios_3_permutations.csv")
+max_alignment_scenarios_4_permutations <- read.csv("../data/processed/max_alignment_scenarios_4_permutations.csv")
+max_alignment_scenarios_5_permutations <- read.csv("../data/processed/max_alignment_scenarios_5_permutations.csv")
+
+max_alignment_scenarios <- max_alignment_scenarios_1_permutations |>
+  bind_rows(max_alignment_scenarios_2_permutations) |> 
+  bind_rows(max_alignment_scenarios_3_permutations) |> 
+  bind_rows(max_alignment_scenarios_4_permutations) |> 
+  bind_rows(max_alignment_scenarios_5_permutations) 
+
+# GGplot defaults
+theme_set(theme_minimal())
 
 ```
 
@@ -22,25 +33,24 @@ I was thinking of including a section talking about trans-, inter- and multidisc
 
 ### Looking at specialisms alignment with the scenarios
 
-::: callout-caution
-## Demo only
-
-This is a visualization for demonstrative purposes:
-:::
-
 ```{r}
 #| label: fig-alignment-scenarios
-#| fig-title: "Alignment indices by scenario and Specialism"
+#| fig-cap: "Alignment indices per number of permutations and scenario"
 #| column: page
-#| fig-width: 20
-#| fig-height: 15
+#| fig-width: 14
+#| fig-height: 18
 #| fig-align: "center"
-alignment_scenarios_long |> 
-  ggplot(aes(x = id, y = alignment_index)) +
-  geom_col() +
-  facet_wrap(~Specialism) +
-  labs(y = "Alignment index", x = "Scenarios") +
-  theme(axis.text.x = element_text(angle = 90, vjust = 1, hjust=1))
+max_alignment_scenarios |> 
+  select(id, n_permutations, alignment_index) |> 
+  pivot_longer(alignment_index) |> 
+  ggplot(aes(x = n_permutations, y = value)) + 
+  geom_line(color = "red", size = 1) +
+  geom_point(color = "red")+ 
+  facet_wrap( ~id, ncol = 5) + 
+  labs(title = "Alignment indices per number of permutations and scenario",
+       y = "Scenario Alignment index",
+       x = "Number of permutations")
+
 ```
 
 ### Meta view of alignment vs interdisciplinarity
