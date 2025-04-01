@@ -49,7 +49,7 @@ max_alignment_scenarios |>
   facet_wrap( ~id, ncol = 5) + 
   labs(title = "Alignment indices per number of permutations and scenario",
        y = "Scenario Alignment index",
-       x = "Number of permutations")
+       x = "Number of specialisms permutations")
 
 ```
 
