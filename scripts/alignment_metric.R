@@ -226,6 +226,10 @@ write_csv(alignment_scenarios,
 
 # Scenarios' permutations new version-------------------------------------------------
 
+# The calc_permutation_alignment function processes a data frame (df) and
+# calculates an "alignment index" for different permutations of a specified
+# number of Specialism values (n). It identifies the best permutation for each
+# Scenario (id) based on the max alignment index.
 calc_permutation_alignment <- function(df, n) {
   df |> 
     group_by(id) |> 
@@ -239,7 +243,9 @@ calc_permutation_alignment <- function(df, n) {
       results = list(map_dfr(permutations, function(p) {
         # Filter data for current id and permutation
         current_id <- id
-        id_data <- df |> filter(id == current_id, Specialism %in% p)
+        id_data <- df |> 
+          filter(id == current_id, 
+                 Specialism %in% p)
         
         # Calculate test_sum
         test_sum <- id_data |>
