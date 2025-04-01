@@ -6,8 +6,10 @@ title: "Interdisciplinarity"
 source("../scripts/setup.R")
 
 alignment_scenarios_long <- read.csv("../data/processed/alignment_scenarios_long.csv")
-alignment_scenarios_2_permutations <- read.csv("../data/processed/alignment_scenarios_2_permutations.csv")
-alignment_scenarios_3_permutations <- read.csv("../data/processed/alignment_scenarios_3_permutations.csv")
+max_alignment_scenarios_1_permutations <- read.csv("../data/processed/max_alignment_scenarios_1_permutations.csv")
+max_alignment_scenarios_2_permutations <- read.csv("../data/processed/max_alignment_scenarios_2_permutations.csv")
+max_alignment_scenarios_3_permutations <- read.csv("../data/processed/max_alignment_scenarios_3_permutations.csv")
+
 ```
 
 ## Theory
