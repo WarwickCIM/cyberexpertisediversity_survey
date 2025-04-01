@@ -53,6 +53,13 @@ max_alignment_scenarios |>
 
 ```
 
+```{r}
+max_alignment_scenarios |> 
+  ggplot(aes(x = alignment_index), y = 1) +
+  geom_boxplot() +
+  facet_wrap(~n_permutations, ncol = 1)
+```
+
 ### Meta view of alignment vs interdisciplinarity
 
 ### Qualitative analysis of the scenario descriptions
