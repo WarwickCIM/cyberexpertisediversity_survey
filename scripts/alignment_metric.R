@@ -288,9 +288,9 @@ calc_permutation_alignment <- function(df, n) {
 #alignment_scenarios_4_permutations <- calc_permutation_alignment(comb_scenario, 4)
 #alignment_scenarios_5_permutations <- calc_permutation_alignment(comb_scenario, 5)
 
-#write.csv(alignment_scenarios_1_permutations, "data/processed/max_alignment_scenarios_1_permutations.csv")
-#write.csv(alignment_scenarios_2_permutations, "data/processed/max_alignment_scenarios_2_permutations.csv")
-#write.csv(alignment_scenarios_3_permutations, "data/processed/max_alignment_scenarios_3_permutations.csv")
-#write.csv(alignment_scenarios_4_permutations, "data/processed/max_alignment_scenarios_4_permutations.csv")
-#write.csv(alignment_scenarios_5_permutations, "data/processed/max_alignment_scenarios_5_permutations.csv")
+#write.csv(alignment_scenarios_1_permutations, "data/processed/max_alignment_scenarios_1_permutations.csv", row.names = FALSE)
+#write.csv(alignment_scenarios_2_permutations, "data/processed/max_alignment_scenarios_2_permutations.csv", row.names = FALSE)
+#write.csv(alignment_scenarios_3_permutations, "data/processed/max_alignment_scenarios_3_permutations.csv", row.names = FALSE)
+#write.csv(alignment_scenarios_4_permutations, "data/processed/max_alignment_scenarios_4_permutations.csv", row.names = FALSE)
+#write.csv(alignment_scenarios_5_permutations, "data/processed/max_alignment_scenarios_5_permutations.csv", row.names = FALSE)
 

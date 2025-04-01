@@ -1,66 +1,66 @@
-"","id","permutation","test_sum","reference_sum","alignment_index","n_permutations"
-"1","1","Digital Forensics, Cyber Threat Intelligence",230.21,250.21,0.920067143599377,2
-"2","2","Cyber Security Management, Secure System Architecture & Design (Industrial Control Systems)",755.94,856.79,0.882293210705074,2
-"3","3","Cyber Security Management, Secure System Architecture & Design (Industrial Control Systems)",1230,2098.1,0.586244697583528,2
-"4","4","Digital Forensics (Industrial Control Systems), Cyber Security Management",747.56,909.81,0.821666062144843,2
-"5","5","Digital Forensics, Cyber Security Management",172.95,179.19,0.965176628160054,2
-"6","6","Security Testing, Identity & Access Management",434.28,508.78,0.853571288179567,2
-"7","7","Incident response (Industrial Control Systems), Cryptography & Communications Security (Cryptographer)",541.94,815.92,0.664207275223061,2
-"8","8","Cyber Security Management, Data Protection & Privacy",438.71,507.27,0.86484515149723,2
-"9","9","Cyber Security Management, Vulnerability Management",583.88,621.54,0.939408565820382,2
-"10","10","Cyber Security Management, Incident response (Industrial Control Systems)",630.97,730.46,0.86379815458752,2
-"11","11","Cyber Security Management, Cryptography & Communications Security (Cryptographer)",784.63,1233.34,0.636183047659202,2
-"12","12","Cyber Security Management, Cryptography & Communications Security (Cryptographer)",304.77,315.79,0.965103391494348,2
-"13","13","Cyber Security Management, Security Testing",900.39,1400.32,0.642988745429616,2
-"14","14","Cyber Security Management, Security Testing",799.11,1003.58,0.796259391378864,2
-"15","15","Cyber Security Management, Identity & Access Management",651.55,836.63,0.778779149683851,2
-"16","16","Cyber Security Management, Network Monitoring & Intrusion Detection",321.44,337.25,0.953120830244626,2
-"17","17","Digital Forensics, Digital Forensics (Industrial Control Systems)",11.8,11.8,1,2
-"18","18","Cyber Security Management, Vulnerability Management",466.19,472.45,0.986749920626521,2
-"19","19","Digital Forensics, Cyber Security Management",96.3,96.3,1,2
-"20","20","Cyber Security Management, Vulnerability Management",195.8,235.8,0.830364715860899,2
-"21","21","Cyber Security Management, Vulnerability Management",799.26,936.89,0.853099083136761,2
-"22","22","Cyber Security Management, Security Testing",624.39,733.67,0.851050199681055,2
-"23","23","Cyber Security Management, Secure Operations",121.67,121.67,1,2
-"24","24","Cyber Threat Intelligence, Cyber Security Management",691.5,846.37,0.817018561621985,2
-"25","25","Digital Forensics, Digital Forensics (Industrial Control Systems)",0,0,NA,2
-"26","26","Cyber Threat Intelligence, Cyber Security Management",544.04,606.59,0.896882573072421,2
-"27","27","Digital Forensics, Secure Operations (Industrial control systems)",569.76,814.76,0.699297952771368,2
-"28","28","Cyber Security Management, Secure System Architecture & Design (Industrial Control Systems)",1172.75,1777.99,0.659593136069382,2
-"29","29","Cyber Security Management, Security Testing",961.95,1296.13,0.742170924212849,2
-"30","30","Cyber Security Management, Incident response (Industrial Control Systems)",351.19,351.19,1,2
-"31","31","Digital Forensics, Digital Forensics (Industrial Control Systems)",0,0,NA,2
-"32","32","Cyber Security Management, Vulnerability Management",596.71,765.32,0.779686928343699,2
-"33","33","Cyber Security Management, Security Testing",692.69,950.67,0.728633490064902,2
-"34","34","Cyber Threat Intelligence, Cyber Security Management",476.66,574.6,0.829550991994431,2
-"35","35","Cyber Security Management, Security Testing",584.71,719.94,0.812164902630775,2
-"36","36","Cyber Threat Intelligence, Cyber Security Management",389.19,409.19,0.951122950218725,2
-"37","37","Cyber Security Management, Secure Operations",292.45,292.45,1,2
-"38","38","Cyber Security Management, Secure Operations",156.66,156.66,1,2
-"39","39","Cyber Security Management, Secure System Architecture & Design (Industrial Control Systems)",539.71,722.2,0.747313763500415,2
-"40","40","Digital Forensics (Industrial Control Systems), Cyber Threat Intelligence",251.73,278.06,0.905308206861828,2
-"41","41","Cyber Security Management, Secure System Architecture & Design (Industrial Control Systems)",1032.49,1321.54,0.7812779030525,2
-"42","42","Digital Forensics, Cyber Security Management",108.31,108.31,1,2
-"43","43","Cyber Security Management, Secure System Architecture & Design (Industrial Control Systems)",1190.26,1828.53,0.650938185318261,2
-"44","44","Digital Forensics, Digital Forensics (Industrial Control Systems)",0,0,NA,2
-"45","45","Cyber Security Management, Secure Operations (Industrial control systems)",766.06,879.81,0.87071072163308,2
-"46","46","Cyber Security Management, Cryptography & Communications Security (Cryptographer)",656.83,871.25,0.753893830703013,2
-"47","47","Cyber Threat Intelligence, Network Monitoring & Intrusion Detection",269.37,279.37,0.96420517593156,2
-"48","48","Cyber Security Management, Vulnerability Management",510.3,551.97,0.924506766672102,2
-"49","49","Cyber Security Management, Secure Operations",299.76,308.95,0.970254086421751,2
-"50","50","Cyber Security Management, Vulnerability Management",616.16,804.87,0.765539776609887,2
-"51","51","Cyber Threat Intelligence, Cyber Security Management",634.33,713.05,0.889601009746862,2
-"52","52","Cyber Security Management, Security Testing",830.34,1025.54,0.809661251633286,2
-"53","53","Digital Forensics, Digital Forensics (Industrial Control Systems)",0,0,NA,2
-"54","54","Cyber Security Management, Cryptography & Communications Security (Cryptographer)",474.37,475.87,0.996847878622313,2
-"55","55","Cyber Security Management, Secure Operations",97.98,97.98,1,2
-"56","56","Cyber Security Management, Secure System Architecture & Design (Industrial Control Systems)",231.57,279.3,0.829108485499463,2
-"57","57","Cyber Security Management, Cryptography & Communications Security (Cryptographer)",317.53,385.88,0.822872395563388,2
-"58","58","Cyber Security Management, Security Testing",848.85,943.06,0.900101796280194,2
-"59","59","Cyber Threat Intelligence, Secure System Architecture & Design",371.44,413.3,0.898717638519235,2
-"60","60","Cyber Threat Intelligence, Cyber Security Management",558.11,693.7,0.804540867810293,2
-"61","61","Cyber Security Management, Secure System Architecture & Design (Industrial Control Systems)",623.73,927.98,0.672137330545917,2
-"62","62","Cyber Security Management, Secure System Architecture & Design (Industrial Control Systems)",909.82,1333.6,0.682228554289142,2
-"63","63","Cyber Security Management, Cryptography & Communications Security (Cryptographer)",281.03,281.35,0.998862626621646,2
-"64","64","Cyber Security Management, Security Testing",841.26,1034.57,0.813149424398543,2
-"65","65","Cyber Security Management, Security Testing",817.67,1027.88,0.795491691637156,2
+id,permutation,test_sum,reference_sum,alignment_index,n_permutations
+1,"Digital Forensics, Cyber Threat Intelligence",230.21,250.21,0.920067143599377,2
+2,"Cyber Security Management, Secure System Architecture & Design (Industrial Control Systems)",755.94,856.79,0.882293210705074,2
+3,"Cyber Security Management, Secure System Architecture & Design (Industrial Control Systems)",1230,2098.1,0.586244697583528,2
+4,"Digital Forensics (Industrial Control Systems), Cyber Security Management",747.56,909.81,0.821666062144843,2
+5,"Digital Forensics, Cyber Security Management",172.95,179.19,0.965176628160054,2
+6,"Security Testing, Identity & Access Management",434.28,508.78,0.853571288179567,2
+7,"Incident response (Industrial Control Systems), Cryptography & Communications Security (Cryptographer)",541.94,815.92,0.664207275223061,2
+8,"Cyber Security Management, Data Protection & Privacy",438.71,507.27,0.86484515149723,2
+9,"Cyber Security Management, Vulnerability Management",583.88,621.54,0.939408565820382,2
+10,"Cyber Security Management, Incident response (Industrial Control Systems)",630.97,730.46,0.86379815458752,2
+11,"Cyber Security Management, Cryptography & Communications Security (Cryptographer)",784.63,1233.34,0.636183047659202,2
+12,"Cyber Security Management, Cryptography & Communications Security (Cryptographer)",304.77,315.79,0.965103391494348,2
+13,"Cyber Security Management, Security Testing",900.39,1400.32,0.642988745429616,2
+14,"Cyber Security Management, Security Testing",799.11,1003.58,0.796259391378864,2
+15,"Cyber Security Management, Identity & Access Management",651.55,836.63,0.778779149683851,2
+16,"Cyber Security Management, Network Monitoring & Intrusion Detection",321.44,337.25,0.953120830244626,2
+17,"Digital Forensics, Digital Forensics (Industrial Control Systems)",11.8,11.8,1,2
+18,"Cyber Security Management, Vulnerability Management",466.19,472.45,0.986749920626521,2
+19,"Digital Forensics, Cyber Security Management",96.3,96.3,1,2
+20,"Cyber Security Management, Vulnerability Management",195.8,235.8,0.830364715860899,2
+21,"Cyber Security Management, Vulnerability Management",799.26,936.89,0.853099083136761,2
+22,"Cyber Security Management, Security Testing",624.39,733.67,0.851050199681055,2
+23,"Cyber Security Management, Secure Operations",121.67,121.67,1,2
+24,"Cyber Threat Intelligence, Cyber Security Management",691.5,846.37,0.817018561621985,2
+25,"Digital Forensics, Digital Forensics (Industrial Control Systems)",0,0,NA,2
+26,"Cyber Threat Intelligence, Cyber Security Management",544.04,606.59,0.896882573072421,2
+27,"Digital Forensics, Secure Operations (Industrial control systems)",569.76,814.76,0.699297952771368,2
+28,"Cyber Security Management, Secure System Architecture & Design (Industrial Control Systems)",1172.75,1777.99,0.659593136069382,2
+29,"Cyber Security Management, Security Testing",961.95,1296.13,0.742170924212849,2
+30,"Cyber Security Management, Incident response (Industrial Control Systems)",351.19,351.19,1,2
+31,"Digital Forensics, Digital Forensics (Industrial Control Systems)",0,0,NA,2
+32,"Cyber Security Management, Vulnerability Management",596.71,765.32,0.779686928343699,2
+33,"Cyber Security Management, Security Testing",692.69,950.67,0.728633490064902,2
+34,"Cyber Threat Intelligence, Cyber Security Management",476.66,574.6,0.829550991994431,2
+35,"Cyber Security Management, Security Testing",584.71,719.94,0.812164902630775,2
+36,"Cyber Threat Intelligence, Cyber Security Management",389.19,409.19,0.951122950218725,2
+37,"Cyber Security Management, Secure Operations",292.45,292.45,1,2
+38,"Cyber Security Management, Secure Operations",156.66,156.66,1,2
+39,"Cyber Security Management, Secure System Architecture & Design (Industrial Control Systems)",539.71,722.2,0.747313763500415,2
+40,"Digital Forensics (Industrial Control Systems), Cyber Threat Intelligence",251.73,278.06,0.905308206861828,2
+41,"Cyber Security Management, Secure System Architecture & Design (Industrial Control Systems)",1032.49,1321.54,0.7812779030525,2
+42,"Digital Forensics, Cyber Security Management",108.31,108.31,1,2
+43,"Cyber Security Management, Secure System Architecture & Design (Industrial Control Systems)",1190.26,1828.53,0.650938185318261,2
+44,"Digital Forensics, Digital Forensics (Industrial Control Systems)",0,0,NA,2
+45,"Cyber Security Management, Secure Operations (Industrial control systems)",766.06,879.81,0.87071072163308,2
+46,"Cyber Security Management, Cryptography & Communications Security (Cryptographer)",656.83,871.25,0.753893830703013,2
+47,"Cyber Threat Intelligence, Network Monitoring & Intrusion Detection",269.37,279.37,0.96420517593156,2
+48,"Cyber Security Management, Vulnerability Management",510.3,551.97,0.924506766672102,2
+49,"Cyber Security Management, Secure Operations",299.76,308.95,0.970254086421751,2
+50,"Cyber Security Management, Vulnerability Management",616.16,804.87,0.765539776609887,2
+51,"Cyber Threat Intelligence, Cyber Security Management",634.33,713.05,0.889601009746862,2
+52,"Cyber Security Management, Security Testing",830.34,1025.54,0.809661251633286,2
+53,"Digital Forensics, Digital Forensics (Industrial Control Systems)",0,0,NA,2
+54,"Cyber Security Management, Cryptography & Communications Security (Cryptographer)",474.37,475.87,0.996847878622313,2
+55,"Cyber Security Management, Secure Operations",97.98,97.98,1,2
+56,"Cyber Security Management, Secure System Architecture & Design (Industrial Control Systems)",231.57,279.3,0.829108485499463,2
+57,"Cyber Security Management, Cryptography & Communications Security (Cryptographer)",317.53,385.88,0.822872395563388,2
+58,"Cyber Security Management, Security Testing",848.85,943.06,0.900101796280194,2
+59,"Cyber Threat Intelligence, Secure System Architecture & Design",371.44,413.3,0.898717638519235,2
+60,"Cyber Threat Intelligence, Cyber Security Management",558.11,693.7,0.804540867810293,2
+61,"Cyber Security Management, Secure System Architecture & Design (Industrial Control Systems)",623.73,927.98,0.672137330545917,2
+62,"Cyber Security Management, Secure System Architecture & Design (Industrial Control Systems)",909.82,1333.6,0.682228554289142,2
+63,"Cyber Security Management, Cryptography & Communications Security (Cryptographer)",281.03,281.35,0.998862626621646,2
+64,"Cyber Security Management, Security Testing",841.26,1034.57,0.813149424398543,2
+65,"Cyber Security Management, Security Testing",817.67,1027.88,0.795491691637156,2

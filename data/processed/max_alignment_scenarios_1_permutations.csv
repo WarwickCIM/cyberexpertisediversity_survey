@@ -1,66 +1,66 @@
-"","id","permutation","test_sum","reference_sum","alignment_index","n_permutations"
-"1","1","Cyber Threat Intelligence",210,250.21,0.839294992206546,1
-"2","2","Cyber Security Management",640.26,856.79,0.747277629290725,1
-"3","3","Cyber Security Management",870,2098.1,0.414660883656642,1
-"4","4","Cyber Security Management",603.23,909.81,0.663028544421363,1
-"5","5","Cyber Security Management",172.95,179.19,0.965176628160054,1
-"6","6","Identity & Access Management",312.6,508.78,0.614410943826408,1
-"7","7","Secure System Architecture & Design (Industrial Control Systems)",366.33,815.92,0.4489778409648,1
-"8","8","Cyber Security Management",408.71,507.27,0.805705048593451,1
-"9","9","Cyber Security Management",535.65,621.54,0.861810985616372,1
-"10","10","Cyber Security Management",542.63,730.46,0.742860663143772,1
-"11","11","Cyber Security Management",606.56,1233.34,0.491802747012178,1
-"12","12","Cyber Security Management",302.77,315.79,0.958770068716552,1
-"13","13","Cyber Security Management",723.25,1400.32,0.51648908820841,1
-"14","14","Cyber Security Management",662.84,1003.58,0.660475497718169,1
-"15","15","Cyber Security Management",560.1,836.63,0.669471570467232,1
-"16","16","Cyber Security Management",247.91,337.25,0.735092661230541,1
-"17","17","Digital Forensics",11.8,11.8,1,1
-"18","18","Cyber Security Management",416.45,472.45,0.881468938512012,1
-"19","19","Digital Forensics",78.33,96.3,0.813395638629284,1
-"20","20","Cyber Security Management",180.53,235.8,0.765606446140797,1
-"21","21","Cyber Security Management",704.99,936.89,0.75247894630106,1
-"22","22","Secure System Architecture & Design (Industrial Control Systems)",419.74,733.67,0.572110076737498,1
-"23","23","Cyber Security Management",113.4,121.67,0.932029259472343,1
-"24","24","Cyber Security Management",571.5,846.37,0.675236598650708,1
-"25","25","Digital Forensics",0,0,NA,1
-"26","26","Cyber Security Management",424.04,606.59,0.699055375129824,1
-"27","27","Cyber Security Management",441.63,814.76,0.542036918847268,1
-"28","28","Cyber Security Management",858.7,1777.99,0.482961096519103,1
-"29","29","Cyber Security Management",806.25,1296.13,0.622044085084058,1
-"30","30","Cyber Security Management",300.6,351.19,0.855946923317862,1
-"31","31","Digital Forensics",0,0,NA,1
-"32","32","Cyber Security Management",506.71,765.32,0.662089060785031,1
-"33","33","Cyber Security Management",538.76,950.67,0.566716105483501,1
-"34","34","Cyber Security Management",371.74,574.6,0.646954403063,1
-"35","35","Cyber Security Management",503.92,719.94,0.699947217823708,1
-"36","36","Cyber Security Management",333.32,409.19,0.814584911654732,1
-"37","37","Cyber Security Management",277.42,292.45,0.948606599418704,1
-"38","38","Cyber Security Management",139.33,156.66,0.889378271415805,1
-"39","39","Cyber Security Management",415.81,722.2,0.575754638604265,1
-"40","40","Cyber Threat Intelligence",220.42,278.06,0.792706610084155,1
-"41","41","Cyber Security Management",781.58,1321.54,0.591416075185011,1
-"42","42","Cyber Security Management",108.31,108.31,1,1
-"43","43","Cyber Security Management",850.64,1828.53,0.46520428978469,1
-"44","44","Digital Forensics",0,0,NA,1
-"45","45","Cyber Security Management",655.42,879.81,0.744956297382389,1
-"46","46","Cyber Security Management",535.4,871.25,0.614519368723099,1
-"47","47","Vulnerability Management",256.02,279.37,0.916419085800193,1
-"48","48","Cyber Security Management",432.21,551.97,0.783031686504701,1
-"49","49","Cyber Security Management",276.87,308.95,0.896164427900955,1
-"50","50","Cyber Security Management",482.81,804.87,0.599860847093319,1
-"51","51","Cyber Security Management",523.12,713.05,0.733637192342753,1
-"52","52","Cyber Security Management",615.57,1025.54,0.600239873627552,1
-"53","53","Digital Forensics",0,0,NA,1
-"54","54","Cyber Security Management",362.89,475.87,0.762582217832601,1
-"55","55","Identity & Access Management",91.33,97.98,0.932129005919575,1
-"56","56","Cyber Security Management",192.25,279.3,0.688327962764053,1
-"57","57","Cyber Security Management",301.94,385.88,0.782471234580699,1
-"58","58","Cyber Security Management",759.48,943.06,0.805335821686849,1
-"59","59","Cyber Threat Intelligence",294.35,413.3,0.712194531817082,1
-"60","60","Cyber Security Management",447.88,693.7,0.645639325356782,1
-"61","61","Cyber Security Management",448.88,927.98,0.483717321493998,1
-"62","62","Cyber Security Management",639.82,1333.6,0.479769046190762,1
-"63","63","Cyber Security Management",242.67,281.35,0.862519992891416,1
-"64","64","Cyber Security Management",670.52,1034.57,0.648114675662353,1
-"65","65","Cyber Security Management",668.24,1027.88,0.650114799392925,1
+id,permutation,test_sum,reference_sum,alignment_index,n_permutations
+1,Cyber Threat Intelligence,210,250.21,0.839294992206546,1
+2,Cyber Security Management,640.26,856.79,0.747277629290725,1
+3,Cyber Security Management,870,2098.1,0.414660883656642,1
+4,Cyber Security Management,603.23,909.81,0.663028544421363,1
+5,Cyber Security Management,172.95,179.19,0.965176628160054,1
+6,Identity & Access Management,312.6,508.78,0.614410943826408,1
+7,Secure System Architecture & Design (Industrial Control Systems),366.33,815.92,0.4489778409648,1
+8,Cyber Security Management,408.71,507.27,0.805705048593451,1
+9,Cyber Security Management,535.65,621.54,0.861810985616372,1
+10,Cyber Security Management,542.63,730.46,0.742860663143772,1
+11,Cyber Security Management,606.56,1233.34,0.491802747012178,1
+12,Cyber Security Management,302.77,315.79,0.958770068716552,1
+13,Cyber Security Management,723.25,1400.32,0.51648908820841,1
+14,Cyber Security Management,662.84,1003.58,0.660475497718169,1
+15,Cyber Security Management,560.1,836.63,0.669471570467232,1
+16,Cyber Security Management,247.91,337.25,0.735092661230541,1
+17,Digital Forensics,11.8,11.8,1,1
+18,Cyber Security Management,416.45,472.45,0.881468938512012,1
+19,Digital Forensics,78.33,96.3,0.813395638629284,1
+20,Cyber Security Management,180.53,235.8,0.765606446140797,1
+21,Cyber Security Management,704.99,936.89,0.75247894630106,1
+22,Secure System Architecture & Design (Industrial Control Systems),419.74,733.67,0.572110076737498,1
+23,Cyber Security Management,113.4,121.67,0.932029259472343,1
+24,Cyber Security Management,571.5,846.37,0.675236598650708,1
+25,Digital Forensics,0,0,NA,1
+26,Cyber Security Management,424.04,606.59,0.699055375129824,1
+27,Cyber Security Management,441.63,814.76,0.542036918847268,1
+28,Cyber Security Management,858.7,1777.99,0.482961096519103,1
+29,Cyber Security Management,806.25,1296.13,0.622044085084058,1
+30,Cyber Security Management,300.6,351.19,0.855946923317862,1
+31,Digital Forensics,0,0,NA,1
+32,Cyber Security Management,506.71,765.32,0.662089060785031,1
+33,Cyber Security Management,538.76,950.67,0.566716105483501,1
+34,Cyber Security Management,371.74,574.6,0.646954403063,1
+35,Cyber Security Management,503.92,719.94,0.699947217823708,1
+36,Cyber Security Management,333.32,409.19,0.814584911654732,1
+37,Cyber Security Management,277.42,292.45,0.948606599418704,1
+38,Cyber Security Management,139.33,156.66,0.889378271415805,1
+39,Cyber Security Management,415.81,722.2,0.575754638604265,1
+40,Cyber Threat Intelligence,220.42,278.06,0.792706610084155,1
+41,Cyber Security Management,781.58,1321.54,0.591416075185011,1
+42,Cyber Security Management,108.31,108.31,1,1
+43,Cyber Security Management,850.64,1828.53,0.46520428978469,1
+44,Digital Forensics,0,0,NA,1
+45,Cyber Security Management,655.42,879.81,0.744956297382389,1
+46,Cyber Security Management,535.4,871.25,0.614519368723099,1
+47,Vulnerability Management,256.02,279.37,0.916419085800193,1
+48,Cyber Security Management,432.21,551.97,0.783031686504701,1
+49,Cyber Security Management,276.87,308.95,0.896164427900955,1
+50,Cyber Security Management,482.81,804.87,0.599860847093319,1
+51,Cyber Security Management,523.12,713.05,0.733637192342753,1
+52,Cyber Security Management,615.57,1025.54,0.600239873627552,1
+53,Digital Forensics,0,0,NA,1
+54,Cyber Security Management,362.89,475.87,0.762582217832601,1
+55,Identity & Access Management,91.33,97.98,0.932129005919575,1
+56,Cyber Security Management,192.25,279.3,0.688327962764053,1
+57,Cyber Security Management,301.94,385.88,0.782471234580699,1
+58,Cyber Security Management,759.48,943.06,0.805335821686849,1
+59,Cyber Threat Intelligence,294.35,413.3,0.712194531817082,1
+60,Cyber Security Management,447.88,693.7,0.645639325356782,1
+61,Cyber Security Management,448.88,927.98,0.483717321493998,1
+62,Cyber Security Management,639.82,1333.6,0.479769046190762,1
+63,Cyber Security Management,242.67,281.35,0.862519992891416,1
+64,Cyber Security Management,670.52,1034.57,0.648114675662353,1
+65,Cyber Security Management,668.24,1027.88,0.650114799392925,1
