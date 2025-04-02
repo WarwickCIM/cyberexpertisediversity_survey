@@ -1,17 +1,25 @@
 ---
-title: "Diversity of expertise"
+title: "Classifications and Diversity of expertise"
 format: html
 ---
 
-## Theory
+## Thinking through classifications
 
-### High reliability organisations
+'To classify is human', wrote Bowker and Star [@bowker1999sorting]. Standardisation smoothes out frictions: if everyone is using the same gauge of wire, the same protocols for communication, the same terminology to refer to the same thing, then the conditions are in place for collaboration and integration, and for a low risk of unforeseen complications. A classification system, can be defined, according to Bowker and Star, as 'a set of boxes (metaphorical or literal) into which things can be put to then do some kind of work' [@bowker1999sorting]. Devising a classification of cyber security expertise has been one of the earliest projects for the cyber security profession. The Cybok project did this in the UK, a large mapping exercise that ingested a wide body of data, and input from practitioners, policymakers and academics, to generate a system of 19 'Knowledge Areas', published in 2019, rising to 21 in the 2021 revision.
 
-The safety management literature is increasingly influential in cyber security and one of the most influential ideas within this tradition is the idea that a diversity of thought is essential for maintaining high reliability. The idea is usually attributed to Karl Weick, but has its roots in cybernetics and Ashby’s principle of requisite variety. Essentially, to be able to detect problems and respond to them early requires a sensitivity to new information. Monocultures, like the ‘production culture’ that Diane Vaughan uncovered at NASA in the years leading up to the Challenger Space Shuttle disaster, tend to have blind spots, which creates risks of problems going unnoticed. The value of diversity from this point of view is not just about broad issues of justice, it is also directly relevant to achieving business goals.
+![Graphic showing the Cybok KAs. From https://www.cybok.org/media/article_images/2021/07/21/cybok_v_1_1.png](images/clipboard-695334883.png)
 
-### STS work on categories
+Cybok enables a great deal of work to happen that would otherwise be very difficult. It enables the assessment of degree programmes in terms of their coverage, and research institutions in terms of the breadth and depth of their focus. It provides a common terminology for making comparisons and building up composite profiles. All of these things play a role in the gradual emergence of the profession as a distinct problem space, set of professional capabilities, norms and identities.
 
-I might also include a section about categories. In the STS literature, standardised categories are often thought of as a kind of infrastructure. Establishing infrastructure often requires standardisation, so that everyone is using the same gauge wire, same protocols, same terminology to refer to the same thing. Like infrastructure, entrenched categories create path dependencies and blindspots. We can think about
+Like all classification systems, Cybok has downsides. It is a trade-off: we gain the ability to smooth over frictions
+
+Path dependencies: Classification systems are a kind of knowledge infrastructure, and like all infrastructure, they create path dependencies and potential 'lock in'. Once adopted, a framework like Cybok can be costly to change, because it would require changes to be propagated through many institutions and systems.
+
+-   Biases and blindspots: The blindspot in the visual field provides a useful metaphor. On both sides, corresponding to where the optic nerve joins the retina, all well-sighted people have a defect in their vision, a small area in which they cannot see. But the integration of the visual system means that, apart from in special circumstances, you cannot see that you don't see. Classification systems have inevitable blindspots, and corresponding to them we find cyborgs, hybrids, mosaics and chimeras.
+
+The Cybok classification gave very little attention to the social sciences and humanities, and what attention was given was bundled into a category (human factors) that has its origins in computer science.
+
+I might also include a section about categories. In the STS literature, standardised categories are often thought of as a kind of infrastructure. Like infrastructure, entrenched categories create path dependencies and blindspots. We can think about
 
 the Cybok categories in these terms, and think about what is excluded from consideration as a result of being excluded from the standard.
 
