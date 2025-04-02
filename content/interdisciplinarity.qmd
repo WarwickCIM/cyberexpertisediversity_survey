@@ -33,16 +33,18 @@ I was thinking of including a section talking about trans-, inter- and multidisc
 
 ### Looking at specialisms alignment with the scenarios
 
-@fig-alignment-scenarios-overview shows that, overall, the Alignment index increases as we increase the number of permutations (this is, the scenarios are more interdisciplinary). While this is expected @fig-alignment-scenarios provides a more nuanced view.
+@fig-alignment-scenarios-overview shows that, overall, the Alignment index increases as we increase the number of permutations (this is, the scenarios are more interdisciplinary). While this could be expected, @fig-alignment-scenarios , which also shows how it changes per scenario, provides a more nuanced view.
 
 ```{r}
 #| label: fig-alignment-scenarios-overview
-#| fig-cap: "Alignment indices per number of permutations and scenario"
+#| fig-cap: "Alignment indices per number of permutations"
 max_alignment_scenarios |> 
   ggplot(aes(x = alignment_index), y = 1) +
   geom_boxplot() +
   facet_wrap(~n_permutations, ncol = 1)
 ```
+
+Explanation here.
 
 ```{r}
 #| label: fig-alignment-scenarios
