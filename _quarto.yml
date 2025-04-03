@@ -48,7 +48,7 @@ book:
       - icon: github
         href: https://github.com/WarwickCIM/
       - icon: mastodon 
-        href: https://fediscience.org/@cimethods
+        href: https://fediscience.org/%40cimethods
       - icon: bluesky
         href: https://bsky.app/profile/cimethods.bsky.social
 
