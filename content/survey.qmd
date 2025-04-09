@@ -91,7 +91,7 @@ Computations for the alignment metric can be audited at the file [`scripts/align
 
 ## Results
 
-The survey was conducted between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")` and received responses from `r nrow(responses)` individuals, describing `r nrow(scenarios)` scenarios. Of these respondents `r nrow(filter(responses, gender == 'Male'))` identified as men, `r nrow(filter(responses, sexual_orientation == 'No'))` as heterosexual, `r nrow(filter(responses, transgender == 'No'))` as their sex assigned at birth, `r nrow(filter(responses, disabilities == 'No, I do not have a disability, or a history/record of having one'))` as having no disabilities, and `r nrow(filter(responses, uk_ethnic_origin == 'White'))` of White British Ethnic origin. These figures, while not reflective of the diversity of wider British society, they are inline with previous findings (XXX ???) of the lack of diversity within the UK cyber security.
+The survey was conducted between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")` and received responses from `r nrow(responses)` individuals, describing `r nrow(scenarios)` scenarios. Of these respondents `r nrow(filter(responses, gender == 'Male'))` identified as men, `r nrow(filter(responses, sexual_orientation == 'No'))` as heterosexual, `r nrow(filter(responses, transgender == 'No'))` as their sex assigned at birth, `r nrow(filter(responses, disabilities == 'No, I do not have a disability, or a history/record of having one'))` as having no disabilities, and `r nrow(filter(responses, uk_ethnic_origin == 'White'))` of White British Ethnic origin. While the small sample prohibits broader conclusions, these figures are broadly aligned with the findings of the 'Decrypting Diversity' reports.
 
 ```{r}
 #| label: fig-responses-age
@@ -183,7 +183,7 @@ kable(org_size)
 
 ```
 
-### Megacombs
+### Responses
 
 ```{r}
 
@@ -217,13 +217,33 @@ Good distribution of responses across the sliders, with `r 100 / nrow(response_a
 2.  Are there features of the data that these visualisations reveal that aren't currently reflected in the report, that we should focus more on?
 :::
 
-## Limitations
+## Key limitations
 
-### Sample size
+Given resource constraints (we received no direct funding for this research), the project was conceived as an exploratory exercise, aiming to develop an analytical approach capable of investigating the value of diverse expertise in cyber security in the UK.
 
-### Sampling strategy
+### Sampling
+
+The total number of responses is modest (56). In comparison, the Decrypting Diversity 2020 report was based on 1252 responses, and the 2021 follow-up drew on a sample of 945.
+
+Our sampling strategy was opportunistic, snowball sampling, reaching participants through existing channels, such as industry networks and social media. This strategy is a trade-off, and like Decrypting Diversity, it is difficult to make strong statistical inferences. A larger, random-sampling approach would have many benefits but would require significant investment. Our approach was chosen as appropriate for exploratory analysis demonstrating the value of a wider analytical frame, bringing the questions about the distribution and value of diverse expertise into conversation with questions about diversity of personal characteristics.
 
 ### Sliders
+
+At the heart of the survey are the expertise 'combs', represented in the interface by a set of sliders.
+
+We used the 21 CyBOK 1.1 categories as a starting point, but after consultation with stakeholders, added a further 5 categories to ensure coverage of areas that are either not addressed by CyBOK, or ambiguously addressed. These were:
+
+-   Social organisational, strategy and process
+
+-   Securty culture, narrative and communication
+
+-   Political aspects of cyber security
+
+-   Data science/AI for security
+
+-   Cloud security
+
+The combs elicit sets of relative responses, with participants setting values in proportion to each other. We did not attempt to introduce an absolute scale across all 'teeth', so that the focus is on the 'shape' of expertise rather than its absolute extent.
 
 ### Alignment scores
 
