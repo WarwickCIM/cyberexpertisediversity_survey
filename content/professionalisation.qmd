@@ -25,7 +25,7 @@ The 'Decrypting Diversity' reports painted a mixed picture of diversity in the c
 
 The Decrypting Diversity report focuses on the experiences of people within the cyber security profession, and although it was intended to be part of a series of studies, only two were carried out.
 
-**What is known about diversity of expertise in cyber??**
+Diversity of expertise is less well studied than individual diversity in cyber security, though recent work building on the CyBOK framework is aiming to address this. Developing a 'knowledge profiling' approach, Nautiyal and Rashid propose a tool for organisations to assess their internal expertise, that represented by common certifications, and expertise brought by partner organisations [@nautiyal2024framework]. Other recent work uses CyBOK to analyse the 'cyber skills gap' through the analysis of job adverts [@attwood2023exploring]. Like these studies, here we focus primarily on the methodological space, examining how the diversity of expertise may be made visible, and we make a tentative step towards the next logical step, exploring how organisations might understand their expertise needs through our scenario alignment analysis.
 
 ## Data analysis
 
