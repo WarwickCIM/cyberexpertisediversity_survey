@@ -23,11 +23,15 @@ theme_set(theme_minimal())
 
 ```
 
-## Theory
+## Interdisciplinary cyber security
 
-### Transdisciplinarity, interdisciplinarity, multidisciplinarity
+Understanding the value of diversity of expertise in cyber security requires a view of the problems that arise in cyber security, and the kinds of combinations of expertise that they require. For organisations, the utility of classifications of individuals into standardised specialisms depends on the extent to which it is possible to identify a need for particular kinds of individuals. Understanding how needs are aligned with specialisms means understanding the kinds of profiles of expertise that are required to address specific problems. The Cyber Expertise Diversity Survey elicited such profiles from participants, for a range of scenarios. While the dataset is limited, the presence of qualitative descriptions of these scenarios enables us to explore the ways in which scenarios map onto specialisms, in particular:
 
-I was thinking of including a section talking about trans-, inter- and multidisciplinarity, as I think that one might see these as useful windows onto the profession.
+-   Which scenarios map straightforwardly onto one specialism
+
+-   Which scenarios require combinations of specialisms
+
+-   Which scenarios require significant expertise that is not accounted for by the specialisms
 
 ## Data analysis
 
@@ -89,3 +93,7 @@ One aspect of the data that we are losing here is: we are only looking at the ca
 :::
 
 ## Recommendations
+
+## The path forward
+
+Discussions of the professionalisation of cyber security are often motivated by analogies with professions such as accounting, medicine or law. However, it is important to recognise that professionalisation may take multiple pathways, that many professions do not end up tightly integrated, and that this destination may not always be the best or most appropriate. Clinical psychology, psychiatry, psychoanalysis and counselling are a case in point, with multiple career pathways, overlapping remits, multiple regulatory bodies and a history of failed attempts to better integrate.

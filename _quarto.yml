@@ -32,8 +32,8 @@ book:
     - part: "Analysis"
       chapters:
         - content/professionalisation.qmd
-        - content/interdisciplinarity.qmd
         - content/diversity.qmd
+        - content/interdisciplinarity.qmd
     # - content/data_exploration.qmd
     - content/references.qmd
   
