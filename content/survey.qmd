@@ -1,9 +1,7 @@
 ---
-title: "The survey"
+title: "The Cyber Expertise Diversity Survey"
 format: html
 ---
-
-## Methodology
 
 ```{r setup}
 source("../scripts/setup.R")
@@ -18,76 +16,63 @@ responses <- read.csv('../data/raw/cyber_expertise_diversity_survey_responses.cs
 
 scenarios <- read.csv("../data/raw/cyber_expertise_diversity_survey_scenarios.csv")
 
+categories <- responses |> 
+  select(starts_with("expertise_comb_")) |> 
+  pivot_longer(everything()) |> 
+  mutate(name = str_remove_all(name, "expertise_comb_"),
+         name = str_replace_all(name, "_", " ") ) |> 
+  select(name) |> 
+  unique() |> 
+  arrange(name) |> 
+  pull(name)
+
 ```
 
-Explain
+## Design and distribution
 
--   goals of the survey, number and type of questions...
+To address our research aims, we designed a survey to gather data on the diversity of expertise within the cyber security profession, in the UK, and on the value of diverse expertise in relation to the problems cyber security practitioners face in their work. The *Cyber Expertise Diversity Survey* consisted of a total of 21 questions grouped in the following blocks:
 
--   we used qualtrics
+1.  A first block about the respondent, where we asked them 5 questions about their job and workplace (i.e. role, number of years of experience, size and sector of their workplace) followed by an optional set of six questions about EDI (i.e. age bracket, disabilities, ethnic origin, gender and sexual orientation).
 
--   received ethical approval from HSSREC
+2.  A block called "Profile expertise" (or expertise comb -see @sec-comb below), where we asked participants to rate their perceived expertise around 26 areas, 21 areas identified by the Cyber Security Body Of Knowledge (CyBOK) [@cybok] and 5 extra categories added by the authors[^survey-1].
 
--   limited to UK participants only
+3.  A block called "Problems or Challenges" (or scenarios comb), where we asked participants to describe one or more scenarios from their working experience in which resolving a problem required a combination of forms of expertise to be brought together. For every scenario, respondents were asked to provide a brief title and description, state whether it was related to their current job (and if negative, to provide information about job and workplace), and rate the amount of expertise needed to address the scenario, using the same 26 categories used in the previous block.
 
--   distribution
+4.  An optional block with free text comments, where we asked participants to list any areas of expertise that they may consider to be missing, and to provide any feedback about the survey.
 
-The survey was distributed on social media, and via a number of industry mailing lists. It was accepting responses between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")`
+[^survey-1]: The 26 categories used were: `r categories`
 
-### The comb concept
+The survey was created using Qualtrics, and was configured to only accept responses from people based in the UK, and not to collect personal details. In order to allow participants to withdraw after participation, the survey displayed their response ID on the first page, which they could refer to to delete their responses. After obtaining ethical approval from the University of Warwick's Humanities and Social Sciences Research Ethics Committee (HSSREC)[^survey-2], it was distributed on social media, and via a number of industry mailing lists. It was accepting responses between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")` , and received a total of received 56 responses and information about 65 different scenarios.
+
+[^survey-2]: <https://warwick.ac.uk/services/ris/research-integrity>
+
+Anonymised results following FAIR principles [@wilkinson2016] can be found in a companion repository [@Camara-Menoyo_The_Cyber_Expertise_2025], and released underusing Open licences. Additionally, the repository contains additional material such as metadata describing every variable, the scripts used to clean the data, and a PDF version of the survey, to foster discoverability and reuse.
+
+### The comb concept {#sec-comb}
+
+The survey is built around the metaphor of a ‘broken comb’ of expertise, with each ‘tooth’ in the comb representing one area of expertise. For blocks 2 and 3, we asked survey participants to imagine their expertise as a kind of comb where each ‘tooth’ of the comb represents one area of specialism. Many people haveone or two areas in which they have a lot of expertise, other areasin which they have a little,and some in which they have none. Some people have a broad base; others are highly specialised. It can depend on domain, careerstage, and individual personality.
 
 ::: aside
-![The broken comb metaphor](/media/expertise_comb.png)
+![The broken comb metaphor, as suggested by John R.](/media/expertise_comb.png)
 :::
-
-In addition to information about their job role, industry, experience and EDI characteristics, we asked survey participants to imagine their expertise as a kind of comb where each ‘tooth’ of the comb represents one area of specialism. Many people haveone or two areas in which they have a lot of expertise, other areasin which they have a little,and some in which they have none. Some people have a broad base; others are highly specialised. It can depend on domain, careerstage, and individual personality.
 
 The survey used an interface based on a series of sliders through which participants could express how they saw their own ‘broken combs’ of expertise, and to define similar 'broken combs' reflecting the combinations of expertise required to address cyber security problems and challenges that they tackle in their work.
 
 We based the 'teeth' of the comb on those developed by the 'CyBOK' project, extended slightly to account for areas that are not accounted for in the standard CyBOK classification.
 
-::: {.callout-tip appearance="minimal"}
-Credit to goes to John R for suggesting the broken comb metaphor!
-:::
+We thus gathered three types of combs to support the analysis.
 
-We thus gathered three combs to support the analysis.
+-   The **personal comb** is just the values that a person put in for their own expertise using the sliders. NB for these alignment calculations we’re only using those ‘teeth’ of the comb that correspond to CyBOK categories (we have some extras in but for these calculations we ignore them).
 
--   The **personal comb** is just the values that a person put in for their own expertise using the sliders. NB for these alignment calculations we’re only using those ‘teeth’ of the comb that correspond to cybok categories (we have some extras in but for these calculations we ignore them).
-
--   The **specialism comb** is the cybok values that correspond to each specialism: we create these by substituting 30 for 'wider', 60 for 'related' and 90 for 'core'.
+-   The **specialism comb** is the CyBOK values that correspond to each specialism: we create these by assigning a numeric value to what CyBOK considers to be core, related or wider TO WHAT? CHECK NAMING.
 
 -   The **scenario comb** is the values that a person put in for that specific scenario using the sliders. Again, for these calculations we're only using the 'teeth' that correspond to cybok categories and ignoring our extras.
 
-### The research process
-
-### The alignment metric calculation
-
-In order to see how well (or badly) are two combs aligned, we compute an **alignment index** $A_{(x,y)}$ as follows.
-
-Given a set of **test values** $X:[x_0, x_1, ... x_n ]$ and a corresponding set of **reference values** $Y:[y_0, y_1, ... y_n ]$, the alignment index will be:
-
-$$
-A_{(x,y)} = \frac{\sum I(X)}{\sum Y}
-$$
-
-Where the indicator function $I(X)$ is defined as follows:
-
--   $I(X) = x_m$ when $x_m \leq y_m$
--   $I(X) = y_m$ when $x_m > y_m$
-
-The indicator function is used to prevent a test comb getting 'credit' for overshooting the reference values (which could offset their deficit in other areas). To do so, it takes the reference value as a ceiling in each tooth of the test comb. This also means that the maximum possible alignment is 1.
-
-With this, we will be calculating two types of alignments:
-
--   **Personal alignment**, where test values ($X$) are the person's comb (responses) and the reference values ($Y$) are the specialism comb. This gives us a sense of how close respondents' combs are to the different kinds of specialism.
-
--   **Scenario alignment**, where test values ($X$) are the specialism comb and the reference values ($Y$) are the scenario comb. In this case, we are interested in how well the specialisms as defined in the Cyber Careers Framework provide the kind of expertise required to address each problem defined in the provided scenarios. We look at this for individual specialisms, and to look at combinations of specialisms.
-
-In both cases, the **alignment index** will result in a number between `0` and `1`, where `1` means perfect alignment between the test value and the reference value and `0` means not aligned at all.
-
-::: aside
-Computations for the alignment metric can be audited at the file [`scripts/alignment_metric.R`](https://github.com/WarwickCIM/cyberexpertisediversity_survey/blob/main/scripts/alignment_metric.R)
+::: callout-warning
+If we are only using the 21 categories from CyBOK, should we even mention that we crated 5 extra categories?
 :::
+
+### The research process
 
 ## Results
 
@@ -215,6 +200,35 @@ Good distribution of responses across the sliders, with `r 100 / nrow(response_a
 1.  Do we have a good set of descriptive views of the basic raw data? You produced quite a few, so it is just a matter of going back to these and seeing if they're ready to go.
 
 2.  Are there features of the data that these visualisations reveal that aren't currently reflected in the report, that we should focus more on?
+:::
+
+### The alignment metric calculation
+
+In order to see how well (or badly) are two combs aligned, we compute an **alignment index** $A_{(x,y)}$ as follows.
+
+Given a set of **test values** $X:[x_0, x_1, ... x_n ]$ and a corresponding set of **reference values** $Y:[y_0, y_1, ... y_n ]$, the alignment index will be:
+
+$$
+A_{(x,y)} = \frac{\sum I(X)}{\sum Y}
+$$
+
+Where the indicator function $I(X)$ is defined as follows:
+
+-   $I(X) = x_m$ when $x_m \leq y_m$
+-   $I(X) = y_m$ when $x_m > y_m$
+
+The indicator function is used to prevent a test comb getting 'credit' for overshooting the reference values (which could offset their deficit in other areas). To do so, it takes the reference value as a ceiling in each tooth of the test comb. This also means that the maximum possible alignment is 1.
+
+With this, we will be calculating two types of alignments:
+
+-   **Personal alignment**, where test values ($X$) are the person's comb (responses) and the reference values ($Y$) are the specialism comb. This gives us a sense of how close respondents' combs are to the different kinds of specialism.
+
+-   **Scenario alignment**, where test values ($X$) are the specialism comb and the reference values ($Y$) are the scenario comb. In this case, we are interested in how well the specialisms as defined in the Cyber Careers Framework provide the kind of expertise required to address each problem defined in the provided scenarios. We look at this for individual specialisms, and to look at combinations of specialisms.
+
+In both cases, the **alignment index** will result in a number between `0` and `1`, where `1` means perfect alignment between the test value and the reference value and `0` means not aligned at all.
+
+::: aside
+Computations for the alignment metric can be audited at the file [`scripts/alignment_metric.R`](https://github.com/WarwickCIM/cyberexpertisediversity_survey/blob/main/scripts/alignment_metric.R)
 :::
 
 ## Key limitations
