@@ -72,6 +72,35 @@ We thus gathered three types of combs to support the analysis.
 If we are only using the 21 categories from CyBOK, should we even mention that we crated 5 extra categories?
 :::
 
+### The alignment metric calculation
+
+In order to see how well (or badly) are two combs aligned, we compute an **alignment index** $A_{(x,y)}$ as follows.
+
+Given a set of **test values** $X:[x_0, x_1, ... x_n ]$ and a corresponding set of **reference values** $Y:[y_0, y_1, ... y_n ]$, the alignment index will be:
+
+$$
+A_{(x,y)} = \frac{\sum I(X)}{\sum Y}
+$$
+
+Where the indicator function $I(X)$ is defined as follows:
+
+-   $I(X) = x_m$ when $x_m \leq y_m$
+-   $I(X) = y_m$ when $x_m > y_m$
+
+The indicator function is used to prevent a test comb getting 'credit' for overshooting the reference values (which could offset their deficit in other areas). To do so, it takes the reference value as a ceiling in each tooth of the test comb. This also means that the maximum possible alignment is 1.
+
+With this, we will be calculating two types of alignments:
+
+-   **Personal alignment**, where test values ($X$) are the person's comb (responses) and the reference values ($Y$) are the specialism comb. This gives us a sense of how close respondents' combs are to the different kinds of specialism.
+
+-   **Scenario alignment**, where test values ($X$) are the specialism comb and the reference values ($Y$) are the scenario comb. In this case, we are interested in how well the specialisms as defined in the Cyber Careers Framework provide the kind of expertise required to address each problem defined in the provided scenarios. We look at this for individual specialisms, and to look at combinations of specialisms.
+
+In both cases, the **alignment index** will result in a number between `0` and `1`, where `1` means perfect alignment between the test value and the reference value and `0` means not aligned at all.
+
+::: aside
+Computations for the alignment metric can be audited at the file [`scripts/alignment_metric.R`](https://github.com/WarwickCIM/cyberexpertisediversity_survey/blob/main/scripts/alignment_metric.R)
+:::
+
 ### The research process
 
 ## Results
@@ -202,34 +231,7 @@ Good distribution of responses across the sliders, with `r 100 / nrow(response_a
 2.  Are there features of the data that these visualisations reveal that aren't currently reflected in the report, that we should focus more on?
 :::
 
-### The alignment metric calculation
-
-In order to see how well (or badly) are two combs aligned, we compute an **alignment index** $A_{(x,y)}$ as follows.
-
-Given a set of **test values** $X:[x_0, x_1, ... x_n ]$ and a corresponding set of **reference values** $Y:[y_0, y_1, ... y_n ]$, the alignment index will be:
-
-$$
-A_{(x,y)} = \frac{\sum I(X)}{\sum Y}
-$$
-
-Where the indicator function $I(X)$ is defined as follows:
-
--   $I(X) = x_m$ when $x_m \leq y_m$
--   $I(X) = y_m$ when $x_m > y_m$
-
-The indicator function is used to prevent a test comb getting 'credit' for overshooting the reference values (which could offset their deficit in other areas). To do so, it takes the reference value as a ceiling in each tooth of the test comb. This also means that the maximum possible alignment is 1.
-
-With this, we will be calculating two types of alignments:
-
--   **Personal alignment**, where test values ($X$) are the person's comb (responses) and the reference values ($Y$) are the specialism comb. This gives us a sense of how close respondents' combs are to the different kinds of specialism.
-
--   **Scenario alignment**, where test values ($X$) are the specialism comb and the reference values ($Y$) are the scenario comb. In this case, we are interested in how well the specialisms as defined in the Cyber Careers Framework provide the kind of expertise required to address each problem defined in the provided scenarios. We look at this for individual specialisms, and to look at combinations of specialisms.
-
-In both cases, the **alignment index** will result in a number between `0` and `1`, where `1` means perfect alignment between the test value and the reference value and `0` means not aligned at all.
-
-::: aside
-Computations for the alignment metric can be audited at the file [`scripts/alignment_metric.R`](https://github.com/WarwickCIM/cyberexpertisediversity_survey/blob/main/scripts/alignment_metric.R)
-:::
+### Scenarios
 
 ## Key limitations
 
