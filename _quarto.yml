@@ -55,12 +55,15 @@ book:
 
 bibliography: references.bib
 
+
+
 format:
   html:
     theme:
       - cosmo
       - brand
       - css/warwick.scss
+    reference-location: margin
   # pdf:
   #   documentclass: scrreprt
 
