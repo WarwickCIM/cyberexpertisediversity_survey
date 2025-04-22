@@ -1,15 +1,11 @@
 ---
 title: "The Cyber Expertise Diversity Survey"
-format: html
 ---
 
 ```{r setup}
 source("../scripts/setup.R")
+source("../R/summarise_column.R")
 
-#responses <- read.csv("../data/raw/cyber_expertise_diversity_survey_responses.csv") |> 
-#  mutate(recorded_date = dmy_hm(recorded_date))
-
-# sorry for changing this, for some reason I just could not get relative paths working
 responses <- read.csv('../data/raw/cyber_expertise_diversity_survey_responses.csv') |> 
   mutate(recorded_date = dmy_hm(recorded_date))
 
@@ -42,15 +38,15 @@ To address our research aims, we designed a survey to gather data on the diversi
 
 [^survey-1]: The 26 categories used were: `r categories`
 
-The survey was created using Qualtrics, and was configured to only accept responses from people based in the UK, and not to collect personal details. In order to allow participants to withdraw after participation, the survey displayed their response ID on the first page, which they could refer to to delete their responses. After obtaining ethical approval from the University of Warwick's Humanities and Social Sciences Research Ethics Committee (HSSREC)[^survey-2], it was distributed on social media, and via a number of industry mailing lists. It was accepting responses between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")` , and received a total of received 56 responses and information about 65 different scenarios.
+The survey was created using Qualtrics, and was configured to only accept responses from people based in the UK, and not to collect personal details. In order to allow participants to withdraw after participation, the survey displayed their response ID on the first page, which they could refer to should they want their responses to be deleted. After obtaining ethical approval from the University of Warwick's Humanities and Social Sciences Research Ethics Committee (HSSREC)[^survey-2], it was distributed on social media, and via a number of industry mailing lists. It was accepting responses between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")` .
 
 [^survey-2]: <https://warwick.ac.uk/services/ris/research-integrity>
 
-Anonymised results following FAIR principles [@wilkinson2016] can be found in a companion repository [@Camara-Menoyo_The_Cyber_Expertise_2025], and released underusing Open licences. Additionally, the repository contains additional material such as metadata describing every variable, the scripts used to clean the data, and a PDF version of the survey, to foster discoverability and reuse.
+Anonymised results can be found in a companion repository [@Camara-Menoyo_The_Cyber_Expertise_2025]. The repository contains additional material such as metadata describing every variable, the scripts used to clean the data, and a PDF version of the survey, following FAIR principles [@wilkinson2016] and released under an open licenceto foster discoverability and reuse.
 
 ### The comb concept {#sec-comb}
 
-The survey is built around the metaphor of a ‘broken comb’ of expertise, with each ‘tooth’ in the comb representing one area of expertise. For blocks 2 and 3, we asked survey participants to imagine their expertise as a kind of comb where each ‘tooth’ of the comb represents one area of specialism. Many people haveone or two areas in which they have a lot of expertise, other areasin which they have a little,and some in which they have none. Some people have a broad base; others are highly specialised. It can depend on domain, careerstage, and individual personality.
+The survey is built around the metaphor of a ‘broken comb’ of expertise, with each ‘tooth’ in the comb representing one area of expertise. For blocks 2 and 3, we asked survey participants to imagine their expertise as a kind of comb where each ‘tooth’ of the comb represents one area of specialism. Many people haveone or two areas in which they have a lot of expertise, other areas in which they have a little,and some in which they have none. Some people have a broad base; others are highly specialised. It can depend on domain, career stage, and individual personality.
 
 ::: aside
 ![The broken comb metaphor, as suggested by John R.](/media/expertise_comb.png)
@@ -58,7 +54,7 @@ The survey is built around the metaphor of a ‘broken comb’ of expertise, wit
 
 The survey used an interface based on a series of sliders through which participants could express how they saw their own ‘broken combs’ of expertise, and to define similar 'broken combs' reflecting the combinations of expertise required to address cyber security problems and challenges that they tackle in their work.
 
-We based the 'teeth' of the comb on those developed by the 'CyBOK' project, extended slightly to account for areas that are not accounted for in the standard CyBOK classification.
+We based the 'teeth' of the comb on those developed by the 'CyBOK' project [@cybok], extended slightly to account for areas that are not accounted for in the standard CyBOK classification.
 
 We thus gathered three types of combs to support the analysis.
 
@@ -66,7 +62,7 @@ We thus gathered three types of combs to support the analysis.
 
 -   The **specialism comb** is the CyBOK values that correspond to each specialism: we create these by assigning a numeric value to what CyBOK considers to be core, related or wider TO WHAT? CHECK NAMING.
 
--   The **scenario comb** is the values that a person put in for that specific scenario using the sliders. Again, for these calculations we're only using the 'teeth' that correspond to cybok categories and ignoring our extras.
+-   The **scenario comb** is the values that a person put in for that specific scenario using the sliders. Again, for these calculations we're only using the 'teeth' that correspond to CyBOK categories and ignoring our extras.
 
 ::: callout-warning
 If we are only using the 21 categories from CyBOK, should we even mention that we crated 5 extra categories?
@@ -101,11 +97,118 @@ In both cases, the **alignment index** will result in a number between `0` and `
 Computations for the alignment metric can be audited at the file [`scripts/alignment_metric.R`](https://github.com/WarwickCIM/cyberexpertisediversity_survey/blob/main/scripts/alignment_metric.R)
 :::
 
-### The research process
+### ~~The research process~~
 
 ## Results
 
-The survey was conducted between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")` and received responses from `r nrow(responses)` individuals, describing `r nrow(scenarios)` scenarios. Of these respondents `r nrow(filter(responses, gender == 'Male'))` identified as men, `r nrow(filter(responses, sexual_orientation == 'No'))` as heterosexual, `r nrow(filter(responses, transgender == 'No'))` as their sex assigned at birth, `r nrow(filter(responses, disabilities == 'No, I do not have a disability, or a history/record of having one'))` as having no disabilities, and `r nrow(filter(responses, uk_ethnic_origin == 'White'))` of White British Ethnic origin. While the small sample prohibits broader conclusions, these figures are broadly aligned with the findings of the 'Decrypting Diversity' reports.
+The survey was conducted between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")` and received responses from `r nrow(responses)` individuals, describing `r nrow(scenarios)` scenarios.
+
+In this section we will be providing an overview of the responses according to each of the blocks of the survey. Detailed analysis and interpretations of those results can be found in the following section of the report and the appendices.
+
+### Respondents
+
+In terms of job-related questions, we can see ( @tbl-responses-experience) that half of our respondents have less than 10 years of experience, and 71% have up to 20 years. A considerable 12.5% has more than 25 years of experience.
+
+```{r}
+#| label: tbl-responses-experience
+#| tbl-cap: "Responses by years of experience"
+responses |> 
+  select(years_experience) |> 
+  mutate(
+    years_experience = case_when(
+      years_experience < 6 ~ "0-5",
+      years_experience < 11 & years_experience > 5  ~ "6-10",
+      years_experience < 16 & years_experience > 10  ~ "11-15",
+      years_experience < 21 & years_experience > 15  ~ "16-20",
+      years_experience < 26 & years_experience > 20  ~ "21-25",
+      years_experience > 25  ~ "25+",
+    ),
+    years_experience = as.factor(years_experience),
+    years_experience = fct_relevel(years_experience, c("0-5", "6-10", "11-15", "16-20", "21-25", "25+"))
+  ) |> 
+  summarise_column("years_experience") |> 
+  kable()
+```
+
+```{r}
+#| label: tbl-responses-org
+#| tbl-cap: "Responses by Organisation size"
+org_size <- data.frame(table(responses$organisation_size))
+
+org_size <- org_size %>% arrange(factor(Var1, levels=c('Large (250 employees or more)',
+                                           'Medium (50 to 249 employees)',
+                                           'Small (10 to 49 employees)',
+                                           'Micro (1 to 9 employees)')))
+
+colnames(org_size) <- c('Organisation Size', 'Number of respondents')
+
+kable(org_size)
+```
+
+Of these respondents `r nrow(filter(responses, gender == 'Male'))` identified as men, `r nrow(filter(responses, sexual_orientation == 'No'))` as heterosexual, `r nrow(filter(responses, transgender == 'No'))` as their sex assigned at birth, `r nrow(filter(responses, disabilities == 'No, I do not have a disability, or a history/record of having one'))` as having no disabilities, and `r nrow(filter(responses, uk_ethnic_origin == 'White'))` of White British Ethnic origin. While the small sample prohibits broader conclusions, these figures are broadly aligned with the findings of the 'Decrypting Diversity' reports.
+
+```{r}
+#| eval: false
+#| label: fig-responses-edi
+#| fig-cap: "EDI questions"
+#| column: page
+#| fig-width: 14
+#| fig-height: 14
+responses |> 
+  select(age, disabilities, uk_ethnic_origin, gender, sexual_orientation, transgender) |> 
+  pivot_longer(everything()) |>
+  ggplot(aes(value)) + 
+  geom_bar() + 
+  facet_wrap(~name, ncol = 2, scales = "free") + 
+  theme_minimal()
+```
+
+```{r}
+#| label: fig-responses-job
+#| fig-cap: "Responses by Job-related questions"
+#| fig-width: 14
+#| fig-height: 10
+#| column: page
+
+p_experience <- responses |> 
+  select(years_experience) |> 
+  ggplot(aes(x = years_experience)) +
+  geom_histogram(binwidth = 5) +
+  labs(title = "Responses distribution by Years of experience",
+       x = "Years of experience", y = "Responses") +
+  theme_minimal()
+
+p_experience <- responses |> 
+  ggplot(aes(cut(responses$years_experience, c(-Inf, 5, 10, 15, 20, 25, Inf), c('0-5', '6-10', '11-15', '16-20', '21-25', '25+')))) +
+  geom_bar() +
+  labs(title = "Responses distribution by Years of experience",
+       x = "Years of experience", y = "Responses") +
+  theme_minimal()
+
+p_org_sector <-responses |> 
+  count(organisation_sector) |> 
+  ggplot(aes(x = organisation_sector, y = n)) +
+  geom_col()+
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 10)) + 
+  labs(title = "Responses distribution by Organisation's sector",
+       x = "Sector", y = "Responses") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+
+p_org_size <- responses |> 
+  count(organisation_size) |> 
+  ggplot(aes(x = organisation_size, y = n)) +
+  geom_col()+
+  labs(title = "Responses distribution by Organisation's size",
+       x = "Size", y = "Responses") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+  
+
+p_experience + p_org_sector + p_org_size
+
+
+```
 
 ```{r}
 #| label: fig-responses-age
@@ -182,22 +285,11 @@ kable(industry_table)
 ```
 
 ```{r}
-#| label: tbl-responses-org
-#| tbl-cap: "Responses by Organisation size"
-org_size <- data.frame(table(responses$organisation_size))
 
-org_size <- org_size %>% arrange(factor(Var1, levels=c('Large (250 employees or more)',
-                                           'Medium (50 to 249 employees)',
-                                           'Small (10 to 49 employees)',
-                                           'Micro (1 to 9 employees)')))
-
-colnames(org_size) <- c('Organisation Size', 'Number of respondents')
-
-kable(org_size)
 
 ```
 
-### Responses
+### Personal comb
 
 ```{r}
 
@@ -223,6 +315,35 @@ ggplot(response_all, aes(all_points, all_name)) +
 
 Good distribution of responses across the sliders, with `r 100 / nrow(response_all) * nrow(filter(response_all, all_points == 0))`% responses being set to 0 and `r 100 / nrow(response_all) * nrow(filter(response_all, all_points == 100))`% set to 1.
 
+@fig-personal-comb-overall shows how the personal score for each of the 26 categories was distributed. For a more detailed, refer to the [Appendice A](personal_combs.qmd), which contains a
+
+Things that I'm noting:
+
+-   
+
+```{r}
+#| label: fig-personal-comb-overall
+#| fig-cap: "Overall distribution of personal comb scores"
+#| fig-height: 7
+#| colum: page-right
+responses |> 
+  select(starts_with("expertise_comb_")) |> 
+  pivot_longer(everything()) |> 
+  mutate(name = str_remove_all(name, "expertise_comb_"),
+         name = str_replace_all(name, "_", " ")) |> 
+  arrange(name) |> 
+  ggplot(aes(x = name, y = value)) + 
+  geom_boxplot(fill = "#2D71A6") +
+  geom_jitter(alpha = 0.1, size = 0.8) + 
+  labs(
+    title = "Personal comb",
+    y = "Score",
+    x = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+```
+
 ::: callout-caution
 ## Questions for Viz
 
@@ -231,7 +352,33 @@ Good distribution of responses across the sliders, with `r 100 / nrow(response_a
 2.  Are there features of the data that these visualisations reveal that aren't currently reflected in the report, that we should focus more on?
 :::
 
-### Scenarios
+### Scenarios comb
+
+Refer to @sec-scenario-combs-appendice
+
+```{r}
+#| label: fig-scenario-comb-overall
+#| fig-cap: "Overall distribution of scenarios comb scores"
+#| fig-height: 7
+#| colum: page-right
+scenarios |> 
+  select(starts_with("scenario_expertise_portfolio_")) |> 
+  pivot_longer(everything()) |> 
+  mutate(name = str_remove_all(name, "scenario_expertise_portfolio_"),
+         name = str_replace_all(name, "_", " ")) |> 
+  arrange(name) |> 
+  ggplot(aes(x = name, y = value)) + 
+  geom_boxplot(fill = "#B7D4E3") +
+  geom_jitter(alpha = 0.1, size = 0.8) + 
+  labs(
+    title = "Scenarios comb",
+    y = "Score",
+    x = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+
+```
 
 ## Key limitations
 
@@ -247,7 +394,7 @@ Our sampling strategy was opportunistic, snowball sampling, reaching participant
 
 At the heart of the survey are the expertise 'combs', represented in the interface by a set of sliders.
 
-We used the 21 CyBOK 1.1 categories as a starting point, but after consultation with stakeholders, added a further 5 categories to ensure coverage of areas that are either not addressed by CyBOK, or ambiguously addressed. These were:
+We used the 21 CyBOK 1.1 [@cybok] categories as a starting point, but after consultation with stakeholders, added a further 5 categories to ensure coverage of areas that are either not addressed by CyBOK, or ambiguously addressed. These were:
 
 -   Social organisational, strategy and process
 
