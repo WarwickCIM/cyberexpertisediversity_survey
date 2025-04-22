@@ -5,6 +5,8 @@ title: "Interdisciplinarity"
 ```{r}
 source("../scripts/setup.R")
 
+scenarios <- read.csv("../data/raw/cyber_expertise_diversity_survey_scenarios.csv")
+
 alignment_scenarios_long <- read.csv("../data/processed/alignment_scenarios_long.csv")
 max_alignment_scenarios_1_permutations <- read.csv("../data/processed/max_alignment_scenarios_1_permutations.csv")
 max_alignment_scenarios_2_permutations <- read.csv("../data/processed/max_alignment_scenarios_2_permutations.csv")
@@ -37,16 +39,25 @@ Understanding the value of diversity of expertise in cyber security requires a v
 
 ### Looking at specialisms alignment with the scenarios
 
-@fig-alignment-scenarios-overview shows that, overall, the Alignment index increases as we increase the number of permutations (this is, the scenarios are more interdisciplinary). While this could be expected, @fig-alignment-scenarios , which also shows how it changes per scenario, provides a more nuanced view.
+@fig-alignment-scenarios-overview shows that, overall, the Alignment index increases as we increase the number of permutations (this is, the scenarios are more interdisciplinary). While this could be expected, this is not the case for every scenario, as shown in @fig-alignment-scenarios, which provides a more nuanced view by displaying how the alignment score changes for every scenario.
 
 ```{r}
 #| label: fig-alignment-scenarios-overview
 #| fig-cap: "Alignment indices per number of permutations"
 max_alignment_scenarios |> 
-  ggplot(aes(x = alignment_index), y = 1) +
+  mutate(
+    n_permutations_txt = case_when(
+      n_permutations == 1 ~ "No permutation",
+      .default = paste(n_permutations, "Permutations")),
+    n_permutations_txt = as.factor(n_permutations_txt),
+    n_permutations_txt = fct_relevel(n_permutations_txt, "No permutation")) |> 
+  ggplot(aes(x = alignment_index)) +
   geom_boxplot() +
-  facet_wrap(~n_permutations, ncol = 1)
+  facet_wrap(~n_permutations_txt, ncol = 1) +
+  labs(x = "Alignment index")
 ```
+
+=
 
 Explanation here.
 
@@ -57,13 +68,29 @@ Explanation here.
 #| fig-width: 14
 #| fig-height: 18
 #| fig-align: "center"
+
+scenario_names <- scenarios |> 
+  select(scenario_name) |> 
+  mutate(id = row_number())
+
 max_alignment_scenarios |> 
   select(id, n_permutations, alignment_index) |> 
+  left_join(scenario_names, by = join_by(id)) |>
+  mutate(scenario_name = paste(id,"-", scenario_name),
+         scenario_name = case_when(
+           nchar(scenario_name) > 25 ~ paste0(str_sub(scenario_name, end = 25), "..."),
+           .default = scenario_name),
+         scenario_name = as.factor(scenario_name),
+         scenario_name = fct_reorder(scenario_name, id)) |> 
   pivot_longer(alignment_index) |> 
   ggplot(aes(x = n_permutations, y = value)) + 
   geom_line(color = "red", size = 1) +
   geom_point(color = "red")+ 
-  facet_wrap( ~id, ncol = 5) + 
+  # facet_wrap( ~id, ncol = 5, 
+  #             labeller = as_labeller(
+  #               function(string, suffix = scenario_names$scenario_name) paste(string, suffix)
+  #             )) +   
+  facet_wrap( ~scenario_name, ncol = 5) + 
   labs(title = "Alignment indices per number of permutations and scenario",
        y = "Scenario Alignment index",
        x = "Number of specialisms permutations")
