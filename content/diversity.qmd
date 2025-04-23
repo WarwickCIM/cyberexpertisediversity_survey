@@ -1,7 +1,26 @@
 ---
 title: "Classifications and Diversity of expertise"
-format: html
 ---
+
+```{r setup}
+
+source("../scripts/setup.R")
+
+responses <- read.csv("../data/raw/cyber_expertise_diversity_survey_responses.csv") |> 
+  mutate(id = row_number(), .before = 1)
+
+scenarios <- read.csv("../data/raw/cyber_expertise_diversity_survey_scenarios.csv") |> 
+  mutate(id = row_number(), .before = 1)
+
+comb_personal <- read.csv("../data/processed/comb_personal.csv")
+comb_scenario <- read.csv("../data/processed/comb_scenario.csv")
+
+alignment_personal <- read.csv("../data/processed/alignment_personal.csv")
+alignment_personal_long <- read.csv("../data/processed/alignment_personal_long.csv")
+
+alignment_scenarios <- read.csv("../data/processed/alignment_scenarios.csv")
+alignment_scenarios_long <- read.csv("../data/processed/alignment_scenarios_long.csv")
+```
 
 ## Thinking through classifications
 
@@ -32,6 +51,50 @@ Various free text comments from respondents are relevant here.
     7.  One version would be just to highlight them in some of the meta-combs, and to pick out those non-cybok categories that are most common
     8.  There may be more sophisticated things we might do as well. For instance, if some of the scenarios include significant contributions from non-cybok expertise, might we highlight this somehow.
 :::
+
+To calculate the % of a person’s comb that is taken into account in CyBOK (and thus in our alignment calcs):
+
+The sum of ‘response’ values for that person’s ID in **comb_personal** / The sum of values in columns starting with expertise_comb\_\* for that person’s ID in **responses**
+
+```{r}
+responses_sum <- comb_personal |> 
+  count(id, wt = response, name = "responses_sum")
+
+expertise_sum <- responses |> 
+  select(id, starts_with("expertise_comb_")) |> 
+  pivot_longer(-id) |> 
+  count(id, wt = value, name = "expertise_sum")
+
+df <- responses_sum |> 
+  left_join(expertise_sum, join_by(id)) |> 
+  mutate(cybok_coverage = responses_sum / expertise_sum)
+
+kable(df)
+```
+
+ 
+
+To calculate the % of a scenario’s comb that is taken into account in CyBOK (and thus in our alignment calcs):
+
+The sum of ‘response’ values for that scenario’s ID in **comb_scenario** / The sum of values in columns starting with scenario_expertise\_\* for that scenario’s ID in **scenarios**
+
+```{r}
+responses_sum <- comb_scenario |> 
+  count(id, wt = response, name = "responses_sum")
+
+expertise_sum <- scenarios |> 
+  select(id, starts_with("scenario_expertise_portfolio")) |> 
+  pivot_longer(-id) |> 
+  count(id, wt = value, name = "expertise_sum")
+
+df <- responses_sum |> 
+  left_join(expertise_sum, join_by(id)) |> 
+  mutate(cybok_coverage = responses_sum / expertise_sum)
+
+kable(df)
+```
+
+ 
 
 ## Recommendations
 
