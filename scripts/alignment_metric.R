@@ -202,28 +202,6 @@ write_csv(alignment_scenarios,
 )
 
 
-# Scenarios' permutations original version-------------------------------------------------
-
-#calc_permutation_alignment <- function(df, n) {
-#  df |> 
-#    group_by(id) |> 
-#      permutations = list(combn(unique(Specialism), n, simplify = FALSE)),
-#    summarise(
-#      .groups = "drop"
-#    ) |> 
-#    unnest(permutations) |> 
-#    mutate(
-#      permutation = map_chr(permutations, ~ paste(.x, collapse = ", ")),
-#      test_max = map_dbl(permutations, ~ max(df$test_sum[df$id == cur_group_id() & df$Specialism %in% .x])),
-#      reference_max = map_dbl(permutations, ~ max(df$reference_sum[df$id == cur_group_id() & df$Specialism %in% .x])),
-#      alignment_index = test_max / reference_max,
-#      n_permutations = n
-#    ) |> 
-#    select(-permutations)
-#}
-#alignment_scenarios_2_permutations <- calc_permutation_alignment(alignment_scenarios_long, 2)
-#alignment_scenarios_3_permutations <- calc_permutation_alignment(alignment_scenarios_long, 3)
-
 # Scenarios' permutations new version-------------------------------------------------
 
 # The calc_permutation_alignment function processes a data frame (df) and
