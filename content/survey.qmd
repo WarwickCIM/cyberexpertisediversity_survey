@@ -46,7 +46,7 @@ Anonymised results can be found in a companion repository [@Camara-Menoyo_The_Cy
 
 ### The comb concept {#sec-comb}
 
-The survey is built around the metaphor of a ‘broken comb’ of expertise, with each ‘tooth’ in the comb representing one area of expertise. For blocks 2 and 3, we asked survey participants to imagine their expertise as a kind of comb where each ‘tooth’ of the comb represents one area of specialism. Many people haveone or two areas in which they have a lot of expertise, other areas in which they have a little,and some in which they have none. Some people have a broad base; others are highly specialised. It can depend on domain, career stage, and individual personality.
+The survey is built around the metaphor of a ‘broken comb’ of expertise, with each ‘tooth’ in the comb representing one area of expertise. For blocks 2 and 3, we asked survey participants to imagine their expertise as a kind of comb where each ‘tooth’ of the comb represents one area of specialism. Many people have one or two areas in which they have a lot of expertise, other areas in which they have a little, and some in which they have none. Some people have a broad base; others are highly specialised. It can depend on domain, career stage, and individual personality.
 
 ::: aside
 ![The broken comb metaphor, as suggested by John R.](/media/expertise_comb.png)
