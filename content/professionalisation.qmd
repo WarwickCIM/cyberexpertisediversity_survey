@@ -1,7 +1,26 @@
 ---
 title: "Professionalisation and exclusion "
-format: html
 ---
+
+```{r setup}
+source("../scripts/setup.R")
+
+respondent_demographics <- read.csv('../data/raw/cyber_expertise_diversity_survey_responses.csv') |> 
+  select(age, disabilities, uk_ethnic_origin, gender, sexual_orientation, transgender,
+        years_experience, organisation_size, organisation_sector) |> 
+  mutate(id = row_number(), .before = 1) |> 
+  mutate(gender = fct_relevel(gender, "Male", "Female", "Non-binary"))
+
+scenarios <- read.csv("../data/raw/cyber_expertise_diversity_survey_scenarios.csv")
+
+alignment_personal <- read.csv("../data/processed/alignment_personal.csv")
+alignment_personal_long <- read.csv("../data/processed/alignment_personal_long.csv") |> 
+  left_join(respondent_demographics, by = join_by(id))
+
+alignment_scenarios <- read.csv("../data/processed/alignment_scenarios.csv")
+alignment_scenarios_long <- read.csv("../data/processed/alignment_scenarios_long.csv")
+
+```
 
 ## Diversity, equity and the morality of professions
 
@@ -33,7 +52,116 @@ Diversity of expertise is less well studied than individual diversity in cyber s
 
 ### looking at individual alignment with the specialisms
 
+```{r}
+#| label: fig-personal-alignment-scenario
+#| fig-cap: "Personal alignment to specialism"
+#| column: page
+#| fig-width: 14
+# #| fig-height: 10 
+#| fig-align: "center"
+alignment_personal_long |> 
+  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index)) + 
+  geom_boxplot() +
+  geom_jitter(alpha = 0.1, size = 0.8) + 
+  labs(y = "Alignment index",
+       x = "Specialisms") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1))
+```
+
+
 ### looking at how well people from different backgrounds are aligned with the specialisms
+
+```{r}
+#| label: fig-personal-alignment-scenario-gender
+#| fig-cap: "Personal alignment to specialism by gender"
+#| column: page
+#| fig-width: 14
+#| fig-height: 10 
+#| fig-align: "center"
+alignment_personal_long |> 
+  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index)) + 
+  geom_boxplot() +
+  geom_jitter(alpha = 0.1, size = 0.8) + 
+  labs(title = "Personal alignment to specialism by gender ",
+       y = "Alignment index",
+       x = "Specialisms") +
+  facet_wrap(~gender, ncol = 1) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1))
+```
+```{r}
+#| label: tbl-personal-alignment-scenario-gender
+#| tbl-cap: "Statistical summary of personal alignment to specialism by gender"
+alignment_personal_long |> 
+  select(age, alignment_index) |> 
+  group_by(age) |> 
+  skim() |> 
+  yank("numeric")
+```
+
+
+#### Age
+
+
+```{r}
+#| label: fig-personal-alignment-scenario-age
+#| fig-cap: "Personal alignment to specialism by age"
+#| column: page
+#| fig-width: 14
+#| fig-height: 12
+#| fig-align: "center"
+alignment_personal_long |> 
+  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index)) + 
+  geom_boxplot() +
+  geom_jitter(alpha = 0.1, size = 0.8) + 
+  labs(title = "Personal alignment to specialism by age ",
+       y = "Alignment index",
+       x = "Specialisms") +
+  facet_wrap(~age, ncol = 1) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1))
+```
+
+
+```{r}
+#| label: fig-personal-alignment-scenario-sexual-orientation
+#| fig-cap: "Personal alignment to specialism by sexual orientation"
+#| column: page
+#| fig-width: 14
+#| fig-height: 12
+#| fig-align: "center"
+alignment_personal_long |> 
+  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index)) + 
+  geom_boxplot() +
+  geom_jitter(alpha = 0.1, size = 0.8) + 
+  labs(title = "Personal alignment to specialism by sexual orientation",
+       y = "Alignment index",
+       x = "Specialisms") +
+  facet_wrap(~sexual_orientation, ncol = 1) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1))
+```
+
+
+```{r}
+#| label: fig-personal-alignment-scenario-sexual-ethnicity
+#| fig-cap: "Personal alignment to specialism by ethnicity"
+#| column: page
+#| fig-width: 14
+#| fig-height: 12
+#| fig-align: "center"
+alignment_personal_long |> 
+  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index)) + 
+  geom_boxplot() +
+  geom_jitter(alpha = 0.1, size = 0.8) + 
+  labs(title = "Personal alignment to specialism by ethnicity",
+       y = "Alignment index",
+       x = "Specialisms") +
+  facet_wrap(~uk_ethnic_origin, ncol = 1) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1))
+```
 
 ::: callout-note
 ## Questions for Viz
