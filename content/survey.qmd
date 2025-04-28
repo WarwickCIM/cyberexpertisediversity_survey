@@ -46,7 +46,7 @@ Anonymised results can be found in a companion repository [@Camara-Menoyo_The_Cy
 
 ### The comb concept {#sec-comb}
 
-The survey is built around the metaphor of a ‘broken comb’ of expertise, with each ‘tooth’ in the comb representing one area of expertise. For blocks 2 and 3, we asked survey participants to imagine their expertise as a kind of comb where each ‘tooth’ of the comb represents one area of specialism. Many people haveone or two areas in which they have a lot of expertise, other areas in which they have a little,and some in which they have none. Some people have a broad base; others are highly specialised. It can depend on domain, career stage, and individual personality.
+The survey is built around the metaphor of a ‘broken comb’ of expertise, with each ‘tooth’ in the comb representing one area of expertise. For blocks 2 and 3, we asked survey participants to imagine their expertise as a kind of comb where each ‘tooth’ of the comb represents one area of specialism. Many people have one or two areas in which they have a lot of expertise, other areas in which they have a little, and some in which they have none. Some people have a broad base; others are highly specialised. It can depend on domain, career stage, and individual personality.
 
 ::: aside
 ![The broken comb metaphor, as suggested by John R.](/media/expertise_comb.png)
@@ -105,9 +105,67 @@ The survey was conducted between `r format(min(date(responses$recorded_date)), "
 
 In this section we will be providing an overview of the responses according to each of the blocks of the survey. Detailed analysis and interpretations of those results can be found in the following section of the report and the appendices.
 
-### Respondents
+### Respondents' demographics
 
-In terms of job-related questions, we can see ( @tbl-responses-experience) that half of our respondents have less than 10 years of experience, and 71% have up to 20 years. A considerable 12.5% has more than 25 years of experience.
+In terms of demographics, we can see (@tbl-responses-age) that, more than 50% of the responses are between 40 and 59 years old.
+
+```{r}
+#| label: tbl-responses-age
+#| tbl-cap: "Responses by age"
+responses |> 
+  select(age) |> 
+  summarise_column("age") |> 
+  kable()
+```
+
+@tbl-responses-gender and @tbl-responses-transgender shows a clear dominance of cis male respondents over other genders. Cis female account for a 17.9%, and other genders are anectodal in this survey.
+
+```{r}
+#| label: tbl-responses-gender
+#| tbl-cap: "Responses by gender"
+responses |> 
+  summarise_column("gender") |> 
+  arrange(desc(count)) |> 
+  kable()
+```
+
+```{r}
+#| label: tbl-responses-transgender
+#| tbl-cap: "Responses by gender (2)"
+responses |> 
+  summarise_column("transgender") |> 
+  arrange(desc(count)) |> 
+  kable()
+```
+
+In terms of ethnicity (@tbl-responses-ethnicity), we can see a clear dominance of White respondents (76.8%), followed by far by Asian and mixed race.
+
+```{r}
+#| label: tbl-responses-ethnicity
+#| tbl-cap: "Responses by ethnicity"
+responses |> 
+  summarise_column("uk_ethnic_origin") |> 
+  arrange(desc(count)) |> 
+  kable()
+```
+
+In terms of disabilities (@tbl-responses-disabilities), respondents reporting some type of disability only account for a total of 17.8%.
+
+```{r}
+#| label: tbl-responses-disabilities
+#| tbl-cap: "Responses by disabilities"
+responses |> 
+  summarise_column("disabilities") |> 
+  arrange(desc(count)) |> 
+  kable()
+```
+
+Overall, responses from this survey are clearly biased towards hegemonic demographics. While the small sample prohibits broader conclusions, these figures are broadly aligned with the sector [@nationalcybersecuritycentreDecryptingDiversityDiversity2021].
+
+
+#### Job-related questions
+
+In terms of job-related questions, we can see ( @tbl-responses-experience) that half of our respondents have less than 10 years of experience, despite most of responses being from mature respondes (see @tbl-responses-age), and 71% have up to 20 years. A considerable 12.5% has more than 25 years of experience. This is in line with the relatively high age of the respondents, but may also suggest that some respondents may have shifted their career towards cybersecurity less than 10 years ago.
 
 ```{r}
 #| label: tbl-responses-experience
@@ -131,19 +189,39 @@ responses |>
 ```
 
 ```{r}
-#| label: tbl-responses-org
-#| tbl-cap: "Responses by Organisation size"
-org_size <- data.frame(table(responses$organisation_size))
-
-org_size <- org_size %>% arrange(factor(Var1, levels=c('Large (250 employees or more)',
-                                           'Medium (50 to 249 employees)',
-                                           'Small (10 to 49 employees)',
-                                           'Micro (1 to 9 employees)')))
-
-colnames(org_size) <- c('Organisation Size', 'Number of respondents')
-
-kable(org_size)
+#| label: tbl-responses-org-size
+#| tbl-cap: "Responses by organisation size"
+responses |> 
+  mutate(organisation_size = fct_relevel(organisation_size, "Micro (1 to 9 employees)", after = 3)) |> 
+  summarise_column("organisation_size") |> 
+  kable()
 ```
+
+```{r}
+#| label: tbl-responses-industry
+#| tbl-cap: "Responses by Industry sector"
+# this might not be the neatest way to create this table, but I was thinking about
+# how the code to create the table could be in the report without it revealing
+# any of the categories we are suppressing
+
+# First make a table of sectors, then set sector names as charecters (otherwise,
+# replace will not work with factors), then set 3 or below to other, then group
+# and count results
+
+industry_table <- data.frame(table(responses$organisation_sector))
+industry_table$Var1 <- industry_table$Var1 <- as.character(industry_table$Var1)
+industry_table$Var1 <- replace(industry_table$Var1, industry_table$Freq <= 3, 'Other (low n)')
+industry_table <- industry_table %>% group_by(Var1) %>% summarise(Freq=sum(Freq))
+
+# order and set col names
+industry_table <- industry_table %>% arrange(desc(Freq))
+colnames(industry_table) <- c('Industry Sector', 'Number of respondents')
+
+kable(industry_table)
+
+```
+
+## To be deleted?
 
 Of these respondents `r nrow(filter(responses, gender == 'Male'))` identified as men, `r nrow(filter(responses, sexual_orientation == 'No'))` as heterosexual, `r nrow(filter(responses, transgender == 'No'))` as their sex assigned at birth, `r nrow(filter(responses, disabilities == 'No, I do not have a disability, or a history/record of having one'))` as having no disabilities, and `r nrow(filter(responses, uk_ethnic_origin == 'White'))` of White British Ethnic origin. While the small sample prohibits broader conclusions, these figures are broadly aligned with the findings of the 'Decrypting Diversity' reports.
 
@@ -164,6 +242,7 @@ responses |>
 ```
 
 ```{r}
+#| eval: false
 #| label: fig-responses-job
 #| fig-cap: "Responses by Job-related questions"
 #| fig-width: 14
@@ -211,6 +290,7 @@ p_experience + p_org_sector + p_org_size
 ```
 
 ```{r}
+#| eval: false
 #| label: fig-responses-age
 #| fig-cap: "Responses by age and years of experience"
 age <- ggplot(responses, aes(age)) +
@@ -260,34 +340,8 @@ ggplot(responses, aes(cut(responses$years_experience, c(-Inf, 5, 10, 15, 20, 25,
 Some caption here, referring to a and b
 :::
 
-```{r}
-#| label: tbl-responses-industry
-#| tbl-cap: "Responses by Industry sector"
-# this might not be the neatest way to create this table, but I was thinking about
-# how the code to create the table could be in the report without it revealing
-# any of the categories we are suppressing
-
-# First make a table of sectors, then set sector names as charecters (otherwise,
-# replace will not work with factors), then set 3 or below to other, then group
-# and count results
-
-industry_table <- data.frame(table(responses$organisation_sector))
-industry_table$Var1 <- industry_table$Var1 <- as.character(industry_table$Var1)
-industry_table$Var1 <- replace(industry_table$Var1, industry_table$Freq <= 3, 'Other (low n)')
-industry_table <- industry_table %>% group_by(Var1) %>% summarise(Freq=sum(Freq))
-
-# order and set col names
-industry_table <- industry_table %>% arrange(desc(Freq))
-colnames(industry_table) <- c('Industry Sector', 'Number of respondents')
-
-kable(industry_table)
-
-```
-
-```{r}
 
 
-```
 
 ### Personal comb
 

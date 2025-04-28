@@ -146,6 +146,11 @@ comb_scenario <- scenarios |>
   calc_indicator()
 
 
+write.csv(comb_personal, file = "data/processed/comb_personal.csv", 
+          row.names = FALSE)
+write.csv(comb_scenario, file = "data/processed/comb_scenario.csv", 
+          row.names = FALSE)
+
 # Personal alignment ----------------------------------------------------
 
 # where test values (X) are the person’s comb (responses) and the reference
