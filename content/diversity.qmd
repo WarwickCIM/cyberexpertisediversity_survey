@@ -40,9 +40,23 @@ The system of professions is itself a kind of classification system, in which cy
 
 ## Data analysis
 
-This is where we look at the non-CyBOK bits of the comb (minimal: just some of the mega combs, with these highlighted)
+### Personal expertise within and beyond CyBOK
 
-Various free text comments from respondents are relevant here.
+When we asked respondents to rate their expertise, we gave them 5 additional categories beyond those that are included in CyBOK 1.1 [@cybok]. These additional categories comprised:
+
+-   Areas that are growing in prominence, since CyBOK was first devised, and likely to continue growing. We thus included *Data Science/AI for cyber security*. AI has been considered through a CyBOK 'topic guide' and 'knowledge guide', but as yet does not have the status of a knowledge area.
+
+-   An area that is well established but happened to be left out from CyBOK. *Cloud Security* was excluded from consideration within the Network Security knowledge area. Related considerations are included within Operating System and Virtualisation Security, but the lack of prominence within CyBOK is at odds with the importance of cloud security expertise in industry.
+
+-   Creating more space for sociotechnical cyber security expertise. CyBOK's Human Factors knowledge area includes considerations of 'positive security', but 'human factors' is an inherently technology centric frame, referring to the 'fit' between the human and the machine [@meister2018history]. It is conceptually a poor home for expertise based in the recognition that security may be, primarily, a matter of value and values. Security culture and security awareness, other areas of expertise that draw on ideas and methodologies from the humanities and social sciences, straddle Human Factors and Risk Management and Governance knowledge areas. To explore sociotechnical dimensions more fully, we experimented with the inclusion of:
+
+    -   *Social organisational, strategy and process*
+
+    -   *Security culture, narrative and communication*
+
+    -   *Political aspects of cyber security*
+
+The addition of these five categories is not intended to 'complete' CyBOK, but to explore what we miss from the analysis when we rely on standardised ways of dividing up the world. In @fig-personal-comb-overall and @fig-scenario-comb-overall, *Data Science and AI for Cyber Security* was relatively low in prominence within respondents' answers for personal and scenario combs. Understanding how areas like this may be gaining in prominence, and when they have crossed an appropriate threshold for consideration within the Careers Framework, will require that data collection steps outside of the standard categories. The other four areas, on the other hand, were widely recognised as elements of respondents' expertise, but we meet a different challenge. While many respondents considered themselves relatively expert in *Political Aspects of Cyber Security*, for example, it is unlikely that this expertise is based in substantial understandings of political theory or political philosophy. The point is probably generally applicable across areas of sociotechnical cyber security, where the recognition of expertise is less well defined than in technology-centred fields.
 
 ::: callout-note
 ### Questions for viz
@@ -57,19 +71,34 @@ To calculate the % of a person’s comb that is taken into account in CyBOK (and
 The sum of ‘response’ values for that person’s ID in **comb_personal** / The sum of values in columns starting with expertise_comb\_\* for that person’s ID in **responses**
 
 ```{r}
+#| label: fig-personal-CyBOKvsalignment
+#| fig-cap: "Percentage of expertise comb covered by CyBOK, versus maximum specialism alignment"
+#| fig-height: 7
+#| colum: page-right
 responses_sum <- comb_personal |> 
   count(id, wt = response, name = "responses_sum")
-
 expertise_sum <- responses |> 
   select(id, starts_with("expertise_comb_")) |> 
   pivot_longer(-id) |> 
   count(id, wt = value, name = "expertise_sum")
-
+max_alignment <- alignment_personal_long |> 
+  group_by(id) |> 
+  summarize(max_alignment_index = max(alignment_index, na.rm = TRUE))
 df <- responses_sum |> 
   left_join(expertise_sum, join_by(id)) |> 
-  mutate(cybok_coverage = responses_sum / expertise_sum)
+  left_join(max_alignment, join_by(id)) |> 
+  mutate(
+    cybok_coverage = (responses_sum / 21) / expertise_sum,
+  ) |>
+  select(id, cybok_coverage, max_alignment_index)
 
-kable(df)
+ggplot(df, aes(x = max_alignment_index, y = cybok_coverage)) +
+  geom_point(alpha = 0.7) +
+  labs(
+    x = "Maximum Alignment Index",
+    y = "CyBOK Coverage"
+  ) +
+  theme_minimal()
 ```
 
  
@@ -89,8 +118,11 @@ expertise_sum <- scenarios |>
 
 df <- responses_sum |> 
   left_join(expertise_sum, join_by(id)) |> 
-  mutate(cybok_coverage = responses_sum / expertise_sum)
-
+  mutate(
+    cybok_coverage = (responses_sum / 21) / expertise_sum,
+    cybok_coverage_numeric = cybok_coverage,
+    cybok_coverage = scales::percent(cybok_coverage, accuracy = 0.1)
+  )
 kable(df)
 ```
 
@@ -98,4 +130,4 @@ kable(df)
 
 ## Recommendations
 
-We might have some recommendations for CyBOK itself.
+Classifications of expertise create considerable value by providing cross-referenced categories that enable standardised analysis, but they inevitably include gaps and fuzzy boundaries, and will need to be updated to keep up with technological change. To support the analysis of boundaries, a future iteration of CyBOK might devise

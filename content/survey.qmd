@@ -162,7 +162,6 @@ responses |>
 
 Overall, responses from this survey are clearly biased towards hegemonic demographics. While the small sample prohibits broader conclusions, these figures are broadly aligned with the sector [@nationalcybersecuritycentreDecryptingDiversityDiversity2021].
 
-
 #### Job-related questions
 
 In terms of job-related questions, we can see ( @tbl-responses-experience) that half of our respondents have less than 10 years of experience, despite most of responses being from mature respondes (see @tbl-responses-age), and 71% have up to 20 years. A considerable 12.5% has more than 25 years of experience. This is in line with the relatively high age of the respondents, but may also suggest that some respondents may have shifted their career towards cybersecurity less than 10 years ago.
@@ -340,9 +339,6 @@ ggplot(responses, aes(cut(responses$years_experience, c(-Inf, 5, 10, 15, 20, 25,
 Some caption here, referring to a and b
 :::
 
-
-
-
 ### Personal comb
 
 ```{r}
@@ -377,7 +373,7 @@ Things that I'm noting:
 
 ```{r}
 #| label: fig-personal-comb-overall
-#| fig-cap: "Overall distribution of personal comb scores"
+#| fig-cap: "Overall distribution of personal comb scores (blue: CyBOK KAs; green: additional categories)"
 #| fig-height: 7
 #| colum: page-right
 responses |> 
@@ -386,8 +382,12 @@ responses |>
   mutate(name = str_remove_all(name, "expertise_comb_"),
          name = str_replace_all(name, "_", " ")) |> 
   arrange(name) |> 
-  ggplot(aes(x = name, y = value)) + 
-  geom_boxplot(fill = "#2D71A6") +
+  mutate(box_color = case_when(
+     name %in% c("cloud security", "data science ai for cyber security", "security culture narrative and communication", "political aspects of cyber security", "social organisation strategy and process") ~ "#32a860",
+     TRUE ~ "#2D71A6"
+   )) |>
+  ggplot(aes(x = name, y = value, fill = box_color)) + 
+  geom_boxplot() +
   geom_jitter(alpha = 0.1, size = 0.8) + 
   labs(
     title = "Personal comb",
@@ -395,7 +395,8 @@ responses |>
     x = NULL
   ) +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1)) +
+  scale_fill_identity()
 ```
 
 ::: callout-caution
@@ -421,8 +422,12 @@ scenarios |>
   mutate(name = str_remove_all(name, "scenario_expertise_portfolio_"),
          name = str_replace_all(name, "_", " ")) |> 
   arrange(name) |> 
-  ggplot(aes(x = name, y = value)) + 
-  geom_boxplot(fill = "#B7D4E3") +
+    mutate(box_color = case_when(
+     name %in% c("cloud security", "data science ai for cyber security", "security culture narrative and communication", "political aspects of cyber security", "social organisation strategy and process") ~ "#c7ebd5",
+     TRUE ~ "#B7D4E3"
+   )) |>
+  ggplot(aes(x = name, y = value, fill = box_color)) + 
+  geom_boxplot() +
   geom_jitter(alpha = 0.1, size = 0.8) + 
   labs(
     title = "Scenarios comb",
@@ -430,8 +435,8 @@ scenarios |>
     x = NULL
   ) +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
-
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1)) +
+  scale_fill_identity()
 ```
 
 ## Key limitations
@@ -452,7 +457,7 @@ We used the 21 CyBOK 1.1 [@cybok] categories as a starting point, but after cons
 
 -   Social organisational, strategy and process
 
--   Securty culture, narrative and communication
+-   Security culture, narrative and communication
 
 -   Political aspects of cyber security
 

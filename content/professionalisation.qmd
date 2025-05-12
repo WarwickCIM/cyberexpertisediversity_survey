@@ -24,6 +24,26 @@ alignment_scenarios_long <- read.csv("../data/processed/alignment_scenarios_long
 
 ## Diversity, equity and the morality of professions
 
+### Professionalizing Cyber Security in the UK
+
+Concerns about the adequacy of the UK's cyber security workforce, and its ability to protect society, state and economy, have driven a number of interconnected policy efforts, aiming to:
+
+-   formalize cyber security education,
+
+-   bring more people into the field,
+
+-   give recognition to those with deep cyber security expertise,
+
+-   to ensure that adequate cyber security knowledge is integrated into related professions, and
+
+-   to enable employers to better understand what they need from their cyber security employees.
+
+The first UK National Cyber Security Strategy, published in 2016, identified the need for government to do more to support the development of the cyber security profession. As part of the implementation of the Strategy, in 2018, the Department for Digital, Culture, Media and Sport launched a proposal and consultation on the creation of the UK Cyber Security Council (UKCSC). The consultation argued that while there were existing forms of recognition, such as offered by the Institute of Information Security Professionals, which received a Royal Charter in 2018, and the International Information System Security Certification Consortium (ISC2), which governs the international CISSP (Certified Information Systems Security Professional) qualification, there were outstanding issues with coverage (some kinds of cyber security expertise were not covered, or partially covered), and equivalence. The UKCSC was thus set up to "act as a governing voice for the cyber security profession in the UK" [@DefenceSecurityIndustrial2021], with a launch in 2021.
+
+Pillar 5 of the UK National Cyber Security Strategy 2022-2030, is the objective to 'develop the right cyber security skills, knowledge and culture' so that 'sufficient, skilled and knowledgeable professionals fulfil all required cyber security needs' [@cabinetofficeGovernmentCyberSecurity2022]. This is to be delivered through "consistent taxonomies, standards and pathways" providing "diverse and fulfilling cyber security careers" and wider status recognition through accreditation and standardisation.
+
+The UKCSC has developed a 'Cyber Careers Framework' which identifies four levels of expertise (Associate, Practitioner, Principal, and Chartered) across a set of 15 specialisms. Assessments of applicants for recognition are carried out by member organisations of UKCSC, who receive a license for specific specialisms: currently the Chartered Institute of Information Security, The Cyber Scheme, and CREST. adopted a phased approach to recognition, with the first chartered cyber security professionals (ChCSP) were recognised in October 2023.
+
 ### Social closure
 
 Professionalisation can be analysed sociologically through the lens of social openness and social closure. The concept of social relationships being 'open' or 'closed' has deep roots in sociology, and is a building block of Max Weber's classic analysis of social action [@weber2019economy]. Social closure is an umbrella term for the ways in which groups construct and maintain monopolies over opportunities, by including some people and excluding others. Understanding how and why closure occurs is key to our understanding of social structure and power. It can operate at multiple levels. Even where opportunities are formally open, groups may nevertheless be able to maintain control over resources through influencing access to jobs or status through cronyism or nepotism. Closure can create durable barriers to entry or 'glass ceilings'. The durability of closure arises because, once they exist, monopolies on resources tend to create alignments of interests among group members, a common interest in maintaining the status quo and resisting change. Weber considered guilds to be an 'archetype' of closure where it is motivated by a cooperative monopolisation of (resource) acquisition, and the sociology of professions has studied professionalisation as an important example of social closure in the modern age, as 'occupational closure'.
@@ -69,7 +89,6 @@ alignment_personal_long |>
   theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1))
 ```
 
-
 ### looking at how well people from different backgrounds are aligned with the specialisms
 
 ```{r}
@@ -90,6 +109,7 @@ alignment_personal_long |>
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1))
 ```
+
 ```{r}
 #| label: tbl-personal-alignment-scenario-gender
 #| tbl-cap: "Statistical summary of personal alignment to specialism by gender"
@@ -100,9 +120,7 @@ alignment_personal_long |>
   yank("numeric")
 ```
 
-
 #### Age
-
 
 ```{r}
 #| label: fig-personal-alignment-scenario-age
@@ -123,7 +141,6 @@ alignment_personal_long |>
   theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1))
 ```
 
-
 ```{r}
 #| label: fig-personal-alignment-scenario-sexual-orientation
 #| fig-cap: "Personal alignment to specialism by sexual orientation"
@@ -142,7 +159,6 @@ alignment_personal_long |>
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1))
 ```
-
 
 ```{r}
 #| label: fig-personal-alignment-scenario-sexual-ethnicity

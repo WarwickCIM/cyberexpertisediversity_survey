@@ -6,7 +6,7 @@ execute:
   warning: false
 
 book:
-  title: "The Cyber Expertise Diversity Survey - Report"
+  title: "Cyber Expertise Diversity: RISCS Report"
   author: 
   - name: Matt Spencer
     orcid: 0000-0002-5146-6201
@@ -29,12 +29,12 @@ book:
     - index.qmd
     - content/introduction.qmd
     - content/survey.qmd
-    - part: "Analysis"
-      chapters:
-        - content/professionalisation.qmd
-        - content/diversity.qmd
-        - content/interdisciplinarity.qmd
-    # - content/data_exploration.qmd
+#    - part: "Analysis"
+#      chapters:
+    - content/professionalisation.qmd
+    - content/diversity.qmd
+    - content/interdisciplinarity.qmd
+    - content/data_exploration.qmd
     - content/conclusions.qmd
     - content/references.qmd
   appendices:
