@@ -24,29 +24,31 @@ alignment_scenarios_long <- read.csv("../data/processed/alignment_scenarios_long
 
 ## Thinking through classifications
 
-'To classify is human', wrote Bowker and Star in their classic study of classification systems [@bowker1999sorting]. Standardisation smoothes out frictions: if everyone is using the same gauge of wire, the same protocols for communication, the same terminology to refer to the same thing, then the conditions are in place for collaboration and integration, and for a low risk of unforeseen complications. A classification system, can be defined, according to Bowker and Star, as 'a set of boxes (metaphorical or literal) into which things can be put to then do some kind of work' [@bowker1999sorting]. Devising a classification of cyber security expertise has been one of the earliest projects for the cyber security profession. The Cybok project did this in the UK, a large mapping exercise that ingested a wide body of data, and input from practitioners, policymakers and academics, to generate a system of 19 'Knowledge Areas', published in 2019, rising to 21 in the 2021 revision.
+'To classify is human' [@bowker1999sorting]. Standardisation smoothes out frictions: if everyone is using the same gauge of wire, the same protocols for communication, the same terminology to refer to the same thing, then the conditions are in place for collaboration and integration, and for a low risk of unforeseen complications. A classification system, can be defined, according to Bowker and Star, as 'a set of boxes (metaphorical or literal) into which things can be put to then do some kind of work' [@bowker1999sorting]. Devising a classification of cyber security expertise has been one of the earliest projects for the cyber security profession. The CyBOK project did this in the UK, a large mapping exercise that ingested a wide body of data, and input from practitioners, policymakers and academics, to generate a system of 19 'Knowledge Areas', published in 2019, rising to 21 in the 2021 revision [@cybok].
 
-![Graphic showing the CyBOK KAs. From https://www.cybok.org/media/article_images/2021/07/21/cybok_v_1_1.png](images/clipboard-695334883.png)
+![Graphic showing the CyBOK KAs. From <https://www.cybok.org/media/article_images/2021/07/21/cybok_v_1_1.png>](images/clipboard-695334883.png)
 
-CyBOK enables a great deal of work to happen that would otherwise be very difficult. It can help the communication and assessment of cyber security degree programmes and research profiles. It provides a common terminology for making comparisons and building up composite profiles. All of these steps towards standardisation have been part of the emergence of the profession as a distinct problem space, set of professional capabilities, norms and identities.
+CyBOK enables work to happen that would otherwise be very difficult. It provides, for instance, a framework for assessing and communicating the content of cyber security degree programmes, or for mapping out the research profiles of cyber security scholars within a university. It provides a common terminology for making comparisons and building up composite profiles.
 
-The UKCSC created its own classification system of 15 specialisms. Where CyBOK focuses on 'knowledge areas', the CSC specialisms are intended to map onto categories of job role. Each knowledge area may be relevant to many specialisms, and each specialism may require many knowledge areas. As part of its cyber careers framework, the CSC provided a mapping of CyBOK to the specialisms, using four levels of relevance ('core', 'related', 'wider' and non-relevant) . Three knowledge areas are not 'core' for any specialisms: Human Factors, Operating Systems and Virtualisation Security, and Physical Layer and Telecoms Security. Formal Methods and Applied Cryptography are not included due to being added in the 2021 CyBOK 1.1 update. Security Operations & Incident Management is the most well represented knowledge area, core to 6 specialisms, followed by Law & Regulation, core to 4 specialisms.
+The UKCSC created its own classification system of 15 specialisms. Where CyBOK focuses on 'knowledge areas', the UKCSC specialisms are intended to map onto type of cyber security job role. Each knowledge area may be relevant to many specialisms, and each specialism may require several knowledge areas. As part of its cyber careers framework, the UKCSC provided a mapping of CyBOK to the specialisms, using four levels of relevance ('core', 'related', 'wider' and non-relevant). Security Operations & Incident Management is the most well represented knowledge area within the UKCSC Careers Framework, core to 6 specialisms, followed by Law & Regulation, which is core to 4 specialisms. Three knowledge areas are not 'core' for any specialisms: Human Factors, Operating Systems and Virtualisation Security, and Physical Layer and Telecoms Security[^diversity-1]. Quite what, if anything, one should read into this is unclear: are these areas that are deemed less 'in demand' by industry? Or are they considered too specialist for the kind of typology that the Careers Framework is bringing together?
 
-All classification systems have downsides. One downside is the propensity to create path dependencies. Classification systems are a kind of knowledge infrastructure, and like all infrastructure, once other systems come to depend on them, the costs of changing can be high, leading to slow, incremental change and strong incentives against radical redesign.
+[^diversity-1]: Formal Methods and Applied Cryptography are not included due to being added in the 2021 CyBOK 1.1 update.
 
-Another downside is the fact that in prioritising some differences as the basis of their scheme, classification systems make other differences less visible. This can lead to 'blindspots', which are not just gaps in the visual field, but gaps that are hard to perceive as gaps (our brains do not show us that there is a gap in the visual field where the optic nerve joins the retina. For instance, by bundling a large part of the social sciences contribution to cyber security into the 'human factors' category, CyBOK prioritised a computer science understanding that pays little attention to the radically different ways of explaining and intervening that psychology, sociology, economics, organisation studies, design and anthropology bring. This is further accentuated as the classification system is taken up into the cyber careers framework, where human factors are treated as 'soft skills', further exacerbating the difficulty of recognising the importance of social scientific expertise to cyber security.
+All classification systems have downsides. One downside is the propensity to create path dependencies. Classification systems are a kind of knowledge infrastructure, and like all infrastructure, once other systems come to depend on them, the costs of changing things later on can be high, leading to slow, incremental change and strong incentives against radical redesign. We learned about this in this project, in a small way, as our effort to expand the scope of our analysis by adding 5 new categories alongside the standard CyBOK KAs created challenges for the analysis: because only the original KAs are mapped to the UKCSC specialisms, we could not incorporate them in our alignment calculations. What we can learn about is thus limited by the established categories.
 
-The system of professions is itself a kind of classification system, in which cyber security is one profession among many [@abbott2014system]. The development of cyber security's own classifications of job roles is also a negotiation of boundaries and 'territory'. That there is a 'Cyber security governance & risk management' specialism suggests that cyber security is coming to contest the terrain of risk management, while the absence of a security awareness specialism may indicate that this ground is being ceded to HR or learning and development.
+Another downside is the fact that in prioritising some differences as the basis of their scheme, classification systems make other differences less visible. This can lead to 'blindspots' (to take the metaphor seriously, a blindspot is more than a gap in the visual field, it is a gap that cannot easily be perceived[^diversity-2]). By bundling a large part of the social sciences contribution to cyber security into the 'human factors' category, CyBOK prioritised a computer science understanding that pays little attention to the radically different ways of explaining and intervening that psychology, sociology, economics, organisation studies, design and anthropology bring. This is further accentuated as the classification system is taken up into the UKCSC Careers Framework, where human factors are treated as 'soft skills'. What was made marginal is thus made invisible.
+
+[^diversity-2]: Try <https://www.scientificamerican.com/article/find-your-blind-spot/>
 
 ## Data analysis
 
 ### Personal expertise within and beyond CyBOK
 
-When we asked respondents to rate their expertise, we gave them 5 additional categories beyond those that are included in CyBOK 1.1 [@cybok]. These additional categories comprised:
+When we asked respondents to rate their expertise and the expertise required for problem scenarios, we gave them 5 additional categories beyond those that are included in CyBOK 1.1 [@cybok]. These additional categories comprised:
 
 -   Areas that are growing in prominence, since CyBOK was first devised, and likely to continue growing. We thus included *Data Science/AI for cyber security*. AI has been considered through a CyBOK 'topic guide' and 'knowledge guide', but as yet does not have the status of a knowledge area.
 
--   An area that is well established but happened to be left out from CyBOK. *Cloud Security* was excluded from consideration within the Network Security knowledge area. Related considerations are included within Operating System and Virtualisation Security, but the lack of prominence within CyBOK is at odds with the importance of cloud security expertise in industry.
+-   An area that is well established but happened to be left out from CyBOK. *Cloud Security* was excluded from consideration within the Network Security knowledge area. Related considerations are included within Operating System and Virtualisation Security, but the lack of prominence within CyBOK is notable because it is at odds with the importance of cloud security expertise in industry.
 
 -   Creating more space for sociotechnical cyber security expertise. CyBOK's Human Factors knowledge area includes considerations of 'positive security', but 'human factors' is an inherently technology centric frame, referring to the 'fit' between the human and the machine [@meister2018history]. It is conceptually a poor home for expertise based in the recognition that security may be, primarily, a matter of value and values. Security culture and security awareness, other areas of expertise that draw on ideas and methodologies from the humanities and social sciences, straddle Human Factors and Risk Management and Governance knowledge areas. To explore sociotechnical dimensions more fully, we experimented with the inclusion of:
 
@@ -56,19 +58,9 @@ When we asked respondents to rate their expertise, we gave them 5 additional cat
 
     -   *Political aspects of cyber security*
 
-The addition of these five categories is not intended to 'complete' CyBOK, but to explore what we miss from the analysis when we rely on standardised ways of dividing up the world. In @fig-personal-comb-overall and @fig-scenario-comb-overall, *Data Science and AI for Cyber Security* was relatively low in prominence within respondents' answers for personal and scenario combs. Understanding how areas like this may be gaining in prominence, and when they have crossed an appropriate threshold for consideration within the Careers Framework, will require that data collection steps outside of the standard categories. The other four areas, on the other hand, were widely recognised as elements of respondents' expertise, but we meet a different challenge. While many respondents considered themselves relatively expert in *Political Aspects of Cyber Security*, for example, it is unlikely that this expertise is based in substantial understandings of political theory or political philosophy. The point is probably generally applicable across areas of sociotechnical cyber security, where the recognition of expertise is less well defined than in technology-centred fields.
+The addition of these five categories is not intended to 'complete' CyBOK, but to explore what we miss from the analysis when we rely on standardised ways of dividing up the world. In @fig-personal-comb-overall and @fig-scenario-comb-overall, *Data Science and AI for Cyber Security* was relatively low in prominence within respondents' answers for personal and scenario combs. Understanding how areas like this may be gaining in prominence, and when they have crossed an appropriate threshold for consideration within the Careers Framework, will require that data collection steps outside of the standard categories. The other four areas, on the other hand, were widely recognised as elements of respondents' expertise. However, while many respondents considered themselves relatively expert in *Political Aspects of Cyber Security* it is unlikely that this expertise is based in substantial understanding of political theory or political philosophy. It is a further challenge for the recognition of sociotechnical expertise in cyber security, if practitioners regard themselves as already well versed in it.
 
-::: callout-note
-### Questions for viz
-
-7.  How can we bring out the relative importance of the categories of expertise that are not included in Cybok?
-    7.  One version would be just to highlight them in some of the meta-combs, and to pick out those non-cybok categories that are most common
-    8.  There may be more sophisticated things we might do as well. For instance, if some of the scenarios include significant contributions from non-cybok expertise, might we highlight this somehow.
-:::
-
-To calculate the % of a person’s comb that is taken into account in CyBOK (and thus in our alignment calcs):
-
-The sum of ‘response’ values for that person’s ID in **comb_personal** / The sum of values in columns starting with expertise_comb\_\* for that person’s ID in **responses**
+The figure below shows on the x axis each respondent's maximum alignment score, plotted against (on the y axis) the fraction of their comb that is covered by CyBOK. There is no correlation gives us confidence that the inclusion of our additional categories was not skewing the personal alignment metric results (the scenario alignment is a different story).
 
 ```{r}
 #| label: fig-personal-CyBOKvsalignment
@@ -101,33 +93,44 @@ ggplot(df, aes(x = max_alignment_index, y = cybok_coverage)) +
   theme_minimal()
 ```
 
- 
+### Participants' comments on classifications
 
-To calculate the % of a scenario’s comb that is taken into account in CyBOK (and thus in our alignment calcs):
+The challenges of recognising and using classifications were visible to survey participants, and several comments questions whether the categories being used were appropriate:
 
-The sum of ‘response’ values for that scenario’s ID in **comb_scenario** / The sum of values in columns starting with scenario_expertise\_\* for that scenario’s ID in **scenarios**
+::: {.callout-note appearance="minimal"}
+"The categories aren't what I was expecting. For example, why would web be in the same category as mobile?"
+:::
 
-```{r}
-responses_sum <- comb_scenario |> 
-  count(id, wt = response, name = "responses_sum")
+::: {.callout-note appearance="minimal"}
+"It felt like I was looking at one of a number of potential 'combs', i.e. I have skills and knowledge that I have used throughout my career that is not represented in the CyBOK."
+:::
 
-expertise_sum <- scenarios |> 
-  select(id, starts_with("scenario_expertise_portfolio")) |> 
-  pivot_longer(-id) |> 
-  count(id, wt = value, name = "expertise_sum")
+One would always expect a certain amount of friction when presenting people with classifications that compress complexity into standard categories. What is more challenging is to identify the cases where the classification is out of alignment and needs to be changed. Further research into expertise diversity in cyber security could thus generate input into CyBOK to help the framework adapt to the changing landscape of cyber security expertise and technology.
 
-df <- responses_sum |> 
-  left_join(expertise_sum, join_by(id)) |> 
-  mutate(
-    cybok_coverage = (responses_sum / 21) / expertise_sum,
-    cybok_coverage_numeric = cybok_coverage,
-    cybok_coverage = scales::percent(cybok_coverage, accuracy = 0.1)
-  )
-kable(df)
-```
+### The value of social and human expertise
 
- 
+::: {.callout-note appearance="minimal"}
+"\[The profession is\] Not diverse enough. Cognitively.
+
+Part of this is a function of who naturally gravitates towards the area. Some of it is nurtured by "professionalisation", and coteries of certification cabals. Institutionalises a mind set. Exact opposite of what we need.
+
+Best people I ever recruited had humanities backgrounds (archeology or Anglo Saxon English); because they had critical thinking, communication skills and a desire to learn."
+:::
+
+The tendency within some segments of professional institutions to social and human expertise as 'soft skills' is a double-edged sword. On the one hand, this term makes it clear that there is value in this expertise across the board. But on the other, this term massively devalues social and human expertise. Some degree of familiarity in human communication, behaviour, critical analysis and social explanation is picked up 'on the job', but having good 'soft skills' is entirely different from being competent in the sciences of communication, behaviour, politics and society.
+
+::: {.callout-note appearance="minimal"}
+"I think the cybersecurity profession focuses too much on technical security skills and not enough on transferable soft skills. We would not have such a diversity and recruitment problem in security, if we could embrace those skills like being able to manage a project, communicate with a board or problem solve. These are experiences gained in a wide range of job roles. We should value that expertise as much as the technical security skills, as without the ability to influence, communicate, change something or solve a problem, how can we drive any improvement."
+:::
+
+::: {.callout-note appearance="minimal"}
+"we have an image problem in cybersecurity - we think the cool image is of a hoody wearing hacker in front of a keyboard / laptop, whether they are good guys or bad guys. The problem is this means we do not encourage the broader roles of cyber that are so not about the technology or the pen testing or hacking skills.
+
+My concern with the chartered status efforts the easy route will be to focus on chartering the technology centric aspects and roles and thus alienate those sitting on the outskirts of the tech often driving forward change and leading major cyber security efforts."
+:::
+
+Respondents' concerns with the overplayed 'technology centric' aspects of cyber security raises a broader issue with the technology and EDI agenda. The goal of increasing the representation of women in technology jobs has led to widespread campaigns to draw more women into STEM subjects at university. The implicit, but nevertheless very strong, message here has been that social science and humanities skills are not relevant to technology jobs. Changing the narrative to emphasise the contribution of the social sciences and humanities within tech and within cyber security may be needed, especially as AI technologies change the skillsets needed. To do this effectively, of course, it will be necessary to see better representation of these forms of expertise in professional classifications.
 
 ## Recommendations
 
-Classifications of expertise create considerable value by providing cross-referenced categories that enable standardised analysis, but they inevitably include gaps and fuzzy boundaries, and will need to be updated to keep up with technological change. To support the analysis of boundaries, a future iteration of CyBOK might devise
+Classifications of expertise create considerable value by providing cross-referenced categories that enable standardised analysis, but they inevitably include gaps and fuzzy boundaries, and will need to be updated to keep up with technological change. Future studies of expertise diversity in cyber security should be designed in ways that test the boundaries of CyBOK (or other classifications) in order that they can inform future iterations of these frameworks.

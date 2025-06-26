@@ -30,7 +30,7 @@ scenarios <- read.csv("../data/raw/cyber_expertise_diversity_survey_scenarios.cs
 
 ### Responses
 
-The survey was conducted bewteen `r min(responses$recorded_date)` and `r max(responses$recorded_date)` and received responses from `r nrow(responses)` individuals and describing `r nrow(scenarios)` scenarios. 
+The survey was conducted bewteen `r min(responses$recorded_date)` and `r max(responses$recorded_date)` and received responses from `r nrow(responses)` individuals and describing `r nrow(scenarios)` scenarios.
 
 ```{r}
 #| column: page

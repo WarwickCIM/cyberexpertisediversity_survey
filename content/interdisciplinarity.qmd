@@ -27,7 +27,7 @@ theme_set(theme_minimal())
 
 ## Interdisciplinary cyber security
 
-Understanding the value of diversity of expertise in cyber security requires a view of the problems that arise in cyber security, and the kinds of combinations of expertise that they require. For organisations, the utility of classifications of individuals into standardised specialisms depends on the extent to which it is possible to identify a need for particular kinds of individuals. Understanding how needs are aligned with specialisms means understanding the kinds of profiles of expertise that are required to address specific problems. The Cyber Expertise Diversity Survey elicited such profiles from participants, for a range of scenarios. While the dataset is limited, the presence of qualitative descriptions of these scenarios enables us to explore the ways in which scenarios map onto specialisms, in particular:
+In this section we were interested in the intrinsic interdisciplinary of cyber security. Understanding the value of diversity of expertise in cyber security requires a view of the problems that arise in cyber security, and the kinds of combinations of expertise that they require. For organisations, the utility of classifications of individuals into standardised specialisms depends on the extent to which it is possible to identify a need for particular kinds of individuals. Understanding how needs are aligned with specialisms means understanding the kinds of profiles of expertise that are required to address specific problems. The Cyber Expertise Diversity Survey elicited such profiles from participants, for a range of scenarios. While the dataset is limited, the presence of qualitative descriptions of these scenarios enables us to explore the ways in which scenarios map onto specialisms, in particular:
 
 -   Which scenarios map straightforwardly onto one specialism
 
@@ -39,7 +39,7 @@ Understanding the value of diversity of expertise in cyber security requires a v
 
 ### Looking at specialisms alignment with the scenarios
 
-@fig-alignment-scenarios-overview shows that, overall, the Alignment index increases as we increase the number of permutations (this is, the scenarios are more interdisciplinary). While this could be expected, this is not the case for every scenario, as shown in @fig-alignment-scenarios, which provides a more nuanced view by displaying how the alignment score changes for every scenario.
+We calculated the alignment of the UKCSC specialisms with the scenarios our respondents told us about. We were interested in how alignment scores would increase if we allowed permutations of two or more specialisms. @fig-alignment-scenarios-overview shows that, overall, the alignment index increases as we increase the number of permutations (this is, these scenarios are more interdisciplinary). While this could be expected, this is not the case for every scenario, as shown in @fig-alignment-scenarios, which provides a more nuanced view by displaying how the alignment score changes for every scenario.
 
 ```{r}
 #| label: fig-alignment-scenarios-overview
@@ -47,10 +47,10 @@ Understanding the value of diversity of expertise in cyber security requires a v
 max_alignment_scenarios |> 
   mutate(
     n_permutations_txt = case_when(
-      n_permutations == 1 ~ "No permutation",
+      n_permutations == 1 ~ "Single specialism",
       .default = paste(n_permutations, "Permutations")),
     n_permutations_txt = as.factor(n_permutations_txt),
-    n_permutations_txt = fct_relevel(n_permutations_txt, "No permutation")) |> 
+    n_permutations_txt = fct_relevel(n_permutations_txt, "Single specialism")) |> 
   ggplot(aes(x = alignment_index)) +
   geom_boxplot() +
   facet_wrap(~n_permutations_txt, ncol = 1) +
@@ -59,7 +59,9 @@ max_alignment_scenarios |>
 
 =
 
-Explanation here.
+Scenarios with a steep gradient show indicate significantly better alignment could be gained through teams of mixed specialists.
+
+**In the viz below, can there be more space to display the scenario names, perhaps allowing two lines of text for each? It doesn't matter if some are cut off, but a few more words would help.**
 
 ```{r}
 #| label: fig-alignment-scenarios
@@ -101,26 +103,54 @@ max_alignment_scenarios |>
 
 ### Qualitative analysis of the scenario descriptions
 
-```{r}
+#### Lowest alignment scenarios
 
-```
+Scenarios that have lower overall alignment tend to be scenarios where respondents set the combs particularly 'full'. For instance, for *Scenario 3: global mass use of malware*, the participant set all sliders to 100 (or nearly). *Scenario 13: investigation of a cyber incident*: apart from a few (data science, hardware, cyber physical and cryptography), this was deemed to require a very 'full' comb. Similarly, *Scenario 28: Develop effective and real world governance to protect assets while facilitating and enabling business goals and objectives* had a very 'full' comb.
 
-![Sketches of data analysis](../media/Picture%201.png)
+#### Most interdisciplinary scenarios
 
-::: callout-note
-### Questions for Viz
+Scenarios that had a steep gradient may be interpreted as particularly interdisciplinary. *Scenario 7: Protecting Legacy equipment against emerging AI/PQC Threat*, for instance combined significant elements of hardware security, cryptography, network security, authentication, authorisation and accountability, and distributed systems security. This hit a combination of expertise that is not directly associated within existing specialisms. No UKCSC specialism, for instance, is identified with authentication, authorisation and accountability *and* hardware security. This scenario is about protecting legacy equipment in a CNI context, and while this is a specific context it is a widely recognised problem scenario.
 
-NB here we are looking at how well specialisms (including combinations of specialisms) are aligned with the scenarios people told us about. Before we were looking at how well people’s own profiles were aligned with the specialisms.
+Scenario 27: incident response was similarly intriguing for its interdisciplinarity, given that there is a specialism called 'incident response'. The respondent had specified the problem scenario including the requirement for very high expertise in authorisation, authentication and accountability, and quite high in operating systems and virtualization security. Neither of these are taken to be of even 'wider' relevance to incident response or digital forensics specialisms.
 
-1.  The main thing is the kind of analysis that we sketched out in the slide above. Those two graphs show comparative views of the scenarios based on how the alignment changes when you are combining specialisms in greater numbers. Carlos and I were chatting about this last week and he said we might be able to do an interactive view of these to help explore the qualitative dataset (I.e. click on a specific point or line and it would tell you what the scenario number or name is, and then can look at the description). In the report we might just need to highlight a small number that are being referred to specifically, rather than necessarily embedding an interactive visualisation (which wouldn’t work well for a pdf/print version).
+Both scenarios 7 and 27 provide anecdotal evidence that the UKCSC CyBOK mapping may itself require further thought. Further research into expertise diversity could help test this hypothesis and improve the mapping.
 
-To make these graphs, there are csv files for 'max_alignment_scenarios_1_permutations', all the way up to 5 permutations. These are generated via the alignment_metric script.
+Scenarios 61 and 62 were more specialist problems
 
-One aspect of the data that we are losing here is: we are only looking at the categories of expertise that are included in CyBOK, and ignoring the additional categories that we added in. So one or two of them have very high alignment (17 and 23 for instance), but this is because these scenario were dominated by non-CyBOK categories of expertise, and the CyBOK ones had low values. To illuminate where this is the case, perhaps we could colour code the data points on the scatter to signal the fraction of expertise that was under CyBOK? This should be easy as it is just (sum of 'response' for that ID in 'comb_scenario' dataframe / sum of numeric fields for that ID in 'scenarios' dataframe, excluding the ID field itself)
+::: {.callout-note appearance="minimal"}
+Got pulled from a job testing building management/HVAC systems to taking lead on assessing encrypted VoIP systems. Had to give a crash course on OT testing to more junior colleagues before switching assignments (61)
 :::
+
+Scenario 61 involved a wide spread of expertise, while scenario 62 required high expertise in a relatively high number of areas.
+
+::: {.callout-note appearance="minimal"}
+Requirement to build out a cyclical, threat detection and engineering process which required:
+
+-   Understanding of Primary Threat Adversaries and identification of their TTPs.
+
+-   Threat Hunting capability for aforementioned TTPs (and other Indicators of Compromise).
+
+-   Detection Engineering capability (for creation of signals, signatures and detections, specific to the aforementioned TTPs), delivering these into production.
+
+-   Event Triage and Investigation to Incident esclation including containment, eradication and recovery.
+
+-   Feedback mechansim of observed incidents, back into Intelligence teams to close the loop. (Detection Lifecycle Management).
+
+    \(62\)
+:::
+
+These scenarios are the more 'naturally' interdisciplinary cases, where problems need to be addressed that are not neatly contained within standard specialism areas, and will either require individuals with unusual skillsets or else mixed teams.
+
+#### Non-CyBOK expertise
+
+Finally, some scenarios were specified in ways that heavily emphasised the need for non-CyBOK areas of expertise. In these cases, the alignment scores are deceptive, because we cannot calculate which specialists would contribute these skills. Interestingly, one of these cases was *58 - Incident Response is a business requirement, not just for the IT/Cyber team(s).*
+
+::: {.callout-note appearance="minimal"}
+Often people think that cyber maturity, resilience, and response is just for the cyber or IT teams to do. Promoting that it there are multiple groups that will be affected and impacted by a successful compromise and making them aware and appreciate their role to play and to consider what their individual playbook would look like is a difficult but important task to achieve. Evidence based metrics to promote the risk and then cyber resilience exercises involving key stakeholders that then promote wider engagement down the line is a necessary tool to have in your armour.
+:::
+
+Incident response is supposed to be captured within the existing specialisms, but this respondent specifies the problem in a way that emphasises expertise that is not considered within the Careers Framework. In particular, the organisational, human factors and culture aspects are deemed particularly important. Again anecdotal, examples like this are suggestive of how the process of professionalisation may be refined, understanding where the hidden areas of expertise are that are needed. Further research may help refinement of definitions, to identify areas in which the expertise needed to tackle problems is changing, and to identify areas in which there are diverse, competing, problem definitions. In the latter case, it would be important for policymakers to ensure that problem definitions enshrined in standard classifications do not suppress innovation by imposing a standard vision of what the solution should look like.
 
 ## Recommendations
 
-## The path forward
-
-Discussions of the professionalisation of cyber security are often motivated by analogies with professions such as accounting, medicine or law. However, it is important to recognise that professionalisation may take multiple pathways, that many professions do not end up tightly integrated, and that this destination may not always be the best or most appropriate. Clinical psychology, psychiatry, psychoanalysis and counselling are a case in point, with multiple career pathways, overlapping remits, multiple regulatory bodies and a history of failed attempts to better integrate.
+We recommend that the UK government supports further research into cyber security expertise diversity, including looking at cyber security problem scenarios, to identify gaps in existing professional classifications and to help validate the Career Framework CyBOK mapping.

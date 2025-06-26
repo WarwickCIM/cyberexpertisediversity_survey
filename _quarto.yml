@@ -34,7 +34,6 @@ book:
     - content/professionalisation.qmd
     - content/diversity.qmd
     - content/interdisciplinarity.qmd
-    - content/data_exploration.qmd
     - content/conclusions.qmd
     - content/references.qmd
   appendices:

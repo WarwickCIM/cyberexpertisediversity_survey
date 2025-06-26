@@ -5,6 +5,15 @@ format: html
 
 ## Introduction
 
+## Executive summary
+
+The RISCS Cyber Expertise Diversity Survey was run as an exploratory project looking at the influence of professionalisation on diversity in cyber security. We ran a small scale survey, and developed methods for assessing individuals' alignment with the new UK Cyber Security Council Careers Framework specialisms, and for assessing the alignment of the specialisms with cyber security problem scenarios our respondents told us about. The survey reveals the need for better data on how professionalisation is influencing diversity within the field, makes the case for future larger-scale surveys adopting a more expertise-focused approach. We argue that studies of this kind are needed to validate current classifications of expertise and specialisms, to ensure that it supports diversity in the field, and to ensure that it stays relevant in a changing world.
+
+## List of recommendations
+
+1.  Recommendation 1
+2.  Recommendation 2
+
 ## Background on this survey, aims and objectives
 
 ### This survey
@@ -13,20 +22,26 @@ The Cyber Expertise Diversity Survey was designed in order to investigate how th
 
 The survey was conducted in association with RISCS (the Research Institute for Sociotechnical Cyber Security), and the approach was developed with help from a number of individuals in industry and government who supported the project by providing advice on the approach and objectives.
 
-The Cyber Expertise Diversity Survey explores the intersection of diversity and professionalisation, and thus builds on a line of inquiry developed in recent years through the 2020-2021 NCSC/KPMG Decrypting Diversity surveys of individual professionals, and other work such as the Cyber Security Skills in the UK Labour Market survey, which introduced additional diversity-focused analysis in 2021, albeit in a survey focused primarily on organisations.
+The Cyber Expertise Diversity Survey explores the intersection of diversity and professionalisation, and thus builds on a line of inquiry developed in recent years through the 2020-2021 NCSC/KPMG 'Decrypting Diversity' surveys of individual professionals, and other work such as the organisation-level 'Cyber Security Skills in the UK Labour Market' survey, which introduced additional diversity-focused analysis in 2021.
 
 ### Research Goals
 
-We wanted to understand how well aligned categories of cyber specialism are with EDI goals of the profession. We wanted to think through who will find it harder or easier to attain recognised status, and to examine how professionalisation is likely to change the distribution of cyber security expertise.
+We wanted to understand how well aligned categories of cyber specialism are with EDI goals of the profession.We wanted to think through who will find it harder or easier to attain recognised status, and to examine how professionalisation is likely to change the distribution of cyber security expertise.
 
 Motivating these questions is a set of concerns that we believe require further evidence and analysis.
 
-Firstly, there is an unavoidable tension between two goals of the UKCSC (or any professional body like it), between the objective to standardise and thus to consolidate existing structures, and the moral obligation to ensure that opportunities are not unequally distributed.
+Firstly, scholars have observed that there is a tension between two goals of professional bodies like the UK Cyber Security Council (UKCSC). On the one hand, such bodies seek to standardise professional categories, statuses and processes of recognition. On the other hand, they have a moral purpose to ensure that opportunities are not unequally distributed across society. Standardising professional categories, statuses and processes of recognition can serve to entrench existing inequalities and create new forms of inequality [@evetts2012similarities; @daniel2007outsiders]. The effectiveness of professional bodies' efforts to support equality, diversity and inclusion (EDI) in their domain will depend on having a good understanding of the actual and potential effects of standardisation initiatives.
 
-The second concern arose in conversations with experts in security awareness and human factors, and relates to the way in which expertise in people and culture is treated in the Cyber Careers Framework, as a general cross-cutting requirements, rather than an area of deep expertise in its own right. Because gender diversity in the profession is well recognised problem, it is concerning that expertise in people and culture does not lead to accreditation via as direct a pathway as more 'technical' forms of expertise (we put the term 'technical' in scare quotes: as much of the work coming out of RISCS will attest, expertise in social and cultural factors is highly technical in its own right).
+Our second concern arose in conversations with experts in security awareness and human factors, and relates to the specific way in which expertise in people and culture is treated in the UKCSC's Cyber Careers Framework. In this framework, expertise in people and culture is treated as a generic requirement ('soft skills'); while this decision has the virtue of emphasising that all cyber security professionals need some forms of competence in this area, it also denies recognition to expertise in people and culture as an area of deep expertise in its own right[^introduction-1]. The distinction between 'being good with people' and understanding the sciences of behaviour and social process, has been elided. It is particularly concerning that expertise in people and culture does not lead to accreditation: anecdotally (and our survey was not of a scale that could substantiate this), women tend to be over-represented in this area of the profession (for instance, working in security awareness and human factors) compared with in other areas; if this is the case, the Cyber Careers Framework is at risk of exacerbating issues of gender representation by making it harder for women to gain recognition.
 
-Finally, we note that many of the senior leaders in the field came into cyber security before this term ('cyber security') was widely used, before many of the categories of expertise we now talk about were clearly defined, and before degrees and other qualifications in cyber security existed. Their career routes were often highly idiosyncratic. The UKCSC was founded to provide more structure, with the goal of better supporting the workforce, but a side effect of this structure may be to disincentivize idiosyncratic career moves. Better understanding diversity of expertise may help us to understand the value of unusual profiles.
+[^introduction-1]: We point the reader to the breadth of research that has taken place at RISCS, for an appreciation of the deeply technical nature of research into people and culture and related sociotechnical aspects of cyber security.
+
+Finally, we note that many of the senior leaders in the profession came into cyber security before most of the categories of expertise and specialism that are now in common use were clearly defined, before degrees and other qualifications in cyber security existed, and indeed before this term ('cyber security') was widely used. Their career routes were often highly idiosyncratic. The UKCSC was founded to provide more structure, with the goal of better supporting the workforce, but a side effect of this structure may be to disincentivize idiosyncratic career moves. Better understanding diversity of expertise may help us to understand the value of atypical expertise profiles, and the risks associated with incentivising more homogeneous skillsets.
 
 ### Approach
 
 Because the survey is exploratory, this report presents the data alongside methodological reflections and reflections drawing on existing social scientific literature.
+
+-   What kind of analysis would illuminate the effects of professionalisation on social inequalities?
+
+-   What kind of analysis would illuminate the value of diversity to the profession?

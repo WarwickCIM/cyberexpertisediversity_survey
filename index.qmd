@@ -6,13 +6,6 @@ Other CIM staff involved in putting the survey together and analysing the data i
 
 The survey aims to inform cyber policy discussions by generating new insights into the value and distribution of cyber expertise.
 
-## Executive summary
-
-## List of recommendations
-
-1.  Recommendation 1
-2.  Recommendation 2
-
 ::: callout-note
 This is a Quarto book.
 
