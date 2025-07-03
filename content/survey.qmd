@@ -219,7 +219,6 @@ kable(industry_table)
 **Name label needs to be replaced/removed on the below. Also in the code it seems we are using responses\[8:33\]. We should be using all the rows in that dataframe. I've tried sorting this but was getting an error. Also, need to add in a label and caption. I've put these in but they don't seem to be appearing correctly.**
 
 ```{r}
-
 #| label: fig-personal-comb-aggregate
 #| fig-cap: "Participants' responses on their personal expertise combs, in aggregate"
 
@@ -243,7 +242,9 @@ ggplot(response_all, aes(all_points, all_name)) +
   ggtitle('All comb responses')
 ```
 
-This is a **{WHAT KIND OF PLOT?\]** showing all the personal comb responses. Respondents were using the full range of the sliders, with `r round(100 / nrow(response_all) * nrow(filter(response_all, all_points == 0)), digits = 1)`% responses being set to 0 and `r round(100 / nrow(response_all) * nrow(filter(response_all, all_points == 100)), digits = 1)`% set to 1.
+This is a **{WHAT KIND OF PLOT?\]** showing all the personal comb responses.
+
+@fig-personal-comb-aggregate shows all the personal comb responses. Respondents were using the full range of the sliders, with `r round(100 / nrow(response_all) * nrow(filter(response_all, all_points == 0)), digits = 1)`% responses being set to 0 and `r round(100 / nrow(response_all) * nrow(filter(response_all, all_points == 100)), digits = 1)`% set to 1.
 
 @fig-personal-comb-overall shows how the personal score for each of the 26 categories was distributed. For a more detailed view, refer to [Appendix A](personal_combs.qmd).
 
@@ -258,21 +259,25 @@ responses |>
   mutate(name = str_remove_all(name, "expertise_comb_"),
          name = str_replace_all(name, "_", " ")) |> 
   arrange(name) |> 
-  mutate(box_color = case_when(
-     name %in% c("cloud security", "data science ai for cyber security", "security culture narrative and communication", "political aspects of cyber security", "social organisation strategy and process") ~ "#32a860",
-     TRUE ~ "#2D71A6"
-   )) |>
+  mutate(
+    box_color = case_when(
+      name %in% c("cloud security", "data science ai for cyber security", "security culture narrative and communication", "political aspects of cyber security", "social organisation strategy and process") ~ "#32a860",
+     TRUE ~ "#2D71A6"),
+    box_color = as.factor(box_color)
+  ) |>
   ggplot(aes(x = name, y = value, fill = box_color)) + 
   geom_boxplot() +
   geom_jitter(alpha = 0.1, size = 0.8) + 
   labs(
     title = "Personal comb",
     y = "Score",
-    x = NULL
+    x = NULL,
+    fill = NULL
   ) +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1)) +
-  scale_fill_identity()
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1),
+        legend.position="top") +
+  scale_fill_manual(values = c("#2D71A6", "#32a860"), labels=c('CyBOK KAs', 'Additional categories'))
 ```
 
 **Why are some dots black and some grey?? Can they be all the same colour?**
@@ -283,11 +288,12 @@ CyBOK categories in the above are coloured blue, with our additional 5 categorie
 
 **Can we have the equivalent of the 'all comb responses' above, just for the scenarios?**
 
+
 Refer to @sec-scenario-combs-appendice
 
 ```{r}
 #| label: fig-scenario-comb-overall
-#| fig-cap: "Overall distribution of scenarios comb scores"
+#| fig-cap: "Overall distribution of scenarios comb scores by category"
 #| fig-height: 7
 #| colum: page-right
 scenarios |> 
@@ -303,14 +309,16 @@ scenarios |>
   ggplot(aes(x = name, y = value, fill = box_color)) + 
   geom_boxplot() +
   geom_jitter(alpha = 0.1, size = 0.8) + 
-  labs(
+labs(
     title = "Scenarios comb",
     y = "Score",
-    x = NULL
+    x = NULL,
+    fill = NULL
   ) +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1)) +
-  scale_fill_identity()
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1),
+        legend.position="top") +
+  scale_fill_manual(values = c("#B7D4E3", "#c7ebd5"), labels=c('CyBOK KAs', 'Additional categories'))
 ```
 
 **To be completed by Matt once we've got the 'all combs': it looks like there is more of a skewed distribution around certain categories in the scenarios compared with personal combs. Probably because people think of incidents more readily when asked about problems/scenarios.**
