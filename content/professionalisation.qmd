@@ -79,8 +79,20 @@ Diversity of expertise is less well studied than individual diversity in cyber s
 #| fig-width: 14
 # #| fig-height: 10 
 #| fig-align: "center"
+
+alignment_personal_sort <- alignment_personal_long |> 
+  group_by(Specialism) |> 
+  summarise(alignment_mean = mean(alignment_index)) |> 
+  arrange(desc(alignment_mean)) |> 
+  mutate(order = row_number())
+  
 alignment_personal_long |> 
-  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index)) + 
+  left_join(alignment_personal_sort, by = "Specialism") |> 
+  mutate(
+    Specialism = str_wrap(Specialism, width = 30),
+    Specialism = as.factor(Specialism),
+    Specialism = fct_reorder(Specialism, alignment_index)) |> 
+  ggplot(aes(x = fct_rev(Specialism), y = alignment_index)) + 
   geom_boxplot() +
   geom_jitter(alpha = 0.1, size = 0.8) + 
   labs(y = "Alignment index",
