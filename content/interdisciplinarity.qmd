@@ -68,7 +68,7 @@ Scenarios with a steep gradient show indicate significantly better alignment cou
 #| fig-cap: "Alignment indices per number of permutations and scenario"
 #| column: page
 #| fig-width: 14
-#| fig-height: 18
+#| fig-height: 25
 #| fig-align: "center"
 
 scenario_names <- scenarios |> 
@@ -80,8 +80,9 @@ max_alignment_scenarios |>
   left_join(scenario_names, by = join_by(id)) |>
   mutate(scenario_name = paste(id,"-", scenario_name),
          scenario_name = case_when(
-           nchar(scenario_name) > 25 ~ paste0(str_sub(scenario_name, end = 25), "..."),
+           nchar(scenario_name) > 55 ~ paste0(str_sub(scenario_name, end = 55), "..."),
            .default = scenario_name),
+         # scenario_name = str_wrap(scenario_name, width = 30),
          scenario_name = as.factor(scenario_name),
          scenario_name = fct_reorder(scenario_name, id)) |> 
   pivot_longer(alignment_index) |> 
@@ -92,7 +93,8 @@ max_alignment_scenarios |>
   #             labeller = as_labeller(
   #               function(string, suffix = scenario_names$scenario_name) paste(string, suffix)
   #             )) +   
-  facet_wrap( ~scenario_name, ncol = 5) + 
+  facet_wrap( ~scenario_name, ncol = 5,
+              labeller = labeller(scenario_name = label_wrap_gen(width = 30))) + 
   labs(title = "Alignment indices per number of permutations and scenario",
        y = "Scenario Alignment index",
        x = "Number of specialisms permutations")
