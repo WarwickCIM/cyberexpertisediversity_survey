@@ -3,17 +3,6 @@ title: "Introduction"
 format: html
 ---
 
-## Introduction
-
-## Executive summary
-
-The RISCS Cyber Expertise Diversity Survey was run as an exploratory project looking at the influence of professionalisation on diversity in cyber security. We ran a small scale survey, and developed methods for assessing individuals' alignment with the new UK Cyber Security Council Careers Framework specialisms, and for assessing the alignment of the specialisms with cyber security problem scenarios our respondents told us about. The survey reveals the need for better data on how professionalisation is influencing diversity within the field, makes the case for future larger-scale surveys adopting a more expertise-focused approach. We argue that studies of this kind are needed to validate current classifications of expertise and specialisms, to ensure that it supports diversity in the field, and to ensure that it stays relevant in a changing world.
-
-## List of recommendations
-
-1.  Recommendation 1
-2.  Recommendation 2
-
 ## Background on this survey, aims and objectives
 
 ### This survey

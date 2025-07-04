@@ -288,7 +288,6 @@ CyBOK categories in the above are coloured blue, with our additional 5 categorie
 
 **Can we have the equivalent of the 'all comb responses' above, just for the scenarios?**
 
-
 Refer to @sec-scenario-combs-appendice
 
 ```{r}
