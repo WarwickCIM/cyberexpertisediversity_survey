@@ -128,18 +128,6 @@ alignment_personal_long |>
 
 While our sample size is too low to make general conclusions, we note that people identifying as cis-men were better aligned in all areas apart from *Cyber security audit and assurance*, and *Data protection and privacy*.
 
-**Below is captioned 'by gender' but actually has age data in it. Please can that be swapped**
-
-```{r}
-#| label: tbl-personal-alignment-scenario-gender
-#| tbl-cap: "Statistical summary of personal alignment to specialism by gender"
-alignment_personal_long |> 
-  select(age, alignment_index) |> 
-  group_by(age) |> 
-  skim() |> 
-  yank("numeric")
-```
-
 #### Age
 
 **Black dots as well as grey dots again**
