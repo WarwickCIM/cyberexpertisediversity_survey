@@ -14,6 +14,28 @@ Other CIM staff involved in putting the survey together and analysing the data i
 
 The survey aims to inform cyber policy discussions by generating new insights into the value and distribution of cyber expertise.
 
+## Citing {.unnumbered}
+
+You are free to reuse this dataset under the Licence conditions. If you use this dataset in your work, please cite it as below:
+
+> Spencer, M., Cámara-Menoyo, C., & Monteath, T. (2025). *Cyber Expertise Diversity: RISCS Report*. University of Warwick. <https://warwickcim.github.io/cyberexpertisediversity_survey/>
+
+For your convenience, we have also included a `CITATION.bib` file you may want to use to import it to your Reference Manager.
+
+``` bibtex
+@techreport{spencerCyberExpertiseDiversity2025,
+  title = {Cyber {{Expertise Diversity}}: {{RISCS Report}}},
+  author = {Spencer, Matt and {C{\'a}mara-Menoyo}, Carlos and Monteath, Timothy},
+  year = {2025},
+  month = sep,
+  institution = {University of Warwick},
+  langid = {english}
+}
+  
+```
+
+**TODO: get a DOI. We may be able to do that soon, once Warwick has implemented their own Figshare**
+
 ## Project's structure
 
 This repo uses quarto to create the online and pdf version of the report. Some important files and folders to note are:
