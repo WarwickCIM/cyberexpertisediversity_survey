@@ -20,6 +20,9 @@ max_alignment_scenarios <- max_alignment_scenarios_1_permutations |>
   bind_rows(max_alignment_scenarios_4_permutations) |> 
   bind_rows(max_alignment_scenarios_5_permutations) 
 
+responses <- read.csv('../data/raw/cyber_expertise_diversity_survey_responses.csv') |> 
+  mutate(recorded_date = dmy_hm(recorded_date))
+
 # GGplot defaults
 theme_set(theme_minimal())
 
@@ -51,10 +54,17 @@ max_alignment_scenarios |>
       .default = paste(n_permutations, "Permutations")),
     n_permutations_txt = as.factor(n_permutations_txt),
     n_permutations_txt = fct_relevel(n_permutations_txt, "Single specialism")) |> 
-  ggplot(aes(x = alignment_index)) +
-  geom_boxplot() +
+  ggplot(aes(x = alignment_index * 100)) +
+  geom_boxplot(outliers = FALSE) +
+  scale_x_continuous(expand = c(0, 0), limits = c(0, NA)) +
   facet_wrap(~n_permutations_txt, ncol = 1) +
-  labs(x = "Alignment index")
+  labs(x = "Alignment index") +
+  theme(
+    panel.grid.major.y = element_line(size=0.5, colour = "white"),
+    panel.grid.minor.y = element_line(size=0.1, colour = "white"),
+    axis.title.x=element_blank(),
+    axis.text.y=element_blank()
+  )
 ```
 
 =
@@ -62,6 +72,10 @@ max_alignment_scenarios |>
 Scenarios with a steep gradient show indicate significantly better alignment could be gained through teams of mixed specialists.
 
 **In the viz below, can there be more space to display the scenario names, perhaps allowing two lines of text for each? It doesn't matter if some are cut off, but a few more words would help.**
+
+_I have incereased the text length here too 120 characters, but I think it might be better if we manually change some of them_
+
+_Version 1_
 
 ```{r}
 #| label: fig-alignment-scenarios
@@ -80,28 +94,169 @@ max_alignment_scenarios |>
   left_join(scenario_names, by = join_by(id)) |>
   mutate(scenario_name = paste(id,"-", scenario_name),
          scenario_name = case_when(
-           nchar(scenario_name) > 55 ~ paste0(str_sub(scenario_name, end = 55), "..."),
+           nchar(scenario_name) > 120 ~ paste0(str_sub(scenario_name, end = 120), "..."),
            .default = scenario_name),
          # scenario_name = str_wrap(scenario_name, width = 30),
          scenario_name = as.factor(scenario_name),
          scenario_name = fct_reorder(scenario_name, id)) |> 
   pivot_longer(alignment_index) |> 
-  ggplot(aes(x = n_permutations, y = value)) + 
+  ggplot(aes(x = n_permutations, y = value * 100)) + 
   geom_line(color = "red", size = 1) +
   geom_point(color = "red")+ 
   # facet_wrap( ~id, ncol = 5, 
   #             labeller = as_labeller(
   #               function(string, suffix = scenario_names$scenario_name) paste(string, suffix)
   #             )) +   
-  facet_wrap( ~scenario_name, ncol = 5,
-              labeller = labeller(scenario_name = label_wrap_gen(width = 30))) + 
+  facet_wrap(~scenario_name, ncol = 5,
+            labeller = labeller(scenario_name = label_wrap_gen(width = 30))) + 
   labs(title = "Alignment indices per number of permutations and scenario",
        y = "Scenario Alignment index",
-       x = "Number of specialisms permutations")
+       x = "Number of specialisms permutations") +
+  theme(
+    panel.grid.major.x = element_line(size=0.5, colour = "white"),
+    panel.grid.minor.x = element_line(size=0.1, colour = "white")
+  )
 
 ```
 
+_Version 2_
+
+```{r}
+#| label: fig-alignment-scenarios_v2
+#| fig-cap: "Alignment indices per number of permutations and scenario"
+#| column: page
+#| fig-align: "center"
+scenario_names <- scenarios |> 
+  select(scenario_name) |> 
+  mutate(id = row_number())
+
+all_align <- max_alignment_scenarios |> 
+  select(id, n_permutations, alignment_index) |> 
+  left_join(scenario_names, by = join_by(id)) |>
+  mutate(scenario_name = paste(id,"-", scenario_name),
+         scenario_name = case_when(
+           nchar(scenario_name) > 25 ~ paste0(str_sub(scenario_name, end = 25), "..."),
+           .default = scenario_name),
+         scenario_name = as.factor(scenario_name),
+         scenario_name = fct_reorder(scenario_name, id)) |> 
+  pivot_longer(alignment_index)
+
+all_align <- all_align |> mutate(color = 'all')
+
+all_mean <- all_align |> group_by(n_permutations) |> summarise(value = mean(value, na.rm=TRUE))
+all_mean <- all_mean |> mutate(id = 0, scenario_name = 'all', name = 'alignment_index_all', color = 'mean')
+
+all_align <- rbind(all_align, all_mean)
+
+all_align <- all_align %>% filter(value > 0)
+# 
+# ggplot(all_align, aes(x = n_permutations, y = value, group = scenario_name, color = color)) + 
+#   geom_line(size = 1, alpha = 0.2) +
+#   geom_point(alpha = 0.2)
+
+
+ggplot(all_align, aes(x = n_permutations, y = value * 100, group = scenario_name)) + 
+  geom_line(data = all_align %>% filter(color == 'all'),
+    linewidth = 1, alpha = 0.2,
+    color = '#F3766E') +
+  geom_point(data = all_align %>% filter(color == 'all'),
+             alpha = 0.2,
+             color = '#F3766E') +
+  geom_line(data = all_align %>% filter(color != 'all'),
+    linewidth = 1, alpha = 1,
+    color = '#1CBDC2') +
+  geom_point(data = all_align %>% filter(color != 'all'),
+             alpha = 1,
+             color = '#1CBDC2',
+             size = 4) + 
+    labs(title = "Alignment indices per number of permutations and scenario",
+       y = "Scenario Alignment index",
+       x = "Number of specialisms permutations") +
+  theme_classic()
+
+```
+
+```{r}
+#| fig-width: 14
+
+sc_tab <- data.frame(`Column 1` = c(scenario_names$scenario_name[1:22]),
+                     `Column 2` = c(scenario_names$scenario_name[23:44]),
+                     `Column 3` = c(scenario_names$scenario_name[45:65], NA))
+
+opts <- options(knitr.kable.NA = "")
+
+sc_tab|>
+  kable()
+```
+
 ### Meta view of alignment vs interdisciplinarity
+
+_New Graph_
+_This is one of the graphs I made for the poster, I have included a basis version here, but can refine further if you would like to keep it_
+
+```{r}
+#| label: fig-alignment-persona-vs-scenarios
+#| fig-cap: "Personal vs Scenarios alignment"
+#| column: page
+#| fig-width: 14
+#| fig-align: "center"
+
+response_exp <- responses[8:33]
+response_exp <- response_exp |> tibble::rowid_to_column()             
+
+response_exp <- pivot_longer(response_exp,
+                            cols = names(response_exp)[2:27],
+                            values_to = 'values')
+
+response_exp <- response_exp |>
+  mutate(name = str_remove(name, 'expertise_comb_'))
+response_exp <- response_exp |>
+  mutate(comb_type = 'personal')
+
+
+response_sce <- responses[41:66]
+response_sce <- response_sce |> tibble::rowid_to_column()             
+
+response_sce <- pivot_longer(response_sce,
+                            cols = names(response_sce)[2:27],
+                            values_to = 'values')
+response_sce <- response_sce |>
+  mutate(name = str_remove(name, 'scenario_expertise_portfolio_'))
+response_sce <- response_sce |>
+  mutate(comb_type = 'scenario')
+
+response_long <- rbind(response_exp, response_sce)
+
+colnames(response_sce) <- c('rowid_sce', 'name_sce', 'values_sce', 'comb_type_sce')
+colnames(response_exp) <- c('rowid_exp', 'name_exp', 'values_exp', 'comb_type_exp')
+
+response_wide <- cbind(response_exp, response_sce)
+
+response_wide <- response_wide %>% mutate(Color = ifelse(values_exp >= values_sce, "green", "red"))
+response_wide <- response_wide %>% mutate(color_n = ifelse(values_exp >= values_sce, -100, 100))
+
+response_wide <- response_wide %>% mutate(color_n = color_n + values_exp + values_sce)
+
+
+response_wide <- response_wide |>
+                    group_by(name_exp) |>
+                    mutate(within_value_order = order(order(color_n,  decreasing = TRUE)))
+
+ggplot(response_wide) +
+  geom_segment(aes(y=values_exp, yend=values_sce, x=within_value_order, color = Color,), linewidth = 0.2) +
+  #geom_point( aes(x=x, y=value1), color=rgb(0.2,0.7,0.1,0.5), size=3 ) +
+  #geom_point( aes(x=x, y=value2), color=rgb(0.7,0.2,0.1,0.5), size=3 ) +
+  #theme_minimal() +
+  theme_classic() +
+theme(
+  strip.background = element_blank(),
+  #strip.text.x = element_blank(),
+  #strip.text.y.left = element_text(angle = 90),
+  #panel.spacing = unit(3, "pt"),
+) +
+  facet_wrap(~name_sce, ncol = 26, 
+             strip.position = 'bottom')
+```
 
 ### Qualitative analysis of the scenario descriptions
 
