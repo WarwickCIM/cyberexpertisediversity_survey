@@ -22,6 +22,42 @@ alignment_scenarios_long <- read.csv("../data/processed/alignment_scenarios_long
 
 ```
 
+```{r}
+## Additional data cleaning
+
+alignment_personal_long <- alignment_personal_long %>%
+  mutate(gender2 = case_when(gender == 'Male' ~ 'Men',
+                          .default = "Women, Non-Binary and 'Prefer not to Answer'"
+                          ))
+
+alignment_personal_long <- alignment_personal_long %>%
+  mutate(age2 = case_when(age == '20-25' ~ '20-29',
+                          age == '26-29' ~ '20-29',
+                          age == '30-39' ~ '30-39',
+                          age == '40-49' ~ '40-49',
+                          age == '50-59' ~ '50 and over',
+                          age == '60 and over' ~'50 and over',
+                          age == "I prefer not to answer" ~ "I prefer not to answer",
+                          age == NA ~ "I prefer not to answer"
+                          ))
+
+alignment_personal_long <- alignment_personal_long %>%
+  mutate(sexual_orientation2 = case_when(
+                          sexual_orientation == 'Yes' ~ 'Yes',
+                          sexual_orientation == 'No' ~ 'No',
+                          sexual_orientation == 'I prefer not to answer' ~ 'I prefer not to answer',
+                          .default = 'I prefer not to answer'
+                          ))
+
+alignment_personal_long <- alignment_personal_long %>%
+  mutate(uk_ethnic_origin2 = case_when(uk_ethnic_origin == 'White' ~ 'White',
+                                       uk_ethnic_origin == 'White' ~ 'White',
+                                       uk_ethnic_origin == 'Asian (Indian, Pakistani, Bangladeshi, Chinese, any other Asian background)' ~ 'Asian (Indian, Pakistani, Bangladeshi, Chinese, any other Asian background)',
+                                       uk_ethnic_origin == 'Prefer not to say' ~ 'Prefer not to say',
+                                       .default = "All other ethnicities"))
+
+```
+
 ## Professionalizing Cyber Security in the UK
 
 Concerns about the adequacy of the UK's cyber security workforce, and its ability to protect society, state and economy, have driven a number of interconnected policy efforts, aiming to:
@@ -46,7 +82,11 @@ In pursuit of these goals, the UKCSC developed a 'Cyber Careers Framework' which
 
 Professionalisation can be analysed sociologically through the lens of social openness and social closure. The concept of social relationships being 'open' or 'closed' has deep roots in sociology, and is a building block of Max Weber's classic analysis of social action [@weber2019economy]. Social closure is an umbrella term for the ways in which groups construct and maintain monopolies over opportunities, by including some people and excluding others. Understanding how and why closure occurs is key to our understanding of social structure and power. It can operate at multiple levels. Even where opportunities are formally open, groups may nevertheless be able to maintain control over resources through influencing access to jobs or status, for instance through cronyism or nepotism. Closure can create durable barriers to entry or 'glass ceilings' that limit opportunities. The durability of closure arises because, once they exist, monopolies on resources tend to create an alignment of interest among group members, as they have a common interest in maintaining the status quo and resisting change. Weber considered guilds to be an 'archetype' of closure where it is motivated by a cooperative monopolisation of (resource) acquisition, and under the rubric of 'occupational closure' the sociology of professions has studied professionalisation as an important example of social closure in the modern age.
 
+<<<<<<< HEAD
 There is a tension between occupational closure, and the moral projects of social liberalism that promote fair access and equality of opportunity. In the cases of the professions, the justification of occupational closure tends to stress a balance between competing moral principles: on the one hand, for buildings to be safe, for accounts to be trustworthy, for all to have fair and equal representation under the law, for healthcare to be safe, and so on, it is necessary to restrict who can practice engineering, accountancy, law and medicine to those who have met a certain standard of qualification and who have committed to accepted standards of conduct. On the other hand, while entry into these professions may be formally open and non-discriminatory, entrants often need considerable capital—social capital in the form of social networks giving access to opportunities for apprenticeships and experience, cultural capital in the form of the ability to 'fit in,' be 'taken seriously' and generally navigate within professional communities, and financial capital in the form of resources to support what are often extended periods of training or low pay at the start of careers—and so the institutional structure of the professions tends to reinforce existing social inequalities. It is not by accident that the traditional British middle classes are commonly referred to as 'the professional class'. Professional bodies, such as the British Medical Associations, the Law Society, the Association of Chartered Certified Accountants, and so on, thus tend to understand their mission as having two sides: one that focuses on ensuring standards of conduct and competence are met, and the other intervening to support equity of access to the profession, through special initiatives, financial support, community engagement, communication campaigns, and supporting research. In short, professional bodies' interest in equality, diversity and inclusion should not be seen as a separate side project, but as a necessary project that ensures the social legitimacy of occupational closure, by showing that the profession is a vehicle for, and not an obstacle to, fair access.
+=======
+There is a tension between occupational closure, and the moral projects of social liberalism that promote fair access and equality of opportunity. In the cases of the professions, the justification of occupational closure tends to stress a balance between competing moral principles: on the one hand, for buildings to be safe, for accounts to be trustworthy, for all to have fair and equal representation under the law, for healthcare to be safe, and so on, it is necessary to restrict who can practice engineering, accountancy, law and medicine to those who have met a certain standard of qualification and wgo have committed to accepted standards of conduct. On the other hand, while entry into these professions may be formally open and non-discriminatory, entrants often need considerable capital---social capital in the form of social networks giving access to opportunities for apprenticeships and experience, cultural capital in the form of the ability to 'fit in,' be 'taken seriously' and generally navigate within professional communities, and financial capital in the form of resources to support what are often extended periods of training or low pay at the start of careers---and so the institutional structure of the professions tends to reinforce existing social inequalities. It is not by accident that the traditional British middle classes are commonly referred to as 'the professional class'. Professional bodies, such as the British Medical Associations, the Law Society, the Association of Chartered Certified Accountants, and so on, thus tend to understand their mission as having two sides: one that focuses on ensuring standards of conduct and competence are met, and the other intervening to support equity of access to the profession, through special initiatives, financial support, community engagement, communication campaigns, and supporting research. In short, professional bodies' interest in equality, diversity and inclusion should not be seen as a separate side project, but as a necessary project that ensures the social legitimacy of occupational closure, by showing that the profession is a vehicle for, and not an obstacle to, fair access.
+>>>>>>> 369437240abcf6738d18ee879f1637f2ef98b8a7
 
 The success of the project to professionalise cyber security in the UK will depend on the ongoing legitimacy of bodies such as the UKCSC. Cyber security is a young profession, and legitimacy cannot rest on a received understanding of its members as an elite group (as with doctors or lawyers). It is crucial to show how diversity will be understood and managed in the years ahead, so that achievement can be celebrated, and the contribution of diversity to the delivery of cyber security outcomes is part of the vision for the sector.
 
@@ -94,11 +134,15 @@ alignment_personal_long |>
     Specialism = fct_reorder(Specialism, alignment_index)) |> 
   ggplot(aes(x = fct_rev(Specialism), y = alignment_index)) + 
   geom_boxplot() +
+  ggplot(aes(x = fct_rev(Specialism), y = alignment_index * 100)) + 
+  geom_boxplot(outliers = FALSE) +
   geom_jitter(alpha = 0.1, size = 0.8) + 
   labs(y = "Alignment index",
        x = "Specialisms") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1))
+  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1),
+        panel.grid.major.x = element_line(size=0.5, colour = "white"))
 ```
 
 **Matt to add a sentence on what the above shows.**
@@ -106,6 +150,8 @@ alignment_personal_long |>
 ### Alignment based on key attributes
 
 #### Gender
+
+**Option 1**
 
 ```{r}
 #| label: fig-personal-alignment-scenario-gender
@@ -117,13 +163,41 @@ alignment_personal_long |>
 alignment_personal_long |> 
   ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index)) + 
   geom_boxplot() +
+  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index * 100)) + 
+  geom_boxplot(outliers = FALSE) +
   geom_jitter(alpha = 0.1, size = 0.8) + 
   labs(title = "Personal alignment to specialism by gender ",
        y = "Alignment index",
        x = "Specialisms") +
   facet_wrap(~gender, ncol = 1) +
+  facet_wrap(~gender2, ncol = 1) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1))
+  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1),
+        panel.grid.major.x = element_line(size=0.5, colour = "white"))
+```
+
+**Option 2**
+
+```{r}
+#| label: fig-personal-alignment-scenario-gender_v2
+#| fig-cap: "Personal alignment to specialism by gender"
+#| column: page
+#| fig-width: 14
+#| fig-align: "center"
+alignment_personal_long |> 
+  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index * 100, fill=gender2)) +
+  geom_boxplot(outliers = FALSE, alpha = 0.8) +
+  scale_fill_manual(values = c("#3880b1", "#ED753E")) +
+  geom_jitter(alpha = 0.1, size = 0.8) + 
+  labs(title = "Personal alignment to specialism by gender ",
+       y = "Alignment index",
+       x = "Specialisms") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1),
+        panel.grid.major.x = element_line(size=0.5, colour = "white",),
+        legend.position="top"
+)
 ```
 
 While our sample size is too low to make general conclusions, we note that people identifying as cis-men were better aligned in all areas apart from *Cyber security audit and assurance*, and *Data protection and privacy*.
@@ -131,6 +205,7 @@ While our sample size is too low to make general conclusions, we note that peopl
 #### Age
 
 **Black dots as well as grey dots again**
+**Option 1**
 
 ```{r}
 #| label: fig-personal-alignment-scenario-age
@@ -142,18 +217,70 @@ While our sample size is too low to make general conclusions, we note that peopl
 alignment_personal_long |> 
   ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index)) + 
   geom_boxplot() +
+  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index * 100)) + 
+  geom_boxplot(outliers = FALSE) +
   geom_jitter(alpha = 0.1, size = 0.8) + 
   labs(title = "Personal alignment to specialism by age ",
        y = "Alignment index",
        x = "Specialisms") +
   facet_wrap(~age, ncol = 1) +
+  facet_wrap(~age2, ncol = 1) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1),
+        panel.grid.major.x = element_line(size=0.5, colour = "white"))
+```
+
+**Option 2: color changes tbc later**
+
+```{r}
+#| label: fig-personal-alignment-scenario-age_v2
+#| fig-cap: "Personal alignment to specialism by age"
+#| column: page
+#| fig-width: 14
+#| fig-align: "center"
+
+alignment_personal_long |> 
+  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index * 100, fill=age2)) +
+  geom_boxplot(outliers = FALSE, alpha = 0.8) +
+  #scale_fill_manual(values = c("#3880b1", "#ED753E")) +
+  geom_jitter(alpha = 0.1, size = 0.8) + 
+  labs(title = "Personal alignment to specialism by Age ",
+       y = "Alignment index",
+       x = "Specialisms") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1),
+        panel.grid.major.x = element_line(size=0.5, colour = "white",),
+        legend.position="top"
+)
+```
+
+**Option 3: bump chart**
+
+```{r}
+
+age_bump <- alignment_personal_long |> 
+  group_by(age2, Specialism) |>
+  summarise(mean = mean(alignment_index))
+
+
+age_bump <- age_bump |>
+    group_by(Specialism) %>% 
+    mutate(rank = rank(mean , ties.method = "first"))
+
+age_bump |>
+  ggplot(aes(y = age2, x = Specialism, group = rank, color=age2)) +
+  geom_bump(linewidth = 0.6, smooth = 6) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1))
+
+
 ```
 
 **Can we have an 'alluvial' visualisation based just on the mean for each of the above. So with age groups on the X axis, showing how the ordering of best to worst alignment across the specialisms re-orders as you move between the age groups?**
 
 #### Sexual orientation
+
+**Option 1**
 
 ```{r}
 #| label: fig-personal-alignment-scenario-sexual-orientation
@@ -161,7 +288,9 @@ alignment_personal_long |>
 #| column: page
 #| fig-width: 14
 #| fig-height: 12
+#| fig-height: 8
 #| fig-align: "center"
+
 alignment_personal_long |> 
   ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index)) + 
   geom_boxplot() +
@@ -170,14 +299,44 @@ alignment_personal_long |>
        y = "Alignment index",
        x = "Specialisms") +
   facet_wrap(~sexual_orientation, ncol = 1) +
+  facet_wrap(~sexual_orientation2, ncol = 1) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1))
+  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1),
+       panel.grid.major.x = element_line(size=0.5, colour = "white")
+)
 
+```
+
+**Option 2 - colors tbc**
+
+```{r}
+#| label: fig-personal-alignment-scenario-sexual-orientation_v2
+#| fig-cap: "Personal alignment to specialism by sexual orientation"
+#| column: page
+#| fig-width: 14
+#| fig-align: "center"
+
+alignment_personal_long |> 
+  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index * 100, fill=sexual_orientation2)) +
+  geom_boxplot(outliers = FALSE, alpha = 0.8) +
+  #scale_fill_manual(values = c("#3880b1", "#ED753E")) +
+  geom_jitter(alpha = 0.1, size = 0.8) + 
+  labs(title = "Personal alignment to specialism by Sexual Orientation ",
+       y = "Alignment index",
+       x = "Specialisms") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1),
+        panel.grid.major.x = element_line(size=0.5, colour = "white",),
+        legend.position="top"
+)
 ```
 
 Our study shows encouraging indicative results that sexual orientation does not significantly map on to differences in alignment with specialisms.
 
 #### Ethnicity
+
+**Option 1**
 
 ```{r}
 #| label: fig-personal-alignment-scenario-ethnicity
@@ -188,14 +347,43 @@ Our study shows encouraging indicative results that sexual orientation does not 
 #| fig-align: "center"
 alignment_personal_long |> 
   ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index)) + 
+  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index * 100)) + 
   geom_boxplot() +
   geom_jitter(alpha = 0.1, size = 0.8) + 
   labs(title = "Personal alignment to specialism by ethnicity",
        y = "Alignment index",
        x = "Specialisms") +
   facet_wrap(~uk_ethnic_origin, ncol = 1) +
+  facet_wrap(~uk_ethnic_origin2, ncol = 1) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1))
+  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1),
+        panel.grid.major.x = element_line(size=0.5, colour = "white",),
+)
+```
+
+**Option 2**
+
+```{r}
+#| label: fig-personal-alignment-scenario-ethnicity_v2
+#| fig-cap: "Personal alignment to specialism by ethnicity"
+#| column: page
+#| fig-width: 14
+#| fig-align: "center"
+
+alignment_personal_long |> 
+  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index * 100, fill=uk_ethnic_origin2)) +
+  geom_boxplot(outliers = FALSE, alpha = 0.8) +
+  #scale_fill_manual(values = c("#3880b1", "#ED753E")) +
+  geom_jitter(alpha = 0.1, size = 0.8) + 
+  labs(title = "Personal alignment to specialism by Sexual Orientation ",
+       y = "Alignment index",
+       x = "Specialisms") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1),
+        panel.grid.major.x = element_line(size=0.5, colour = "white",),
+        legend.position="top"
+)
 ```
 
 **Is the mean for 'white' highest in all areas? Excluding 'prefer not to say'?**

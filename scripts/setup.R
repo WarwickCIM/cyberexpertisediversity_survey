@@ -11,6 +11,7 @@ library(patchwork)
 library(skimr)
 library(stringr)
 library(tidyr)
+library(ggbump)
 
 # files.sources = list.files("R/")
 # sapply(paste0("../R/", files.sources), source)
