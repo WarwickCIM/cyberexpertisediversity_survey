@@ -47,33 +47,6 @@ skim(responses)
 skim(scenarios)
 ```
 
-## Alignment metric
-
-Explain how the metric was calculated
-
-Given a set of **test values** $X:[x_0, x_1, ... x_n ]$ and a corresponding set of **reference values** $Y:[y_0, y_1, ... y_n ]$
-
-$$
-Asc_{(x,y)} = \frac{\sum I(X)}{\sum Y}
-$$
-
-Where the indicator function $I(X)$ is defined as follows:
-
--   $I(X) = x_m$ when $x_m <= y_m$
--   $I(X) = y_m$ when $x_m > y_m$
-
-All the indicator function does is say that a person can’t get ‘credit’ for overshooting the reference values (which could offset their deficit in other areas). So it takes the reference value as a ceiling in each tooth of the test comb.
-
-Computations for the alignment metric can be audited at the file `alignment_metric.R`
-
-### Expertise Alignment
-
-In this case, we are interested in how well
-
-### Scenarios alignment
-
-We are interested in how well the specialisms align with the scenarios. To do so, we will be calculating an *scenario alignment index (Asc)*, where the test values correspond to , and the reference values correspond to
-
 ## Megacomb
 
 ### Expertise comb
