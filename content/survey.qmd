@@ -46,13 +46,13 @@ Anonymised results can be found in a companion repository [@Camara-Menoyo_The_Cy
 
 ### The comb concept {#sec-comb}
 
-The survey is built around the metaphor of a ‘broken comb’ of expertise, with each ‘tooth’ in the comb representing one area of expertise. For blocks 2 and 3, we asked survey participants to imagine their expertise as a kind of comb where each ‘tooth’ of the comb represents one area of specialism. Some cyber security professionals have one or two areas in which they have a lot of expertise, other areas in which they have a little, and some in which they have none. Some people have a broad base; others are highly specialised. It can depend on domain, career stage, and individual personality.
+The survey is built around the metaphor of a 'broken comb' of expertise, with each 'tooth' in the comb representing one area of expertise. For blocks 2 and 3, we asked survey participants to imagine their expertise as a kind of comb where each 'tooth' of the comb represents one area of specialism. Some cyber security professionals have one or two areas in which they have a lot of expertise, other areas in which they have a little, and some in which they have none. Some people have a broad base; others are highly specialised. It can depend on domain, career stage, and individual personality.
 
 ::: aside
 ![The broken comb metaphor, as suggested by John R.](/media/expertise_comb.png)
 :::
 
-The survey used an interface based on a series of sliders through which participants could express how they saw their own ‘broken combs’ of expertise, and to define similar 'broken combs' reflecting the combinations of expertise required to address cyber security problems and challenges that they tackle in their work.
+The survey used an interface based on a series of sliders through which participants could express how they saw their own 'broken combs' of expertise, and to define similar 'broken combs' reflecting the combinations of expertise required to address cyber security problems and challenges that they tackle in their work.
 
 We based the 'teeth' of the comb on those developed by the 'CyBOK' project [@cybok], extended slightly to account for areas that are not accounted for in the standard CyBOK classification.
 
@@ -85,7 +85,7 @@ With this, we will be calculating two types of alignments:
 
 -   **Personal alignment**, where test values ($X$) are the personal comb (responses) and the reference values ($Y$) are the specialism comb. This gives us a sense of how close respondents' combs are to the different kinds of specialism.
 
--   **Specialism alignment**, where test values ($X$) are the specialism comb and the reference values ($Y$) are the scenario comb. In this case, we are interested in how well the specialisms as defined in the Cyber Careers Framework provide the kind of expertise required to address each problem defined in the provided scenarios. We look at this for individual specialisms, and for combinations of specialisms in permutations up to 5.
+-   **Scenario alignment**, where test values ($X$) are the specialism comb and the reference values ($Y$) are the scenario comb. In this case, we are interested in how well the specialisms as defined in the Cyber Careers Framework provide the kind of expertise required to address each problem defined in the provided scenarios. We look at this for individual specialisms, and to look at combinations of specialisms.
 
 In both cases, the **alignment index** will result in a number between `0` and `1`, where `1` means perfect alignment between the test value and the reference value and `0` means not aligned at all.
 
@@ -221,8 +221,10 @@ kable(industry_table)
 ```{r}
 #| label: fig-personal-comb-aggregate
 #| fig-cap: "Participants' responses on their personal expertise combs, in aggregate"
+#| fig-height: 3
 
-response_all <- responses[8:33]
+
+response_all <- responses[8:33] # selecting expertise responses only
 
 response_all <- pivot_longer(response_all, 
                                 cols = names(response_all), 
@@ -235,14 +237,56 @@ response_all$name <- gsub("expertise_comb_", '', response_all$name)
 response_all <- drop_na(response_all)
 
 ggplot(response_all, aes(all_points, all_name)) +
-  geom_quasirandom(size= 0.5, alpha=0.5) +
-  geom_boxplot(width=0.05) +
+  geom_quasirandom(size= 0.5, alpha=0.1, color="black") +
+  geom_boxplot(width=0.05, alpha=0.75, color="#3880b1") +
   xlab('') + 
   ylab('') +
-  ggtitle('All comb responses')
+  ggtitle('All Expertise Responses') +
+  theme(
+    axis.title.x=element_blank(),
+    axis.text.y=element_blank(),
+    panel.background = element_rect(fill="white"),
+    panel.grid.minor.x = element_line(size=0.5, colour = "grey"),
+    panel.grid.major.x = element_line(size=0.25, colour = "grey"),
+    #aspect.ratio=1/5
+  )
 ```
 
-This is a **{WHAT KIND OF PLOT?\]** showing all the personal comb responses.
+```{r}
+#| label: fig-scenario-comb-aggregate
+#| fig-cap: "Participants' responses on their personal scenario combs, in aggregate"
+#| fig-height: 3
+
+
+scenario_all <- responses[41:66] # selecting scenario responses only
+
+scenario_all <- pivot_longer(scenario_all, 
+                                cols = names(scenario_all), 
+                                values_to = 'all_points')
+
+scenario_all$all_name <-  'name'
+# chopping off the name variable
+scenario_all$name <- gsub("expertise_comb_", '', scenario_all$name)
+# 87 NAs
+scenario_all <- drop_na(scenario_all)
+
+ggplot(scenario_all, aes(all_points, all_name)) +
+  geom_quasirandom(size= 0.5, alpha=0.1, color="black") +
+  geom_boxplot(width=0.05, alpha=0.5, color="#3880b1") +
+  xlab('') + 
+  ylab('') +
+  ggtitle('All Scenario Responses') +
+  theme(
+    axis.title.x=element_blank(),
+    axis.text.y=element_blank(),
+    panel.background = element_rect(fill="white"),
+    panel.grid.minor.x = element_line(size=0.5, colour = "grey"),
+    panel.grid.major.x = element_line(size=0.25, colour = "grey"),
+    #aspect.ratio=1/5
+  )
+```
+
+This is a **beeswarm plot overlaid with a box and wisker plot** showing all the personal comb responses.
 
 @fig-personal-comb-aggregate shows all the personal comb responses. Respondents were using the full range of the sliders, with `r round(100 / nrow(response_all) * nrow(filter(response_all, all_points == 0)), digits = 1)`% responses being set to 0 and `r round(100 / nrow(response_all) * nrow(filter(response_all, all_points == 100)), digits = 1)`% set to 1.
 
@@ -261,12 +305,12 @@ responses |>
   arrange(name) |> 
   mutate(
     box_color = case_when(
-      name %in% c("cloud security", "data science ai for cyber security", "security culture narrative and communication", "political aspects of cyber security", "social organisation strategy and process") ~ "#32a860",
-     TRUE ~ "#2D71A6"),
+      name %in% c("cloud security", "data science ai for cyber security", "security culture narrative and communication", "political aspects of cyber security", "social organisation strategy and process") ~ "#ED753E",
+     TRUE ~ "#3880b1"),
     box_color = as.factor(box_color)
   ) |>
   ggplot(aes(x = name, y = value, fill = box_color)) + 
-  geom_boxplot() +
+  geom_boxplot(outliers=FALSE) +
   geom_jitter(alpha = 0.1, size = 0.8) + 
   labs(
     title = "Personal comb",
@@ -276,8 +320,9 @@ responses |>
   ) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1),
-        legend.position="top") +
-  scale_fill_manual(values = c("#2D71A6", "#32a860"), labels=c('CyBOK KAs', 'Additional categories'))
+        legend.position="top",
+        panel.grid.major.x = element_line(size=0.5, colour = "white")) +
+  scale_fill_manual(values = c("#3880b1", "#ED753E"), labels=c('CyBOK KAs', 'Additional categories'))
 ```
 
 **Why are some dots black and some grey?? Can they be all the same colour?**
@@ -302,11 +347,11 @@ scenarios |>
          name = str_replace_all(name, "_", " ")) |> 
   arrange(name) |> 
     mutate(box_color = case_when(
-     name %in% c("cloud security", "data science ai for cyber security", "security culture narrative and communication", "political aspects of cyber security", "social organisation strategy and process") ~ "#c7ebd5",
-     TRUE ~ "#B7D4E3"
+     name %in% c("cloud security", "data science ai for cyber security", "security culture narrative and communication", "political aspects of cyber security", "social organisation strategy and process") ~ "#ED753E",
+     TRUE ~ "#3880b1"
    )) |>
   ggplot(aes(x = name, y = value, fill = box_color)) + 
-  geom_boxplot() +
+  geom_boxplot(outliers=FALSE) +
   geom_jitter(alpha = 0.1, size = 0.8) + 
 labs(
     title = "Scenarios comb",
@@ -316,8 +361,9 @@ labs(
   ) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1),
-        legend.position="top") +
-  scale_fill_manual(values = c("#B7D4E3", "#c7ebd5"), labels=c('CyBOK KAs', 'Additional categories'))
+        legend.position="top",
+        panel.grid.major.x = element_line(size=0.5, colour = "white")) +
+  scale_fill_manual(values = c("#3880b1", "#ED753E"), labels=c('CyBOK KAs', 'Additional categories'))
 ```
 
 **To be completed by Matt once we've got the 'all combs': it looks like there is more of a skewed distribution around certain categories in the scenarios compared with personal combs. Probably because people think of incidents more readily when asked about problems/scenarios.**
