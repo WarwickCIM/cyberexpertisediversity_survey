@@ -42,77 +42,6 @@ In this section we were interested in how one might analyse the interdisciplinar
 
 ### Looking at specialisms alignment with the scenarios
 
-We calculated the alignment of the UKCSC specialisms with the scenarios our respondents told us about. We were interested in how alignment scores would increase if we allowed permutations of two or more specialisms. @fig-alignment-scenarios-overview shows that, on average, the alignment index increases as we increase the number of permutations (this is, these scenarios are more interdisciplinary). While this could be expected, this is not the case for every scenario, as shown in @fig-alignment-scenarios, which provides a more nuanced view by displaying how the alignment score changes for every scenario.
-
-```{r}
-#| label: fig-alignment-scenarios-overview
-#| fig-cap: "Alignment indices per number of permutations"
-max_alignment_scenarios |> 
-  mutate(
-    n_permutations_txt = case_when(
-      n_permutations == 1 ~ "Single specialism",
-      .default = paste(n_permutations, "Permutations")),
-    n_permutations_txt = as.factor(n_permutations_txt),
-    n_permutations_txt = fct_relevel(n_permutations_txt, "Single specialism")) |> 
-  ggplot(aes(x = alignment_index * 100)) +
-  geom_boxplot(outliers = FALSE) +
-  scale_x_continuous(expand = c(0, 0), limits = c(0, NA)) +
-  facet_wrap(~n_permutations_txt, ncol = 1) +
-  labs(x = "Alignment index") +
-  theme(
-    panel.grid.major.y = element_line(size=0.5, colour = "white"),
-    panel.grid.minor.y = element_line(size=0.1, colour = "white"),
-    axis.title.x=element_blank(),
-    axis.text.y=element_blank()
-  )
-```
-
-Scenarios with a steep gradient indicate significantly better alignment could be gained through mixed teams of specialists.
-
-```{r}
-#| label: fig-alignment-scenarios
-#| fig-cap: "Alignment indices per number of permutations and scenario"
-#| column: page
-#| fig-width: 14
-#| fig-height: 25
-#| fig-align: "center"
-
-scenario_names <- scenarios |> 
-  select(scenario_name) |> 
-  mutate(id = row_number())
-
-max_alignment_scenarios |> 
-  select(id, n_permutations, alignment_index) |> 
-  left_join(scenario_names, by = join_by(id)) |>
-  mutate(scenario_name = paste(id,"-", scenario_name),
-         scenario_name = case_when(
-           nchar(scenario_name) > 120 ~ paste0(str_sub(scenario_name, end = 120), "..."),
-           .default = scenario_name),
-         # scenario_name = str_wrap(scenario_name, width = 30),
-         scenario_name = as.factor(scenario_name),
-         scenario_name = fct_reorder(scenario_name, id)) |> 
-  pivot_longer(alignment_index) |> 
-  ggplot(aes(x = n_permutations, y = value * 100)) + 
-  geom_line(color = "red", size = 1) +
-  geom_point(color = "red")+ 
-  # facet_wrap( ~id, ncol = 5, 
-  #             labeller = as_labeller(
-  #               function(string, suffix = scenario_names$scenario_name) paste(string, suffix)
-  #             )) +   
-  facet_wrap(~scenario_name, ncol = 5,
-            labeller = labeller(scenario_name = label_wrap_gen(width = 30))) + 
-  labs(title = "Alignment indices per number of permutations and scenario",
-       y = "Scenario Alignment index",
-       x = "Number of specialisms permutations") +
-  theme(
-    panel.grid.major.x = element_line(size=0.5, colour = "white"),
-    panel.grid.minor.x = element_line(size=0.1, colour = "white")
-  )
-
-```
-
-### Meta view of alignment vs interdisciplinarity
-
 *New Graph* *This is one of the graphs I made for the poster, I have included a basis version here, but can refine further if you would like to keep it*
 
 ```{r}
@@ -179,7 +108,78 @@ theme(
              strip.position = 'bottom')
 ```
 
-### Qualitative analysis of the scenario descriptions
+#### Alignment of permutations of multiple specialisms with problem scenarios
+
+We calculated the alignment of the UKCSC specialisms with the scenarios our respondents told us about. We were interested in how alignment scores would increase if we allowed permutations of two or more specialisms. @fig-alignment-scenarios-overview shows that, on average, the alignment index increases as we increase the number of permutations (this is, these scenarios are more interdisciplinary). While this could be expected, this is not the case for every scenario, as shown in @fig-alignment-scenarios, which provides a more nuanced view by displaying how the alignment score changes for every scenario.
+
+```{r}
+#| label: fig-alignment-scenarios-overview
+#| fig-cap: "Alignment indices per number of permutations"
+max_alignment_scenarios |> 
+  mutate(
+    n_permutations_txt = case_when(
+      n_permutations == 1 ~ "Single specialism",
+      .default = paste(n_permutations, "Permutations")),
+    n_permutations_txt = as.factor(n_permutations_txt),
+    n_permutations_txt = fct_relevel(n_permutations_txt, "Single specialism")) |> 
+  ggplot(aes(x = alignment_index * 100)) +
+  geom_boxplot(outliers = FALSE) +
+  scale_x_continuous(expand = c(0, 0), limits = c(0, NA)) +
+  facet_wrap(~n_permutations_txt, ncol = 1) +
+  labs(x = "Alignment index") +
+  theme(
+    panel.grid.major.y = element_line(size=0.5, colour = "white"),
+    panel.grid.minor.y = element_line(size=0.1, colour = "white"),
+    axis.title.x=element_blank(),
+    axis.text.y=element_blank()
+  )
+```
+
+Scenarios with a steep gradient indicate significantly better alignment could be gained through mixed teams of specialists. The alignment score for permutations of specialists is calculated by creating combined 'combs' from the maximum values. We do this for all possible permutations, up to a maximum of 5, and plot the maximum alignment for each team size.
+
+```{r}
+#| label: fig-alignment-scenarios
+#| fig-cap: "Alignment indices per number of permutations and scenario"
+#| column: page
+#| fig-width: 14
+#| fig-height: 25
+#| fig-align: "center"
+
+scenario_names <- scenarios |> 
+  select(scenario_name) |> 
+  mutate(id = row_number())
+
+max_alignment_scenarios |> 
+  select(id, n_permutations, alignment_index) |> 
+  left_join(scenario_names, by = join_by(id)) |>
+  mutate(scenario_name = paste(id,"-", scenario_name),
+         scenario_name = case_when(
+           nchar(scenario_name) > 120 ~ paste0(str_sub(scenario_name, end = 120), "..."),
+           .default = scenario_name),
+         # scenario_name = str_wrap(scenario_name, width = 30),
+         scenario_name = as.factor(scenario_name),
+         scenario_name = fct_reorder(scenario_name, id)) |> 
+  pivot_longer(alignment_index) |> 
+  ggplot(aes(x = n_permutations, y = value * 100)) + 
+  geom_line(color = "red", size = 1) +
+  geom_point(color = "red")+ 
+  # facet_wrap( ~id, ncol = 5, 
+  #             labeller = as_labeller(
+  #               function(string, suffix = scenario_names$scenario_name) paste(string, suffix)
+  #             )) +   
+  facet_wrap(~scenario_name, ncol = 5,
+            labeller = labeller(scenario_name = label_wrap_gen(width = 30))) + 
+  labs(title = "Alignment indices per number of permutations and scenario",
+       y = "Scenario Alignment index",
+       x = "Number of specialisms permutations") +
+  theme(
+    panel.grid.major.x = element_line(size=0.5, colour = "white"),
+    panel.grid.minor.x = element_line(size=0.1, colour = "white")
+  )
+
+```
+
+### Discussion
 
 #### Lowest alignment scenarios
 
@@ -187,11 +187,11 @@ Scenarios that have lower overall alignment tend to be scenarios where responden
 
 #### Most interdisciplinary scenarios
 
-Scenarios that had a steep gradient may be interpreted as particularly interdisciplinary. *Scenario 7: Protecting Legacy equipment against emerging AI/PQC Threat*, for instance combined significant elements of hardware security, cryptography, network security, authentication, authorisation and accountability, and distributed systems security. This hit a combination of expertise that is not directly associated within existing specialisms. No UKCSC specialism, for instance, is identified with authentication, authorisation and accountability *and* hardware security. This scenario is about protecting legacy equipment in a CNI context, and while this is a specific context it is a widely recognised problem scenario.
+Scenarios that had a steep gradient may be interpreted as particularly interdisciplinary. The adequacy of a team to tackle these scenarios improves significantly if more different specialists are added. *Scenario 7: Protecting Legacy equipment against emerging AI/PQC Threat*, for instance combined significant elements of 'hardware security', 'cryptography', 'network security', 'authentication, authorisation and accountability', and 'distributed systems security'. Scenarios like this hit a combination of expertise that is not directly associated within existing specialisms. No UKCSC specialism, for instance, is identified with 'authentication, authorisation and accountability' *and* 'hardware security'. This scenario is about protecting legacy equipment in a CNI context, and while this is a specific context it is a widely recognised problem scenario.
 
-Scenario 27: incident response was similarly intriguing for its interdisciplinarity, given that there is a specialism called 'incident response'. The respondent had specified the problem scenario including the requirement for very high expertise in authorisation, authentication and accountability, and quite high in operating systems and virtualization security. Neither of these are taken to be of even 'wider' relevance to incident response or digital forensics specialisms.
+Scenario 27: incident response was intriguing. It was also very 'interdisciplinarity' by this gradient heuristic. But this is puzzling because there is a specialism called 'incident response' that one might presume ought to align well on its own. The respondent had specified the problem scenario including the requirement for very high expertise in 'authorisation, authentication and accountability', and quite high in 'operating systems and virtualization security'. Neither of these are taken to be of even 'wider' relevance to incident response or digital forensics specialisms.
 
-Both scenarios 7 and 27 provide anecdotal evidence that the UKCSC CyBOK mapping may itself require further thought. Further research into expertise diversity could help test this hypothesis and improve the mapping.
+Both scenarios 7 and 27 provide anecdotal evidence that the Cyber Careers Framework's CyBOK mapping may itself require further development. Further research into expertise diversity could help test this hypothesis and generate insights to improve the mapping.
 
 Scenarios 61 and 62 were more specialist problems
 
@@ -227,8 +227,8 @@ Finally, some scenarios were specified in ways that heavily emphasised the need 
 Often people think that cyber maturity, resilience, and response is just for the cyber or IT teams to do. Promoting that it there are multiple groups that will be affected and impacted by a successful compromise and making them aware and appreciate their role to play and to consider what their individual playbook would look like is a difficult but important task to achieve. Evidence based metrics to promote the risk and then cyber resilience exercises involving key stakeholders that then promote wider engagement down the line is a necessary tool to have in your armour.
 :::
 
-Incident response is supposed to be captured within the existing specialisms, but this respondent specifies the problem in a way that emphasises expertise that is not considered within the Careers Framework. In particular, the organisational, human factors and culture aspects are deemed particularly important. Again anecdotal, examples like this are suggestive of how the process of professionalisation may be refined, understanding where the hidden areas of expertise are that are needed. Further research may help refinement of definitions, to identify areas in which the expertise needed to tackle problems is changing, and to identify areas in which there are diverse, competing, problem definitions. In the latter case, it would be important for policymakers to ensure that problem definitions enshrined in standard classifications do not suppress innovation by imposing a standard vision of what the solution should look like.
+Incident response is supposed to be captured within the existing specialisms, but this respondent specifies the problem in a way that emphasises expertise that is not considered within the Careers Framework. In particular, the organisational, human factors and culture aspects are deemed particularly important. Again anecdotal, examples like this are suggestive of how the process of professionalising cyber security may benefit from further research. Given that several respondents voiced scepticism about the value of certifications, ensuring alignment with real world problems is likely to be crucial to long term success. This means examining the adequacy of the current framework, examining how problems are changing with new technology and new threats, and examining problem definition more broadly.
 
 ## Recommendations
 
-We recommend that the UK government supports further research into cyber security expertise diversity, including looking at cyber security problem scenarios, to identify gaps in existing professional classifications and to help validate the Career Framework CyBOK mapping.
+We recommend that the UK government supports further research into cyber security expertise diversity, including looking at cyber security problem scenarios, to identify present and future gaps in existing professional classifications and to help validate the Career Framework's CyBOK mapping.
