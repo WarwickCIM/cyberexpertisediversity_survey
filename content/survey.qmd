@@ -30,7 +30,7 @@ To address our research aims, we designed a survey to gather data on the diversi
 
 1.  A first block about the respondent, where we asked them 5 questions about their job and workplace (i.e. role, number of years of experience, size and sector of their workplace) followed by an optional set of six questions about EDI (i.e. age bracket, disabilities, ethnic origin, gender and sexual orientation).
 
-2.  A block called "Profile expertise" (or expertise comb -see @sec-comb below), where we asked participants to rate their perceived expertise around 26 areas, 21 areas identified by the Cyber Security Body Of Knowledge (CyBOK) [@cybok] and 5 extra categories added by the authors[^survey-1].
+2.  A block called "Expertise profile" (or expertise comb -see @sec-comb below), where we asked participants to rate their perceived expertise around 26 areas, 21 areas identified by the Cyber Security Body Of Knowledge (CyBOK) [@cybok] and 5 extra categories added by the authors[^survey-1].
 
 3.  A block called "Problems or Challenges" (or scenarios comb), where we asked participants to describe one or more scenarios from their working experience in which resolving a problem required a combination of forms of expertise to be brought together. For every scenario, respondents were asked to provide a brief title and description, state whether it was related to their current job (and if negative, to provide information about job and workplace), and rate the amount of expertise needed to address the scenario, using the same 26 categories used in the previous block.
 
@@ -38,7 +38,7 @@ To address our research aims, we designed a survey to gather data on the diversi
 
 [^survey-1]: The 26 categories used were: `r categories`
 
-The survey was created using Qualtrics, and was configured to only accept responses from people based in the UK, and not to collect personal details. In order to allow participants to withdraw after participation, the survey displayed their response ID on the first page, which they could refer to should they want their responses to be deleted. After obtaining ethical approval from the University of Warwick's Humanities and Social Sciences Research Ethics Committee (HSSREC)[^survey-2], it was distributed on social media, and via a number of industry mailing lists. It was accepting responses between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")` .
+The survey was created using Qualtrics, and was configured to only accept responses from people based in the UK, and not to collect personal details. In order to allow participants to withdraw after participation, the survey displayed their response ID on the first page, which they could refer to should they want their responses to be deleted. After obtaining ethical approval from the University of Warwick's Humanities and Social Sciences Research Ethics Committee (HSSREC)[^survey-2], it was distributed on social media, and via a number of industry mailing lists. The survey was accepting responses between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")`.
 
 [^survey-2]: <https://warwick.ac.uk/services/ris/research-integrity>
 
@@ -49,18 +49,18 @@ Anonymised results can be found in a companion repository [@Camara-Menoyo_The_Cy
 The survey is built around the metaphor of a 'broken comb' of expertise, with each 'tooth' in the comb representing one area of expertise. For blocks 2 and 3, we asked survey participants to imagine their expertise as a kind of comb where each 'tooth' of the comb represents one area of specialism. Some cyber security professionals have one or two areas in which they have a lot of expertise, other areas in which they have a little, and some in which they have none. Some people have a broad base; others are highly specialised. It can depend on domain, career stage, and individual personality.
 
 ::: aside
-![The broken comb metaphor, as suggested by John R.](/media/expertise_comb.png)
+![The broken comb metaphor, which was suggested to us by John R.](/media/expertise_comb.png)
 :::
 
 The survey used an interface based on a series of sliders through which participants could express how they saw their own 'broken combs' of expertise, and to define similar 'broken combs' reflecting the combinations of expertise required to address cyber security problems and challenges that they tackle in their work.
 
-We based the 'teeth' of the comb on those developed by the 'CyBOK' project [@cybok], extended slightly to account for areas that are not accounted for in the standard CyBOK classification.
+We based the 'teeth' of the comb on the knowledge area classification developed by the 'CyBOK' project [@cybok], extended slightly to account for areas that are not accounted for in the standard CyBOK classification.
 
 We thus gathered three types of combs to support the analysis.
 
 -   The **personal comb** is just the values that a person put in for their own expertise using the sliders. For alignment calculations we only use the CyBOK values.
 
--   The **specialism comb** is the CyBOK values that correspond to each specialism: we create these by assigning a numeric value to what CyBOK considers to be core, related or wider TO WHAT? CHECK NAMING.
+-   The **specialism comb** is a representation of the Cyber Careers Framework CyBOK mapping: we create these by assigning a numeric value to what the UKCSC considers to be 'core', 'related' or 'wider' relevance to each specialism.
 
 -   The **scenario comb** is the values that a person put in for that specific scenario using the sliders. For alignment calculations we only use the CyBOK values.
 
@@ -85,7 +85,7 @@ With this, we will be calculating two types of alignments:
 
 -   **Personal alignment**, where test values ($X$) are the personal comb (responses) and the reference values ($Y$) are the specialism comb. This gives us a sense of how close respondents' combs are to the different kinds of specialism.
 
--   **Scenario alignment**, where test values ($X$) are the specialism comb and the reference values ($Y$) are the scenario comb. In this case, we are interested in how well the specialisms as defined in the Cyber Careers Framework provide the kind of expertise required to address each problem defined in the provided scenarios. We look at this for individual specialisms, and to look at combinations of specialisms.
+-   **Scenario alignment**, where test values ($X$) are the specialism comb and the reference values ($Y$) are the scenario comb. In this case, we are interested in how well the specialisms as defined in the Cyber Careers Framework provide the kind of expertise required to address each problem defined in the provided scenarios. We look at this for individual specialisms, and to look at the alignment of combinations of specialisms in permutations up to 5.
 
 In both cases, the **alignment index** will result in a number between `0` and `1`, where `1` means perfect alignment between the test value and the reference value and `0` means not aligned at all.
 
@@ -97,7 +97,7 @@ Computations for the alignment metric can be audited at the file [`scripts/align
 
 The survey was conducted between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")` and received responses from `r nrow(responses)` individuals, describing `r nrow(scenarios)` scenarios.
 
-In this section we will be providing an overview of the responses according to each of the blocks of the survey. Detailed analysis and interpretations of those results can be found in the following section of the report and the appendices.
+In this section we will be providing an overview of the responses according to each of the blocks of the survey. Detailed analysis and interpretations of those results can be found in the following sections of the report and the appendices.
 
 ### Respondents' demographics
 
@@ -112,7 +112,7 @@ responses |>
   kable()
 ```
 
-@tbl-responses-gender and @tbl-responses-transgender shows a clear dominance of cis male respondents over other genders. Cis female account for a 17.9%, and other genders are anectodal in this survey.
+@tbl-responses-gender and @tbl-responses-transgender shows a clear dominance of cis male respondents over other genders. Cis female account for a 17.9%, and other genders are anecdotal in this survey.
 
 ```{r}
 #| label: tbl-responses-gender
@@ -154,11 +154,11 @@ responses |>
   kable()
 ```
 
-While the small sample prohibits broader conclusions, these figures are broadly aligned with the sector [@nationalcybersecuritycentreDecryptingDiversityDiversity2021].
+While the small sample, and opportunistic sampling approach prohibits broader conclusions, these figures are broadly aligned with the sector [@nationalcybersecuritycentreDecryptingDiversityDiversity2021]. We will argue, however, that the data is suggestive that further data collection would be of value to the sector.
 
 #### Job-related questions
 
-In terms of job-related questions, we can see ( @tbl-responses-experience) that half of our respondents have less than 10 years of experience, despite most of responses being from mature respondes (see @tbl-responses-age), and 71% have up to 20 years. A considerable 12.5% has more than 25 years of experience. This is in line with the relatively high age of the respondents, but may also suggest that some respondents may have shifted their career towards cybersecurity less than 10 years ago.
+In terms of job-related questions, we can see ( @tbl-responses-experience) that half of our respondents have less than 10 years of experience, despite most of responses being from relatively mature respondees (see @tbl-responses-age), and 71% have up to 20 years. 12.5% had more than 25 years of experience. This is in line with the relatively high age of the respondents, but may also suggest that some respondents may have shifted their career towards cybersecurity less than 10 years ago.
 
 ```{r}
 #| label: tbl-responses-experience
@@ -214,9 +214,7 @@ kable(industry_table)
 
 ```
 
-### Personal comb
-
-**Name label needs to be replaced/removed on the below. Also in the code it seems we are using responses\[8:33\]. We should be using all the rows in that dataframe. I've tried sorting this but was getting an error. Also, need to add in a label and caption. I've put these in but they don't seem to be appearing correctly.**
+### Comb responses
 
 ```{r}
 #| label: fig-personal-comb-aggregate
@@ -286,11 +284,13 @@ ggplot(scenario_all, aes(all_points, all_name)) +
   )
 ```
 
-This is a **beeswarm plot overlaid with a box and wisker plot** showing all the personal comb responses.
+The visualisations above are beeswarm plots overlaid with a box and whisker plots showing all the responses in aggregate. For a more detailed view, refer to [Appendix A](personal_combs.qmd) and [Appendix B](scenario_combs.qmd).
 
 @fig-personal-comb-aggregate shows all the personal comb responses. Respondents were using the full range of the sliders, with `r round(100 / nrow(response_all) * nrow(filter(response_all, all_points == 0)), digits = 1)`% responses being set to 0 and `r round(100 / nrow(response_all) * nrow(filter(response_all, all_points == 100)), digits = 1)`% set to 1.
 
-@fig-personal-comb-overall shows how the personal score for each of the 26 categories was distributed. For a more detailed view, refer to [Appendix A](personal_combs.qmd).
+@fig-personal-comb-overall shows how the personal score for each of the 26 categories was distributed. The visualisation shows that when describing scenarios, respondents tended to use a subset of the 'teeth' and the other sliders at a low value.
+
+Breaking down the responses by expertise category, we observe that our additional 5 non-CyBOK categories featured in respondents' profiles as commonly as CyBOK categories did. This helps to validate that they were relevant and recognisable.
 
 ```{r}
 #| label: fig-personal-comb-overall
@@ -325,15 +325,7 @@ responses |>
   scale_fill_manual(values = c("#3880b1", "#ED753E"), labels=c('CyBOK KAs', 'Additional categories'))
 ```
 
-**Why are some dots black and some grey?? Can they be all the same colour?**
-
-CyBOK categories in the above are coloured blue, with our additional 5 categories in green. We observe that the additional 5 categories featured in respondents' profiles as commonly as CyBOK categories did. This helps to validate that they were relevant and recognisable.
-
-### Scenarios comb
-
-**Can we have the equivalent of the 'all comb responses' above, just for the scenarios?**
-
-Refer to @sec-scenario-combs-appendice
+The scenarios elicited from respondents favoured areas such as *security culture*, *adversarial behaviours*, *risk management* and *security operations*. This reflects the prominence of organisational challenges and incidents in the dataset.
 
 ```{r}
 #| label: fig-scenario-comb-overall
@@ -366,26 +358,24 @@ labs(
   scale_fill_manual(values = c("#3880b1", "#ED753E"), labels=c('CyBOK KAs', 'Additional categories'))
 ```
 
-**To be completed by Matt once we've got the 'all combs': it looks like there is more of a skewed distribution around certain categories in the scenarios compared with personal combs. Probably because people think of incidents more readily when asked about problems/scenarios.**
-
 ## Key limitations
 
-Given resource constraints (we received no direct funding for this research), the project was conceived as an exploratory exercise, aiming to develop an analytical approach capable of investigating the value of diverse expertise in cyber security in the UK.
+Given resource constraints (we received no direct funding for this research), the project was conceived as an exploratory exercise, aiming to develop analytical tools suitable for investigating the value of diverse expertise in cyber security in the UK. It is important to bear in mind the following key limitations when interpreting the results.
 
 ### Sampling
 
-The total number of responses is modest (56). In comparison, the Decrypting Diversity 2020 report was based on 1252 responses, and the 2021 follow-up drew on a sample of 945.
+The total number of responses is modest (56). To put this into context, the Decrypting Diversity 2020 report was based on 1252 responses, and the 2021 follow-up drew on a sample of 945.
 
-Our sampling strategy was opportunistic, snowball sampling, reaching participants through existing channels, such as industry networks and social media. This strategy is a trade-off, and like Decrypting Diversity, it is difficult to make strong statistical inferences. A larger, random-sampling approach would have many benefits but would require significant investment. Our approach was chosen as appropriate for exploratory analysis demonstrating the value of a wider analytical frame, bringing the questions about the distribution and value of diverse expertise into conversation with questions about diversity of personal characteristics.
+Our sampling strategy was opportunistic snowball sampling, reaching participants through existing channels, such as industry networks and social media. This strategy is a trade-off, and like Decrypting Diversity, it is difficult to make strong statistical inferences. A larger, random-sampling approach would have many benefits but would require much more significant investment. Our approach was chosen as appropriate for exploratory analysis demonstrating the value of a wider analytical frame, bringing the questions about the distribution and value of diverse expertise into conversation with questions about diversity of personal characteristics. Small sample studies like this should be seen as part of the wider endeavour to understand the domain, prototyping methodologies for data collection and analysis in a lightweight manner.
 
 ### Sliders
 
-At the heart of the survey are the expertise 'combs', represented in the interface by a set of sliders. The combs elicit sets of relative responses, with participants setting values in proportion to each other. Given the challenges in establishing an absolute scale across all 'teeth', we asked participants to focus on the relative proportions of each category, the focus thus being on the 'shape' of expertise rather than its absolute extent. Because sliders generate numerical values, they allow for analysis of these shapes, at individual or aggregate levels, but it must be remembered that the scales being applied are inevitably imprecise.
+Given the challenges in establishing an absolute scale across all 'teeth', we asked participants to focus on the relative proportions of each category, the focus thus being on the 'shape' of expertise rather than its absolute extent. Because sliders generate numerical values, they allow for analysis of these shapes, at individual or aggregate levels, but it must be remembered that the scales being applied are inevitably imprecise.
 
 ### Alignment scores
 
-The data has some important limitations that should be kept in mind when interpreting these alignment scores:
+The data has some important limitations that should be kept in mind when interpreting alignment scores:
 
--   The specialisms are defined according to 'core', 'related' and 'wider' relevance of categories of expertise, which to be used in our calculations have to be translated into positions in the slider. We have chosen values of 90, 60 and 30 as parameters for these levels of relevance respectively.
+-   The specialisms are defined according to 'core', 'related' and 'wider' relevance of categories of expertise, which to be used in our calculations have to be translated into positions in the slider. We have chosen values of 90, 60 and 30 as parameters for these levels of relevance respectively. Alternative parameters can be readily substituted in the script.
 
--   The specialisms are only defined according to the standard CyBOK categories. The relevance of other forms of expertise is left undefined. This means that our additional teeth of the comb, representing areas that are not accounted for in CyBOK, must be ignored for the purposes of the alignment calculations. In certain cases, for instance where a scenario required significant amounts of expertise in one or more of the non-CyBOK areas, the alignment calculation could be misleading. We have highlighted this in the analysis. Because this study aims at methodological exploration, we feel it is valuable to include these reflections, which demonstrate the way in which existing classifications like CyBOK create challenges for researcher that seeks to explore emerging or neglected areas.
+-   The specialisms are defined according to the standard CyBOK knowledge area classification. The relevance of other forms of expertise is left undefined. This means that our additional teeth of the comb, representing areas that are not accounted for in CyBOK, must be ignored for the purposes of the alignment calculations. In certain cases, for instance where a scenario required significant amounts of expertise in one or more of the non-CyBOK areas, the alignment calculation could be misleading. We have highlighted this in the analysis, and reflect on how reliance on established classifications like CyBOK creates opportunities for analysis, but also challenges where one is interested in accounting for neglected or recently emerging areas of expertise.

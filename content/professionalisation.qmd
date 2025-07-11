@@ -1,5 +1,5 @@
 ---
-title: "Professionalisation and exclusion "
+title: "Professionalisation and Inclusion "
 ---
 
 ```{r setup}
@@ -26,10 +26,16 @@ alignment_scenarios_long <- read.csv("../data/processed/alignment_scenarios_long
 ## Additional data cleaning
 
 alignment_personal_long <- alignment_personal_long %>%
-  mutate(gender2 = case_when(gender == 'Male' ~ 'Men',
-                          .default = "Women, Non-Binary and 'Prefer not to Answer'"
-                          ))
+#  mutate(gender2 = case_when(gender == 'Male' ~ 'Men',
+#                          .default = "Women, Non-Binary and 'Prefer not to Answer'"
+#                          ))
 
+  mutate(gender2 = case_when(
+  gender == 'Male' ~ 'Men',
+  gender %in% c('Female', 'Non binary') ~ 'Women and Non-binary',
+  .default = NA_character_
+))
+  
 alignment_personal_long <- alignment_personal_long %>%
   mutate(age2 = case_when(age == '20-25' ~ '20-29',
                           age == '26-29' ~ '20-29',
@@ -66,43 +72,39 @@ Concerns about the adequacy of the UK's cyber security workforce, and its abilit
 
 -   bring more people into the field,
 
--   give recognition to those with deep cyber security expertise,
+-   give recognition to those with cyber security expertise,
 
 -   to ensure that adequate cyber security knowledge is integrated into related professions, and
 
 -   to enable employers to better understand what they need from their cyber security employees.
 
-The first UK National Cyber Security Strategy, published in 2016, identified the need for government to do more to support the development of the cyber security profession. As part of the implementation of the Strategy, in 2018, the Department for Digital, Culture, Media and Sport launched a proposal and consultation on the creation of the UK Cyber Security Council (UKCSC). The consultation argued that while there were existing forms of recognition, such as offered by the Institute of Information Security Professionals, which received a Royal Charter in 2018, and the International Information System Security Certification Consortium (ISC2), which governs the international CISSP (Certified Information Systems Security Professional) qualification, there were outstanding issues with coverage (some kinds of cyber security expertise were not covered, or partially covered), and equivalence. The UKCSC was thus set up to "act as a governing voice for the cyber security profession in the UK" [@DefenceSecurityIndustrial2021], and was launched in 2021.
+The first UK National Cyber Security Strategy, published in 2016, identified the need for government to do more to support the development of the cyber security profession. As part of the implementation of the Strategy, in 2018, the Department for Digital, Culture, Media and Sport launched a proposal and consultation on the creation of the UK Cyber Security Council (UKCSC). The consultation recognised that there were existing forms of recognition, such as offered by the Institute of Information Security Professionals, which received a Royal Charter in 2018, and the International Information System Security Certification Consortium (ISC2), which governs the international CISSP (Certified Information Systems Security Professional) qualification, but argued that there were outstanding issues with coverage (some kinds of cyber security expertise were not covered, or partially covered), and equivalence. The UKCSC was thus set up to "act as a governing voice for the cyber security profession in the UK" [@DefenceSecurityIndustrial2021], and was launched in 2021.
 
-Pillar 5 of the UK National Cyber Security Strategy 2022-2030, is the objective to 'develop the right cyber security skills, knowledge and culture' so that 'sufficient, skilled and knowledgeable professionals fulfil all required cyber security needs' [@cabinetofficeGovernmentCyberSecurity2022]. This is to be delivered through "consistent taxonomies, standards and pathways" providing "diverse and fulfilling cyber security careers" and wider status recognition through accreditation and standardisation. The UKCSC's work has thus remained central to the national strategic vision.
+Pillar 5 of the UK National Cyber Security Strategy 2022-2030, is the objective to 'develop the right cyber security skills, knowledge and culture' so that 'sufficient, skilled and knowledgeable professionals fulfil all required cyber security needs' [@cabinetofficeGovernmentCyberSecurity2022]. This is to be delivered through "consistent taxonomies, standards and pathways" providing "diverse and fulfilling cyber security careers" and wider status recognition through accreditation and standardisation. The UKCSC's work has thus become central to the national strategic vision.
 
-In pursuit of these goals, the UKCSC developed a 'Cyber Careers Framework' which identifies four levels of expertise (Associate, Practitioner, Principal, and Chartered) across a set of 15 specialisms. Assessments of applicants for recognition are carried out by member organisations of UKCSC, who receive a license for specific specialisms: currently the Chartered Institute of Information Security, The Cyber Scheme, and CREST. Recognition is being delivered in a phased approach, with the first chartered cyber security professionals (ChCSP) recognised in October 2023.
+In pursuit of these goals, the UKCSC developed a 'Cyber Careers Framework' which identifies four levels of expertise (Associate, Practitioner, Principal, and Chartered) across a set of 15 specialisms. Assessments of applicants for recognition are carried out by member organisations of UKCSC, who receive a license for specific specialisms: currently the Chartered Institute of Information Security, The Cyber Scheme, and CREST. Recognition is being delivered in a phased manner, and the first chartered cyber security professionals (ChCSP) were recognised in October 2023.
 
 ## Social closure
 
-Professionalisation can be analysed sociologically through the lens of social openness and social closure. The concept of social relationships being 'open' or 'closed' has deep roots in sociology, and is a building block of Max Weber's classic analysis of social action [@weber2019economy]. Social closure is an umbrella term for the ways in which groups construct and maintain monopolies over opportunities, by including some people and excluding others. Understanding how and why closure occurs is key to our understanding of social structure and power. It can operate at multiple levels. Even where opportunities are formally open, groups may nevertheless be able to maintain control over resources through influencing access to jobs or status, for instance through cronyism or nepotism. Closure can create durable barriers to entry or 'glass ceilings' that limit opportunities. The durability of closure arises because, once they exist, monopolies on resources tend to create an alignment of interest among group members, as they have a common interest in maintaining the status quo and resisting change. Weber considered guilds to be an 'archetype' of closure where it is motivated by a cooperative monopolisation of (resource) acquisition, and under the rubric of 'occupational closure' the sociology of professions has studied professionalisation as an important example of social closure in the modern age.
+Professionalisation can be analysed sociologically through the lens of social openness and social closure. The concept of social relationships being 'open' or 'closed' has deep roots in sociology, and is a building block of Max Weber's classic analysis of social action [@weber2019economy]. Social closure is an umbrella term for the ways in which groups construct and maintain monopolies over opportunities, by including some people and excluding others. Understanding how and why closure occurs is key to our understanding of social structure and power. It can operate at multiple levels. Even where opportunities are formally open, groups may nevertheless be able to maintain control over resources through influencing access to jobs or status, for instance through cronyism or nepotism. Closure can create durable barriers to entry or 'glass ceilings' that limit opportunities. Social closure can be durable because, once they exist, monopolies on resources tend to create an alignment of interest among group members, as they have a common interest in maintaining the status quo and resisting change. Weber considered guilds to be an 'archetype' of closure where it is motivated by a cooperative monopolisation of (resource) acquisition, and under the rubric of 'occupational closure' the sociology of professions has studied professionalisation as an important example of social closure in the modern age.
 
-<<<<<<< HEAD
-There is a tension between occupational closure, and the moral projects of social liberalism that promote fair access and equality of opportunity. In the cases of the professions, the justification of occupational closure tends to stress a balance between competing moral principles: on the one hand, for buildings to be safe, for accounts to be trustworthy, for all to have fair and equal representation under the law, for healthcare to be safe, and so on, it is necessary to restrict who can practice engineering, accountancy, law and medicine to those who have met a certain standard of qualification and who have committed to accepted standards of conduct. On the other hand, while entry into these professions may be formally open and non-discriminatory, entrants often need considerable capital—social capital in the form of social networks giving access to opportunities for apprenticeships and experience, cultural capital in the form of the ability to 'fit in,' be 'taken seriously' and generally navigate within professional communities, and financial capital in the form of resources to support what are often extended periods of training or low pay at the start of careers—and so the institutional structure of the professions tends to reinforce existing social inequalities. It is not by accident that the traditional British middle classes are commonly referred to as 'the professional class'. Professional bodies, such as the British Medical Associations, the Law Society, the Association of Chartered Certified Accountants, and so on, thus tend to understand their mission as having two sides: one that focuses on ensuring standards of conduct and competence are met, and the other intervening to support equity of access to the profession, through special initiatives, financial support, community engagement, communication campaigns, and supporting research. In short, professional bodies' interest in equality, diversity and inclusion should not be seen as a separate side project, but as a necessary project that ensures the social legitimacy of occupational closure, by showing that the profession is a vehicle for, and not an obstacle to, fair access.
-=======
-There is a tension between occupational closure, and the moral projects of social liberalism that promote fair access and equality of opportunity. In the cases of the professions, the justification of occupational closure tends to stress a balance between competing moral principles: on the one hand, for buildings to be safe, for accounts to be trustworthy, for all to have fair and equal representation under the law, for healthcare to be safe, and so on, it is necessary to restrict who can practice engineering, accountancy, law and medicine to those who have met a certain standard of qualification and wgo have committed to accepted standards of conduct. On the other hand, while entry into these professions may be formally open and non-discriminatory, entrants often need considerable capital---social capital in the form of social networks giving access to opportunities for apprenticeships and experience, cultural capital in the form of the ability to 'fit in,' be 'taken seriously' and generally navigate within professional communities, and financial capital in the form of resources to support what are often extended periods of training or low pay at the start of careers---and so the institutional structure of the professions tends to reinforce existing social inequalities. It is not by accident that the traditional British middle classes are commonly referred to as 'the professional class'. Professional bodies, such as the British Medical Associations, the Law Society, the Association of Chartered Certified Accountants, and so on, thus tend to understand their mission as having two sides: one that focuses on ensuring standards of conduct and competence are met, and the other intervening to support equity of access to the profession, through special initiatives, financial support, community engagement, communication campaigns, and supporting research. In short, professional bodies' interest in equality, diversity and inclusion should not be seen as a separate side project, but as a necessary project that ensures the social legitimacy of occupational closure, by showing that the profession is a vehicle for, and not an obstacle to, fair access.
->>>>>>> 369437240abcf6738d18ee879f1637f2ef98b8a7
+There is a tension between occupational closure and the moral projects of social liberalism that promote fair access and equality of opportunity. In the cases of the professions, the justification of occupational closure involves achieving a balance between competing moral principles: on the one hand, for buildings to be safe, for accounts to be trustworthy, for all to have fair and equal representation under the law, for healthcare to be safe, and so on, it is necessary to restrict who can practice engineering, accountancy, law and medicine to those who have met a certain standard of qualification and committed to accepted standards of conduct. On the other hand, while entry into these professions may be formally open and non-discriminatory, entrants often need considerable capital---social capital in the form of social networks giving access to opportunities for apprenticeships and experience, cultural capital in the form of the ability to 'fit in,' be 'taken seriously' and generally navigate within professional communities, and financial capital in the form of resources to support what are often extended periods of training or low pay at the start of careers---and so the institutional structure of the professions tends to reinforce existing social inequalities. It is not by accident that the traditional British middle classes are commonly referred to as 'the professional class'. Professional bodies, such as the British Medical Associations, the Law Society, the Association of Chartered Certified Accountants, and so on, thus understand their mission as having two sides: one that focuses on ensuring standards of competence and conduct are met, and the other intervening to improve and support equitable access to the profession, through special initiatives, financial support, community engagement, communication campaigns, and research. In short, professional bodies' interest in equality, diversity and inclusion should not be seen as a separate side project, but as a core project that ensures the social legitimacy of occupational closure, by showing that the profession is a vehicle for, and not an obstacle to, fair access.
 
-The success of the project to professionalise cyber security in the UK will depend on the ongoing legitimacy of bodies such as the UKCSC. Cyber security is a young profession, and legitimacy cannot rest on a received understanding of its members as an elite group (as with doctors or lawyers). It is crucial to show how diversity will be understood and managed in the years ahead, so that achievement can be celebrated, and the contribution of diversity to the delivery of cyber security outcomes is part of the vision for the sector.
+The success of the project to professionalise cyber security in the UK will depend on the ongoing legitimacy of bodies such as the UKCSC. Cyber security is a young profession, and legitimacy cannot rest on a received understanding of its members as an elite group (as with doctors or lawyers). It is crucial to show how diversity will be understood and managed in the years ahead, so that achievement can be celebrated, and the contribution of diversity to the delivery of cyber security outcomes is part of the vision for the sector. This will require that professional bodies are attentive to, and responsive to, challenges of diversity in the years ahead.
 
 ## The value of diversity
 
-Diversity covers many attributes (race, class, gender, sexuality, religion and disability, to name a few). Sociologists have argued that organisational or institutional diversity has value as a resource during times of economic transition [@grabher1997organizing]. Scholars in safety studies have argued that overly homogeneous patterns of reasoning and valuation can 'incubate disaster', a central problem for organisations that operate in safety critical contexts [@dekker2014drifting; @vaughan1996challenger]. In Karl Weick's classic studies of high reliability organisations, diversity can be understood as a source of 'requisite variety' that enables organisations to avoid accidents.
+While considerations of social closure are sufficient to illustrate why diversity is a core priority for the legitimacy of the UKCSC, an even stronger argument can be constructed based on research into the value of diversity. Sociologists have argued that organisational or institutional diversity has value as a resource during times of economic transition [@grabher1997organizing]. Scholars in safety studies have argued that overly homogeneous patterns of reasoning and valuation can 'incubate disaster', a central problem for organisations that operate in safety critical contexts [@dekker2014drifting; @vaughan1996challenger]. In Karl Weick's classic studies of high reliability organisations, diversity can be understood as a source of 'requisite variety' that enables organisations to avoid accidents.
 
 > Whether team members differ in occupational specialities, past experience, gender, conceptual skills, or personality may be less crucial than the fact that they do differ and look for different things when they size up a problem. If people look for different things, when their observations are pooled they collectively see more than any one of them alone would see. However, as team members become more alike, their pooled observations cannot be distinguished from their individual observations, which means collectively they know little more about a problem than they know individually.[@weick1987organizational]
 
-Several studies have indicated that hiring people from diverse backgrounds provides value in broadening organisational repertoires of thought and practice, and enhancing the potential to innovate [@herring2009does]. Researchers have also argued that homogeneity can be a source of problems, with evidence, for instance, that homogeneity leads to bubbles and inefficient markets [@levine2014ethnic]. The 2020-2021 NCSC/KPMG Decrypting Diversity reports build on this line of thinking, arguing that diversity in the workplace brings "benefits including better financial performance, increased creativity and innovation, greater employee satisfaction, lower absenteeism and stronger talent retention" [@NCSC2020decrypting]. In other words, diversity is valuable not just because inequality and discrimination are unacceptable, but also because it is a driver of innovation and ultimately a more secure society.
+Several studies have indicated that hiring people from diverse backgrounds provides value in broadening organisational repertoires of thought and practice, and enhancing the potential to innovate [@herring2009does]. Researchers have also argued that homogeneity can be a source of problems, with evidence, for instance, that homogeneity leads to bubbles and inefficient markets [@levine2014ethnic]. The 2020-2021 NCSC/KPMG Decrypting Diversity reports explicitly reference this line of thinking, arguing that diversity in the workplace brings "benefits including better financial performance, increased creativity and innovation, greater employee satisfaction, lower absenteeism and stronger talent retention" [@NCSC2020decrypting]. In other words, diversity is valuable not just because inequality and discrimination are unacceptable, but also because it is a driver of innovation and ultimately a more secure society.
 
 ## The status quo
 
-The 'Decrypting Diversity' reports painted a mixed picture of diversity in the cyber security profession. On the one hand, the proportion of the cyber profession that identifies as coming from a BAME (Black and Minority Ethnic) background, and the proportion that identifies as Lesbian, Gay and Bisexual (LGB), were broadly in line with national figures. Data on trans people was insufficient to make reliable claims, and more research is needed in areas such as this. Gender is well-recognised to be an issue for cyber security, with survey respondents identifying as male outnumbering those identifying as female 2:1 in the Decrypting Diversity studies. Here, the cyber security profession needs to engage with broader efforts, as the same gender imbalance is found across the technology workforce. Socio-economic backgrounds were also skewed, for instance with those who had attended private schools over-represented. Furthermore, even in areas such as ethnicity or sexuality, where the profession was broadly in line with the general population, survey respondents noted that people from BAME backgrounds or who identified as LGB were more likely to have faced discrimination in the workplace.
+The 'Decrypting Diversity' reports painted a mixed picture of diversity in the cyber security profession. On the one hand, the proportion of the cyber profession that identifies as coming from a BAME (Black and Minority Ethnic) background, and the proportion that identifies as Lesbian, Gay and Bisexual (LGB), were broadly in line with national figures. Data on Trans people was insufficient to make reliable claims, and more research is needed in areas such as this. Gender is well-recognised to be an issue for cyber security, with survey respondents identifying as male outnumbering those identifying as female 2:1 in the Decrypting Diversity studies. Here, the cyber security profession needs to engage with broader efforts, as the same gender imbalance is found across the technology workforce. Socio-economic backgrounds were also skewed, for instance with those who had attended private schools over-represented. Furthermore, even in areas such as ethnicity or sexuality, where the profession was broadly in line with the general population, survey respondents noted that people from BAME backgrounds or who identified as LGB were more likely to have faced discrimination in the workplace.
 
-The Decrypting Diversity report focuses on the experiences of people within the cyber security profession, and although it was intended to be part of a series of studies, unfortunately only two were carried out. Furthermore, existing research looks specifically at diversity of background, with little effort to connect this data with diversity of expertise, either at the personal level or at the level of the key problems that the cyber security profession is expected to address in work contexts.
+The Decrypting Diversity report focuses on the experiences of people within the cyber security profession, and although it was intended to be part of a series of annual studies, only two were carried out. Furthermore, these studies looked specifically at diversity of background, and there was little data connecting diversity of background with diversity of expertise, either at the personal level or at the level of the key problems that the cyber security profession is expected to address in work contexts.
 
 Diversity of expertise is less well studied than individual diversity in cyber security, though recent work building on the CyBOK framework is aiming to address this. Developing a 'knowledge profiling' approach, Nautiyal and Rashid propose a tool for organisations to assess their internal expertise, key certifications, and expertise brought by partner organisations [@nautiyal2024framework]. Other recent work uses CyBOK to analyse the 'cyber skills gap' through the analysis of job adverts [@attwood2023exploring]. The Cyber Expertise Diversity Survey was developed in this vein. Like these studies, we focus on the methodological possibilities, examining how the diversity of expertise may be made visible and actionable. Our approach aims to make connections between diverse profiles of expertise among professionals, professional frameworks, and the alignment of both of these with problem scenarios.
 
@@ -110,7 +112,7 @@ Diversity of expertise is less well studied than individual diversity in cyber s
 
 ### Alignment of respondents with the specialisms
 
-**Please could the below visualisation sort the boxplots according to the mean alignment (least to most). Also again we have some black spots as well as grey.**
+The visualisation below shows an overall view of how our respondents aligned with the UKCSC specialisms. The variance was relatively modest, with the highest average alignment roughly double that of the lowest average alignment. Looking at the individual boxplots, we note that our sample spanned a wide range, including respondents that scored very highly and very low in each area.
 
 ```{r}
 #| label: fig-personal-alignment-scenario
@@ -132,52 +134,23 @@ alignment_personal_long |>
     Specialism = str_wrap(Specialism, width = 30),
     Specialism = as.factor(Specialism),
     Specialism = fct_reorder(Specialism, alignment_index)) |> 
-  ggplot(aes(x = fct_rev(Specialism), y = alignment_index)) + 
-  geom_boxplot() +
   ggplot(aes(x = fct_rev(Specialism), y = alignment_index * 100)) + 
   geom_boxplot(outliers = FALSE) +
   geom_jitter(alpha = 0.1, size = 0.8) + 
   labs(y = "Alignment index",
        x = "Specialisms") +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1))
   theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1),
         panel.grid.major.x = element_line(size=0.5, colour = "white"))
 ```
 
-**Matt to add a sentence on what the above shows.**
+Of particular interest for our analysis is breaking down the overall picture according to key attributes.
 
 ### Alignment based on key attributes
 
 #### Gender
 
-**Option 1**
-
-```{r}
-#| label: fig-personal-alignment-scenario-gender
-#| fig-cap: "Personal alignment to specialism by gender"
-#| column: page
-#| fig-width: 14
-#| fig-height: 10 
-#| fig-align: "center"
-alignment_personal_long |> 
-  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index)) + 
-  geom_boxplot() +
-  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index * 100)) + 
-  geom_boxplot(outliers = FALSE) +
-  geom_jitter(alpha = 0.1, size = 0.8) + 
-  labs(title = "Personal alignment to specialism by gender ",
-       y = "Alignment index",
-       x = "Specialisms") +
-  facet_wrap(~gender, ncol = 1) +
-  facet_wrap(~gender2, ncol = 1) +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1))
-  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1),
-        panel.grid.major.x = element_line(size=0.5, colour = "white"))
-```
-
-**Option 2**
+When we break out alignment by gender we notice that people identifying as men were on average better aligned than those identifying as women or non-binary in all areas apart from *Cyber security audit and assurance*, and *Data protection and privacy*. We have ignored 'prefer not to say' in this case.
 
 ```{r}
 #| label: fig-personal-alignment-scenario-gender_v2
@@ -186,6 +159,7 @@ alignment_personal_long |>
 #| fig-width: 14
 #| fig-align: "center"
 alignment_personal_long |> 
+  filter(!is.na(gender2)) |>
   ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index * 100, fill=gender2)) +
   geom_boxplot(outliers = FALSE, alpha = 0.8) +
   scale_fill_manual(values = c("#3880b1", "#ED753E")) +
@@ -200,37 +174,9 @@ alignment_personal_long |>
 )
 ```
 
-While our sample size is too low to make general conclusions, we note that people identifying as cis-men were better aligned in all areas apart from *Cyber security audit and assurance*, and *Data protection and privacy*.
-
 #### Age
 
-**Black dots as well as grey dots again**
-**Option 1**
-
-```{r}
-#| label: fig-personal-alignment-scenario-age
-#| fig-cap: "Personal alignment to specialism by age"
-#| column: page
-#| fig-width: 14
-#| fig-height: 12
-#| fig-align: "center"
-alignment_personal_long |> 
-  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index)) + 
-  geom_boxplot() +
-  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index * 100)) + 
-  geom_boxplot(outliers = FALSE) +
-  geom_jitter(alpha = 0.1, size = 0.8) + 
-  labs(title = "Personal alignment to specialism by age ",
-       y = "Alignment index",
-       x = "Specialisms") +
-  facet_wrap(~age, ncol = 1) +
-  facet_wrap(~age2, ncol = 1) +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1),
-        panel.grid.major.x = element_line(size=0.5, colour = "white"))
-```
-
-**Option 2: color changes tbc later**
+The same view but broken down by age shows that, interestingly, in our sample younger respondents were not less well aligned than older respondents. This could reflect the fact that younger cyber security professionals may have studied degrees relating to cyber security that did not exist when older respondents were students (degrees that have syllabuses that aim at comprehensive coverage). Understanding this view from a larger dataset would be illuminating about how the profile of the profession is changing.
 
 ```{r}
 #| label: fig-personal-alignment-scenario-age_v2
@@ -256,6 +202,8 @@ alignment_personal_long |>
 
 **Option 3: bump chart**
 
+**I like the bump chart but please can you swap x and y axes? And add a caption?**
+
 ```{r}
 
 age_bump <- alignment_personal_long |> 
@@ -276,39 +224,9 @@ age_bump |>
 
 ```
 
-**Can we have an 'alluvial' visualisation based just on the mean for each of the above. So with age groups on the X axis, showing how the ordering of best to worst alignment across the specialisms re-orders as you move between the age groups?**
-
 #### Sexual orientation
 
-**Option 1**
-
-```{r}
-#| label: fig-personal-alignment-scenario-sexual-orientation
-#| fig-cap: "Personal alignment to specialism by sexual orientation"
-#| column: page
-#| fig-width: 14
-#| fig-height: 12
-#| fig-height: 8
-#| fig-align: "center"
-
-alignment_personal_long |> 
-  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index)) + 
-  geom_boxplot() +
-  geom_jitter(alpha = 0.1, size = 0.8) + 
-  labs(title = "Personal alignment to specialism by sexual orientation",
-       y = "Alignment index",
-       x = "Specialisms") +
-  facet_wrap(~sexual_orientation, ncol = 1) +
-  facet_wrap(~sexual_orientation2, ncol = 1) +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1))
-  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1),
-       panel.grid.major.x = element_line(size=0.5, colour = "white")
-)
-
-```
-
-**Option 2 - colors tbc**
+**Please can you change the label on the legend to read 'Do you identify as lesbian, gay or bisexual?' so that the 'No' and 'Yes' make sense?**
 
 ```{r}
 #| label: fig-personal-alignment-scenario-sexual-orientation_v2
@@ -336,33 +254,7 @@ Our study shows encouraging indicative results that sexual orientation does not 
 
 #### Ethnicity
 
-**Option 1**
-
-```{r}
-#| label: fig-personal-alignment-scenario-ethnicity
-#| fig-cap: "Personal alignment to specialism by ethnicity"
-#| column: page
-#| fig-width: 14
-#| fig-height: 12
-#| fig-align: "center"
-alignment_personal_long |> 
-  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index)) + 
-  ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index * 100)) + 
-  geom_boxplot() +
-  geom_jitter(alpha = 0.1, size = 0.8) + 
-  labs(title = "Personal alignment to specialism by ethnicity",
-       y = "Alignment index",
-       x = "Specialisms") +
-  facet_wrap(~uk_ethnic_origin, ncol = 1) +
-  facet_wrap(~uk_ethnic_origin2, ncol = 1) +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1))
-  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1),
-        panel.grid.major.x = element_line(size=0.5, colour = "white",),
-)
-```
-
-**Option 2**
+Due to having a low number of respondents in some categories, we've grouped data into three main categories: white, Asian and 'all other ethnicities'.
 
 ```{r}
 #| label: fig-personal-alignment-scenario-ethnicity_v2
@@ -376,7 +268,7 @@ alignment_personal_long |>
   geom_boxplot(outliers = FALSE, alpha = 0.8) +
   #scale_fill_manual(values = c("#3880b1", "#ED753E")) +
   geom_jitter(alpha = 0.1, size = 0.8) + 
-  labs(title = "Personal alignment to specialism by Sexual Orientation ",
+  labs(title = "Personal alignment to specialism by ethnicity",
        y = "Alignment index",
        x = "Specialisms") +
   theme_minimal() +
@@ -386,23 +278,21 @@ alignment_personal_long |>
 )
 ```
 
-**Is the mean for 'white' highest in all areas? Excluding 'prefer not to say'?**
+It is potentially concerning to observe that respondents identifying as white were, on average, most well aligned with every single specialism. This observation alone could justify further research.
 
-**Matt to add commentary on the alignment**
+#### Further analysis
 
-A number of factors could explain the observation that white and male respondents had greatest average alignment in the majority of specialism areas:
+The suggestive patterns we observe, particularly in relation to gender and ethnicity, warrant further investigation in order to investigate the explanation. Candidate factors include:
 
--   Sampling bias
+1.  Sampling bias: Our sample may not be representative and these differences may be less apparent in a larger sample
 
--   Specialisms being defined in ways that favour expertise belonging to certain groups over others
+2.  Methodological factors, for instance if white and/or male respondents tend to rate their own expertise more highly than others, all else being equal.
 
--   Certain groups being more established and/or experienced within the profession
+3.  Biased specialisms: The specialisms may be defined in ways that favour expertise belonging to certain groups over others
 
--   A tendency for white and/or male respondents to rate their own expertise more highly than others.
+4.  Structural inequalities reflected in skewed distributions of expertise across different ethnic groups
 
-More research is needed to disambiguate these factors, and to build a dataset that would allow us to control for factors such as years of experience. In our recommendations we call for further Decrypting Diversity studies that could address this gap.
-
-**Can we have a simple graph of diversity characteristics against years of experience? I.e. indicating if the while or male respondents also tended to be more senior/experienced.**
+More research is needed to disambiguate these factors, and to build a dataset that would allow us to control for factors such as years of experience. In our recommendations we call for further Decrypting Diversity studies that could address this gap. In parallel with this, any specialisms that are likely to help to rebalance professional recognition in these direction should be developed. Two examples are security human factors and security awareness. Understanding what specialisms like these could look like could help future analysis to investigate the implications for inclusivity of possible future adjustments to the Cyber Careers Framework.
 
 ### Respondents' views on Chartered status
 
@@ -456,10 +346,10 @@ Government procurement does not recognise expertise. Nearly all Government contr
 "The skill of security isn't in the expertise itself, it is being able to join the dots and think critically about what is being asked of you, dealing with peoples assumptions and also dealing with many new people coming into an industry who think they have the answer. When really cyber security has complexities and interconnections that would be very hard to create a single programme to address. If we look to silo the approach with 'chartered' status i would worry it does not really appreciate the multifaceted roles. We already have the issue that security only really puts value, training and gives space to the technical and those who have risk expertise. What about all the people who run between those spaces and don't fit into the box."
 :::
 
-The issues raised here are wide-ranging. The potential disconnect between policy priorities and 'on the ground' perceptions of what is going on should be of concern to UKCSC and government policymakers. If people doubt whether professional statuses really map onto the realities of expertise and how it is valued, then they may be less willing to seek accreditation or value it in others. There is a cost to sustaining the UKCSC that is paid by professionals, their employers, and ultimately their employers' customers. In addition to being confident that professionalisation is, and will, deliver value for society (through reduction of risks and harms), it is necessary for the UKCSC and government policymakers to find ways to persuade professionals that they should share this confidence.
+The issues raised here are wide-ranging. The potential disconnect between policy priorities and 'on the ground' perceptions of the value of recognition should be of concern to UKCSC and wider government policymakers. If people doubt whether professional statuses really map onto the realities of expertise and how it is valued, then they may be less willing to seek accreditation or value it in others. There is a cost to sustaining the UKCSC that will be paid by professionals, their employers, and ultimately their employers' customers. In addition to being confident that professionalisation is, and will, deliver value for society (through reduction of risks and harms), it is necessary for the UKCSC and government policymakers to find ways to persuade professionals that they should share this confidence.
 
 ## Recommendations
 
 The UK government should support further Decrypting Diversity studies. These should explore the intersection of diversity and professionalisation, looking at how diverse cyber security practitioners align with existing UKCSC specialisms, and at how such alignments are changing over time.
 
-The UKCSC should examine whether a new specialism focused on security awareness or human factors could be added to the Careers Framework, looking in particular at whether this could rebalance the framework in relation to diversity characteristics.
+The UKCSC should commence work on possible new specialisms in areas such as security human factors and security awareness, and explore whether this could rebalance the framework in relation to diversity characteristics.
