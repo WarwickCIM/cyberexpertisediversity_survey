@@ -30,7 +30,7 @@ theme_set(theme_minimal())
 
 ## Interdisciplinary cyber security
 
-In this section we were interested in the intrinsic interdisciplinary of cyber security. Understanding the value of diversity of expertise in cyber security requires a view of the problems that arise in cyber security, and the kinds of combinations of expertise that they require. For organisations, the utility of classifications of individuals into standardised specialisms depends on the extent to which it is possible to identify a need for particular kinds of individuals. Understanding how needs are aligned with specialisms means understanding the kinds of profiles of expertise that are required to address specific problems. The Cyber Expertise Diversity Survey elicited such profiles from participants, for a range of scenarios. While the dataset is limited, the presence of qualitative descriptions of these scenarios enables us to explore the ways in which scenarios map onto specialisms, in particular:
+In this section we were interested in how one might analyse the interdisciplinary of cyber security practice. Understanding the value of diversity of expertise in cyber security requires a view of the problems that arise in cyber security, and the kinds of combinations of expertise that they require. For organisations, the utility of professional classifications depends on the extent to which it is possible to identify a need for particular kinds of expertise. Understanding the alignment of specialisms with scenarios that are representative of organisations' practical cyber security problems is one way to approach this. The Cyber Expertise Diversity Survey elicited such profiles from respondents, for a range of scenarios. Qualitative descriptions of these scenarios help us to explore the ways in which scenarios map onto specialisms, in particular:
 
 -   Which scenarios map straightforwardly onto one specialism
 
@@ -42,7 +42,7 @@ In this section we were interested in the intrinsic interdisciplinary of cyber s
 
 ### Looking at specialisms alignment with the scenarios
 
-We calculated the alignment of the UKCSC specialisms with the scenarios our respondents told us about. We were interested in how alignment scores would increase if we allowed permutations of two or more specialisms. @fig-alignment-scenarios-overview shows that, overall, the alignment index increases as we increase the number of permutations (this is, these scenarios are more interdisciplinary). While this could be expected, this is not the case for every scenario, as shown in @fig-alignment-scenarios, which provides a more nuanced view by displaying how the alignment score changes for every scenario.
+We calculated the alignment of the UKCSC specialisms with the scenarios our respondents told us about. We were interested in how alignment scores would increase if we allowed permutations of two or more specialisms. @fig-alignment-scenarios-overview shows that, on average, the alignment index increases as we increase the number of permutations (this is, these scenarios are more interdisciplinary). While this could be expected, this is not the case for every scenario, as shown in @fig-alignment-scenarios, which provides a more nuanced view by displaying how the alignment score changes for every scenario.
 
 ```{r}
 #| label: fig-alignment-scenarios-overview
@@ -67,15 +67,7 @@ max_alignment_scenarios |>
   )
 ```
 
-=
-
-Scenarios with a steep gradient show indicate significantly better alignment could be gained through teams of mixed specialists.
-
-**In the viz below, can there be more space to display the scenario names, perhaps allowing two lines of text for each? It doesn't matter if some are cut off, but a few more words would help.**
-
-*I have incereased the text length here too 120 characters, but I think it might be better if we manually change some of them*
-
-*Version 1*
+Scenarios with a steep gradient indicate significantly better alignment could be gained through mixed teams of specialists.
 
 ```{r}
 #| label: fig-alignment-scenarios
@@ -117,76 +109,6 @@ max_alignment_scenarios |>
     panel.grid.minor.x = element_line(size=0.1, colour = "white")
   )
 
-```
-
-*Version 2*
-
-```{r}
-#| label: fig-alignment-scenarios_v2
-#| fig-cap: "Alignment indices per number of permutations and scenario"
-#| column: page
-#| fig-align: "center"
-scenario_names <- scenarios |> 
-  select(scenario_name) |> 
-  mutate(id = row_number())
-
-all_align <- max_alignment_scenarios |> 
-  select(id, n_permutations, alignment_index) |> 
-  left_join(scenario_names, by = join_by(id)) |>
-  mutate(scenario_name = paste(id,"-", scenario_name),
-         scenario_name = case_when(
-           nchar(scenario_name) > 25 ~ paste0(str_sub(scenario_name, end = 25), "..."),
-           .default = scenario_name),
-         scenario_name = as.factor(scenario_name),
-         scenario_name = fct_reorder(scenario_name, id)) |> 
-  pivot_longer(alignment_index)
-
-all_align <- all_align |> mutate(color = 'all')
-
-all_mean <- all_align |> group_by(n_permutations) |> summarise(value = mean(value, na.rm=TRUE))
-all_mean <- all_mean |> mutate(id = 0, scenario_name = 'all', name = 'alignment_index_all', color = 'mean')
-
-all_align <- rbind(all_align, all_mean)
-
-all_align <- all_align %>% filter(value > 0)
-# 
-# ggplot(all_align, aes(x = n_permutations, y = value, group = scenario_name, color = color)) + 
-#   geom_line(size = 1, alpha = 0.2) +
-#   geom_point(alpha = 0.2)
-
-
-ggplot(all_align, aes(x = n_permutations, y = value * 100, group = scenario_name)) + 
-  geom_line(data = all_align %>% filter(color == 'all'),
-    linewidth = 1, alpha = 0.2,
-    color = '#F3766E') +
-  geom_point(data = all_align %>% filter(color == 'all'),
-             alpha = 0.2,
-             color = '#F3766E') +
-  geom_line(data = all_align %>% filter(color != 'all'),
-    linewidth = 1, alpha = 1,
-    color = '#1CBDC2') +
-  geom_point(data = all_align %>% filter(color != 'all'),
-             alpha = 1,
-             color = '#1CBDC2',
-             size = 4) + 
-    labs(title = "Alignment indices per number of permutations and scenario",
-       y = "Scenario Alignment index",
-       x = "Number of specialisms permutations") +
-  theme_classic()
-
-```
-
-```{r}
-#| fig-width: 14
-
-sc_tab <- data.frame(`Column 1` = c(scenario_names$scenario_name[1:22]),
-                     `Column 2` = c(scenario_names$scenario_name[23:44]),
-                     `Column 3` = c(scenario_names$scenario_name[45:65], NA))
-
-opts <- options(knitr.kable.NA = "")
-
-sc_tab|>
-  kable()
 ```
 
 ### Meta view of alignment vs interdisciplinarity
