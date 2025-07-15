@@ -36,9 +36,9 @@ book:
     - content/interdisciplinarity.qmd
     - content/conclusions.qmd
     - content/references.qmd
-  appendices:
-    - content/personal_combs.qmd
-    - content/scenario_combs.qmd
+  #appendices:
+  #  - content/personal_combs.qmd
+  #  - content/scenario_combs.qmd
   
   page-footer: 
     # left: "[![](media/CIM_logo_white.png){height=120}](https://warwick.ac.uk/fac/cross_fac/cim/) [![](media/cropped-RISCS-Banner-Reg1-1.png){height=120}](https://riscs.org.uk/)"

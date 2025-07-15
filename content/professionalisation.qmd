@@ -58,7 +58,7 @@ alignment_personal_long <- alignment_personal_long %>%
 alignment_personal_long <- alignment_personal_long %>%
   mutate(uk_ethnic_origin2 = case_when(uk_ethnic_origin == 'White' ~ 'White',
                                        uk_ethnic_origin == 'White' ~ 'White',
-                                       uk_ethnic_origin == 'Asian (Indian, Pakistani, Bangladeshi, Chinese, any other Asian background)' ~ 'Asian (Indian, Pakistani, Bangladeshi, Chinese, any other Asian background)',
+                                       uk_ethnic_origin == 'Asian (Indian, Pakistani, Bangladeshi, Chinese, and all other Asian backgrounds)' ~ 'Asian (Indian, Pakistani, Bangladeshi, Chinese, and all other Asian backgrounds)',
                                        uk_ethnic_origin == 'Prefer not to say' ~ 'Prefer not to say',
                                        .default = "All other ethnicities"))
 
@@ -162,7 +162,7 @@ alignment_personal_long |>
   filter(!is.na(gender2)) |>
   ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index * 100, fill=gender2)) +
   geom_boxplot(outliers = FALSE, alpha = 0.8) +
-  scale_fill_manual(values = c("#3880b1", "#ED753E")) +
+  scale_fill_manual(values = c("#a199ee", "#78d3c1")) +
   geom_jitter(alpha = 0.1, size = 0.8) + 
   labs(title = "Personal alignment to specialism by gender ",
        y = "Alignment index",
@@ -170,7 +170,8 @@ alignment_personal_long |>
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1),
         panel.grid.major.x = element_line(size=0.5, colour = "white",),
-        legend.position="top"
+        legend.position="top",
+        legend.title = element_blank()
 )
 ```
 
@@ -196,8 +197,11 @@ alignment_personal_long |>
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1),
         panel.grid.major.x = element_line(size=0.5, colour = "white",),
-        legend.position="top"
-)
+        legend.position="top",
+        legend.title = element_blank(),
+        ) +
+  scale_fill_manual(values = c("#78d3c1", "#a199ee", "#f8df88", "#e39a83", "#7eb5f9"))
+
 ```
 
 **Option 3: bump chart**
@@ -217,10 +221,13 @@ age_bump <- age_bump |>
 
 age_bump |>
   ggplot(aes(y = age2, x = Specialism, group = rank, color=age2)) +
-  geom_bump(linewidth = 0.6, smooth = 6) +
+  geom_bump(linewidth = 0.6, smooth = 6, direction = "x", show.legend = FALSE) +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1))
-
+  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1
+                                   ),
+        axis.title.x = element_blank(),
+        axis.text.y = element_text(angle = 15)) +
+  coord_flip()
 
 ```
 
@@ -235,6 +242,8 @@ age_bump |>
 #| fig-width: 14
 #| fig-align: "center"
 
+alignment_personal_long$sexual_orientation2 <- factor(alignment_personal_long$sexual_orientation2,levels=c("Yes","No", "I prefer not to answer"))
+
 alignment_personal_long |> 
   ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index * 100, fill=sexual_orientation2)) +
   geom_boxplot(outliers = FALSE, alpha = 0.8) +
@@ -246,8 +255,10 @@ alignment_personal_long |>
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1),
         panel.grid.major.x = element_line(size=0.5, colour = "white",),
-        legend.position="top"
-)
+        legend.position="top",
+        legend.title = element_blank()
+        ) +
+        scale_fill_manual(values = c("#78d3c1", "#a199ee", "#f8df88"))
 ```
 
 Our study shows encouraging indicative results that sexual orientation does not significantly map on to differences in alignment with specialisms.
@@ -263,6 +274,8 @@ Due to having a low number of respondents in some categories, we've grouped data
 #| fig-width: 14
 #| fig-align: "center"
 
+alignment_personal_long$uk_ethnic_origin2 <- factor(alignment_personal_long$uk_ethnic_origin2,levels=c("White","Asian (Indian, Pakistani, Bangladeshi, Chinese, any other Asian background)", "All other ethnicities", "Prefer not to say"))
+
 alignment_personal_long |> 
   ggplot(aes(x = str_wrap(Specialism, width = 30), y = alignment_index * 100, fill=uk_ethnic_origin2)) +
   geom_boxplot(outliers = FALSE, alpha = 0.8) +
@@ -274,8 +287,10 @@ alignment_personal_long |>
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1),
         panel.grid.major.x = element_line(size=0.5, colour = "white",),
-        legend.position="top"
-)
+        legend.position="top",
+        legend.title = element_blank()
+        ) +
+    scale_fill_manual(values = c("#78d3c1", "#a199ee", "#f8df88", "#e39a83", "#7eb5f9"))
 ```
 
 It is potentially concerning to observe that respondents identifying as white were, on average, most well aligned with every single specialism. This observation alone could justify further research.

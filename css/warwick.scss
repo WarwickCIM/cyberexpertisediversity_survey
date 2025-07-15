@@ -3,6 +3,8 @@ $w_aubergine: #552D62;
 $w_grey: #393A3B;
 $w_ruby_red: #9A1310;
 $w_sky_blue: #00407A;
+$w_new_lavender: #a199ee;
+$w_new_teal: #78d3c1;
 
 
 /*-- scss:defaults --*/
@@ -11,11 +13,11 @@ $w_sky_blue: #00407A;
 $link-color: $w_aubergine;
 
 #quarto-content {
-    border-top: 5px solid $link-color;
+    border-top: 5px solid $w_new_lavender;
 }
 
 .footer .nav-footer {
-    background-color: $link-color;
+    background-color: $w_new_lavender;
     color: white;
     a {
         color: white;

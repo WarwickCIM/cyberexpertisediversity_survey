@@ -84,8 +84,8 @@ df <- responses_sum |>
   ) |>
   select(id, cybok_coverage, max_alignment_index)
 
-ggplot(df, aes(x = max_alignment_index, y = cybok_coverage)) +
-  geom_point(alpha = 0.7) +
+ggplot(df, aes(x = max_alignment_index * 100, y = cybok_coverage * 100)) +
+  geom_point(alpha = 1,  color = '#78d3c1') +
   labs(
     x = "Maximum Alignment Index",
     y = "CyBOK Coverage"

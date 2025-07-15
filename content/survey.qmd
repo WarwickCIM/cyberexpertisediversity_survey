@@ -106,9 +106,13 @@ In terms of demographics, we can see (@tbl-responses-age) that, more than 50% of
 ```{r}
 #| label: tbl-responses-age
 #| tbl-cap: "Responses by age"
-responses |> 
+age_table <- responses |> 
   select(age) |> 
-  summarise_column("age") |> 
+  summarise_column("age")
+
+colnames(age_table) <- c("Age", "N", "Percent")
+
+age_table|> 
   kable()
 ```
 
@@ -117,18 +121,26 @@ responses |>
 ```{r}
 #| label: tbl-responses-gender
 #| tbl-cap: "Responses by gender"
-responses |> 
+gender_table <- responses |> 
   summarise_column("gender") |> 
-  arrange(desc(count)) |> 
+  arrange(desc(count))
+
+colnames(gender_table) <- c("Gender", "N", "Percent")
+
+gender_table |> 
   kable()
 ```
 
 ```{r}
 #| label: tbl-responses-transgender
 #| tbl-cap: "Responses by gender (2)"
-responses |> 
+trans_table <- responses |> 
   summarise_column("transgender") |> 
-  arrange(desc(count)) |> 
+  arrange(desc(count)) 
+
+colnames(trans_table) <- c("Trans", "N", "Percent")
+
+trans_table|> 
   kable()
 ```
 
@@ -137,9 +149,13 @@ In terms of ethnicity (@tbl-responses-ethnicity), we can see a clear dominance o
 ```{r}
 #| label: tbl-responses-ethnicity
 #| tbl-cap: "Responses by ethnicity"
-responses |> 
+ethnicity_table <- responses |> 
   summarise_column("uk_ethnic_origin") |> 
-  arrange(desc(count)) |> 
+  arrange(desc(count)) 
+
+colnames(ethnicity_table) <- c("Ethnicity", "N", "Percent")
+
+ethnicity_table|> 
   kable()
 ```
 
@@ -148,9 +164,13 @@ In terms of disabilities (@tbl-responses-disabilities), respondents reporting so
 ```{r}
 #| label: tbl-responses-disabilities
 #| tbl-cap: "Responses by disabilities"
-responses |> 
+disability_table <- responses |> 
   summarise_column("disabilities") |> 
-  arrange(desc(count)) |> 
+  arrange(desc(count))
+
+colnames(disability_table) <-  c("Disabilites", "N", "Percent")
+
+disability_table|> 
   kable()
 ```
 
@@ -163,7 +183,7 @@ In terms of job-related questions, we can see ( @tbl-responses-experience) that 
 ```{r}
 #| label: tbl-responses-experience
 #| tbl-cap: "Responses by years of experience"
-responses |> 
+age_table <- responses |> 
   select(years_experience) |> 
   mutate(
     years_experience = case_when(
@@ -177,16 +197,24 @@ responses |>
     years_experience = as.factor(years_experience),
     years_experience = fct_relevel(years_experience, c("0-5", "6-10", "11-15", "16-20", "21-25", "25+"))
   ) |> 
-  summarise_column("years_experience") |> 
+  summarise_column("years_experience")
+
+colnames(age_table) <- c("Age", "N", "Percent")
+
+age_table |> 
   kable()
 ```
 
 ```{r}
 #| label: tbl-responses-org-size
 #| tbl-cap: "Responses by organisation size"
-responses |> 
+org_size <- responses |> 
   mutate(organisation_size = fct_relevel(organisation_size, "Micro (1 to 9 employees)", after = 3)) |> 
-  summarise_column("organisation_size") |> 
+  summarise_column("organisation_size")
+
+colnames(org_size) <- c("Organisation Size", "N", "Percent")
+
+org_size|> 
   kable()
 ```
 
@@ -203,14 +231,22 @@ responses |>
 
 industry_table <- data.frame(table(responses$organisation_sector))
 industry_table$Var1 <- industry_table$Var1 <- as.character(industry_table$Var1)
+industry_table$Var1 <- tools::toTitleCase(industry_table$Var1)
 industry_table$Var1 <- replace(industry_table$Var1, industry_table$Freq <= 3, 'Other (low n)')
-industry_table <- industry_table %>% group_by(Var1) %>% summarise(Freq=sum(Freq))
 
-# order and set col names
-industry_table <- industry_table %>% arrange(desc(Freq))
-colnames(industry_table) <- c('Industry Sector', 'Number of respondents')
+industry_table <- industry_table |>
+  group_by(Var1) |>
+  summarise(Freq=sum(Freq),
+            PCT= Freq / sum(industry_table$Freq) * 100) |>
+  arrange(desc(Freq)) 
+  
 
-kable(industry_table)
+industry_table$PCT <- paste0(round(industry_table$PCT, digits = 1), '%')
+
+colnames(industry_table) <- c('Industry Sector', 'N', 'Percent')
+
+industry_table |>
+  kable()
 
 ```
 
@@ -236,7 +272,7 @@ response_all <- drop_na(response_all)
 
 ggplot(response_all, aes(all_points, all_name)) +
   geom_quasirandom(size= 0.5, alpha=0.1, color="black") +
-  geom_boxplot(width=0.05, alpha=0.75, color="#3880b1") +
+  geom_boxplot(width=0.05, alpha=0.75, color="#a199ee") +
   xlab('') + 
   ylab('') +
   ggtitle('All Expertise Responses') +
@@ -270,7 +306,7 @@ scenario_all <- drop_na(scenario_all)
 
 ggplot(scenario_all, aes(all_points, all_name)) +
   geom_quasirandom(size= 0.5, alpha=0.1, color="black") +
-  geom_boxplot(width=0.05, alpha=0.5, color="#3880b1") +
+  geom_boxplot(width=0.05, alpha=0.5, color="#a199ee") +
   xlab('') + 
   ylab('') +
   ggtitle('All Scenario Responses') +
@@ -305,11 +341,11 @@ responses |>
   arrange(name) |> 
   mutate(
     box_color = case_when(
-      name %in% c("cloud security", "data science ai for cyber security", "security culture narrative and communication", "political aspects of cyber security", "social organisation strategy and process") ~ "#ED753E",
-     TRUE ~ "#3880b1"),
+      name %in% c("cloud security", "data science ai for cyber security", "security culture narrative and communication", "political aspects of cyber security", "social organisation strategy and process") ~ "#a199ee",
+     TRUE ~ "#78d3c1"),
     box_color = as.factor(box_color)
   ) |>
-  ggplot(aes(x = name, y = value, fill = box_color)) + 
+  ggplot(aes(x = tools::toTitleCase(name), y = value, fill = box_color)) + 
   geom_boxplot(outliers=FALSE) +
   geom_jitter(alpha = 0.1, size = 0.8) + 
   labs(
@@ -322,7 +358,7 @@ responses |>
   theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1),
         legend.position="top",
         panel.grid.major.x = element_line(size=0.5, colour = "white")) +
-  scale_fill_manual(values = c("#3880b1", "#ED753E"), labels=c('CyBOK KAs', 'Additional categories'))
+  scale_fill_manual(values = c("#78d3c1", "#a199ee"), labels=c('CyBOK KAs', 'Additional categories'))
 ```
 
 The scenarios elicited from respondents favoured areas such as *security culture*, *adversarial behaviours*, *risk management* and *security operations*. This reflects the prominence of organisational challenges and incidents in the dataset.
@@ -339,10 +375,10 @@ scenarios |>
          name = str_replace_all(name, "_", " ")) |> 
   arrange(name) |> 
     mutate(box_color = case_when(
-     name %in% c("cloud security", "data science ai for cyber security", "security culture narrative and communication", "political aspects of cyber security", "social organisation strategy and process") ~ "#ED753E",
-     TRUE ~ "#3880b1"
+     name %in% c("cloud security", "data science ai for cyber security", "security culture narrative and communication", "political aspects of cyber security", "social organisation strategy and process") ~ "#a199ee",
+     TRUE ~ "#78d3c1"
    )) |>
-  ggplot(aes(x = name, y = value, fill = box_color)) + 
+  ggplot(aes(x = tools::toTitleCase(name), y = value, fill = box_color)) + 
   geom_boxplot(outliers=FALSE) +
   geom_jitter(alpha = 0.1, size = 0.8) + 
 labs(
@@ -355,7 +391,7 @@ labs(
   theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1),
         legend.position="top",
         panel.grid.major.x = element_line(size=0.5, colour = "white")) +
-  scale_fill_manual(values = c("#3880b1", "#ED753E"), labels=c('CyBOK KAs', 'Additional categories'))
+  scale_fill_manual(values = c("#78d3c1", "#a199ee"), labels=c('CyBOK KAs', 'Additional categories'))
 ```
 
 ## Key limitations
