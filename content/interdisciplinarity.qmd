@@ -40,9 +40,7 @@ In this section we were interested in how one might analyse the interdisciplinar
 
 ## Data analysis
 
-### Looking at specialisms alignment with the scenarios
-
-*New Graph* *This is one of the graphs I made for the poster, I have included a basis version here, but can refine further if you would like to keep it*
+### Respondents and scenarios
 
 ```{r}
 #| label: fig-alignment-persona-vs-scenarios
@@ -119,7 +117,9 @@ theme(
              strip.position = 'bottom')
 ```
 
-**This graph plots the difference between the personal alignment metric and scenario alignment metric for each individual respondent. Each line shows the difference between these two responses. Purple shows those responses where personal skills exceed those needed for the scenario described. Teal shows those where the skills needed for the scenario exceed those of the respondent .**
+This graph plots the difference between the personal alignment metric and scenario alignment metric for each individual respondent. Each line shows the difference between these two responses. Purple shows those responses where personal skills exceed those needed for the scenario described. Teal shows those where the skills needed for the scenario exceed those of the respondent. At a very high level this gives a sense of the breadth and depth of the profession as represented in our sample.
+
+### Looking at specialisms alignment with the scenarios
 
 #### Alignment of permutations of multiple specialisms with problem scenarios
 
@@ -148,7 +148,7 @@ max_alignment_scenarios |>
   )
 ```
 
-Scenarios with a steep gradient indicate significantly better alignment could be gained through mixed teams of specialists. The alignment score for permutations of specialists is calculated by creating combined 'combs' from the maximum values. We do this for all possible permutations, up to a maximum of 5, and plot the maximum alignment for each team size.
+In the graphs below, a steep gradient indicates significantly better alignment could be gained through mixed teams of specialists. The alignment score for permutations of specialists is calculated by creating combined 'combs'. We do this for all possible permutations, up to a maximum of 5, and plot how the maximum alignment for each scenario increases. The sliders for 25, 31, 44 and 53 were left blank, but we include for completeness.
 
 ```{r}
 #| label: fig-alignment-scenarios
@@ -200,11 +200,19 @@ Scenarios that have lower overall alignment tend to be scenarios where responden
 
 #### Most interdisciplinary scenarios
 
-Scenarios that had a steep gradient may be interpreted as particularly interdisciplinary. The adequacy of a team to tackle these scenarios improves significantly if more different specialists are added. *Scenario 7: Protecting Legacy equipment against emerging AI/PQC Threat*, for instance combined significant elements of 'hardware security', 'cryptography', 'network security', 'authentication, authorisation and accountability', and 'distributed systems security'. Scenarios like this hit a combination of expertise that is not directly associated within existing specialisms. No UKCSC specialism, for instance, is identified with 'authentication, authorisation and accountability' *and* 'hardware security'. This scenario is about protecting legacy equipment in a CNI context, and while this is a specific context it is a widely recognised problem scenario.
+Scenarios that had a steep gradient may be interpreted as particularly interdisciplinary. The adequacy of a team to tackle these scenarios improves significantly if more different specialists are added. *Scenario 7: Protecting Legacy equipment against emerging AI/PQC Threat*, for instance combined significant elements of 'hardware security', 'cryptography', 'network security', 'authentication, authorisation and accountability', and 'distributed systems security'. Scenarios like this hit a combination of expertise that is not directly associated within existing specialisms. No UKCSC specialism, for instance, is identified with 'authentication, authorisation and accountability' *and* 'hardware security'. This scenario is about protecting legacy equipment in a CNI context, widely understood to be a key problem area in the profession. In this case the best alignment was achieved as follows:
 
-Scenario 27: incident response was intriguing. It was also very 'interdisciplinarity' by this gradient heuristic. But this is puzzling because there is a specialism called 'incident response' that one might presume ought to align well on its own. The respondent had specified the problem scenario including the requirement for very high expertise in 'authorisation, authentication and accountability', and quite high in 'operating systems and virtualization security'. Neither of these are taken to be of even 'wider' relevance to incident response or digital forensics specialisms.
+1 Specialist: Secure System Architecture & Design (Industrial Control Systems)
 
-Both scenarios 7 and 27 provide anecdotal evidence that the Cyber Careers Framework's CyBOK mapping may itself require further development. Further research into expertise diversity could help test this hypothesis and generate insights to improve the mapping.
+2 Specialists: Incident response (Industrial Control Systems), Cryptography & Communications Security (Cryptographer)
+
+3 Specialists: Cyber Threat Intelligence, Cryptography & Communications Security (Cryptographer), Secure System Architecture & Design (Industrial Control Systems)
+
+4 Specialists: Cyber Threat Intelligence, Cryptography & Communications Security (Cryptographer), Secure Operations, Secure System Architecture & Design (Industrial Control Systems)"
+
+5 Specialists: Cyber Threat Intelligence, Cyber Security Management, Cryptography & Communications Security (Cryptographer), Secure Operations, Secure System Architecture & Design (Industrial Control Systems)"
+
+Scenario 27: incident response was intriguing. It was also very 'interdisciplinarity' looking at the gradient that we are using for a heuristic. But this is puzzling because there is a specialism called 'incident response' that one might presume ought to align well on its own. The respondent had specified the problem scenario including the requirement for very high expertise in 'authorisation, authentication and accountability', and quite high in 'operating systems and virtualization security'. Neither of these are taken to be of even 'wider' relevance to incident response. Indeed, the incident response specialism did not feature in any of the best combinations of specialisms for this scenario. While this is highly anecdotal, it does suggest there is more to be understood, and that there could be improvements to the Cyber Careers Framework's CyBOK mapping to ensure good alignment with practice.
 
 Scenarios 61 and 62 were more specialist problems
 
@@ -230,17 +238,17 @@ Requirement to build out a cyclical, threat detection and engineering process wh
     \(62\)
 :::
 
-These scenarios are the more 'naturally' interdisciplinary cases, where problems need to be addressed that are not neatly contained within standard specialism areas, and will either require individuals with unusual skillsets or else mixed teams.
+These scenarios are the more 'naturally' interdisciplinary cases, where problems need to be addressed that are idiosyncratic, are not neatly contained within standard specialism areas, and will either require individuals with unusual skillsets or else mixed teams.
 
 #### Non-CyBOK expertise
 
 Finally, some scenarios were specified in ways that heavily emphasised the need for non-CyBOK areas of expertise. In these cases, the alignment scores are deceptive, because we cannot calculate which specialists would contribute these skills. Interestingly, one of these cases was *58 - Incident Response is a business requirement, not just for the IT/Cyber team(s).*
 
 ::: {.callout-note appearance="minimal"}
-Often people think that cyber maturity, resilience, and response is just for the cyber or IT teams to do. Promoting that it there are multiple groups that will be affected and impacted by a successful compromise and making them aware and appreciate their role to play and to consider what their individual playbook would look like is a difficult but important task to achieve. Evidence based metrics to promote the risk and then cyber resilience exercises involving key stakeholders that then promote wider engagement down the line is a necessary tool to have in your armour.
+Often people think that cyber maturity, resilience, and response is just for the cyber or IT teams to do. Promoting that it there are multiple groups that will be affected and impacted by a successful compromise and making them aware and appreciate their role to play and to consider what their individual playbook would look like is a difficult but important task to achieve. Evidence based metrics to promote the risk and then cyber resilience exercises involving key stakeholders that then promote wider engagement down the line is a necessary tool to have in your armour. (58)
 :::
 
-Incident response is supposed to be captured within the existing specialisms, but this respondent specifies the problem in a way that emphasises expertise that is not considered within the Careers Framework. In particular, the organisational, human factors and culture aspects are deemed particularly important. Again anecdotal, examples like this are suggestive of how the process of professionalising cyber security may benefit from further research. Given that several respondents voiced scepticism about the value of certifications, ensuring alignment with real world problems is likely to be crucial to long term success. This means examining the adequacy of the current framework, examining how problems are changing with new technology and new threats, and examining problem definition more broadly.
+Incident response is supposed to be captured within the existing specialisms, but this respondent specifies the problem in a way that emphasises expertise that is not considered within the Careers Framework. In particular, the organisational, human factors and culture aspects are deemed particularly important. Again anecdotal, examples like this are suggestive that these areas are perhaps more diverse in their needs, or in the approaches that practitioners take, than is usually recognised. Given that several respondents voiced scepticism about the value of certifications, ensuring alignment of the specialisms with real world problems is likely to be crucial to long term success. This means examining the adequacy of the current framework, examining how problems are changing with new technology and new threats, and examining problem definition more broadly.
 
 ## Recommendations
 

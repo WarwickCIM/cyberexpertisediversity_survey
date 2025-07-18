@@ -2,4 +2,16 @@
 title: "Conclusions"
 ---
 
-Summarise main findings from every section and higlight relevance/importance.
+'More research is needed' is never a satisfying conclusion to draw, but in a rapidly evolving sector these kinds of conclusions are crucial in ensuring that future research lines up with key questions.
+
+-   We need data that helps us to establish relationships between diversity and expertise, to influence the process of professionalisation. We have argued that this evidence base would be a key enabler for the credibility of professional categories, and ultimately for strengthening the UK's cyber security capacity. We have argued that future Decrypting Diversity studies would be of great value to the profession especially if they incorporate attention to expertise in the way we have prototyped here.
+
+-   This data can help inform classifications such as CyBOK and the Cyber Careers Framework, ensure that gaps are filled and the profession is responsive to new areas of expertise as it adapts to changing technological and social circumstances.
+
+-   In parallel with seeking to build the evidence base, we feel it would be worthwhile for exploratory work to be undertaken to map out what new specialisms in areas such as security human factors and security awareness could look like. This would be valuable because once they are scoped out, the alignment of these specialisms with cyber security scenarios could be tested through data analysis.
+
+-   We were unable to develop a detailed analysis of the value of idiosyncratic career pathways to cyber security but this remains an issue worthy of further investigation, given that professionalisation is likely to guide the careers of future professionals along increasingly conventionalised pathways.
+
+-   We have sought to contextualise this work within bodies of literature on professionalisation, classification and diversity, which we hope will help to provide strong theoretical foundations for future analyses.
+
+We would like to thank all our respondents for the time they gave us in filling in the survey, and to the generous individuals from industry and government who helped us to define the project.
