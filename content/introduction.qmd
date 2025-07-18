@@ -5,8 +5,6 @@ format: html
 
 ## Background on this survey, aims and objectives
 
-### This survey
-
 The Cyber Expertise Diversity Survey was designed to investigate how new structures being introduced into the cyber security profession may be influencing its composition. The survey is small scale, opportunistic, and exploratory. These limitations mean it is oriented more towards formulating and testing the questions we should be asking rather than providing conclusive answers. It aims to provide recommendations for the design of future larger studies.
 
 The survey was conducted in association with RISCS (the Research Institute for Sociotechnical Cyber Security), and the approach was developed with help from a number of individuals in industry and government who supported the project by providing advice on the approach and objectives.
@@ -15,7 +13,7 @@ The Cyber Expertise Diversity Survey explores the intersection of diversity and 
 
 [^introduction-1]: See <https://www.ncsc.gov.uk/report/diversity-and-inclusion-in-cyber-security-report>, <https://www.ncsc.gov.uk/report/decrypting-diversity-2021-diversity-and-inclusion-in-cyber-security>, [https://www.gov.uk/government/publications/cyber-security-skills-in-the-uk-labour-market-2024/cyber-security-skills-in-the-uk-labour-market-2024-technical-report](https://www.gov.uk/government/publications/cyber-security-skills-in-the-uk-labour-market-2024/cyber-security-skills-in-the-uk-labour-market-2024-technical-report#overview)
 
-### Research Goals
+## Research Goals
 
 We wanted to understand how well aligned categories of cyber specialism are with EDI goals of the profession. We wanted to think through who will find it harder or easier to attain recognised status, and to examine how professionalisation is likely to change the distribution of cyber security expertise.
 
