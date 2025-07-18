@@ -78,7 +78,9 @@ Concerns about the adequacy of the UK's cyber security workforce, and its abilit
 
 -   to enable employers to better understand what they need from their cyber security employees.
 
-The first UK National Cyber Security Strategy, published in 2016, identified the need for government to do more to support the development of the cyber security profession. As part of the implementation of the Strategy, in 2018, the Department for Digital, Culture, Media and Sport launched a proposal and consultation on the creation of the UK Cyber Security Council (UKCSC). The consultation recognised that there were existing forms of recognition, such as offered by the Institute of Information Security Professionals, which received a Royal Charter in 2018, and the International Information System Security Certification Consortium (ISC2), which governs the international CISSP (Certified Information Systems Security Professional) qualification, but argued that there were outstanding issues with coverage (some kinds of cyber security expertise were not covered, or partially covered), and equivalence. The UKCSC was thus set up to "act as a governing voice for the cyber security profession in the UK" [@DefenceSecurityIndustrial2021], and was launched in 2021.
+The first UK National Cyber Security Strategy, published in 2016, identified the need for government to do more to support the development of the cyber security profession[^professionalisation-1]. As part of the implementation of the Strategy, in 2018, the Department for Digital, Culture, Media and Sport launched a proposal and consultation on the creation of the UK Cyber Security Council (UKCSC). The consultation recognised that there were existing forms of recognition, such as offered by the Institute of Information Security Professionals, which received a Royal Charter in 2018, and the International Information System Security Certification Consortium (ISC2), which governs the international CISSP (Certified Information Systems Security Professional) qualification, but argued that there were outstanding issues with coverage (some kinds of cyber security expertise were not covered, or partially covered), and equivalence. The UKCSC was thus set up to "act as a governing voice for the cyber security profession in the UK" [@DefenceSecurityIndustrial2021], and was launched in 2021.
+
+[^professionalisation-1]: <https://www.gov.uk/government/publications/national-cyber-security-strategy-2016-to-2021>
 
 Pillar 5 of the UK National Cyber Security Strategy 2022-2030, is the objective to 'develop the right cyber security skills, knowledge and culture' so that 'sufficient, skilled and knowledgeable professionals fulfil all required cyber security needs' [@cabinetofficeGovernmentCyberSecurity2022]. This is to be delivered through "consistent taxonomies, standards and pathways" providing "diverse and fulfilling cyber security careers" and wider status recognition through accreditation and standardisation. The UKCSC's work has thus become central to the national strategic vision.
 
@@ -88,15 +90,15 @@ In pursuit of these goals, the UKCSC developed a 'Cyber Careers Framework' which
 
 Professionalisation can be analysed sociologically through the lens of social openness and social closure. The concept of social relationships being 'open' or 'closed' has deep roots in sociology, and is a building block of Max Weber's classic analysis of social action [@weber2019economy]. Social closure is an umbrella term for the ways in which groups construct and maintain monopolies over opportunities, by including some people and excluding others. Understanding how and why closure occurs is key to our understanding of social structure and power. It can operate at multiple levels. Even where opportunities are formally open, groups may nevertheless be able to maintain control over resources through influencing access to jobs or status, for instance through cronyism or nepotism. Closure can create durable barriers to entry or 'glass ceilings' that limit opportunities. Social closure can be durable because, once they exist, monopolies on resources tend to create an alignment of interest among group members, as they have a common interest in maintaining the status quo and resisting change. Weber considered guilds to be an 'archetype' of closure where it is motivated by a cooperative monopolisation of (resource) acquisition, and under the rubric of 'occupational closure' the sociology of professions has studied professionalisation as an important example of social closure in the modern age.
 
-There is a tension between occupational closure and the moral projects of social liberalism that promote fair access and equality of opportunity. In the cases of the professions, the justification of occupational closure involves achieving a balance between competing moral principles: on the one hand, for buildings to be safe, for accounts to be trustworthy, for all to have fair and equal representation under the law, for healthcare to be safe, and so on, it is necessary to restrict who can practice engineering, accountancy, law and medicine to those who have met a certain standard of qualification and committed to accepted standards of conduct. On the other hand, while entry into these professions may be formally open and non-discriminatory, entrants often need considerable capital---social capital in the form of social networks giving access to opportunities for apprenticeships and experience, cultural capital in the form of the ability to 'fit in,' be 'taken seriously' and generally navigate within professional communities, and financial capital in the form of resources to support what are often extended periods of training or low pay at the start of careers---and so the institutional structure of the professions tends to reinforce existing social inequalities. It is not by accident that the traditional British middle classes are commonly referred to as 'the professional class'. Professional bodies, such as the British Medical Associations, the Law Society, the Association of Chartered Certified Accountants, and so on, thus understand their mission as having two sides: one that focuses on ensuring standards of competence and conduct are met, and the other intervening to improve and support equitable access to the profession, through special initiatives, financial support, community engagement, communication campaigns, and research. In short, professional bodies' interest in equality, diversity and inclusion should not be seen as a separate side project, but as a core project that ensures the social legitimacy of occupational closure, by showing that the profession is a vehicle for, and not an obstacle to, fair access.
+There is a tension between occupational closure and the values of social liberalism that promote fair access and equality of opportunity. In the cases of the professions, the justification of occupational closure involves achieving a balance between competing moral principles: on the one hand, for buildings to be safe, for accounts to be trustworthy, for all to have fair and equal representation under the law, for healthcare to be safe, and so on, it is necessary to restrict who can practice engineering, accountancy, law and medicine to those who have met a certain standard of qualification and committed to accepted standards of conduct. On the other hand, while entry into these professions may be formally open and non-discriminatory, entrants often need considerable capital---social capital in the form of social networks giving access to opportunities for apprenticeships and experience, cultural capital in the form of the ability to 'fit in,' be 'taken seriously' and generally navigate within professional communities, and financial capital in the form of resources to support what are often extended periods of training or low pay at the start of careers---and so the institutional structure of the professions tends to reinforce existing social inequalities. It is not by accident that the traditional British middle classes are commonly referred to as 'the professional class'. Professional bodies, such as the British Medical Associations, the Law Society, the Association of Chartered Certified Accountants, and so on, thus tend to understand their mission as having two sides: one that focuses on ensuring standards of competence and conduct are met, and the other intervening to improve and support equitable access to the profession, through special initiatives, financial support, community engagement, communication campaigns, and research. In short, professional bodies' interest in equality, diversity and inclusion should not be seen as a separate side project, but as a core project that ensures the social legitimacy of occupational closure, by ensuring and demonstrating that the profession is a vehicle for, and not an obstacle to, fair access.
 
-The success of the project to professionalise cyber security in the UK will depend on the ongoing legitimacy of bodies such as the UKCSC. Cyber security is a young profession, and legitimacy cannot rest on a received understanding of its members as an elite group (as with doctors or lawyers). It is crucial to show how diversity will be understood and managed in the years ahead, so that achievement can be celebrated, and the contribution of diversity to the delivery of cyber security outcomes is part of the vision for the sector. This will require that professional bodies are attentive to, and responsive to, challenges of diversity in the years ahead.
+The success of the project to professionalise cyber security in the UK will depend on the ongoing legitimacy of bodies such as the UKCSC. Cyber security is a young profession, and legitimacy cannot rest on a received understanding of its members as an elite group (as is arguably the case with doctors or lawyers). It is crucial to show how diversity will be understood and managed in the years ahead, so that achievement can be celebrated, and so that the contribution of diversity to the delivery of cyber security outcomes is part of the vision for the sector. This will require that professional bodies are attentive to, and responsive to, challenges of diversity.
 
 ## The value of diversity
 
 While considerations of social closure are sufficient to illustrate why diversity is a core priority for the legitimacy of the UKCSC, an even stronger argument can be constructed based on research into the value of diversity. Sociologists have argued that organisational or institutional diversity has value as a resource during times of economic transition [@grabher1997organizing]. Scholars in safety studies have argued that overly homogeneous patterns of reasoning and valuation can 'incubate disaster', a central problem for organisations that operate in safety critical contexts [@dekker2014drifting; @vaughan1996challenger]. In Karl Weick's classic studies of high reliability organisations, diversity can be understood as a source of 'requisite variety' that enables organisations to avoid accidents.
 
-> Whether team members differ in occupational specialities, past experience, gender, conceptual skills, or personality may be less crucial than the fact that they do differ and look for different things when they size up a problem. If people look for different things, when their observations are pooled they collectively see more than any one of them alone would see. However, as team members become more alike, their pooled observations cannot be distinguished from their individual observations, which means collectively they know little more about a problem than they know individually.[@weick1987organizational]
+> Whether team members differ in occupational specialities, past experience, gender, conceptual skills, or personality may be less crucial than the fact that they do differ and look for different things when they size up a problem. If people look for different things, when their observations are pooled they collectively see more than any one of them alone would see. However, as team members become more alike, their pooled observations cannot be distinguished from their individual observations, which means collectively they know little more about a problem than they know individually [@weick1987organizational].
 
 Several studies have indicated that hiring people from diverse backgrounds provides value in broadening organisational repertoires of thought and practice, and enhancing the potential to innovate [@herring2009does]. Researchers have also argued that homogeneity can be a source of problems, with evidence, for instance, that homogeneity leads to bubbles and inefficient markets [@levine2014ethnic]. The 2020-2021 NCSC/KPMG Decrypting Diversity reports explicitly reference this line of thinking, arguing that diversity in the workplace brings "benefits including better financial performance, increased creativity and innovation, greater employee satisfaction, lower absenteeism and stronger talent retention" [@NCSC2020decrypting]. In other words, diversity is valuable not just because inequality and discrimination are unacceptable, but also because it is a driver of innovation and ultimately a more secure society.
 
@@ -150,7 +152,7 @@ Of particular interest for our analysis is breaking down the overall picture acc
 
 #### Gender
 
-When we break out alignment by gender we notice that people identifying as men were on average better aligned than those identifying as women or non-binary in all areas apart from *Cyber security audit and assurance*, and *Data protection and privacy*. We have ignored 'prefer not to say' in this case.
+When we break out alignment by gender we notice that people identifying as men were on average better aligned than those identifying as women or non-binary in all areas apart from *Cyber security audit and assurance*, *Cyber security governance and risk management* and *Data protection and privacy*. We have ignored 'prefer not to say' in this case.
 
 ```{r}
 #| label: fig-personal-alignment-scenario-gender_v2
@@ -204,36 +206,9 @@ alignment_personal_long |>
 
 ```
 
-**Option 3: bump chart**
-
-**I like the bump chart but please can you swap x and y axes? And add a caption?**
-
-```{r}
-
-age_bump <- alignment_personal_long |> 
-  group_by(age2, Specialism) |>
-  summarise(mean = mean(alignment_index))
-
-
-age_bump <- age_bump |>
-    group_by(Specialism) %>% 
-    mutate(rank = rank(mean , ties.method = "first"))
-
-age_bump |>
-  ggplot(aes(y = age2, x = Specialism, group = rank, color=age2)) +
-  geom_bump(linewidth = 0.6, smooth = 6, direction = "x", show.legend = FALSE) +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1
-                                   ),
-        axis.title.x = element_blank(),
-        axis.text.y = element_text(angle = 15)) +
-  coord_flip()
-
-```
-
 #### Sexual orientation
 
-**Please can you change the label on the legend to read 'Do you identify as lesbian, gay or bisexual?' so that the 'No' and 'Yes' make sense?**
+In the visualisation below, respondents were asked 'Do you identify as lesbian, gay or bisexual?'.
 
 ```{r}
 #| label: fig-personal-alignment-scenario-sexual-orientation_v2
