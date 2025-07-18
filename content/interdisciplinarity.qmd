@@ -119,7 +119,7 @@ theme(
              strip.position = 'bottom')
 ```
 
-**This graph plots the difference between the personal alignment metric and scenario alignment metric for each individual respondent. Each line shows the difference between these two responses. Purple shows those responses where personal skills exceed those needed for the scenario described. Teal shows those where the skills needed for the scenario exceed those of the respondent . **
+**This graph plots the difference between the personal alignment metric and scenario alignment metric for each individual respondent. Each line shows the difference between these two responses. Purple shows those responses where personal skills exceed those needed for the scenario described. Teal shows those where the skills needed for the scenario exceed those of the respondent .**
 
 #### Alignment of permutations of multiple specialisms with problem scenarios
 
