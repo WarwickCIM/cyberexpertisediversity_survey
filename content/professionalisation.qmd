@@ -58,7 +58,7 @@ alignment_personal_long <- alignment_personal_long %>%
 alignment_personal_long <- alignment_personal_long %>%
   mutate(uk_ethnic_origin2 = case_when(uk_ethnic_origin == 'White' ~ 'White',
                                        uk_ethnic_origin == 'White' ~ 'White',
-                                       uk_ethnic_origin == 'Asian (Indian, Pakistani, Bangladeshi, Chinese, and all other Asian backgrounds)' ~ 'Asian (Indian, Pakistani, Bangladeshi, Chinese, and all other Asian backgrounds)',
+                                       uk_ethnic_origin == 'Asian (Indian, Pakistani, Bangladeshi, Chinese, any other Asian background)' ~ 'Asian (Indian, Pakistani, Bangladeshi, Chinese, any other Asian background)',
                                        uk_ethnic_origin == 'Prefer not to say' ~ 'Prefer not to say',
                                        .default = "All other ethnicities"))
 
