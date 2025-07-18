@@ -1,20 +1,20 @@
 # Executive summary {.unnumbered}
 
-The RISCS Cyber Expertise Diversity Survey was run as an exploratory project looking at the influence of professionalisation on diversity in cyber security. We ran a small scale survey, and developed methods for assessing individuals' alignment with the new UK Cyber Security Council Careers Framework specialisms, and for assessing the alignment of the specialisms with cyber security problem scenarios our respondents told us about. The survey reveals the need for better data on how professionalisation is influencing diversity within the field, makes the case for future larger-scale surveys adopting a more expertise-focused approach. We argue that studies of this kind are needed to validate current classifications of expertise and specialisms, to ensure that it supports diversity in the field, and to ensure that it stays relevant in a changing world.
+The RISCS Cyber Expertise Diversity Survey was run as an exploratory project looking at the influence of professionalisation on diversity in cyber security. We ran a small scale survey, and developed methods for assessing individuals' alignment with the new UK Cyber Security Council Careers Framework specialisms, and for assessing the alignment of the specialisms with cyber security problem scenarios our respondents told us about. The survey reveals the need for better data on how professionalisation is influencing diversity within the field and makes the case for future larger-scale surveys of cyber security diversity adopting an expertise-focused approach. We argue that studies of this kind are needed to validate current classifications of expertise and specialisms, to ensure that the professionalisation of cyber security supports diversity in the field, and to ensure that it stays relevant in a changing world.
 
 ## Recommendations {.unnumbered}
 
-The UK government should support further Decrypting Diversity studies. These should explore the intersection of diversity and professionalisation, looking at how diverse cyber security practitioners align with existing UK Cyber Security Council Cyber Careers Framework specialisms, and at how such alignments are changing over time.
+The UK government should support further Decrypting Diversity studies. These should be extended to explore the intersection of diversity and professionalisation, looking at how diverse cyber security practitioners align with existing UK Cyber Security Council Cyber Careers Framework specialisms, and at how such alignments are changing over time.
 
 The UK Cyber Security Council should commence work on possible new specialisms in areas such as security human factors and security awareness, and explore whether this could rebalance the framework in relation to diversity characteristics.
 
-Future studies of expertise diversity in cyber security should be designed in ways that test the boundaries of CyBOK (or other classifications) in order that they can inform future iterations of these frameworks. Future CyBOK should better represent the contribution of the humanities and social sciences to cyber security.
+Future studies of expertise diversity in cyber security should be designed in ways that test the boundaries of CyBOK (or other classifications) in order that they can inform future iterations of these classificatory frameworks. Future CyBOK should better represent the contribution of the humanities and social sciences to cyber security.
 
-We recommend that the UK government supports further research into cyber security expertise diversity, including looking at cyber security problem scenarios, to identify present and future gaps in existing professional classifications and to help validate the Career Framework's CyBOK mapping.
+We recommend that the UK government supports further research into cyber security expertise diversity, looking in particular at cyber security problem scenarios to help validate the UK Cyber Security Council's Cyber Career Framework's CyBOK mapping.
 
 # About {.unnumbered}
 
-The [Cyber Expertise Diversity Survey](https://warwick.ac.uk/fac/cross_fac/cim/research/cyber_expertise_diversity) is a project run by the [Centre for Interdisciplinary Methodologies](https://warwick.ac.uk/cim) (CIM) and the [Research Institute for Sociotechnical Cyber Security (RISCS)](https://riscs.org.uk), led by Matt Spencer, RISCS Senior Fellow and Associate Professor at CIM.
+The [Cyber Expertise Diversity Survey](https://warwick.ac.uk/fac/cross_fac/cim/research/cyber_expertise_diversity) was a project run by the [Centre for Interdisciplinary Methodologies](https://warwick.ac.uk/cim) (CIM) and the [Research Institute for Sociotechnical Cyber Security (RISCS)](https://riscs.org.uk), led by Matt Spencer, RISCS Senior Fellow and Associate Professor at CIM.
 
 Other CIM staff involved in putting the survey together and analysing the data include Carlos Cámara-Menoyo and Timothy Monteath.
 
