@@ -73,14 +73,13 @@ format:
     reference-location: margin
   epub: default
   pdf:
+    # Worth exploring this: https://nmfs-opensci.github.io/quarto_titlepages/
     documentclass: book
     pdf-engine: lualatex
     papersize: a4
-    # geometry: margin=2.5cm
     fig-width: 6   # custom default figure width (in inches)
     fig-height: 8   # custom default figure height (in inches)
     cover-image: https://riscs.blogs.bristol.ac.uk/files/2024/06/RISCS_scribe_001-1.jpg  # Custom cover for PDF
-    aside-to-body: true         # Move asides to body
 
 editor: visual
 
