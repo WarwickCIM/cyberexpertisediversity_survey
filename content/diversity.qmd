@@ -129,6 +129,7 @@ Some degree of familiarity in human communication, behaviour, critical analysis 
 "we have an image problem in cybersecurity - we think the cool image is of a hoody wearing hacker in front of a keyboard / laptop, whether they are good guys or bad guys. The problem is this means we do not encourage the broader roles of cyber that are so not about the technology or the pen testing or hacking skills.
 
 My concern with the chartered status efforts the easy route will be to focus on chartering the technology centric aspects and roles and thus alienate those sitting on the outskirts of the tech often driving forward change and leading major cyber security efforts."
+
 :::
 
 Respondents' concerns with the overplayed 'technology centric' aspects of cyber security raises a broader issue with the technology and EDI agenda. The goal of increasing the representation of women in technology jobs has motivated campaigns to draw more women into STEM subjects in further and higher education. There is no doubt that this has been highly valuable. But there is an additional narrative that is implied here that is not necessarily helpful: that social scientific and humanities skills are not relevant to technology jobs. Changing the narrative to emphasise the contribution of the social sciences and humanities within tech and within cyber security may be needed, especially as AI technologies change skillsets. To do this effectively it will be necessary to see better representation of these forms of expertise in professional classifications.

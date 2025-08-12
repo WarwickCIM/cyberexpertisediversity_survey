@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: _book
   
 execute: 
   echo: false
@@ -21,6 +22,9 @@ book:
     affiliations:
     - name: University of Warwick
   date: "7/18/2025"
+  twitter-card: true
+  downloads: [pdf, epub]
+  output-file: "cyber-expertise-diversiry-report"
   
   repo-url: https://github.com/WarwickCIM/cyberexpertisediversity_survey
   repo-actions: [edit, issue]
@@ -48,12 +52,12 @@ book:
       # - text: "![](media/cropped-RISCS-Banner-Reg1-1.png){width=400}"
       #   href: https://riscs.org
     right: 
-      - icon: github
-        href: https://github.com/WarwickCIM/
       - icon: mastodon 
         href: https://fediscience.org/%40cimethods
-      - icon: bluesky
+      - icon: twitter
         href: https://bsky.app/profile/cimethods.bsky.social
+      - icon: github
+        href: https://github.com/WarwickCIM/
 
 
 bibliography: references.bib
@@ -67,8 +71,15 @@ format:
       - brand
       - css/warwick.scss
     reference-location: margin
-  # pdf:
-  #   documentclass: scrreprt
+  epub: default
+  pdf:
+    # Worth exploring this: https://nmfs-opensci.github.io/quarto_titlepages/
+    documentclass: book
+    pdf-engine: lualatex
+    papersize: a4
+    fig-width: 6   # custom default figure width (in inches)
+    fig-height: 8   # custom default figure height (in inches)
+    cover-image: https://riscs.blogs.bristol.ac.uk/files/2024/06/RISCS_scribe_001-1.jpg  # Custom cover for PDF
 
 editor: visual
 
