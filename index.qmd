@@ -1,20 +1,22 @@
 # Executive summary {.unnumbered}
 
-The RISCS Cyber Expertise Diversity Survey was run as an exploratory project looking at the influence of professionalisation on diversity in cyber security. We ran a small scale survey, and developed methods for assessing individuals' alignment with the new UK Cyber Security Council Careers Framework specialisms, and for assessing the alignment of the specialisms with cyber security problem scenarios our respondents told us about. The survey reveals the need for better data on how professionalisation is influencing diversity within the field and makes the case for future larger-scale surveys of cyber security diversity adopting an expertise-focused approach. We argue that studies of this kind are needed to validate current classifications of expertise and specialisms, to ensure that the professionalisation of cyber security supports diversity in the field, and to ensure that it stays relevant in a changing world.
+Our society is deeply and increasingly reliant on cyber security practitioners to ensure that digital services are dependable, critical infrastructure is resilient and sensitive data is protected. Their success depends on diverse ways of thinking, diverse skillsets, perspectives and backgrounds. Today, the profession is being transformed, with standardised categories of specialism, new certifications and governance structures. While this process of professionalisation is driven by the need to better support practitioners and their employers, it is vital to understand any unintended consequences that may be emerging. We focus here on potential negative impacts on diversity, a topic that must be carefully addressed to ensure that cyber security remains an attractive field to work in, to support the legitimacy of professional institutions and to enhance the efficacy of the field.
+
+We developed methodologies for analysing the alignment of practitioners with new classifications of specialisms, and for analysing the alignment of specialisms with cyber security problems. We tested these approaches using data from a small exploratory survey. We found that there is profound uncertainty about the impacts of professionalisation on diversity. This is rooted in a lack of data and a lack of theoretical analysis. This report takes a small step to correct this issue.
 
 ## Recommendations {.unnumbered}
 
-The UK government should support further Decrypting Diversity studies. These should be extended to explore the intersection of diversity and professionalisation, looking at how diverse cyber security practitioners align with existing UK Cyber Security Council Cyber Careers Framework specialisms, and at how such alignments are changing over time.
+Surveys on diversity in cyber security (Decrypting Diversity) should be revived and extended to look at the intersection of diversity and professionalisation, examining how the backgrounds of cyber security practitioners correlates with alignment to UK Cyber Security Council Cyber Careers Framework specialisms, and how such alignments are changing over time.
 
 The UK Cyber Security Council should commence work on possible new specialisms in areas such as security human factors and security awareness, and explore whether this could rebalance the framework in relation to diversity characteristics.
 
-Future studies of expertise diversity in cyber security should be designed in ways that test the boundaries of CyBOK (or other classifications) in order that they can inform future iterations of these classificatory frameworks. Future CyBOK should better represent the contribution of the humanities and social sciences to cyber security.
+Future iterations of the Cybersecurity Body of Knowledge (CyBOK) should be informed by research into expertise diversity, to ensure that the value of the humanities and social sciences within cyber security is better reflected.
 
-We recommend that the UK government supports further research into cyber security expertise diversity, looking in particular at cyber security problem scenarios to help validate the UK Cyber Security Council's Cyber Career Framework's CyBOK mapping.
+The UK Cyber Security Council's Cyber Career Framework's cross-reference to CyBOK should be refined and validated through studies of cyber security problem scenarios.
 
 # About {.unnumbered}
 
-The [Cyber Expertise Diversity Survey](https://warwick.ac.uk/fac/cross_fac/cim/research/cyber_expertise_diversity) was a project run by the [Centre for Interdisciplinary Methodologies](https://warwick.ac.uk/cim) (CIM) and the [Research Institute for Sociotechnical Cyber Security (RISCS)](https://riscs.org.uk), led by Matt Spencer, RISCS Senior Fellow and Associate Professor at CIM.
+The [Cyber Expertise Diversity Survey](https://warwick.ac.uk/fac/cross_fac/cim/research/cyber_expertise_diversity) was run by the [Centre for Interdisciplinary Methodologies](https://warwick.ac.uk/cim) (CIM) in collaboration with the [Research Institute for Sociotechnical Cyber Security (RISCS)](https://riscs.org.uk), led by Matt Spencer, RISCS Senior Fellow and Associate Professor at CIM.
 
 Other CIM staff involved in putting the survey together and analysing the data include Carlos Cámara-Menoyo and Timothy Monteath.
 
@@ -24,16 +26,14 @@ The survey aims to inform cyber policy discussions by generating new insights in
 
 You are free to reuse this dataset under the Licence conditions. If you use this dataset in your work, please cite it as below:
 
-> Spencer, M., Cámara-Menoyo, C., & Monteath, T. (2025). *Cyber Expertise Diversity: RISCS Report*. University of Warwick. <https://warwickcim.github.io/cyberexpertisediversity_survey/>
-
+> Spencer, M., Cámara-Menoyo, C., & Monteath, T. (2025). Diversity and Cyber Security Expertise: Policy report. University of Warwick. <https://warwickcim.github.io/cyberexpertisediversity_survey/>
 
 ::: {.content-hidden unless-format="HTML"}
-
 For your convenience, we have also included a `CITATION.bib` file you may want to use to import it to your Reference Manager.
 
 ``` bibtex
 @techreport{spencerCyberExpertiseDiversity2025,
-  title = {Cyber {{Expertise Diversity}}: {{RISCS Report}}},
+  title = {Diversity and Cyber Security Expertise: Policy report},
   author = {Spencer, Matt and {C{\'a}mara-Menoyo}, Carlos and Monteath, Timothy},
   year = {2025},
   month = sep,
@@ -42,7 +42,6 @@ For your convenience, we have also included a `CITATION.bib` file you may want t
 }
   
 ```
-
 :::
 
 **TODO: get a DOI. We may be able to do that soon, once Warwick has implemented their own Figshare**

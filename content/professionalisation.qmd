@@ -340,6 +340,6 @@ The issues raised here are wide-ranging. The potential disconnect between policy
 
 ## Recommendations
 
-The UK government should support further Decrypting Diversity studies. These should explore the intersection of diversity and professionalisation, looking at how diverse cyber security practitioners align with existing UKCSC specialisms, and at how such alignments are changing over time.
+Surveys on diversity in cyber security (Decrypting Diversity) should be revived and extended to look at the intersection of diversity and professionalisation, examining how the backgrounds of cyber security practitioners correlates with alignment to UK Cyber Security Council Cyber Careers Framework specialisms, and how such alignments are changing over time.
 
-The UKCSC should commence work on possible new specialisms in areas such as security human factors and security awareness, and explore whether this could rebalance the framework in relation to diversity characteristics.
+The UK Cyber Security Council should commence work on possible new specialisms in areas such as security human factors and security awareness, and explore whether this could rebalance the framework in relation to diversity characteristics.

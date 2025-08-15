@@ -48,18 +48,14 @@ Anonymised results can be found in a companion repository [@Camara-Menoyo_The_Cy
 
 The survey is built around the metaphor of a 'broken comb' of expertise, with each 'tooth' in the comb representing one area of expertise. For blocks 2 and 3, we asked survey participants to imagine their expertise as a kind of comb where each 'tooth' of the comb represents one area of specialism. Some cyber security professionals have one or two areas in which they have a lot of expertise, other areas in which they have a little, and some in which they have none. Some people have a broad base; others are highly specialised. It can depend on domain, career stage, and individual personality.
 
-
-::: {.content-visible when-format="html"}
+:::: {.content-visible when-format="html"}
 ::: aside
 ![The broken comb metaphor, which was suggested to us by John R.](/media/expertise_comb.png)
 :::
-
-:::
+::::
 
 ::: {.content-hidden when-format="html"}
-
 ![The broken comb metaphor, which was suggested to us by John R.](/media/expertise_comb.png)
-
 :::
 
 The survey used an interface based on a series of sliders through which participants could express how they saw their own 'broken combs' of expertise, and to define similar 'broken combs' reflecting the combinations of expertise required to address cyber security problems and challenges that they tackle in their work.

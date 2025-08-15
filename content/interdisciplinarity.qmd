@@ -252,4 +252,4 @@ Incident response is supposed to be captured within the existing specialisms, bu
 
 ## Recommendations
 
-We recommend that the UK government supports further research into cyber security expertise diversity, including looking at cyber security problem scenarios, to identify present and future gaps in existing professional classifications and to help validate the Career Framework's CyBOK mapping.
+The UK Cyber Security Council's Cyber Career Framework's cross-reference to CyBOK should be refined and validated through studies of cyber security problem scenarios.
