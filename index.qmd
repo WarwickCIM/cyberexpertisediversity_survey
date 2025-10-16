@@ -6,13 +6,13 @@ We developed methodologies for analysing the alignment of practitioners with new
 
 ## Recommendations {.unnumbered}
 
-Surveys on diversity in cyber security (Decrypting Diversity) should be revived and extended to look at the intersection of diversity and professionalisation, examining how the backgrounds of cyber security practitioners correlates with alignment to UK Cyber Security Council Cyber Careers Framework specialisms, and how such alignments are changing over time.
+Surveys on diversity in cyber security (Decrypting Diversity) should be revived to ensure good quality data is available. They should be extended to gather more detailed data on respondents' expertise, for example using the CyBOK framework. This would enable evidence to be gathered about correlations between diversity characteristics and the alignment of professionals with the UK Cyber Security Council Cyber Careers Framework specialisms. Regular surveys would enable the analysis of how this alignment is changing over time.
 
-The UK Cyber Security Council should commence work on possible new specialisms in areas such as security human factors and security awareness, and explore whether this could rebalance the framework in relation to diversity characteristics.
+The UK Cyber Security Council should commence work on new candidate specialisms to address the current lack of coverage of security human factors and security awareness. The latter could be based on the European Cybersecurity Skills Framework 'Cybersecurity educator' role.
 
-Future iterations of the Cybersecurity Body of Knowledge (CyBOK) should be informed by research into expertise diversity, to ensure that the value of the humanities and social sciences within cyber security is better reflected.
+Future iterations of the Cybersecurity Body of Knowledge (CyBOK) should be informed by research into expertise diversity, to ensure that the value of the humanities and social sciences within cyber security is better reflected. Humanities and social science researchers in the cyber security field should engage more closely with the CyBOK community to support this.
 
-The UK Cyber Security Council's Cyber Career Framework's cross-reference to CyBOK should be refined and validated through studies of cyber security problem scenarios.
+The UK Cyber Security Council's Cyber Career Framework's cross-reference of specialisms with CyBOK knowledge areas should be refined and validated through studies of cyber security problem scenarios.
 
 # About {.unnumbered}
 
@@ -36,7 +36,7 @@ For your convenience, we have also included a `CITATION.bib` file you may want t
   title = {Diversity and Cyber Security Expertise: Policy report},
   author = {Spencer, Matt and {C{\'a}mara-Menoyo}, Carlos and Monteath, Timothy},
   year = {2025},
-  month = sep,
+  month = oct,
   institution = {University of Warwick},
   langid = {english}
 }
