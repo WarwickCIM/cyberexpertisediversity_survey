@@ -1,10 +1,6 @@
-
-
 ---
 title: "The Cyber Expertise Diversity Survey"
 ---
-
-
 
 ```{r setup}
 source("../scripts/setup.R")
@@ -64,7 +60,7 @@ The survey is built around the metaphor of a 'broken comb' of expertise, with ea
 
 The survey used an interface based on a series of sliders through which participants could express how they saw their own 'broken combs' of expertise, and to define similar 'broken combs' reflecting the combinations of expertise required to address cyber security problems and challenges that they tackle in their work.
 
-We based the 'teeth' of the comb on the knowledge area classification developed by the 'CyBOK' project [@cybok], extended slightly to account for areas that are not accounted for in the standard CyBOK classification.
+We based the 'teeth' of the comb on the knowledge area classification developed by the 'CyBOK' project [@cybok], extended slightly to account for areas that are not accounted for in the standard CyBOK classification (see .
 
 We thus gathered three types of combs to support the analysis.
 
@@ -95,7 +91,7 @@ With this, we will be calculating two types of alignments:
 
 -   **Personal alignment**, where test values ($X$) are the personal comb (responses) and the reference values ($Y$) are the specialism comb. This gives us a sense of how close respondents' combs are to the different kinds of specialism.
 
--   **Scenario alignment**, where test values ($X$) are the specialism comb and the reference values ($Y$) are the scenario comb. In this case, we are interested in how well the specialisms as defined in the Cyber Careers Framework provide the kind of expertise required to address each problem defined in the provided scenarios. We look at this for individual specialisms, and to look at the alignment of combinations of specialisms in permutations up to 5.
+-   **Scenario alignment**, where test values ($X$) are the specialism comb and the reference values ($Y$) are the scenario comb. In this case, we are interested in how well the specialisms as defined in the Cyber Careers Framework provide the kind of expertise required to address each problem defined in the provided scenarios. For instance, if a problem scenario is defined by a respondent to require only expertise in Adversarial Behaviour and Forensics, the Cyber Security Management specialism would be best aligned of all the UKCSC specialisms, as this is the only specialism for which both of these knowledge areas are defined as 'core' areas of expertise. We look at this for individual specialisms, and also look at the alignment of combinations of specialisms in permutations up to 5.
 
 In both cases, the **alignment index** will result in a number between `0` and `1`, where `1` means perfect alignment between the test value and the reference value and `0` means not aligned at all.
 
@@ -410,7 +406,7 @@ Given resource constraints (we received no direct funding for this research), th
 
 The total number of responses is modest (56). To put this into context, the Decrypting Diversity 2020 report was based on 1252 responses, and the 2021 follow-up drew on a sample of 945.
 
-Our sampling strategy was opportunistic snowball sampling, reaching participants through existing channels, such as industry networks and social media. A larger, random-sampling approach would have many benefits but would require much more significant investment. Our approach was chosen as appropriate for exploratory analysis demonstrating the value of an analytical frame that brings questions about the distribution and value of diverse expertise into conversation with questions about diversity of personal characteristics. Small sample studies like this should be seen as part of the wider endeavour to understand the domain, as opportunities for lightweight prototyping of methodologies for data collection and analysis.
+Our sampling strategy was opportunistic: we distributed the invitation to participate via a number of cyber security related industry networks within the UK and on LinkedIn. A larger, random-sampling approach would have many benefits but would require much more significant investment. Our approach was chosen as appropriate for exploratory analysis demonstrating the value of an analytical frame that brings questions about the distribution and value of diverse expertise into conversation with questions about diversity of personal characteristics. Small sample studies like this should be seen as part of the wider endeavour to understand the domain, as opportunities for lightweight prototyping of methodologies for data collection and analysis.
 
 ### Sliders
 
