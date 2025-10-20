@@ -38,9 +38,11 @@ To address our research aims, we designed a survey to gather data on the diversi
 
 [^survey-1]: The 26 categories used were: `r categories`
 
-The survey was created using Qualtrics, and was configured to only accept responses from people based in the UK, and not to collect personal details. In order to allow participants to withdraw after participation, the survey displayed their response ID on the first page, which they could refer to should they want their responses to be deleted. After obtaining ethical approval from the University of Warwick's Humanities and Social Sciences Research Ethics Committee (HSSREC)[^survey-2], it was distributed on social media, and via a number of industry mailing lists. The survey was accepting responses between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")`.
+The survey was created using Qualtrics, and was configured to only accept responses from people based in the UK, and not to collect personal details. In order to allow participants to withdraw after participation, the survey displayed their response ID on the first page, which they could refer to should they want their responses to be deleted. Ethical approval from the University of Warwick's Humanities and Social Sciences Research Ethics Committee (HSSREC)[^survey-2]: to ensure informed consent, we designed the survey to include key information for participants about purpose and data use in the initial pages, as well as a separate downloadable participant information leaflet. Because we did not collect personal identifying data in the survey, we generated a random identifier for participants to store, should they wish to get in touch with us about their responses at a later date. Participants were not offered remuneration for their time.
 
 [^survey-2]: <https://warwick.ac.uk/services/ris/research-integrity>
+
+The survey was accepting responses between `r format(min(date(responses$recorded_date)), "%d/%m/%Y")` and `r format(max(date(responses$recorded_date)), "%d/%m/%Y")`. Because this was a resource-constrained exploratory project, we followed a convenience sampling approach, distributing the survey via cyber security industry mailing lists and via the LinkedIn social media network (see @sec-sampling below).
 
 Anonymised results can be found in a companion repository [@Camara-Menoyo_The_Cyber_Expertise_2025]. The repository contains additional material such as metadata describing every variable, the scripts used to clean the data, and a PDF version of the survey, following FAIR principles [@wilkinson2016] and released under an open licence, to foster discoverability and reuse.
 
@@ -60,7 +62,7 @@ The survey is built around the metaphor of a 'broken comb' of expertise, with ea
 
 The survey used an interface based on a series of sliders through which participants could express how they saw their own 'broken combs' of expertise, and to define similar 'broken combs' reflecting the combinations of expertise required to address cyber security problems and challenges that they tackle in their work.
 
-We based the 'teeth' of the comb on the knowledge area classification developed by the 'CyBOK' project [@cybok], extended slightly to account for areas that are not accounted for in the standard CyBOK classification (see .
+We based the 'teeth' of the comb on the knowledge area classification developed by the 'CyBOK' project [@cybok], extended slightly to account for areas that are not accounted for in the standard CyBOK classification (see @sec-personal-expertise-within-and-beyond-cybok).
 
 We thus gathered three types of combs to support the analysis.
 
@@ -402,15 +404,17 @@ labs(
 
 Given resource constraints (we received no direct funding for this research), the project was conceived as an exploratory exercise, aiming to develop analytical tools suitable for investigating the value of diverse expertise in cyber security in the UK. It is important to bear in mind the following key limitations when interpreting the results.
 
-### Sampling
+### Sampling {#sec-sampling}
 
 The total number of responses is modest (56). To put this into context, the Decrypting Diversity 2020 report was based on 1252 responses, and the 2021 follow-up drew on a sample of 945.
 
-Our sampling strategy was opportunistic: we distributed the invitation to participate via a number of cyber security related industry networks within the UK and on LinkedIn. A larger, random-sampling approach would have many benefits but would require much more significant investment. Our approach was chosen as appropriate for exploratory analysis demonstrating the value of an analytical frame that brings questions about the distribution and value of diverse expertise into conversation with questions about diversity of personal characteristics. Small sample studies like this should be seen as part of the wider endeavour to understand the domain, as opportunities for lightweight prototyping of methodologies for data collection and analysis.
+Our sampling strategy was opportunistic: we distributed the invitation to participate via a number of cyber security related industry networks within the UK and on LinkedIn. A larger, random-sampling approach would have many benefits but would require much more significant investment. A convenience approach was chosen as appropriate for exploratory analysis demonstrating the value of an analytical frame that brings questions about the distribution and value of diverse expertise into conversation with questions about diversity of personal characteristics. Small sample studies like this should be seen as part of the wider endeavour to understand the domain, as opportunities for lightweight prototyping of methodologies for data collection and analysis.
 
 ### Sliders
 
 Given the challenges in establishing an absolute scale across all 'teeth', we asked participants to focus on the relative proportions of each category, the focus thus being on the 'shape' of expertise rather than its absolute extent. Because sliders generate numerical values, they allow for analysis of these shapes, at individual or aggregate levels, but it must be remembered that the scales being applied are inevitably imprecise.
+
+Because CyBOK is designed to refer to established areas of cyber security knowledge, we assumed participants would be familiar with the categories, and able to provide a relative assessment of their own expertise. However, respondents will vary in their level of understanding of the CyBOK categories, and this will also introduce imprecision into the analysis. A better resourced survey might assess familiarity with the categories as part of the survey process, or single out a subset of respondents for an interview to examine levels of understanding.
 
 ### Alignment scores
 
