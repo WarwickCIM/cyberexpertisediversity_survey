@@ -192,6 +192,54 @@ max_alignment_scenarios |>
 
 ```
 
+```{r}
+
+all_align <- max_alignment_scenarios |> 
+  select(id, n_permutations, alignment_index) |> 
+  left_join(scenario_names, by = join_by(id)) |>
+  mutate(scenario_name = paste(id,"-", scenario_name),
+         scenario_name = case_when(
+           nchar(scenario_name) > 25 ~ paste0(str_sub(scenario_name, end = 25), "..."),
+           .default = scenario_name),
+         scenario_name = as.factor(scenario_name),
+         scenario_name = fct_reorder(scenario_name, id)) |> 
+  pivot_longer(alignment_index)
+
+all_align <- all_align |> mutate(color = 'all')
+
+all_mean <- all_align |> group_by(n_permutations) |> summarise(value = mean(value, na.rm=TRUE))
+all_mean <- all_mean |> mutate(id = 0, scenario_name = 'all', name = 'alignment_index_all', color = 'mean')
+
+all_align <- rbind(all_align, all_mean)
+
+all_align <- all_align %>% filter(value > 0)
+
+ggplot(all_align, aes(x = n_permutations, y = value * 100, group = scenario_name)) + 
+  geom_line(data = all_align %>% filter(color == 'all'),
+    size = 1, alpha = 0.2,
+    color = '#F3766E') +
+  geom_point(data = all_align %>% filter(color == 'all'),
+             alpha = 0.2,
+             color = '#F3766E') +
+  geom_line(data = all_align %>% filter(color != 'all'),
+    size = 1, alpha = 1,
+    color = '#1CBDC2') +
+  geom_point(data = all_align %>% filter(color != 'all'),
+             alpha = 1,
+             color = '#1CBDC2',
+             size = 4) +
+  labs(title = "All Alignment indices per number of permutations and scenario",
+       y = "Scenario Alignment index",
+       x = "Number of specialisms permutations") +
+  #theme_classic() +
+    theme(
+    panel.grid.major.x = element_line(size=0.5, colour = "white"),
+    panel.grid.minor.x = element_line(size=0.1, colour = "white"),
+    legend.position="top"
+  )
+```
+
+
 ### Discussion
 
 #### Lowest alignment scenarios
