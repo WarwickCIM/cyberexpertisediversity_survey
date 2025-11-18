@@ -1,22 +1,26 @@
 # Executive summary {.unnumbered}
 
-Our society is deeply and increasingly reliant on cyber security practitioners to ensure that digital services are dependable, critical infrastructure is resilient and sensitive data is protected. Their success depends on diverse ways of thinking, diverse skillsets, perspectives and backgrounds. Today, the profession is being transformed, with standardised categories of specialism, new certifications and governance structures. While this process of professionalisation is driven by the need to better support practitioners and their employers, it is vital to understand any unintended consequences that may be emerging. We focus here on potential negative impacts on diversity, a topic that must be carefully addressed to ensure that cyber security remains an attractive field to work in, to support the legitimacy of professional institutions and to enhance the efficacy of the field.
+Our society is deeply and increasingly reliant on cyber security practitioners to ensure that digital services are dependable, critical infrastructure is resilient and sensitive data is protected. Their success depends on diverse ways of thinking, diverse skillsets, perspectives and backgrounds. Today, the profession is being transformed, with standardised categories of specialism, new certifications and evolving governance structures. While this process of professionalisation is driven by the need to better support practitioners and their employers, it is vital to understand any unintended consequences that may be emerging. We focus here on potential negative impacts on diversity, a topic that must be carefully addressed to ensure that cyber security remains an attractive field to work in, to support the legitimacy of professional institutions and to enhance the efficacy of the field.
 
-We developed methodologies for analysing the alignment of practitioners with new classifications of specialisms, and for analysing the alignment of specialisms with cyber security problems. We tested these approaches using data from a small exploratory survey. We found that there is profound uncertainty about the impacts of professionalisation on diversity. This is rooted in a lack of data and a lack of theoretical analysis. This report takes a small step to correct this issue.
+We developed methodologies for analysing the alignment of practitioners with new classifications of cyber security specialisms, and for analysing the alignment of specialisms with cyber security problems. We tested these approaches using data from a small exploratory survey. We found that there is profound uncertainty about the impacts of professionalisation on diversity. This is rooted in a lack of data and a lack of theoretical analysis. This report takes a small step to correct this issue.
 
 ## Recommendations {.unnumbered}
 
-Surveys on diversity in cyber security (Decrypting Diversity) should be revived to ensure good quality data is available. They should be extended to gather more detailed data on respondents' expertise, for example using the CyBOK framework. This would enable evidence to be gathered about correlations between diversity characteristics and the alignment of professionals with the UK Cyber Security Council Cyber Careers Framework specialisms. Regular surveys would enable the analysis of how this alignment is changing over time.
+Surveys on diversity in cyber security (Decrypting Diversity) should be revived to ensure good quality data is available. They should be extended to gather more detailed data on respondents' expertise, for example using the CyBOK (Cybersecurity Body of Knowledge) framework[^index-1]. This would enable evidence to be gathered about correlations between diversity characteristics and the alignment of professionals with the UK Cyber Security Council Cyber Careers Framework specialisms. Regular surveys would enable the analysis of how this alignment is changing over time.
 
-The UK Cyber Security Council should commence work on new candidate specialisms to address the current lack of coverage of security human factors and security awareness. The latter could be based on the European Cybersecurity Skills Framework 'Cybersecurity educator' role.
+[^index-1]: <https://www.cybok.org/>
 
-Future iterations of the Cybersecurity Body of Knowledge (CyBOK) should be informed by research into expertise diversity, to ensure that the value of the humanities and social sciences within cyber security is better reflected. Humanities and social science researchers in the cyber security field should engage more closely with the CyBOK community to support this.
+The UK Cyber Security Council should commence work on new candidate specialisms to address the current lack of coverage of security human factors and security awareness. The latter could be based on the European Cybersecurity Skills Framework 'Cybersecurity educator' role[^index-2].
 
-The UK Cyber Security Council's Cyber Career Framework's cross-reference of specialisms with CyBOK knowledge areas should be refined and validated through studies of cyber security problem scenarios.
+[^index-2]: <https://www.enisa.europa.eu/publications/european-cybersecurity-skills-framework-ecsf>
+
+Future iterations of CyBOK should be informed by research into expertise diversity, to ensure that the value of the humanities and social sciences within cyber security is better reflected. Humanities and social science researchers in the cyber security field should engage more closely with the CyBOK community to support this.
+
+The UK Cyber Security Council's Cyber Career Framework's cross-reference of specialisms with CyBOK knowledge areas should be refined and validated through qualitative studies of cyber security problem scenarios.
 
 # About {.unnumbered}
 
-The [Cyber Expertise Diversity Survey](https://warwick.ac.uk/fac/cross_fac/cim/research/cyber_expertise_diversity) was run by the [Centre for Interdisciplinary Methodologies](https://warwick.ac.uk/cim) (CIM) in collaboration with the [Research Institute for Sociotechnical Cyber Security (RISCS)](https://riscs.org.uk), led by Matt Spencer, RISCS Senior Fellow and Associate Professor at CIM.
+This [Cyber Expertise Diversity Survey](https://warwick.ac.uk/fac/cross_fac/cim/research/cyber_expertise_diversity) was run by the [Centre for Interdisciplinary Methodologies](https://warwick.ac.uk/cim) (CIM) in collaboration with the [Research Institute for Sociotechnical Cyber Security (RISCS)](https://riscs.org.uk), led by Matt Spencer, RISCS Senior Fellow and Associate Professor at CIM.
 
 Other CIM staff involved in putting the survey together and analysing the data include Carlos Cámara-Menoyo and Timothy Monteath.
 

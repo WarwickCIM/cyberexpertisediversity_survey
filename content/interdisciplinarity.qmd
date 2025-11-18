@@ -239,7 +239,6 @@ ggplot(all_align, aes(x = n_permutations, y = value * 100, group = scenario_name
   )
 ```
 
-
 ### Discussion
 
 #### Lowest alignment scenarios
@@ -260,15 +259,13 @@ Scenarios that had a steep gradient may be interpreted as particularly interdisc
 
 5 Specialists: Cyber Threat Intelligence, Cyber Security Management, Cryptography & Communications Security (Cryptographer), Secure Operations, Secure System Architecture & Design (Industrial Control Systems)"
 
-Scenario 27: incident response was intriguing. It was also very 'interdisciplinarity' looking at the gradient that we are using for a heuristic. But this is puzzling because there is a specialism called 'incident response' that one might presume ought to align well on its own. The respondent had specified the problem scenario including the requirement for very high expertise in 'authorisation, authentication and accountability', and quite high in 'operating systems and virtualization security'. Neither of these are taken to be of even 'wider' relevance to incident response. Indeed, the incident response specialism did not feature in any of the best combinations of specialisms for this scenario. While this is highly anecdotal, it does suggest there is more to be understood, and that there could be improvements to the Cyber Careers Framework's CyBOK mapping to ensure good alignment with practice.
+*Scenario 27: Incident Response* was intriguing. It was also very 'interdisciplinary' looking at the gradient that we are using for a heuristic. But this is puzzling because there is a specialism called 'incident response' that one might presume ought to align well on its own. The respondent had specified the problem scenario including the requirement for very high expertise in 'authorisation, authentication and accountability', and quite high in 'operating systems and virtualization security'. Neither of these are taken to be of even 'wider' relevance to incident response. Indeed, the incident response specialism did not feature in any of the best combinations of specialisms for this scenario. While this is highly anecdotal, it does suggest there is more to be understood, and that there could be improvements to the Cyber Careers Framework's CyBOK mapping to ensure good alignment with practice.
 
-Scenarios 61 and 62 were more specialist problems
+Scenarios 61 and 62 were more specialist problems. Scenario 61 involved a wide spread of expertise, while scenario 62 required high expertise in a relatively high number of areas.
 
 ::: {.callout-note appearance="minimal"}
 Got pulled from a job testing building management/HVAC systems to taking lead on assessing encrypted VoIP systems. Had to give a crash course on OT testing to more junior colleagues before switching assignments (61)
 :::
-
-Scenario 61 involved a wide spread of expertise, while scenario 62 required high expertise in a relatively high number of areas.
 
 ::: {.callout-note appearance="minimal"}
 Requirement to build out a cyclical, threat detection and engineering process which required:
