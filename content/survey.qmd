@@ -50,11 +50,11 @@ Anonymised results can be found in a companion repository [@Camara-Menoyo_The_Cy
 
 The survey is built around the metaphor of a 'broken comb' of expertise, with each 'tooth' in the comb representing one area of expertise. For blocks 2 and 3, we asked survey participants to imagine their expertise as a kind of comb where each 'tooth' of the comb represents one area of specialism. Some cyber security professionals have one or two areas in which they have a lot of expertise, other areas in which they have a little, and some in which they have none. Some people have a broad base; others are highly specialised. It can depend on domain, career stage, and individual personality.
 
-:::: {.content-visible when-format="html"}
+::: {.content-visible when-format="html"}
 ::: aside
 ![The broken comb metaphor, which was suggested to us by John R.](/media/expertise_comb.png)
 :::
-::::
+:::
 
 ::: {.content-hidden when-format="html"}
 ![The broken comb metaphor, which was suggested to us by John R.](/media/expertise_comb.png)
@@ -124,7 +124,7 @@ age_table|>
   kable()
 ```
 
-@tbl-responses-gender and @tbl-responses-transgender shows a clear dominance of cis male respondents over other genders. Cis female account for a 17.9%, and other genders are anecdotal in this survey.
+@tbl-responses-gender and @tbl-responses-transgender shows a clear preponderance of  male respondents over other genders. Women account for a 17.9% of respondents to our survey - which is inline with the workforce estimates of the UK Cyber Skills Survey (17%) [@DSIT2025].
 
 ```{r}
 #| label: tbl-responses-gender
@@ -136,6 +136,31 @@ gender_table <- responses |>
 colnames(gender_table) <- c("Gender", "N", "Percent")
 
 gender_table |> 
+  kable()
+```
+
+@tbl-two-gender brings together responses by age and gender in a two way table.
+
+```{r}
+#| label: tbl-two-gender
+#| tbl-cap: "Two way table of responses by gender and age"
+responses <- responses %>%
+#  mutate(gender2 = case_when(gender == 'Male' ~ 'Men',
+#                          .default = "Women, Non-Binary and 'Prefer not to Answer'"
+#                          ))
+
+  mutate(gender2 = case_when(
+  gender == 'Male' ~ 'Men',
+  gender %in% c('Female', 'Non binary') ~ 'Women and Non-binary',
+  .default = NA_character_
+))
+  
+gender_table_2 <- responses |> 
+  select(c(age, gender2))
+
+gender_table_2 <- table(gender_table_2)
+
+gender_table_2|> 
   kable()
 ```
 
@@ -152,7 +177,7 @@ trans_table|>
   kable()
 ```
 
-In terms of ethnicity (@tbl-responses-ethnicity), we can see a clear dominance of White respondents (76.8%), followed by far by Asian and mixed race.
+In terms of ethnicity (@tbl-responses-ethnicity), we can see a clear prevalence of White respondents (76.8%), followed by far by Asian and mixed race. Compared to the estimates of the UK Cyber Skills Survey our survey has slightly less White respondents overall (81%) [@DSIT2025]81 
 
 ```{r}
 #| label: tbl-responses-ethnicity
@@ -167,7 +192,7 @@ ethnicity_table|>
   kable()
 ```
 
-In terms of disabilities (@tbl-responses-disabilities), respondents reporting some type of disability account for a total of 17.8%.
+In terms of disabilities (@tbl-responses-disabilities), respondents reporting some type of disability account for a total of 17.8%. Compared to the UK Cyber Skills Survey this is a slightly above the estimates for people with a disability as part of the workforce (8%) but is inline with for neuro-divergence (16%) which our survey did not specifically ask about [@DSIT2025].
 
 ```{r}
 #| label: tbl-responses-disabilities
@@ -182,7 +207,7 @@ disability_table|>
   kable()
 ```
 
-While the small sample, and opportunistic sampling approach prohibits broader conclusions, these figures are broadly aligned with the sector [@nationalcybersecuritycentreDecryptingDiversityDiversity2021]. We will argue, however, that the data is suggestive that further data collection would be of value.
+While the small sample, and opportunistic sampling approach prohibits broader conclusions, these figures are broadly aligned with the sector [@nationalcybersecuritycentreDecryptingDiversityDiversity2021; @DSIT2025]. We will argue, however, that the data is suggestive that further data collection would be of value.
 
 #### Job-related questions
 
@@ -226,6 +251,32 @@ org_size|>
   kable()
 ```
 
+@tbl-responses-org-size-and-exp brings together the two previous responeses consider the alignment between years spent in the cyber security industry and the size of company at which respondents work.
+
+```{r}
+#| label: tbl-responses-org-size-and-exp
+#| tbl-cap: "Two way table of responses by organisation size and years experience"  
+company_exp <- responses |> 
+  select(c(organisation_size, years_experience)) |>
+  mutate(
+    years_experience = case_when(
+      years_experience < 6 ~ "0-5",
+      years_experience < 11 & years_experience > 5  ~ "6-10",
+      years_experience < 16 & years_experience > 10  ~ "11-15",
+      years_experience < 21 & years_experience > 15  ~ "16-20",
+      years_experience < 26 & years_experience > 20  ~ "21-25",
+      years_experience > 25  ~ "25+",
+    ),
+    years_experience = as.factor(years_experience),
+    years_experience = fct_relevel(years_experience, c("0-5", "6-10", "11-15", "16-20", "21-25", "25+"))
+  ) 
+
+company_exp <- table(company_exp)
+
+company_exp|> 
+  kable()
+```
+
 ```{r}
 #| label: tbl-responses-industry
 #| tbl-cap: "Responses by Industry sector"
@@ -233,7 +284,7 @@ org_size|>
 # how the code to create the table could be in the report without it revealing
 # any of the categories we are suppressing
 
-# First make a table of sectors, then set sector names as charecters (otherwise,
+# First make a table of sectors, then set sector names as characters (otherwise,
 # replace will not work with factors), then set 3 or below to other, then group
 # and count results
 
@@ -257,6 +308,9 @@ industry_table |>
   kable()
 
 ```
+#### Intersections
+
+Re Section 2.2, I’d consider bivariate demographics by age and gender in one table. That might also interesting across years of experience and size of company. 
 
 ### Comb responses
 
@@ -414,6 +468,51 @@ Our sampling strategy was opportunistic: we distributed the invitation to partic
 
 Given the challenges in establishing an absolute scale across all 'teeth', we asked participants to focus on the relative proportions of each category, the focus thus being on the 'shape' of expertise rather than its absolute extent. Because sliders generate numerical values, they allow for analysis of these shapes, at individual or aggregate levels, but it must be remembered that the scales being applied are inevitably imprecise.
 
+A further limitation of the use of relative slider was that their use by respondents created a non-parametric distribution to the data collected. As the beeswamp plots @fig-personal-comb-aggregate and @fig-personal-comb-overall showed, while respondents used the whole range of each slider available, on aggregate, responses clustered around the tails of each distribution and at median and quartile points. Consequently, the overall distribution of responses has 'three' humps. The non-standard distribution of this data, along with our small sample size, made the application of traditional statistical methods - for which a standard distribution is assumed - unsuited to our data. Furthermore, the way in which the use of the sliders amongst respondents from different categories, such as by gender, differed  further significantly complicating statistical analysis between these groups.
+
+@fig-density-gender shows the 'three' hump pattern of the data and the differing density of responses by gender. We consider the miss-alignment between the two different groups to be a finding of how each group self-reports. Rather than seeking to 'correct' this data for statistical analysis we incorporate this into our 'interpretive' analysis of the responses to our survey. 
+```{r}
+#| label: fig-density-gender
+#| fig-cap: "Density of responses by Gender"
+#| fig-height: 7
+#| colum: page-right
+#| 
+
+respondent_demographics <- read.csv('../data/raw/cyber_expertise_diversity_survey_responses.csv') |> 
+  select(age, disabilities, uk_ethnic_origin, gender, sexual_orientation, transgender,
+        years_experience, organisation_size, organisation_sector) |> 
+  mutate(id = row_number(), .before = 1) |> 
+  mutate(gender = fct_relevel(gender, "Male", "Female", "Non-binary"))
+
+alignment_personal_long <- read.csv("../data/processed/alignment_personal_long.csv") |> 
+  left_join(respondent_demographics, by = join_by(id))
+
+alignment_personal_long <- alignment_personal_long %>%
+#  mutate(gender2 = case_when(gender == 'Male' ~ 'Men',
+#                          .default = "Women, Non-Binary and 'Prefer not to Answer'"
+#                          ))
+
+  mutate(gender2 = case_when(
+  gender == 'Male' ~ 'Men',
+  gender %in% c('Female', 'Non binary') ~ 'Women and Non-binary',
+  .default = NA_character_
+))
+
+alignment_personal_long |> 
+  filter(!is.na(gender2)) |>
+  ggplot(aes(x = alignment_index * 100, fill=gender2)) +
+  geom_density(alpha = .3) +
+  scale_fill_manual(values = c("#a199ee", "#78d3c1")) +
+  labs(title = "Density of responses by Gender",
+       y = "Density",
+       x = "All Specialisms") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 60, vjust = 1, hjust = 1),
+        panel.grid.major.x = element_line(size=0.5, colour = "white",),
+        legend.position="top",
+        legend.title = element_blank()
+  )
+```
 Because CyBOK is designed to refer to established areas of cyber security knowledge, we assumed participants would be familiar with the categories, and able to provide a relative assessment of their own expertise. However, respondents will vary in their level of understanding of the CyBOK categories, and this will also introduce imprecision into the analysis. A better resourced survey might assess familiarity with the categories as part of the survey process, or single out a subset of respondents for an interview to examine levels of understanding.
 
 ### Alignment scores
