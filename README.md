@@ -1,8 +1,12 @@
-# The Cyber Expertise Diversity Survey - Report
+[![CC BY 4.0][cc-by-shield]][cc-by]
+
+# [The Cyber Expertise Diversity Survey - Report](https://warwickcim.github.io/cyberexpertisediversity_survey/)
 
 This repository contains the report and analysis components derived from [The Cyber Expertise Diversity Survey](https://warwick.ac.uk/fac/cross_fac/cim/research/research-projects/cyber_expertise_diversity) aimed to inform cyber policy discussions by generating new insights into the value and distribution of cyber expertise and ran from to 12th September 2024 to 30th November 2024.
 
-You are free to reuse this dataset under the Licence conditions. If you use this dataset in your work, please cite it as below:
+The online version of the report can be found at: <https://warwickcim.github.io/cyberexpertisediversity_survey/>.
+
+Text and images are licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). 
 
 -   [ ] TODO: incorporate citation file and cite text here ([see #1](https://github.com/WarwickCIM/cyberexpertisediversity_survey/issues/2)).
 
