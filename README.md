@@ -40,6 +40,8 @@ For your convenience, we have also included a `CITATION.bib` file you may want t
 
 Text and images are licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
+[Diversity and Cyber Security Expertise: Policy report](https://warwickcim.github.io/cyberexpertisediversity_survey/) © 2025 by Matt Spencer, Carlos Cámara-Menoyo and Timothy Monteath is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"/><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"/>
+
 ## Project's structure
 
 This repo uses quarto to create the online and pdf version of the report. Some important files and folders to note are:
