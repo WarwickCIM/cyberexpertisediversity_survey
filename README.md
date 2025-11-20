@@ -1,11 +1,10 @@
- [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![DOI Static Badge](https://img.shields.io/badge/DOI-110.5281/zenodo.17659435-blue)](https://doi.org/10.5281/zenodo.17659435) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-# [The Cyber Expertise Diversity Survey - Report](https://warwickcim.github.io/cyberexpertisediversity_survey/)
+# [The Cyber Expertise Diversity Survey Report](https://warwickcim.github.io/cyberexpertisediversity_survey/)
 
 This repository contains the report and analysis components derived from [The Cyber Expertise Diversity Survey](https://warwick.ac.uk/fac/cross_fac/cim/research/research-projects/cyber_expertise_diversity) aimed to inform cyber policy discussions by generating new insights into the value and distribution of cyber expertise and ran from to 12th September 2024 to 30th November 2024.
 
 The online version of the report can be found at: <https://warwickcim.github.io/cyberexpertisediversity_survey/>.
-
 
 -   [ ] TODO: incorporate citation file and cite text here ([see #1](https://github.com/WarwickCIM/cyberexpertisediversity_survey/issues/2)).
 
@@ -21,7 +20,7 @@ The survey aims to inform cyber policy discussions by generating new insights in
 
 You are free to reuse this dataset under the Licence conditions. If you use this dataset in your work, please cite it as below:
 
-> Spencer, M., Cámara-Menoyo, C., & Monteath, T. (2025). *Cyber Expertise Diversity: RISCS Report*. University of Warwick. <https://warwickcim.github.io/cyberexpertisediversity_survey/>
+> Spencer, M., Cámara-Menoyo, C., & Monteath, T. (2025). Diversity and Cyber Security Expertise: Policy report. University of Warwick. <https://warwickcim.github.io/cyberexpertisediversity_survey/>, <https://doi.org/10.5281/zenodo.17659435>
 
 For your convenience, we have also included a `CITATION.bib` file you may want to use to import it to your Reference Manager.
 
@@ -34,13 +33,14 @@ For your convenience, we have also included a `CITATION.bib` file you may want t
   institution = {University of Warwick},
   langid = {english},
   url = {https://warwickcim.github.io/cyberexpertisediversity_survey/},
+  doi = {10.5281/zenodo.17659435}
 }
   
 ```
 
-## License 
-Text and images are licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). 
+## License
 
+Text and images are licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
 ## Project's structure
 

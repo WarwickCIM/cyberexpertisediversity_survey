@@ -30,7 +30,7 @@ The survey aims to inform cyber policy discussions by generating new insights in
 
 You are free to reuse this report (fully or partially) under the Licence conditions. If you use it in your work, please cite it as below:
 
-> Spencer, M., Cámara-Menoyo, C., & Monteath, T. (2025). Diversity and Cyber Security Expertise: Policy report. University of Warwick. <https://warwickcim.github.io/cyberexpertisediversity_survey/>
+> Spencer, M., Cámara-Menoyo, C., & Monteath, T. (2025). Diversity and Cyber Security Expertise: Policy report. University of Warwick. <https://warwickcim.github.io/cyberexpertisediversity_survey/>, <https://doi.org/10.5281/zenodo.17659435>
 
 ::: {.content-hidden unless-format="HTML"}
 For your convenience, we have also included a `CITATION.bib` file you may want to use to import it to your Reference Manager.
@@ -44,6 +44,7 @@ For your convenience, we have also included a `CITATION.bib` file you may want t
   institution = {University of Warwick},
   langid = {english},
   url = {https://warwickcim.github.io/cyberexpertisediversity_survey/},
+  doi = {10.5281/zenodo.17659435}
 }
   
 ```
