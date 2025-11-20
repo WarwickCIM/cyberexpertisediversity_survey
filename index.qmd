@@ -1,4 +1,4 @@
-# Executive summary {.unnumbered}
+## Executive summary {.unnumbered}
 
 Our society is deeply and increasingly reliant on cyber security practitioners to ensure that digital services are dependable, critical infrastructure is resilient and sensitive data is protected. Their success depends on diverse ways of thinking, diverse skillsets, perspectives and backgrounds. Today, the profession is being transformed, with standardised categories of specialism, new certifications and evolving governance structures. While this process of professionalisation is driven by the need to better support practitioners and their employers, it is vital to understand any unintended consequences that may be emerging. We focus here on potential negative impacts on diversity, a topic that must be carefully addressed to ensure that cyber security remains an attractive field to work in, to support the legitimacy of professional institutions and to enhance the efficacy of the field.
 
@@ -18,7 +18,7 @@ Future iterations of CyBOK should be informed by research into expertise diversi
 
 The UK Cyber Security Council's Cyber Career Framework's cross-reference of specialisms with CyBOK knowledge areas should be refined and validated through qualitative studies of cyber security problem scenarios.
 
-# About {.unnumbered}
+## About {.unnumbered}
 
 This [Cyber Expertise Diversity Survey](https://warwick.ac.uk/fac/cross_fac/cim/research/cyber_expertise_diversity) was run by the [Centre for Interdisciplinary Methodologies](https://warwick.ac.uk/cim) (CIM) in collaboration with the [Research Institute for Sociotechnical Cyber Security (RISCS)](https://riscs.org.uk), led by Matt Spencer, RISCS Senior Fellow and Associate Professor at CIM.
 
@@ -28,7 +28,7 @@ The survey aims to inform cyber policy discussions by generating new insights in
 
 ## Citing {.unnumbered}
 
-You are free to reuse this dataset under the Licence conditions. If you use this dataset in your work, please cite it as below:
+You are free to reuse this report (fully or partially) under the Licence conditions. If you use it in your work, please cite it as below:
 
 > Spencer, M., Cámara-Menoyo, C., & Monteath, T. (2025). Diversity and Cyber Security Expertise: Policy report. University of Warwick. <https://warwickcim.github.io/cyberexpertisediversity_survey/>
 
@@ -37,15 +37,14 @@ For your convenience, we have also included a `CITATION.bib` file you may want t
 
 ``` bibtex
 @techreport{spencerCyberExpertiseDiversity2025,
-  title = {Diversity and Cyber Security Expertise: Policy report},
+  title = {Cyber {{Expertise Diversity}}: {{RISCS Report}}},
   author = {Spencer, Matt and {C{\'a}mara-Menoyo}, Carlos and Monteath, Timothy},
   year = {2025},
-  month = oct,
+  month = sep,
   institution = {University of Warwick},
-  langid = {english}
+  langid = {english},
+  url = {https://warwickcim.github.io/cyberexpertisediversity_survey/},
 }
   
 ```
 :::
-
-**TODO: get a DOI. We may be able to do that soon, once Warwick has implemented their own Figshare**
