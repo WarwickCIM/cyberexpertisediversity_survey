@@ -5,6 +5,7 @@ project:
 execute: 
   echo: false
   warning: false
+  freeze: auto
 
 book:
   title: "Diversity and Cyber Security Expertise: Policy report"
