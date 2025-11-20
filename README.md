@@ -6,8 +6,6 @@ This repository contains the report and analysis components derived from [The Cy
 
 The online version of the report can be found at: <https://warwickcim.github.io/cyberexpertisediversity_survey/>.
 
--   [ ] TODO: incorporate citation file and cite text here ([see #1](https://github.com/WarwickCIM/cyberexpertisediversity_survey/issues/2)).
-
 ## About us
 
 The Cyber Expertise Diversity Survey is a project run by the [Centre for Interdisciplinary Methodologies](https://warwick.ac.uk/cim) and the [Research Institute for Sociotechnical Cyber Security (RISCS)](), led by Matt Spencer, RISCS Senior Fellow and Associate Professor at CIM.
