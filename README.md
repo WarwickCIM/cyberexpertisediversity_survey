@@ -1,6 +1,6 @@
 [![DOI Static Badge](https://img.shields.io/badge/DOI-110.5281/zenodo.17659435-blue)](https://doi.org/10.5281/zenodo.17659435) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-# [The Cyber Expertise Diversity Survey Report](https://warwickcim.github.io/cyberexpertisediversity_survey/)
+# [Diversity and Cyber Security Expertise: Policy report](https://warwickcim.github.io/cyberexpertisediversity_survey/)
 
 This repository contains the report and analysis components derived from [The Cyber Expertise Diversity Survey](https://warwick.ac.uk/fac/cross_fac/cim/research/research-projects/cyber_expertise_diversity) aimed to inform cyber policy discussions by generating new insights into the value and distribution of cyber expertise and ran from to 12th September 2024 to 30th November 2024.
 
