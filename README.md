@@ -24,7 +24,7 @@ For your convenience, we have also included a `CITATION.bib` file you may want t
 
 ``` bibtex
 @techreport{spencerCyberExpertiseDiversity2025,
-  title = {Cyber {{Expertise Diversity}}: {{RISCS Report}}},
+  title = {Diversity and {{Cyber Security Expertise}}: {{Policy}} Report},
   author = {Spencer, Matt and {C{\'a}mara-Menoyo}, Carlos and Monteath, Timothy},
   year = {2025},
   month = sep,
