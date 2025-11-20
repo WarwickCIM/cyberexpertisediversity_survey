@@ -1,0 +1,251 @@
+# Scenario Combs {#sec-scenario-combs-appendice}
+
+
+```{r setup}
+source("../scripts/setup.R")
+
+responses <- read.csv('../data/raw/cyber_expertise_diversity_survey_responses.csv') |> 
+  mutate(recorded_date = dmy_hm(recorded_date))
+
+
+scenarios <- read.csv("../data/raw/cyber_expertise_diversity_survey_scenarios.csv")
+
+categories <- responses |> 
+  select(starts_with("expertise_comb_")) |> 
+  pivot_longer(everything()) |> 
+  mutate(name = str_remove_all(name, "expertise_comb_"),
+         name = str_replace_all(name, "_", " ") ) |> 
+  select(name) |> 
+  unique() |> 
+  arrange(name) |> 
+  pull(name)
+
+scenario_color <- "#B7D4E3"
+```
+
+This section includes how the scenario comb was distributed across different categories. Refer to @sec-comb for the rationale of the comb metaphor and an explanation of how the combs were calculated.
+
+## By EDI categories
+
+### Age
+
+```{r}
+#| label: fig-scenario-comb-age
+#| fig-cap: "Distribution of scenario comb scores according to age"
+#| fig-height: 12
+#| colum: page-right
+
+# age, disabilities, uk_ethnic_origin, gender, sexual_orientation, transgender,
+scenarios |> 
+  select(age, starts_with("scenario_expertise_portfolio_")) |> 
+  pivot_longer(starts_with("scenario_expertise_portfolio_")) |> 
+  mutate(name = str_remove_all(name, "scenario_expertise_portfolio_"),
+         name = str_replace_all(name, "_", " ")) |> 
+  arrange(name) |> 
+  ggplot(aes(x = name, y = value)) + 
+  geom_boxplot(fill = scenario_color) +
+  geom_jitter(alpha = 0.1) + 
+  facet_wrap(~age, ncol = 1)+
+  labs(
+    title = "",
+    y = "Score",
+    x = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+```
+
+### Gender
+
+```{r}
+#| label: fig-scenario-comb-gender
+#| fig-cap: "Distribution of scenario comb scores according to gender"
+#| fig-height: 12
+#| colum: page-right
+
+# age, disabilities, uk_ethnic_origin, gender, sexual_orientation, transgender,
+scenarios |> 
+  select(gender, starts_with("scenario_expertise_portfolio_")) |> 
+  pivot_longer(starts_with("scenario_expertise_portfolio_")) |> 
+  mutate(name = str_remove_all(name, "scenario_expertise_portfolio_"),
+         name = str_replace_all(name, "_", " ")) |> 
+  arrange(name) |> 
+  ggplot(aes(x = name, y = value)) + 
+  geom_boxplot(fill = scenario_color) +
+  geom_jitter(alpha = 0.1) + 
+  facet_wrap(~gender, ncol = 1)+
+  labs(
+    title = "",
+    y = "Score",
+    x = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+```
+
+
+```{r}
+#| label: fig-scenario-comb-transgender
+#| fig-cap: "Distribution of scenario comb scores according to gender (2)"
+#| fig-height: 12
+#| colum: page-right
+
+# age, disabilities, uk_ethnic_origin, gender, sexual_orientation, transgender,
+scenarios |> 
+  select(transgender, starts_with("scenario_expertise_portfolio_")) |> 
+  pivot_longer(starts_with("scenario_expertise_portfolio_")) |> 
+  mutate(name = str_remove_all(name, "scenario_expertise_portfolio_"),
+         name = str_replace_all(name, "_", " ")) |> 
+  arrange(name) |> 
+  ggplot(aes(x = name, y = value)) + 
+  geom_boxplot(fill = scenario_color) +
+  geom_jitter(alpha = 0.1) + 
+  facet_wrap(~transgender, ncol = 1)+
+  labs(
+    title = "",
+    y = "Score",
+    x = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+```
+
+### Sexual orientation
+
+```{r}
+#| label: fig-scenario-comb-sexual-orientation
+#| fig-cap: "Distribution of scenario comb scores according to sexual orientation"
+#| fig-height: 12
+#| colum: page-right
+
+# age, disabilities, uk_ethnic_origin, gender, sexual_orientation, transgender,
+scenarios |> 
+  select(sexual_orientation, starts_with("scenario_expertise_portfolio_")) |> 
+  pivot_longer(starts_with("scenario_expertise_portfolio_")) |> 
+  mutate(name = str_remove_all(name, "scenario_expertise_portfolio_"),
+         name = str_replace_all(name, "_", " ")) |> 
+  arrange(name) |> 
+  ggplot(aes(x = name, y = value)) + 
+  geom_boxplot(fill = scenario_color) +
+  geom_jitter(alpha = 0.1) + 
+  facet_wrap(~sexual_orientation, ncol = 1)+
+  labs(
+    title = "",
+    y = "Score",
+    x = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+```
+
+### Ethnicity
+
+```{r}
+#| label: fig-scenario-comb-ethnicity
+#| fig-cap: "Distribution of scenario comb scores according to ethnicity"
+#| fig-height: 12
+#| colum: page-right
+
+# age, disabilities, uk_ethnic_origin, gender, sexual_orientation, transgender,
+scenarios |> 
+  select(uk_ethnic_origin, starts_with("scenario_expertise_portfolio_")) |> 
+  pivot_longer(starts_with("scenario_expertise_portfolio_")) |> 
+  mutate(name = str_remove_all(name, "scenario_expertise_portfolio_"),
+         name = str_replace_all(name, "_", " ")) |> 
+  arrange(name) |> 
+  ggplot(aes(x = name, y = value)) + 
+  geom_boxplot(fill = scenario_color) +
+  geom_jitter(alpha = 0.1) + 
+  facet_wrap(~uk_ethnic_origin, ncol = 1)+
+  labs(
+    title = "",
+    y = "Score",
+    x = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+```
+
+### Disabilities
+
+```{r}
+#| label: fig-scenario-comb-disabilities
+#| fig-cap: "Distribution of scenario comb scores according to reported disability"
+#| fig-height: 12
+#| colum: page-right
+
+# age, disabilities, uk_ethnic_origin, gender, sexual_orientation, transgender,
+scenarios |> 
+  select(disabilities, starts_with("scenario_expertise_portfolio_")) |> 
+  pivot_longer(starts_with("scenario_expertise_portfolio_")) |> 
+  mutate(name = str_remove_all(name, "scenario_expertise_portfolio_"),
+         name = str_replace_all(name, "_", " ")) |> 
+  arrange(name) |> 
+  ggplot(aes(x = name, y = value)) + 
+  geom_boxplot(fill = scenario_color) +
+  geom_jitter(alpha = 0.1) + 
+  facet_wrap(~disabilities, ncol = 1)+
+  labs(
+    title = "Reported disability",
+    y = "Score",
+    x = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+```
+
+
+## By job-related questions
+
+### Organisation's size
+
+```{r}
+#| label: fig-scenario-comb-size
+#| fig-cap: "Distribution of scenario comb scores according to organisation size"
+#| fig-height: 12
+
+scenarios |> 
+  select(scenario_organisation_size, starts_with("scenario_expertise_portfolio_")) |> 
+  pivot_longer(starts_with("scenario_expertise_portfolio_")) |> 
+  mutate(name = str_remove_all(name, "scenario_expertise_portfolio_"),
+         name = str_replace_all(name, "_", " ")) |> 
+  arrange(name) |> 
+  ggplot(aes(x = name, y = value)) + 
+  geom_boxplot(fill = scenario_color) +
+  geom_jitter(alpha = 0.1) + 
+  facet_wrap(~scenario_organisation_size, ncol = 1)+
+  labs(
+    title = "Organisation size",
+    y = "Score",
+    x = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+```
+
+### Organisation's sector
+
+```{r}
+#| label: fig-personal-comb-sector
+#| fig-cap: "Distribution of scenario comb scores according to organisation's sector"
+#| fig-height: 14
+#| colum: page-right
+
+scenarios |> 
+  select(scenario_organisation_sector, starts_with("scenario_expertise_portfolio_")) |> 
+  pivot_longer(starts_with("scenario_expertise_portfolio_")) |> 
+  mutate(name = str_remove_all(name, "scenario_expertise_portfolio_"),
+         name = str_replace_all(name, "_", " ")) |> 
+  arrange(name) |> 
+  ggplot(aes(x = name, y = value)) + 
+  geom_boxplot(fill = scenario_color ) +
+  geom_jitter(alpha = 0.1) + 
+  facet_wrap(~scenario_organisation_sector, ncol = 1)+
+  labs(
+    title = "Organisation sector",
+    y = "Score",
+    x = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+```

@@ -1,0 +1,294 @@
+---
+title: "Personal Combs"
+---
+
+```{r setup}
+source("../scripts/setup.R")
+
+responses <- read.csv('../data/raw/cyber_expertise_diversity_survey_responses.csv') |> 
+  mutate(recorded_date = dmy_hm(recorded_date))
+
+
+scenarios <- read.csv("../data/raw/cyber_expertise_diversity_survey_scenarios.csv")
+
+categories <- responses |> 
+  select(starts_with("expertise_comb_")) |> 
+  pivot_longer(everything()) |> 
+  mutate(name = str_remove_all(name, "expertise_comb_"),
+         name = str_replace_all(name, "_", " ") ) |> 
+  select(name) |> 
+  unique() |> 
+  arrange(name) |> 
+  pull(name)
+
+```
+
+This section includes how the personal comb was distributed across different categories. Refer to @sec-comb for the rationale of the comb metaphor and an explanation of how the personal comb was calculated.
+
+## By EDI categories
+
+### Age
+
+```{r}
+#| label: fig-personal-comb-age
+#| fig-cap: "Distribution of personal comb scores according to age"
+#| fig-height: 12
+#| colum: page-right
+
+# age, disabilities, uk_ethnic_origin, gender, sexual_orientation, transgender,
+responses |> 
+  select(age, starts_with("expertise_comb_")) |> 
+  pivot_longer(starts_with("expertise_comb_")) |> 
+  mutate(name = str_remove_all(name, "expertise_comb_"),
+         name = str_replace_all(name, "_", " ")) |> 
+  arrange(name) |> 
+  ggplot(aes(x = name, y = value)) + 
+  geom_boxplot(fill = "#2D71A6") +
+  geom_jitter(alpha = 0.1) + 
+  facet_wrap(~age, ncol = 1)+
+  labs(
+    title = "Personal comb by age",
+    y = "Score",
+    x = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+```
+
+### Gender
+
+
+```{r}
+#| label: fig-personal-comb-gender
+#| fig-cap: "Distribution of personal comb scores according to gender"
+#| fig-height: 12
+#| colum: page-right
+
+# age, disabilities, uk_ethnic_origin, gender, sexual_orientation, transgender,
+responses |> 
+  select(gender, starts_with("expertise_comb_")) |> 
+  pivot_longer(starts_with("expertise_comb_")) |> 
+  mutate(name = str_remove_all(name, "expertise_comb_"),
+         name = str_replace_all(name, "_", " ")) |> 
+  arrange(name) |> 
+  ggplot(aes(x = name, y = value)) + 
+  geom_boxplot(fill = "#2D71A6") +
+  geom_jitter(alpha = 0.1) + 
+  facet_wrap(~gender, ncol = 1)+
+  labs(
+    title = "Personal comb by gender",
+    y = "Score",
+    x = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+```
+
+
+### Disabilities
+
+```{r}
+#| label: fig-personal-comb-disabilities
+#| fig-cap: "Distribution of personal comb scores according to reported disability"
+#| fig-height: 12
+#| colum: page-right
+
+# age, disabilities, uk_ethnic_origin, gender, sexual_orientation, transgender,
+responses |> 
+  select(disabilities, starts_with("expertise_comb_")) |> 
+  pivot_longer(starts_with("expertise_comb_")) |> 
+  mutate(name = str_remove_all(name, "expertise_comb_"),
+         name = str_replace_all(name, "_", " ")) |> 
+  arrange(name) |> 
+  ggplot(aes(x = name, y = value)) + 
+  geom_boxplot(fill = "#2D71A6") +
+  geom_jitter(alpha = 0.1) + 
+  facet_wrap(~disabilities, ncol = 1)+
+  labs(
+    title = "Personal comb by reported disability",
+    y = "Score",
+    x = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+```
+
+### Ethnicity
+
+```{r}
+#| label: fig-personal-comb-ethnicity
+#| fig-cap: "Distribution of personal comb scores according to ethnicity"
+#| fig-height: 12
+#| colum: page-right
+
+# age, disabilities, uk_ethnic_origin, gender, sexual_orientation, transgender,
+responses |> 
+  select(uk_ethnic_origin, starts_with("expertise_comb_")) |> 
+  pivot_longer(starts_with("expertise_comb_")) |> 
+  mutate(name = str_remove_all(name, "expertise_comb_"),
+         name = str_replace_all(name, "_", " ")) |> 
+  arrange(name) |> 
+  ggplot(aes(x = name, y = value)) + 
+  geom_boxplot(fill = "#2D71A6") +
+  geom_jitter(alpha = 0.1) + 
+  facet_wrap(~uk_ethnic_origin, ncol = 1)+
+  labs(
+    title = "Personal comb by reported ethnicity",
+    y = "Score",
+    x = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+```
+
+### Sexual Orientation
+
+```{r}
+#| label: fig-personal-comb-sexual-orientation
+#| fig-cap: "Distribution of personal comb scores according to sexual orientation"
+#| fig-height: 12
+#| colum: page-right
+
+# age, disabilities, uk_ethnic_origin, gender, sexual_orientation, transgender,
+responses |> 
+  select(sexual_orientation, starts_with("expertise_comb_")) |> 
+  pivot_longer(starts_with("expertise_comb_")) |> 
+  mutate(name = str_remove_all(name, "expertise_comb_"),
+         name = str_replace_all(name, "_", " ")) |> 
+  arrange(name) |> 
+  ggplot(aes(x = name, y = value)) + 
+  geom_boxplot(fill = "#2D71A6") +
+  geom_jitter(alpha = 0.1) + 
+  facet_wrap(~sexual_orientation, ncol = 1)+
+  labs(
+    title = "",
+    y = "Score",
+    x = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+```
+
+
+### Transgender
+
+```{r}
+#| label: fig-personal-comb-transgender
+#| fig-cap: "Distribution of personal comb scores according to sexual orientation"
+#| fig-height: 12
+#| colum: page-right
+
+# age, disabilities, uk_ethnic_origin, gender, sexual_orientation, transgender,
+responses |> 
+  select(transgender, starts_with("expertise_comb_")) |> 
+  pivot_longer(starts_with("expertise_comb_")) |> 
+  mutate(name = str_remove_all(name, "expertise_comb_"),
+         name = str_replace_all(name, "_", " ")) |> 
+  arrange(name) |> 
+  ggplot(aes(x = name, y = value)) + 
+  geom_boxplot(fill = "#2D71A6") +
+  geom_jitter(alpha = 0.1) + 
+  facet_wrap(~transgender, ncol = 1)+
+  labs(
+    title = "",
+    y = "Score",
+    x = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+```
+
+
+## By job-related questions
+
+### Years of experience
+
+```{r}
+#| label: fig-personal-comb-experience
+#| fig-cap: "Distribution of personal comb scores according to years of experience"
+#| fig-height: 12
+
+responses |> 
+  select(years_experience, starts_with("expertise_comb_")) |> 
+  mutate(
+    years_experience = case_when(
+      years_experience < 6 ~ "0-5",
+      years_experience < 11 & years_experience > 5  ~ "6-10",
+      years_experience < 16 & years_experience > 10  ~ "11-15",
+      years_experience < 21 & years_experience > 15  ~ "16-20",
+      years_experience < 26 & years_experience > 20  ~ "21-25",
+      years_experience > 25  ~ "25+",
+    ),
+    years_experience = as.factor(years_experience)
+  ) |> 
+  pivot_longer(starts_with("expertise_comb_")) |> 
+  mutate(name = str_remove_all(name, "expertise_comb_"),
+         name = str_replace_all(name, "_", " ")) |> 
+  arrange(name) |> 
+  ggplot(aes(x = name, y = value)) + 
+  geom_boxplot(fill = "#2D71A6") +
+  geom_jitter(alpha = 0.1) + 
+  facet_wrap(~years_experience, ncol = 1)+
+  labs(
+    title = "Years of experience",
+    y = "Score",
+    x = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+```
+
+### Organisation's size
+
+```{r}
+#| label: fig-personal-comb-size
+#| fig-cap: "Distribution of personal comb scores according to organisation's size"
+#| colum: page
+#| fig-height: 18
+#| fig-align: "center"
+
+responses |> 
+  select(organisation_size, starts_with("expertise_comb_")) |> 
+  pivot_longer(starts_with("expertise_comb_")) |> 
+  mutate(name = str_remove_all(name, "expertise_comb_"),
+         name = str_replace_all(name, "_", " ")) |> 
+  arrange(name) |> 
+  ggplot(aes(x = name, y = value)) + 
+  geom_boxplot(fill = "#2D71A6") +
+  geom_jitter(alpha = 0.1) + 
+  facet_wrap(~organisation_size, ncol = 1)+
+  labs(
+    title = "Organisation size",
+    y = "Score",
+    x = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+```
+
+### Organisation's sector
+
+```{r}
+#| label: fig-personal-comb-sector
+#| fig-cap: "Distribution of personal comb scores according to organisation's sector"
+#| fig-height: 14
+#| colum: page-right
+
+responses |> 
+  select(organisation_sector, starts_with("expertise_comb_")) |> 
+  pivot_longer(starts_with("expertise_comb_")) |> 
+  mutate(name = str_remove_all(name, "expertise_comb_"),
+         name = str_replace_all(name, "_", " ")) |> 
+  arrange(name) |> 
+  ggplot(aes(x = name, y = value)) + 
+  geom_boxplot(fill = "#2D71A6") +
+  geom_jitter(alpha = 0.1) + 
+  facet_wrap(~organisation_sector, ncol = 1)+
+  labs(
+    title = "Organisation sector",
+    y = "Score",
+    x = NULL
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
+```
