@@ -20,11 +20,21 @@
     ]
   },
   {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Diversity and Cyber Security Expertise: Policy report",
+    "section": "About",
+    "text": "About\nThis Cyber Expertise Diversity Survey was run by the Centre for Interdisciplinary Methodologies (CIM) in collaboration with the Research Institute for Sociotechnical Cyber Security (RISCS), led by Matt Spencer, RISCS Senior Fellow and Associate Professor at CIM.\nOther CIM staff involved in putting the survey together and analysing the data include Carlos Cámara-Menoyo and Timothy Monteath.\nThe survey aims to inform cyber policy discussions by generating new insights into the value and distribution of cyber expertise.",
+    "crumbs": [
+      "Executive summary"
+    ]
+  },
+  {
     "objectID": "index.html#citing",
     "href": "index.html#citing",
     "title": "Diversity and Cyber Security Expertise: Policy report",
     "section": "Citing",
-    "text": "Citing\nYou are free to reuse this dataset under the Licence conditions. If you use this dataset in your work, please cite it as below:\n\nSpencer, M., Cámara-Menoyo, C., & Monteath, T. (2025). Diversity and Cyber Security Expertise: Policy report. University of Warwick. https://warwickcim.github.io/cyberexpertisediversity_survey/\n\nTODO: get a DOI. We may be able to do that soon, once Warwick has implemented their own Figshare",
+    "text": "Citing\nYou are free to reuse this report (fully or partially) under the Licence conditions. If you use it in your work, please cite it as below:\n\nSpencer, M., Cámara-Menoyo, C., & Monteath, T. (2025). Diversity and Cyber Security Expertise: Policy report. University of Warwick. https://warwickcim.github.io/cyberexpertisediversity_survey/, https://doi.org/10.5281/zenodo.17659435",
     "crumbs": [
       "Executive summary"
     ]
