@@ -1,4 +1,4 @@
-[![CC BY 4.0][cc-by-shield]][cc-by]
+ [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 # [The Cyber Expertise Diversity Survey - Report](https://warwickcim.github.io/cyberexpertisediversity_survey/)
 
@@ -6,7 +6,6 @@ This repository contains the report and analysis components derived from [The Cy
 
 The online version of the report can be found at: <https://warwickcim.github.io/cyberexpertisediversity_survey/>.
 
-Text and images are licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). 
 
 -   [ ] TODO: incorporate citation file and cite text here ([see #1](https://github.com/WarwickCIM/cyberexpertisediversity_survey/issues/2)).
 
@@ -18,7 +17,7 @@ Other CIM staff involved in putting the survey together and analysing the data i
 
 The survey aims to inform cyber policy discussions by generating new insights into the value and distribution of cyber expertise.
 
-## Citing {.unnumbered}
+## Citing
 
 You are free to reuse this dataset under the Licence conditions. If you use this dataset in your work, please cite it as below:
 
@@ -33,12 +32,15 @@ For your convenience, we have also included a `CITATION.bib` file you may want t
   year = {2025},
   month = sep,
   institution = {University of Warwick},
-  langid = {english}
+  langid = {english},
+  url = {https://warwickcim.github.io/cyberexpertisediversity_survey/},
 }
   
 ```
 
-**TODO: get a DOI. We may be able to do that soon, once Warwick has implemented their own Figshare**
+## License 
+Text and images are licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). 
+
 
 ## Project's structure
 
