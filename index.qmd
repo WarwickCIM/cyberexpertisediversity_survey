@@ -1,3 +1,5 @@
+[![](https://img.shields.io/badge/DOI-110.5281/zenodo.17659435-blue)](https://doi.org/10.5281/zenodo.17659435)
+
 ## Executive summary {.unnumbered}
 
 Our society is deeply and increasingly reliant on cyber security practitioners to ensure that digital services are dependable, critical infrastructure is resilient and sensitive data is protected. Their success depends on diverse ways of thinking, diverse skillsets, perspectives and backgrounds. Today, the profession is being transformed, with standardised categories of specialism, new certifications and evolving governance structures. While this process of professionalisation is driven by the need to better support practitioners and their employers, it is vital to understand any unintended consequences that may be emerging. We focus here on potential negative impacts on diversity, a topic that must be carefully addressed to ensure that cyber security remains an attractive field to work in, to support the legitimacy of professional institutions and to enhance the efficacy of the field.
