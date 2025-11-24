@@ -1,4 +1,4 @@
-::: {.content-hidden unless-format="HTML"}
+::: {.content-hidden unless-format="html:js"}
 [![](https://img.shields.io/badge/DOI-110.5281/zenodo.17659435-blue)](https://doi.org/10.5281/zenodo.17659435)
 :::
 
@@ -36,7 +36,7 @@ You are free to reuse this report (fully or partially) under the Licence conditi
 
 > Spencer, M., Cámara-Menoyo, C., & Monteath, T. (2025). Diversity and Cyber Security Expertise: Policy report. University of Warwick. <https://warwickcim.github.io/cyberexpertisediversity_survey/>, <https://doi.org/10.5281/zenodo.17659435>
 
-::: {.content-hidden unless-format="HTML"}
+::: {.content-hidden unless-format="html:js"}
 For your convenience, we have also included a `CITATION.bib` file you may want to use to import it to your Reference Manager.
 
 ``` bibtex
