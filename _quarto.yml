@@ -18,18 +18,20 @@ book:
     orcid: 0000-0002-9378-0549
     affiliations:
     - name: University of Warwick
+    - affiliation-url: http://warwick.ac.uk/cim
   - name: Timothy Monteath
     orcid: 0000-0003-2481-9785
     affiliations:
     - name: University of Warwick
-  date: "7/18/2025"
+    - affiliation-url: http://warwick.ac.uk/cim
+  date: "11/20/2025"
   twitter-card: true
   downloads: [pdf, epub]
   output-file: "cyber-expertise-diversiry-report"
   
   repo-url: https://github.com/WarwickCIM/cyberexpertisediversity_survey
   repo-actions: [edit, issue]
-  
+
   chapters:
     - index.qmd
     - content/introduction.qmd
@@ -55,7 +57,7 @@ book:
     right: 
       - icon: mastodon 
         href: https://fediscience.org/%40cimethods
-      - icon: twitter
+      - icon: bluesky
         href: https://bsky.app/profile/cimethods.bsky.social
       - icon: github
         href: https://github.com/WarwickCIM/
