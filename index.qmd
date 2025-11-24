@@ -1,4 +1,6 @@
+::: {.content-hidden unless-format="HTML"}
 [![](https://img.shields.io/badge/DOI-110.5281/zenodo.17659435-blue)](https://doi.org/10.5281/zenodo.17659435)
+:::
 
 ## Executive summary {.unnumbered}
 
